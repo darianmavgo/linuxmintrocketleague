@@ -1,0 +1,2995 @@
+{
+    "timestamp": "2026-05-23T08:42:18.825912",
+    "memory_summary": {
+        "total": 8223391744,
+        "free": 2611642368,
+        "available": 5704617984,
+        "used": 2518773760,
+        "buffers": 119304192,
+        "cached": 3253813248,
+        "slab": 241451008,
+        "page_tables": 42463232
+    },
+    "tmpfs_mounts": [
+        {
+            "mount_point": "/run",
+            "total": 822341632,
+            "used": 1961984,
+            "free": 820379648,
+            "percent_used": 0.23858502642366528
+        },
+        {
+            "mount_point": "/dev/shm",
+            "total": 4111695872,
+            "used": 48238592,
+            "free": 4063457280,
+            "percent_used": 1.1732042811944627
+        },
+        {
+            "mount_point": "/run/lock",
+            "total": 5242880,
+            "used": 12288,
+            "free": 5230592,
+            "percent_used": 0.234375
+        },
+        {
+            "mount_point": "/run/user/1000",
+            "total": 822337536,
+            "used": 208896,
+            "free": 822128640,
+            "percent_used": 0.02540270762977795
+        }
+    ],
+    "processes": [
+        {
+            "pid": 1,
+            "user": "root",
+            "name": "systemd",
+            "rss": 14606336,
+            "vsz": 23404544,
+            "cmdline": "/sbin/init splash",
+            "rl_role": "Linux system daemon/shell providing basic OS infrastructure, hardware polling, and environment capabilities.",
+            "what_breaks": "The operating system will become unstable or crash, taking Rocket League and Heroic Launcher down with it."
+        },
+        {
+            "pid": 2,
+            "user": "root",
+            "name": "kthreadd",
+            "rss": 0,
+            "vsz": 0,
+            "cmdline": "[kthreadd]",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 3,
+            "user": "root",
+            "name": "pool_workqueue_release",
+            "rss": 0,
+            "vsz": 0,
+            "cmdline": "[pool_workqueue_release]",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 4,
+            "user": "root",
+            "name": "kworker/R-rcu_gp",
+            "rss": 0,
+            "vsz": 0,
+            "cmdline": "[kworker/R-rcu_gp]",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 5,
+            "user": "root",
+            "name": "kworker/R-sync_wq",
+            "rss": 0,
+            "vsz": 0,
+            "cmdline": "[kworker/R-sync_wq]",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 6,
+            "user": "root",
+            "name": "kworker/R-kvfree_rcu_reclaim",
+            "rss": 0,
+            "vsz": 0,
+            "cmdline": "[kworker/R-kvfree_rcu_reclaim]",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 7,
+            "user": "root",
+            "name": "kworker/R-slub_flushwq",
+            "rss": 0,
+            "vsz": 0,
+            "cmdline": "[kworker/R-slub_flushwq]",
+            "rl_role": "Linux system daemon/shell providing basic OS infrastructure, hardware polling, and environment capabilities.",
+            "what_breaks": "The operating system will become unstable or crash, taking Rocket League and Heroic Launcher down with it."
+        },
+        {
+            "pid": 8,
+            "user": "root",
+            "name": "kworker/R-netns",
+            "rss": 0,
+            "vsz": 0,
+            "cmdline": "[kworker/R-netns]",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 10,
+            "user": "root",
+            "name": "kworker/0:0H-events_highpri",
+            "rss": 0,
+            "vsz": 0,
+            "cmdline": "[kworker/0:0H-events_highpri]",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 13,
+            "user": "root",
+            "name": "kworker/R-mm_percpu_wq",
+            "rss": 0,
+            "vsz": 0,
+            "cmdline": "[kworker/R-mm_percpu_wq]",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 14,
+            "user": "root",
+            "name": "ksoftirqd/0",
+            "rss": 0,
+            "vsz": 0,
+            "cmdline": "[ksoftirqd/0]",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 15,
+            "user": "root",
+            "name": "rcu_preempt",
+            "rss": 0,
+            "vsz": 0,
+            "cmdline": "[rcu_preempt]",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 16,
+            "user": "root",
+            "name": "rcu_exp_par_gp_kthread_worker/0",
+            "rss": 0,
+            "vsz": 0,
+            "cmdline": "[rcu_exp_par_gp_kthread_worker/0]",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 17,
+            "user": "root",
+            "name": "rcu_exp_gp_kthread_worker",
+            "rss": 0,
+            "vsz": 0,
+            "cmdline": "[rcu_exp_gp_kthread_worker]",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 18,
+            "user": "root",
+            "name": "migration/0",
+            "rss": 0,
+            "vsz": 0,
+            "cmdline": "[migration/0]",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 19,
+            "user": "root",
+            "name": "idle_inject/0",
+            "rss": 0,
+            "vsz": 0,
+            "cmdline": "[idle_inject/0]",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 20,
+            "user": "root",
+            "name": "cpuhp/0",
+            "rss": 0,
+            "vsz": 0,
+            "cmdline": "[cpuhp/0]",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 21,
+            "user": "root",
+            "name": "cpuhp/1",
+            "rss": 0,
+            "vsz": 0,
+            "cmdline": "[cpuhp/1]",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 22,
+            "user": "root",
+            "name": "idle_inject/1",
+            "rss": 0,
+            "vsz": 0,
+            "cmdline": "[idle_inject/1]",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 23,
+            "user": "root",
+            "name": "migration/1",
+            "rss": 0,
+            "vsz": 0,
+            "cmdline": "[migration/1]",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 24,
+            "user": "root",
+            "name": "ksoftirqd/1",
+            "rss": 0,
+            "vsz": 0,
+            "cmdline": "[ksoftirqd/1]",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 25,
+            "user": "root",
+            "name": "kworker/1:0-mm_percpu_wq",
+            "rss": 0,
+            "vsz": 0,
+            "cmdline": "[kworker/1:0-mm_percpu_wq]",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 26,
+            "user": "root",
+            "name": "kworker/1:0H-events_highpri",
+            "rss": 0,
+            "vsz": 0,
+            "cmdline": "[kworker/1:0H-events_highpri]",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 27,
+            "user": "root",
+            "name": "cpuhp/2",
+            "rss": 0,
+            "vsz": 0,
+            "cmdline": "[cpuhp/2]",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 28,
+            "user": "root",
+            "name": "idle_inject/2",
+            "rss": 0,
+            "vsz": 0,
+            "cmdline": "[idle_inject/2]",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 29,
+            "user": "root",
+            "name": "migration/2",
+            "rss": 0,
+            "vsz": 0,
+            "cmdline": "[migration/2]",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 30,
+            "user": "root",
+            "name": "ksoftirqd/2",
+            "rss": 0,
+            "vsz": 0,
+            "cmdline": "[ksoftirqd/2]",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 32,
+            "user": "root",
+            "name": "kworker/2:0H-events_highpri",
+            "rss": 0,
+            "vsz": 0,
+            "cmdline": "[kworker/2:0H-events_highpri]",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 33,
+            "user": "root",
+            "name": "cpuhp/3",
+            "rss": 0,
+            "vsz": 0,
+            "cmdline": "[cpuhp/3]",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 34,
+            "user": "root",
+            "name": "idle_inject/3",
+            "rss": 0,
+            "vsz": 0,
+            "cmdline": "[idle_inject/3]",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 35,
+            "user": "root",
+            "name": "migration/3",
+            "rss": 0,
+            "vsz": 0,
+            "cmdline": "[migration/3]",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 36,
+            "user": "root",
+            "name": "ksoftirqd/3",
+            "rss": 0,
+            "vsz": 0,
+            "cmdline": "[ksoftirqd/3]",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 38,
+            "user": "root",
+            "name": "kworker/3:0H-events_highpri",
+            "rss": 0,
+            "vsz": 0,
+            "cmdline": "[kworker/3:0H-events_highpri]",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 39,
+            "user": "root",
+            "name": "cpuhp/4",
+            "rss": 0,
+            "vsz": 0,
+            "cmdline": "[cpuhp/4]",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 40,
+            "user": "root",
+            "name": "idle_inject/4",
+            "rss": 0,
+            "vsz": 0,
+            "cmdline": "[idle_inject/4]",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 41,
+            "user": "root",
+            "name": "migration/4",
+            "rss": 0,
+            "vsz": 0,
+            "cmdline": "[migration/4]",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 42,
+            "user": "root",
+            "name": "ksoftirqd/4",
+            "rss": 0,
+            "vsz": 0,
+            "cmdline": "[ksoftirqd/4]",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 43,
+            "user": "root",
+            "name": "kworker/4:0-display_unordered",
+            "rss": 0,
+            "vsz": 0,
+            "cmdline": "[kworker/4:0-display_unordered]",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 45,
+            "user": "root",
+            "name": "cpuhp/5",
+            "rss": 0,
+            "vsz": 0,
+            "cmdline": "[cpuhp/5]",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 46,
+            "user": "root",
+            "name": "idle_inject/5",
+            "rss": 0,
+            "vsz": 0,
+            "cmdline": "[idle_inject/5]",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 47,
+            "user": "root",
+            "name": "migration/5",
+            "rss": 0,
+            "vsz": 0,
+            "cmdline": "[migration/5]",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 48,
+            "user": "root",
+            "name": "ksoftirqd/5",
+            "rss": 0,
+            "vsz": 0,
+            "cmdline": "[ksoftirqd/5]",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 50,
+            "user": "root",
+            "name": "kworker/5:0H-events_highpri",
+            "rss": 0,
+            "vsz": 0,
+            "cmdline": "[kworker/5:0H-events_highpri]",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 51,
+            "user": "root",
+            "name": "cpuhp/6",
+            "rss": 0,
+            "vsz": 0,
+            "cmdline": "[cpuhp/6]",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 52,
+            "user": "root",
+            "name": "idle_inject/6",
+            "rss": 0,
+            "vsz": 0,
+            "cmdline": "[idle_inject/6]",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 53,
+            "user": "root",
+            "name": "migration/6",
+            "rss": 0,
+            "vsz": 0,
+            "cmdline": "[migration/6]",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 54,
+            "user": "root",
+            "name": "ksoftirqd/6",
+            "rss": 0,
+            "vsz": 0,
+            "cmdline": "[ksoftirqd/6]",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 56,
+            "user": "root",
+            "name": "kworker/6:0H-events_highpri",
+            "rss": 0,
+            "vsz": 0,
+            "cmdline": "[kworker/6:0H-events_highpri]",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 57,
+            "user": "root",
+            "name": "cpuhp/7",
+            "rss": 0,
+            "vsz": 0,
+            "cmdline": "[cpuhp/7]",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 58,
+            "user": "root",
+            "name": "idle_inject/7",
+            "rss": 0,
+            "vsz": 0,
+            "cmdline": "[idle_inject/7]",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 59,
+            "user": "root",
+            "name": "migration/7",
+            "rss": 0,
+            "vsz": 0,
+            "cmdline": "[migration/7]",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 60,
+            "user": "root",
+            "name": "ksoftirqd/7",
+            "rss": 0,
+            "vsz": 0,
+            "cmdline": "[ksoftirqd/7]",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 61,
+            "user": "root",
+            "name": "kworker/7:0-events",
+            "rss": 0,
+            "vsz": 0,
+            "cmdline": "[kworker/7:0-events]",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 62,
+            "user": "root",
+            "name": "kworker/7:0H-events_highpri",
+            "rss": 0,
+            "vsz": 0,
+            "cmdline": "[kworker/7:0H-events_highpri]",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 63,
+            "user": "root",
+            "name": "kdevtmpfs",
+            "rss": 0,
+            "vsz": 0,
+            "cmdline": "[kdevtmpfs]",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 64,
+            "user": "root",
+            "name": "kworker/R-inet_frag_wq",
+            "rss": 0,
+            "vsz": 0,
+            "cmdline": "[kworker/R-inet_frag_wq]",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 65,
+            "user": "root",
+            "name": "rcu_tasks_kthread",
+            "rss": 0,
+            "vsz": 0,
+            "cmdline": "[rcu_tasks_kthread]",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 66,
+            "user": "root",
+            "name": "rcu_tasks_rude_kthread",
+            "rss": 0,
+            "vsz": 0,
+            "cmdline": "[rcu_tasks_rude_kthread]",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 67,
+            "user": "root",
+            "name": "rcu_tasks_trace_kthread",
+            "rss": 0,
+            "vsz": 0,
+            "cmdline": "[rcu_tasks_trace_kthread]",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 68,
+            "user": "root",
+            "name": "kauditd",
+            "rss": 0,
+            "vsz": 0,
+            "cmdline": "[kauditd]",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 69,
+            "user": "root",
+            "name": "khungtaskd",
+            "rss": 0,
+            "vsz": 0,
+            "cmdline": "[khungtaskd]",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 71,
+            "user": "root",
+            "name": "oom_reaper",
+            "rss": 0,
+            "vsz": 0,
+            "cmdline": "[oom_reaper]",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 72,
+            "user": "root",
+            "name": "kworker/R-writeback",
+            "rss": 0,
+            "vsz": 0,
+            "cmdline": "[kworker/R-writeback]",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 73,
+            "user": "root",
+            "name": "kcompactd0",
+            "rss": 0,
+            "vsz": 0,
+            "cmdline": "[kcompactd0]",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 74,
+            "user": "root",
+            "name": "ksmd",
+            "rss": 0,
+            "vsz": 0,
+            "cmdline": "[ksmd]",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 75,
+            "user": "root",
+            "name": "khugepaged",
+            "rss": 0,
+            "vsz": 0,
+            "cmdline": "[khugepaged]",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 76,
+            "user": "root",
+            "name": "kworker/R-kblockd",
+            "rss": 0,
+            "vsz": 0,
+            "cmdline": "[kworker/R-kblockd]",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 77,
+            "user": "root",
+            "name": "kworker/R-blkcg_punt_bio",
+            "rss": 0,
+            "vsz": 0,
+            "cmdline": "[kworker/R-blkcg_punt_bio]",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 78,
+            "user": "root",
+            "name": "kworker/R-kintegrityd",
+            "rss": 0,
+            "vsz": 0,
+            "cmdline": "[kworker/R-kintegrityd]",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 79,
+            "user": "root",
+            "name": "kworker/u32:2-kvfree_rcu_reclaim",
+            "rss": 0,
+            "vsz": 0,
+            "cmdline": "[kworker/u32:2-kvfree_rcu_reclaim]",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 80,
+            "user": "root",
+            "name": "irq/9-acpi",
+            "rss": 0,
+            "vsz": 0,
+            "cmdline": "[irq/9-acpi]",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 82,
+            "user": "root",
+            "name": "kworker/R-tpm_dev_wq",
+            "rss": 0,
+            "vsz": 0,
+            "cmdline": "[kworker/R-tpm_dev_wq]",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 83,
+            "user": "root",
+            "name": "kworker/R-ata_sff",
+            "rss": 0,
+            "vsz": 0,
+            "cmdline": "[kworker/R-ata_sff]",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 84,
+            "user": "root",
+            "name": "kworker/R-md",
+            "rss": 0,
+            "vsz": 0,
+            "cmdline": "[kworker/R-md]",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 85,
+            "user": "root",
+            "name": "kworker/R-md_bitmap",
+            "rss": 0,
+            "vsz": 0,
+            "cmdline": "[kworker/R-md_bitmap]",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 86,
+            "user": "root",
+            "name": "kworker/R-edac-poller",
+            "rss": 0,
+            "vsz": 0,
+            "cmdline": "[kworker/R-edac-poller]",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 87,
+            "user": "root",
+            "name": "kworker/R-devfreq_wq",
+            "rss": 0,
+            "vsz": 0,
+            "cmdline": "[kworker/R-devfreq_wq]",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 88,
+            "user": "root",
+            "name": "watchdogd",
+            "rss": 0,
+            "vsz": 0,
+            "cmdline": "[watchdogd]",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 90,
+            "user": "root",
+            "name": "kworker/R-quota_events_unbound",
+            "rss": 0,
+            "vsz": 0,
+            "cmdline": "[kworker/R-quota_events_unbound]",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 91,
+            "user": "root",
+            "name": "kworker/0:1H-kblockd",
+            "rss": 0,
+            "vsz": 0,
+            "cmdline": "[kworker/0:1H-kblockd]",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 93,
+            "user": "root",
+            "name": "kswapd0",
+            "rss": 0,
+            "vsz": 0,
+            "cmdline": "[kswapd0]",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 94,
+            "user": "root",
+            "name": "ecryptfs-kthread",
+            "rss": 0,
+            "vsz": 0,
+            "cmdline": "[ecryptfs-kthread]",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 95,
+            "user": "root",
+            "name": "kworker/R-kthrotld",
+            "rss": 0,
+            "vsz": 0,
+            "cmdline": "[kworker/R-kthrotld]",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 96,
+            "user": "root",
+            "name": "irq/123-aerdrv",
+            "rss": 0,
+            "vsz": 0,
+            "cmdline": "[irq/123-aerdrv]",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 97,
+            "user": "root",
+            "name": "irq/125-aerdrv",
+            "rss": 0,
+            "vsz": 0,
+            "cmdline": "[irq/125-aerdrv]",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 98,
+            "user": "root",
+            "name": "kworker/R-acpi_thermal_pm",
+            "rss": 0,
+            "vsz": 0,
+            "cmdline": "[kworker/R-acpi_thermal_pm]",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 99,
+            "user": "root",
+            "name": "hwrng",
+            "rss": 0,
+            "vsz": 0,
+            "cmdline": "[hwrng]",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 101,
+            "user": "root",
+            "name": "kworker/R-mld",
+            "rss": 0,
+            "vsz": 0,
+            "cmdline": "[kworker/R-mld]",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 102,
+            "user": "root",
+            "name": "kworker/2:1H-kblockd",
+            "rss": 0,
+            "vsz": 0,
+            "cmdline": "[kworker/2:1H-kblockd]",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 103,
+            "user": "root",
+            "name": "kworker/R-ipv6_addrconf",
+            "rss": 0,
+            "vsz": 0,
+            "cmdline": "[kworker/R-ipv6_addrconf]",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 104,
+            "user": "root",
+            "name": "kworker/R-kstrp",
+            "rss": 0,
+            "vsz": 0,
+            "cmdline": "[kworker/R-kstrp]",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 106,
+            "user": "root",
+            "name": "kworker/6:1-display_unordered",
+            "rss": 0,
+            "vsz": 0,
+            "cmdline": "[kworker/6:1-display_unordered]",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 108,
+            "user": "root",
+            "name": "kworker/u33:0-rb_allocator",
+            "rss": 0,
+            "vsz": 0,
+            "cmdline": "[kworker/u33:0-rb_allocator]",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 119,
+            "user": "root",
+            "name": "kworker/5:2-display_unordered",
+            "rss": 0,
+            "vsz": 0,
+            "cmdline": "[kworker/5:2-display_unordered]",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 120,
+            "user": "root",
+            "name": "kworker/R-charger_manager",
+            "rss": 0,
+            "vsz": 0,
+            "cmdline": "[kworker/R-charger_manager]",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 121,
+            "user": "root",
+            "name": "kworker/1:1H-kblockd",
+            "rss": 0,
+            "vsz": 0,
+            "cmdline": "[kworker/1:1H-kblockd]",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 150,
+            "user": "root",
+            "name": "kworker/3:1H-kblockd",
+            "rss": 0,
+            "vsz": 0,
+            "cmdline": "[kworker/3:1H-kblockd]",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 151,
+            "user": "root",
+            "name": "kworker/5:1H-kblockd",
+            "rss": 0,
+            "vsz": 0,
+            "cmdline": "[kworker/5:1H-kblockd]",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 162,
+            "user": "root",
+            "name": "kworker/6:1H-kblockd",
+            "rss": 0,
+            "vsz": 0,
+            "cmdline": "[kworker/6:1H-kblockd]",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 168,
+            "user": "root",
+            "name": "kworker/4:1H-kblockd",
+            "rss": 0,
+            "vsz": 0,
+            "cmdline": "[kworker/4:1H-kblockd]",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 170,
+            "user": "root",
+            "name": "kworker/7:1H-kblockd",
+            "rss": 0,
+            "vsz": 0,
+            "cmdline": "[kworker/7:1H-kblockd]",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 176,
+            "user": "root",
+            "name": "kworker/3:2-display_unordered",
+            "rss": 0,
+            "vsz": 0,
+            "cmdline": "[kworker/3:2-display_unordered]",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 191,
+            "user": "root",
+            "name": "scsi_eh_0",
+            "rss": 0,
+            "vsz": 0,
+            "cmdline": "[scsi_eh_0]",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 192,
+            "user": "root",
+            "name": "kworker/R-scsi_tmf_0",
+            "rss": 0,
+            "vsz": 0,
+            "cmdline": "[kworker/R-scsi_tmf_0]",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 193,
+            "user": "root",
+            "name": "scsi_eh_1",
+            "rss": 0,
+            "vsz": 0,
+            "cmdline": "[scsi_eh_1]",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 194,
+            "user": "root",
+            "name": "kworker/R-scsi_tmf_1",
+            "rss": 0,
+            "vsz": 0,
+            "cmdline": "[kworker/R-scsi_tmf_1]",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 195,
+            "user": "root",
+            "name": "scsi_eh_2",
+            "rss": 0,
+            "vsz": 0,
+            "cmdline": "[scsi_eh_2]",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 196,
+            "user": "root",
+            "name": "kworker/R-scsi_tmf_2",
+            "rss": 0,
+            "vsz": 0,
+            "cmdline": "[kworker/R-scsi_tmf_2]",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 197,
+            "user": "root",
+            "name": "scsi_eh_3",
+            "rss": 0,
+            "vsz": 0,
+            "cmdline": "[scsi_eh_3]",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 198,
+            "user": "root",
+            "name": "kworker/R-scsi_tmf_3",
+            "rss": 0,
+            "vsz": 0,
+            "cmdline": "[kworker/R-scsi_tmf_3]",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 199,
+            "user": "root",
+            "name": "scsi_eh_4",
+            "rss": 0,
+            "vsz": 0,
+            "cmdline": "[scsi_eh_4]",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 200,
+            "user": "root",
+            "name": "kworker/R-scsi_tmf_4",
+            "rss": 0,
+            "vsz": 0,
+            "cmdline": "[kworker/R-scsi_tmf_4]",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 201,
+            "user": "root",
+            "name": "kworker/u32:3-flush-8:16",
+            "rss": 0,
+            "vsz": 0,
+            "cmdline": "[kworker/u32:3-flush-8:16]",
+            "rl_role": "Linux system daemon/shell providing basic OS infrastructure, hardware polling, and environment capabilities.",
+            "what_breaks": "The operating system will become unstable or crash, taking Rocket League and Heroic Launcher down with it."
+        },
+        {
+            "pid": 204,
+            "user": "root",
+            "name": "kworker/R-nvme-wq",
+            "rss": 0,
+            "vsz": 0,
+            "cmdline": "[kworker/R-nvme-wq]",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 205,
+            "user": "root",
+            "name": "kworker/R-nvme-reset-wq",
+            "rss": 0,
+            "vsz": 0,
+            "cmdline": "[kworker/R-nvme-reset-wq]",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 206,
+            "user": "root",
+            "name": "kworker/R-nvme-delete-wq",
+            "rss": 0,
+            "vsz": 0,
+            "cmdline": "[kworker/R-nvme-delete-wq]",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 207,
+            "user": "root",
+            "name": "kworker/R-nvme-auth-wq",
+            "rss": 0,
+            "vsz": 0,
+            "cmdline": "[kworker/R-nvme-auth-wq]",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 225,
+            "user": "root",
+            "name": "scsi_eh_5",
+            "rss": 0,
+            "vsz": 0,
+            "cmdline": "[scsi_eh_5]",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 226,
+            "user": "root",
+            "name": "kworker/R-scsi_tmf_5",
+            "rss": 0,
+            "vsz": 0,
+            "cmdline": "[kworker/R-scsi_tmf_5]",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 227,
+            "user": "root",
+            "name": "usb-storage",
+            "rss": 0,
+            "vsz": 0,
+            "cmdline": "[usb-storage]",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 228,
+            "user": "root",
+            "name": "kworker/R-uas",
+            "rss": 0,
+            "vsz": 0,
+            "cmdline": "[kworker/R-uas]",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 229,
+            "user": "root",
+            "name": "kworker/4:2H-kblockd",
+            "rss": 0,
+            "vsz": 0,
+            "cmdline": "[kworker/4:2H-kblockd]",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 260,
+            "user": "root",
+            "name": "kworker/R-raid5wq",
+            "rss": 0,
+            "vsz": 0,
+            "cmdline": "[kworker/R-raid5wq]",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 398,
+            "user": "root",
+            "name": "jbd2/sdb1-8",
+            "rss": 0,
+            "vsz": 0,
+            "cmdline": "[jbd2/sdb1-8]",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 399,
+            "user": "root",
+            "name": "kworker/R-ext4-rsv-conversion",
+            "rss": 0,
+            "vsz": 0,
+            "cmdline": "[kworker/R-ext4-rsv-conversion]",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 449,
+            "user": "root",
+            "name": "systemd-journal",
+            "rss": 18698240,
+            "vsz": 51949568,
+            "cmdline": "/usr/lib/systemd/systemd-journald",
+            "rl_role": "Linux system daemon/shell providing basic OS infrastructure, hardware polling, and environment capabilities.",
+            "what_breaks": "The operating system will become unstable or crash, taking Rocket League and Heroic Launcher down with it."
+        },
+        {
+            "pid": 494,
+            "user": "root",
+            "name": "kworker/2:2-events",
+            "rss": 0,
+            "vsz": 0,
+            "cmdline": "[kworker/2:2-events]",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 506,
+            "user": "root",
+            "name": "systemd-udevd",
+            "rss": 8552448,
+            "vsz": 30945280,
+            "cmdline": "/usr/lib/systemd/systemd-udevd",
+            "rl_role": "Linux system daemon/shell providing basic OS infrastructure, hardware polling, and environment capabilities.",
+            "what_breaks": "The operating system will become unstable or crash, taking Rocket League and Heroic Launcher down with it."
+        },
+        {
+            "pid": 510,
+            "user": "root",
+            "name": "psimon",
+            "rss": 0,
+            "vsz": 0,
+            "cmdline": "[psimon]",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 561,
+            "user": "root",
+            "name": "irq/150-mei_me",
+            "rss": 0,
+            "vsz": 0,
+            "cmdline": "[irq/150-mei_me]",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 563,
+            "user": "root",
+            "name": "kworker/0:2-display_unordered",
+            "rss": 0,
+            "vsz": 0,
+            "cmdline": "[kworker/0:2-display_unordered]",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 564,
+            "user": "root",
+            "name": "kworker/1:2-display_unordered",
+            "rss": 0,
+            "vsz": 0,
+            "cmdline": "[kworker/1:2-display_unordered]",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 575,
+            "user": "root",
+            "name": "kworker/6:2-events",
+            "rss": 0,
+            "vsz": 0,
+            "cmdline": "[kworker/6:2-events]",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 580,
+            "user": "root",
+            "name": "kworker/R-cfg80211",
+            "rss": 0,
+            "vsz": 0,
+            "cmdline": "[kworker/R-cfg80211]",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 588,
+            "user": "root",
+            "name": "kworker/u33:1-hci0",
+            "rss": 0,
+            "vsz": 0,
+            "cmdline": "[kworker/u33:1-hci0]",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 606,
+            "user": "root",
+            "name": "irq/151-iwlwifi",
+            "rss": 0,
+            "vsz": 0,
+            "cmdline": "[irq/151-iwlwifi]",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 621,
+            "user": "root",
+            "name": "kworker/R-ttm",
+            "rss": 0,
+            "vsz": 0,
+            "cmdline": "[kworker/R-ttm]",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 622,
+            "user": "root",
+            "name": "card1-crtc0",
+            "rss": 0,
+            "vsz": 0,
+            "cmdline": "[card1-crtc0]",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 623,
+            "user": "root",
+            "name": "card1-crtc1",
+            "rss": 0,
+            "vsz": 0,
+            "cmdline": "[card1-crtc1]",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 624,
+            "user": "root",
+            "name": "card1-crtc2",
+            "rss": 0,
+            "vsz": 0,
+            "cmdline": "[card1-crtc2]",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 677,
+            "user": "root",
+            "name": "nv_queue",
+            "rss": 0,
+            "vsz": 0,
+            "cmdline": "[nv_queue]",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 678,
+            "user": "root",
+            "name": "nv_queue",
+            "rss": 0,
+            "vsz": 0,
+            "cmdline": "[nv_queue]",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 755,
+            "user": "root",
+            "name": "nvidia-modeset/kthread_q",
+            "rss": 0,
+            "vsz": 0,
+            "cmdline": "[nvidia-modeset/kthread_q]",
+            "rl_role": "Underlying GPU driver/monitoring daemon providing low-level hardware access for Vulkan/OpenGL rendering.",
+            "what_breaks": "Rocket League will drop to software rendering (unplayable slideshow), fail to start, or crash."
+        },
+        {
+            "pid": 756,
+            "user": "root",
+            "name": "nvidia-modeset/deferred_close_kthread_q",
+            "rss": 0,
+            "vsz": 0,
+            "cmdline": "[nvidia-modeset/deferred_close_kthread_q]",
+            "rl_role": "Underlying GPU driver/monitoring daemon providing low-level hardware access for Vulkan/OpenGL rendering.",
+            "what_breaks": "Rocket League will drop to software rendering (unplayable slideshow), fail to start, or crash."
+        },
+        {
+            "pid": 758,
+            "user": "root",
+            "name": "irq/154-nvidia",
+            "rss": 0,
+            "vsz": 0,
+            "cmdline": "[irq/154-nvidia]",
+            "rl_role": "Underlying GPU driver/monitoring daemon providing low-level hardware access for Vulkan/OpenGL rendering.",
+            "what_breaks": "Rocket League will drop to software rendering (unplayable slideshow), fail to start, or crash."
+        },
+        {
+            "pid": 759,
+            "user": "root",
+            "name": "nvidia",
+            "rss": 0,
+            "vsz": 0,
+            "cmdline": "[nvidia]",
+            "rl_role": "Underlying GPU driver/monitoring daemon providing low-level hardware access for Vulkan/OpenGL rendering.",
+            "what_breaks": "Rocket League will drop to software rendering (unplayable slideshow), fail to start, or crash."
+        },
+        {
+            "pid": 760,
+            "user": "root",
+            "name": "nv_queue",
+            "rss": 0,
+            "vsz": 0,
+            "cmdline": "[nv_queue]",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 797,
+            "user": "root",
+            "name": "UVM global queue",
+            "rss": 0,
+            "vsz": 0,
+            "cmdline": "[UVM global queue]",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 798,
+            "user": "root",
+            "name": "UVM deferred release queue",
+            "rss": 0,
+            "vsz": 0,
+            "cmdline": "[UVM deferred release queue]",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 799,
+            "user": "root",
+            "name": "UVM Tools Event Queue",
+            "rss": 0,
+            "vsz": 0,
+            "cmdline": "[UVM Tools Event Queue]",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 949,
+            "user": "systemd-resolve",
+            "name": "systemd-resolve",
+            "rss": 14180352,
+            "vsz": 22253568,
+            "cmdline": "/usr/lib/systemd/systemd-resolved",
+            "rl_role": "Linux system daemon/shell providing basic OS infrastructure, hardware polling, and environment capabilities.",
+            "what_breaks": "The operating system will become unstable or crash, taking Rocket League and Heroic Launcher down with it."
+        },
+        {
+            "pid": 950,
+            "user": "systemd-timesync",
+            "name": "systemd-timesyn",
+            "rss": 8372224,
+            "vsz": 93417472,
+            "cmdline": "/usr/lib/systemd/systemd-timesyncd",
+            "rl_role": "Linux system daemon/shell providing basic OS infrastructure, hardware polling, and environment capabilities.",
+            "what_breaks": "The operating system will become unstable or crash, taking Rocket League and Heroic Launcher down with it."
+        },
+        {
+            "pid": 958,
+            "user": "root",
+            "name": "accounts-daemon",
+            "rss": 8224768,
+            "vsz": 320819200,
+            "cmdline": "/usr/libexec/accounts-daemon",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 960,
+            "user": "avahi",
+            "name": "avahi-daemon",
+            "rss": 4861952,
+            "vsz": 8912896,
+            "cmdline": "avahi-daemon: running [darian-XPS-8920.local]",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 962,
+            "user": "root",
+            "name": "bluetoothd",
+            "rss": 7163904,
+            "vsz": 13848576,
+            "cmdline": "/usr/libexec/bluetooth/bluetoothd",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 963,
+            "user": "root",
+            "name": "cron",
+            "rss": 2985984,
+            "vsz": 9658368,
+            "cmdline": "/usr/sbin/cron -f -P",
+            "rl_role": "Linux system daemon/shell providing basic OS infrastructure, hardware polling, and environment capabilities.",
+            "what_breaks": "The operating system will become unstable or crash, taking Rocket League and Heroic Launcher down with it."
+        },
+        {
+            "pid": 965,
+            "user": "messagebus",
+            "name": "dbus-daemon",
+            "rss": 7057408,
+            "vsz": 11436032,
+            "cmdline": "@dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only",
+            "rl_role": "Linux system daemon/shell providing basic OS infrastructure, hardware polling, and environment capabilities.",
+            "what_breaks": "The operating system will become unstable or crash, taking Rocket League and Heroic Launcher down with it."
+        },
+        {
+            "pid": 975,
+            "user": "root",
+            "name": "irqbalance",
+            "rss": 4800512,
+            "vsz": 85049344,
+            "cmdline": "/usr/sbin/irqbalance",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 989,
+            "user": "polkitd",
+            "name": "polkitd",
+            "rss": 11726848,
+            "vsz": 318627840,
+            "cmdline": "/usr/lib/polkit-1/polkitd --no-debug",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 990,
+            "user": "root",
+            "name": "power-profiles-",
+            "rss": 8343552,
+            "vsz": 321040384,
+            "cmdline": "/usr/libexec/power-profiles-daemon",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 993,
+            "user": "root",
+            "name": "switcheroo-cont",
+            "rss": 7172096,
+            "vsz": 317161472,
+            "cmdline": "/usr/libexec/switcheroo-control",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 994,
+            "user": "root",
+            "name": "systemd-logind",
+            "rss": 9584640,
+            "vsz": 18620416,
+            "cmdline": "/usr/lib/systemd/systemd-logind",
+            "rl_role": "Linux system daemon/shell providing basic OS infrastructure, hardware polling, and environment capabilities.",
+            "what_breaks": "The operating system will become unstable or crash, taking Rocket League and Heroic Launcher down with it."
+        },
+        {
+            "pid": 995,
+            "user": "root",
+            "name": "thermald",
+            "rss": 12050432,
+            "vsz": 435089408,
+            "cmdline": "/usr/sbin/thermald --systemd --dbus-enable --adaptive",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 996,
+            "user": "root",
+            "name": "touchegg",
+            "rss": 15634432,
+            "vsz": 265039872,
+            "cmdline": "/usr/bin/touchegg --daemon",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 998,
+            "user": "root",
+            "name": "udisksd",
+            "rss": 16310272,
+            "vsz": 481280000,
+            "cmdline": "/usr/libexec/udisks2/udisksd",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 1024,
+            "user": "nvidia-persistenced",
+            "name": "nvidia-persiste",
+            "rss": 2187264,
+            "vsz": 5361664,
+            "cmdline": "/usr/bin/nvidia-persistenced --user nvidia-persistenced --no-persistence-mode --verbose",
+            "rl_role": "Underlying GPU driver/monitoring daemon providing low-level hardware access for Vulkan/OpenGL rendering.",
+            "what_breaks": "Rocket League will drop to software rendering (unplayable slideshow), fail to start, or crash."
+        },
+        {
+            "pid": 1041,
+            "user": "syslog",
+            "name": "rsyslogd",
+            "rss": 7000064,
+            "vsz": 227856384,
+            "cmdline": "/usr/sbin/rsyslogd -n -iNONE",
+            "rl_role": "Linux system daemon/shell providing basic OS infrastructure, hardware polling, and environment capabilities.",
+            "what_breaks": "The operating system will become unstable or crash, taking Rocket League and Heroic Launcher down with it."
+        },
+        {
+            "pid": 1042,
+            "user": "avahi",
+            "name": "avahi-daemon",
+            "rss": 1560576,
+            "vsz": 8634368,
+            "cmdline": "avahi-daemon: chroot helper",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 1172,
+            "user": "root",
+            "name": "NetworkManager",
+            "rss": 20717568,
+            "vsz": 344776704,
+            "cmdline": "/usr/sbin/NetworkManager --no-daemon",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 1173,
+            "user": "root",
+            "name": "wpa_supplicant",
+            "rss": 12505088,
+            "vsz": 18599936,
+            "cmdline": "/usr/sbin/wpa_supplicant -u -s -O DIR=/run/wpa_supplicant GROUP=netdev",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 1219,
+            "user": "root",
+            "name": "ModemManager",
+            "rss": 13545472,
+            "vsz": 401518592,
+            "cmdline": "/usr/sbin/ModemManager",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 1316,
+            "user": "root",
+            "name": "cupsd",
+            "rss": 12656640,
+            "vsz": 39333888,
+            "cmdline": "/usr/sbin/cupsd -l",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 1331,
+            "user": "root",
+            "name": "lightdm",
+            "rss": 7823360,
+            "vsz": 389201920,
+            "cmdline": "/usr/sbin/lightdm",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 1342,
+            "user": "root",
+            "name": "Xorg",
+            "rss": 214700032,
+            "vsz": 26802708480,
+            "cmdline": "/usr/lib/xorg/Xorg -core :0 -seat seat0 -auth /var/run/lightdm/root/:0 -nolisten tcp vt7 -novtswitch",
+            "rl_role": "The display server and window manager rendering Rocket League's graphics on your monitor and capturing inputs.",
+            "what_breaks": "The graphical session terminates, immediately closing Heroic, Rocket League, and all open windows."
+        },
+        {
+            "pid": 1345,
+            "user": "root",
+            "name": "agetty",
+            "rss": 2088960,
+            "vsz": 8921088,
+            "cmdline": "/sbin/agetty -o -p -- \\u --noclear - linux",
+            "rl_role": "Linux system daemon/shell providing basic OS infrastructure, hardware polling, and environment capabilities.",
+            "what_breaks": "The operating system will become unstable or crash, taking Rocket League and Heroic Launcher down with it."
+        },
+        {
+            "pid": 1346,
+            "user": "lp",
+            "name": "dbus",
+            "rss": 7262208,
+            "vsz": 17248256,
+            "cmdline": "/usr/lib/cups/notifier/dbus dbus://",
+            "rl_role": "Linux system daemon/shell providing basic OS infrastructure, hardware polling, and environment capabilities.",
+            "what_breaks": "The operating system will become unstable or crash, taking Rocket League and Heroic Launcher down with it."
+        },
+        {
+            "pid": 1347,
+            "user": "lp",
+            "name": "dbus",
+            "rss": 7258112,
+            "vsz": 17248256,
+            "cmdline": "/usr/lib/cups/notifier/dbus dbus://",
+            "rl_role": "Linux system daemon/shell providing basic OS infrastructure, hardware polling, and environment capabilities.",
+            "what_breaks": "The operating system will become unstable or crash, taking Rocket League and Heroic Launcher down with it."
+        },
+        {
+            "pid": 1370,
+            "user": "cups-browsed",
+            "name": "cups-browsed",
+            "rss": 20926464,
+            "vsz": 274948096,
+            "cmdline": "/usr/sbin/cups-browsed",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 1373,
+            "user": "kernoops",
+            "name": "kerneloops",
+            "rss": 2609152,
+            "vsz": 13058048,
+            "cmdline": "/usr/sbin/kerneloops --test",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 1376,
+            "user": "kernoops",
+            "name": "kerneloops",
+            "rss": 2629632,
+            "vsz": 13058048,
+            "cmdline": "/usr/sbin/kerneloops",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 1401,
+            "user": "root",
+            "name": "psimon",
+            "rss": 0,
+            "vsz": 0,
+            "cmdline": "[psimon]",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 1431,
+            "user": "rtkit",
+            "name": "rtkit-daemon",
+            "rss": 3694592,
+            "vsz": 23498752,
+            "cmdline": "/usr/libexec/rtkit-daemon",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 1498,
+            "user": "root",
+            "name": "krfcommd",
+            "rss": 0,
+            "vsz": 0,
+            "cmdline": "[krfcommd]",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 1503,
+            "user": "root",
+            "name": "upowerd",
+            "rss": 10211328,
+            "vsz": 324972544,
+            "cmdline": "/usr/libexec/upowerd",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 1512,
+            "user": "root",
+            "name": "lightdm",
+            "rss": 9838592,
+            "vsz": 242159616,
+            "cmdline": "lightdm --session-child 14 21",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 1532,
+            "user": "darian",
+            "name": "systemd",
+            "rss": 12259328,
+            "vsz": 21164032,
+            "cmdline": "/usr/lib/systemd/systemd --user",
+            "rl_role": "Linux system daemon/shell providing basic OS infrastructure, hardware polling, and environment capabilities.",
+            "what_breaks": "The operating system will become unstable or crash, taking Rocket League and Heroic Launcher down with it."
+        },
+        {
+            "pid": 1533,
+            "user": "darian",
+            "name": "(sd-pam)",
+            "rss": 3866624,
+            "vsz": 23719936,
+            "cmdline": "(sd-pam)",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 1545,
+            "user": "darian",
+            "name": "pipewire",
+            "rss": 14778368,
+            "vsz": 118276096,
+            "cmdline": "/usr/bin/pipewire",
+            "rl_role": "Manages the Linux system audio server, routing Rocket League's sound output and mic input.",
+            "what_breaks": "The game will be completely silent, and voice chat will not function."
+        },
+        {
+            "pid": 1546,
+            "user": "darian",
+            "name": "pipewire",
+            "rss": 6324224,
+            "vsz": 100089856,
+            "cmdline": "/usr/bin/pipewire -c filter-chain.conf",
+            "rl_role": "Manages the Linux system audio server, routing Rocket League's sound output and mic input.",
+            "what_breaks": "The game will be completely silent, and voice chat will not function."
+        },
+        {
+            "pid": 1548,
+            "user": "darian",
+            "name": "wireplumber",
+            "rss": 19992576,
+            "vsz": 416964608,
+            "cmdline": "/usr/bin/wireplumber",
+            "rl_role": "Manages the Linux system audio server, routing Rocket League's sound output and mic input.",
+            "what_breaks": "The game will be completely silent, and voice chat will not function."
+        },
+        {
+            "pid": 1549,
+            "user": "darian",
+            "name": "pipewire-pulse",
+            "rss": 18690048,
+            "vsz": 119881728,
+            "cmdline": "/usr/bin/pipewire-pulse",
+            "rl_role": "Manages the Linux system audio server, routing Rocket League's sound output and mic input.",
+            "what_breaks": "The game will be completely silent, and voice chat will not function."
+        },
+        {
+            "pid": 1550,
+            "user": "darian",
+            "name": "gnome-keyring-d",
+            "rss": 11022336,
+            "vsz": 324239360,
+            "cmdline": "/usr/bin/gnome-keyring-daemon --foreground --components=pkcs11,secrets --control-directory=/run/user/1000/keyring",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 1555,
+            "user": "darian",
+            "name": "dbus-daemon",
+            "rss": 6569984,
+            "vsz": 10706944,
+            "cmdline": "/usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only",
+            "rl_role": "Linux system daemon/shell providing basic OS infrastructure, hardware polling, and environment capabilities.",
+            "what_breaks": "The operating system will become unstable or crash, taking Rocket League and Heroic Launcher down with it."
+        },
+        {
+            "pid": 1578,
+            "user": "darian",
+            "name": "cinnamon-sessio",
+            "rss": 15798272,
+            "vsz": 564768768,
+            "cmdline": "/usr/lib/x86_64-linux-gnu/cinnamon-session-binary --session cinnamon",
+            "rl_role": "The display server and window manager rendering Rocket League's graphics on your monitor and capturing inputs.",
+            "what_breaks": "The graphical session terminates, immediately closing Heroic, Rocket League, and all open windows."
+        },
+        {
+            "pid": 1665,
+            "user": "darian",
+            "name": "ibus-daemon",
+            "rss": 11870208,
+            "vsz": 473718784,
+            "cmdline": "/usr/bin/ibus-daemon --daemonize --xim",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 1669,
+            "user": "darian",
+            "name": "gvfsd",
+            "rss": 8523776,
+            "vsz": 321814528,
+            "cmdline": "/usr/libexec/gvfsd",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 1675,
+            "user": "darian",
+            "name": "gvfsd-fuse",
+            "rss": 7610368,
+            "vsz": 470749184,
+            "cmdline": "/usr/libexec/gvfsd-fuse /run/user/1000/gvfs -f",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 1677,
+            "user": "darian",
+            "name": "ibus-memconf",
+            "rss": 7446528,
+            "vsz": 242331648,
+            "cmdline": "/usr/libexec/ibus-memconf",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 1691,
+            "user": "darian",
+            "name": "ibus-ui-gtk3",
+            "rss": 45223936,
+            "vsz": 474984448,
+            "cmdline": "/usr/libexec/ibus-ui-gtk3",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 1695,
+            "user": "darian",
+            "name": "ibus-extension-",
+            "rss": 34164736,
+            "vsz": 392556544,
+            "cmdline": "/usr/libexec/ibus-extension-gtk3",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 1697,
+            "user": "darian",
+            "name": "ibus-x11",
+            "rss": 25903104,
+            "vsz": 309571584,
+            "cmdline": "/usr/libexec/ibus-x11 --kill-daemon",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 1700,
+            "user": "darian",
+            "name": "ibus-portal",
+            "rss": 7606272,
+            "vsz": 317882368,
+            "cmdline": "/usr/libexec/ibus-portal",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 1715,
+            "user": "darian",
+            "name": "at-spi-bus-laun",
+            "rss": 8785920,
+            "vsz": 392302592,
+            "cmdline": "/usr/libexec/at-spi-bus-launcher",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 1722,
+            "user": "darian",
+            "name": "dbus-daemon",
+            "rss": 5529600,
+            "vsz": 9797632,
+            "cmdline": "/usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 11 --address=unix:path=/run/user/1000/at-spi/bus_0",
+            "rl_role": "Linux system daemon/shell providing basic OS infrastructure, hardware polling, and environment capabilities.",
+            "what_breaks": "The operating system will become unstable or crash, taking Rocket League and Heroic Launcher down with it."
+        },
+        {
+            "pid": 1726,
+            "user": "darian",
+            "name": "at-spi2-registr",
+            "rss": 8552448,
+            "vsz": 241717248,
+            "cmdline": "/usr/libexec/at-spi2-registryd --use-gnome-session",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 1735,
+            "user": "darian",
+            "name": "csd-background",
+            "rss": 42471424,
+            "vsz": 520613888,
+            "cmdline": "/usr/bin/csd-background",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 1736,
+            "user": "darian",
+            "name": "csd-clipboard",
+            "rss": 25288704,
+            "vsz": 308924416,
+            "cmdline": "/usr/bin/csd-clipboard",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 1739,
+            "user": "darian",
+            "name": "csd-color",
+            "rss": 28389376,
+            "vsz": 550883328,
+            "cmdline": "/usr/bin/csd-color",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 1740,
+            "user": "darian",
+            "name": "csd-wacom",
+            "rss": 26353664,
+            "vsz": 385376256,
+            "cmdline": "/usr/bin/csd-wacom",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 1741,
+            "user": "darian",
+            "name": "csd-screensaver",
+            "rss": 6078464,
+            "vsz": 311095296,
+            "cmdline": "/usr/bin/csd-screensaver-proxy",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 1742,
+            "user": "darian",
+            "name": "csd-print-notif",
+            "rss": 11694080,
+            "vsz": 325652480,
+            "cmdline": "/usr/bin/csd-print-notifications",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 1743,
+            "user": "darian",
+            "name": "csd-keyboard",
+            "rss": 25640960,
+            "vsz": 460345344,
+            "cmdline": "/usr/bin/csd-keyboard",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 1744,
+            "user": "darian",
+            "name": "csd-settings-re",
+            "rss": 6746112,
+            "vsz": 311517184,
+            "cmdline": "/usr/bin/csd-settings-remap",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 1745,
+            "user": "darian",
+            "name": "csd-power",
+            "rss": 27549696,
+            "vsz": 612720640,
+            "cmdline": "/usr/bin/csd-power",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 1746,
+            "user": "darian",
+            "name": "csd-housekeepin",
+            "rss": 25939968,
+            "vsz": 384913408,
+            "cmdline": "/usr/bin/csd-housekeeping",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 1748,
+            "user": "darian",
+            "name": "csd-media-keys",
+            "rss": 28811264,
+            "vsz": 608051200,
+            "cmdline": "/usr/bin/csd-media-keys",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 1749,
+            "user": "darian",
+            "name": "csd-a11y-settin",
+            "rss": 6959104,
+            "vsz": 312537088,
+            "cmdline": "/usr/bin/csd-a11y-settings",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 1750,
+            "user": "darian",
+            "name": "csd-xsettings",
+            "rss": 27688960,
+            "vsz": 386560000,
+            "cmdline": "/usr/bin/csd-xsettings",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 1755,
+            "user": "darian",
+            "name": "csd-automount",
+            "rss": 26308608,
+            "vsz": 460574720,
+            "cmdline": "/usr/bin/csd-automount",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 1767,
+            "user": "darian",
+            "name": "dconf-service",
+            "rss": 6328320,
+            "vsz": 235765760,
+            "cmdline": "/usr/libexec/dconf-service",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 1811,
+            "user": "darian",
+            "name": "csd-printer",
+            "rss": 15679488,
+            "vsz": 426237952,
+            "cmdline": "/usr/libexec/csd-printer",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 1817,
+            "user": "darian",
+            "name": "gvfs-udisks2-vo",
+            "rss": 11751424,
+            "vsz": 474337280,
+            "cmdline": "/usr/libexec/gvfs-udisks2-volume-monitor",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 1837,
+            "user": "darian",
+            "name": "gvfs-gphoto2-vo",
+            "rss": 7426048,
+            "vsz": 318226432,
+            "cmdline": "/usr/libexec/gvfs-gphoto2-volume-monitor",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 1838,
+            "user": "colord",
+            "name": "colord",
+            "rss": 15376384,
+            "vsz": 327917568,
+            "cmdline": "/usr/libexec/colord",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 1845,
+            "user": "darian",
+            "name": "gvfs-afc-volume",
+            "rss": 8511488,
+            "vsz": 398733312,
+            "cmdline": "/usr/libexec/gvfs-afc-volume-monitor",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 1851,
+            "user": "darian",
+            "name": "gvfs-mtp-volume",
+            "rss": 7036928,
+            "vsz": 317235200,
+            "cmdline": "/usr/libexec/gvfs-mtp-volume-monitor",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 1861,
+            "user": "darian",
+            "name": "gvfs-goa-volume",
+            "rss": 6889472,
+            "vsz": 317214720,
+            "cmdline": "/usr/libexec/gvfs-goa-volume-monitor",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 1873,
+            "user": "darian",
+            "name": "goa-daemon",
+            "rss": 25292800,
+            "vsz": 559538176,
+            "cmdline": "/usr/libexec/goa-daemon",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 1876,
+            "user": "darian",
+            "name": "cinnamon-launch",
+            "rss": 41828352,
+            "vsz": 554885120,
+            "cmdline": "cinnamon-launcher",
+            "rl_role": "The display server and window manager rendering Rocket League's graphics on your monitor and capturing inputs.",
+            "what_breaks": "The graphical session terminates, immediately closing Heroic, Rocket League, and all open windows."
+        },
+        {
+            "pid": 1883,
+            "user": "darian",
+            "name": "ibus-engine-sim",
+            "rss": 7897088,
+            "vsz": 242458624,
+            "cmdline": "/usr/libexec/ibus-engine-simple",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 1898,
+            "user": "darian",
+            "name": "goa-identity-se",
+            "rss": 9875456,
+            "vsz": 398471168,
+            "cmdline": "/usr/libexec/goa-identity-service",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 1909,
+            "user": "darian",
+            "name": "cinnamon",
+            "rss": 337670144,
+            "vsz": 4699877376,
+            "cmdline": "cinnamon --replace",
+            "rl_role": "The display server and window manager rendering Rocket League's graphics on your monitor and capturing inputs.",
+            "what_breaks": "The graphical session terminates, immediately closing Heroic, Rocket League, and all open windows."
+        },
+        {
+            "pid": 1945,
+            "user": "darian",
+            "name": "nemo-desktop",
+            "rss": 62988288,
+            "vsz": 720928768,
+            "cmdline": "/usr/bin/nemo-desktop",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 1949,
+            "user": "darian",
+            "name": "cinnamon-killer",
+            "rss": 39325696,
+            "vsz": 401678336,
+            "cmdline": "cinnamon-killer-daemon",
+            "rl_role": "The display server and window manager rendering Rocket League's graphics on your monitor and capturing inputs.",
+            "what_breaks": "The graphical session terminates, immediately closing Heroic, Rocket League, and all open windows."
+        },
+        {
+            "pid": 1951,
+            "user": "darian",
+            "name": "evolution-alarm",
+            "rss": 65048576,
+            "vsz": 922079232,
+            "cmdline": "/usr/libexec/evolution-data-server/evolution-alarm-notify",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 1953,
+            "user": "darian",
+            "name": "agent",
+            "rss": 6758400,
+            "vsz": 317714432,
+            "cmdline": "/usr/libexec/geoclue-2.0/demos/agent",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 2037,
+            "user": "darian",
+            "name": "xapp-sn-watcher",
+            "rss": 36999168,
+            "vsz": 482963456,
+            "cmdline": "/usr/lib/x86_64-linux-gnu/xapps/xapp-sn-watcher",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 2066,
+            "user": "darian",
+            "name": "evolution-sourc",
+            "rss": 44257280,
+            "vsz": 613834752,
+            "cmdline": "/usr/libexec/evolution-source-registry",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 2115,
+            "user": "darian",
+            "name": "evolution-calen",
+            "rss": 25829376,
+            "vsz": 912400384,
+            "cmdline": "/usr/libexec/evolution-calendar-factory",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 2121,
+            "user": "darian",
+            "name": "gvfsd-trash",
+            "rss": 9465856,
+            "vsz": 548573184,
+            "cmdline": "/usr/libexec/gvfsd-trash --spawner :1.15 /org/gtk/gvfs/exec_spaw/0",
+            "rl_role": "Linux system daemon/shell providing basic OS infrastructure, hardware polling, and environment capabilities.",
+            "what_breaks": "The operating system will become unstable or crash, taking Rocket League and Heroic Launcher down with it."
+        },
+        {
+            "pid": 2147,
+            "user": "darian",
+            "name": "evolution-addre",
+            "rss": 31657984,
+            "vsz": 845422592,
+            "cmdline": "/usr/libexec/evolution-addressbook-factory",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 2247,
+            "user": "darian",
+            "name": "gvfsd-metadata",
+            "rss": 6791168,
+            "vsz": 241946624,
+            "cmdline": "/usr/libexec/gvfsd-metadata",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 2263,
+            "user": "darian",
+            "name": "antigravity",
+            "rss": 242708480,
+            "vsz": 1494890729472,
+            "cmdline": "/home/darian/Documents/Antigravity-x64/antigravity",
+            "rl_role": "The Antigravity AI pair programmer agent context (currently performing system diagnostics).",
+            "what_breaks": "This interactive AI development session will terminate immediately."
+        },
+        {
+            "pid": 2267,
+            "user": "darian",
+            "name": "antigravity",
+            "rss": 57487360,
+            "vsz": 51822657536,
+            "cmdline": "/home/darian/Documents/Antigravity-x64/antigravity --type=zygote --no-zygote-sandbox",
+            "rl_role": "The Antigravity AI pair programmer agent context (currently performing system diagnostics).",
+            "what_breaks": "This interactive AI development session will terminate immediately."
+        },
+        {
+            "pid": 2268,
+            "user": "darian",
+            "name": "antigravity",
+            "rss": 56754176,
+            "vsz": 51822645248,
+            "cmdline": "/home/darian/Documents/Antigravity-x64/antigravity --type=zygote",
+            "rl_role": "The Antigravity AI pair programmer agent context (currently performing system diagnostics).",
+            "what_breaks": "This interactive AI development session will terminate immediately."
+        },
+        {
+            "pid": 2270,
+            "user": "darian",
+            "name": "antigravity",
+            "rss": 14323712,
+            "vsz": 51822669824,
+            "cmdline": "/home/darian/Documents/Antigravity-x64/antigravity --type=zygote",
+            "rl_role": "The Antigravity AI pair programmer agent context (currently performing system diagnostics).",
+            "what_breaks": "This interactive AI development session will terminate immediately."
+        },
+        {
+            "pid": 2314,
+            "user": "darian",
+            "name": "antigravity",
+            "rss": 266174464,
+            "vsz": 52330307584,
+            "cmdline": "/home/darian/Documents/Antigravity-x64/antigravity --type=zygote --no-zygote-sandbox",
+            "rl_role": "The Antigravity AI pair programmer agent context (currently performing system diagnostics).",
+            "what_breaks": "This interactive AI development session will terminate immediately."
+        },
+        {
+            "pid": 2322,
+            "user": "darian",
+            "name": "antigravity",
+            "rss": 84676608,
+            "vsz": 51917688832,
+            "cmdline": "/proc/self/exe --type=utility --utility-sub-type=network.mojom.NetworkService --lang=en-US --service-sandbox-type=none --enable-crash-reporter=543efe0e-99b9-4601-8aac-d61d9f0af32a,no_channel --user-data-dir=/home/darian/.config/Antigravity --standard-schemes=plugin --secure-schemes=plugin --cors-schemes=plugin --fetch-schemes=plugin --service-worker-schemes=plugin --code-cache-schemes=plugin --shared-files=v8_context_snapshot_data:100 --field-trial-handle=3,i,11512375653675579488,11000277727307274072,262144 --enable-features=PdfUseShowSaveFilePicker --disable-features=DropInputEventsWhilePaintHolding,LocalNetworkAccessChecks,ScreenAIOCREnabled,SpareRendererForSitePerProcess,TraceSiteInstanceGetProcessCreation --variations-seed-version --pseudonymization-salt-handle=7,i,15387890543201814933,14344561466586639882,4 --trace-process-track-uuid=3190708989122997041",
+            "rl_role": "Handles Epic Online Services (EOS) authentication, cross-play matchmaking, friends list sync, and multiplayer stats.",
+            "what_breaks": "Multiplayer matchmaking, invite system, and sync with Epic Games servers will be disabled."
+        },
+        {
+            "pid": 2339,
+            "user": "darian",
+            "name": "xdg-desktop-por",
+            "rss": 20025344,
+            "vsz": 577802240,
+            "cmdline": "/usr/libexec/xdg-desktop-portal",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 2344,
+            "user": "darian",
+            "name": "xdg-permission-",
+            "rss": 6541312,
+            "vsz": 316743680,
+            "cmdline": "/usr/libexec/xdg-permission-store",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 2349,
+            "user": "darian",
+            "name": "xdg-document-po",
+            "rss": 8032256,
+            "vsz": 549654528,
+            "cmdline": "/usr/libexec/xdg-document-portal",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 2360,
+            "user": "darian",
+            "name": "fusermount3",
+            "rss": 2142208,
+            "vsz": 2777088,
+            "cmdline": "fusermount3 -o rw,nosuid,nodev,fsname=portal,auto_unmount,subtype=portal -- /run/user/1000/doc",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 2364,
+            "user": "darian",
+            "name": "xdg-desktop-por",
+            "rss": 26595328,
+            "vsz": 461307904,
+            "cmdline": "/usr/libexec/xdg-desktop-portal-xapp",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 2388,
+            "user": "darian",
+            "name": "xdg-desktop-por",
+            "rss": 47341568,
+            "vsz": 704614400,
+            "cmdline": "/usr/libexec/xdg-desktop-portal-gtk",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 2409,
+            "user": "darian",
+            "name": "language_server",
+            "rss": 247312384,
+            "vsz": 4923703296,
+            "cmdline": "/home/darian/Documents/Antigravity-x64/resources/bin/language_server --standalone --override_ide_name antigravity --subclient_type hub --override_ide_version 2.0.6 --override_user_agent_name antigravity --https_server_port 0 --csrf_token 1fea6b9c-f215-4ddc-a828-4880ed2436d5 --app_data_dir antigravity --api_server_url https://generativelanguage.googleapis.com --cloud_code_endpoint https://daily-cloudcode-pa.googleapis.com --enable_sidecars",
+            "rl_role": "The Antigravity AI pair programmer agent context (currently performing system diagnostics).",
+            "what_breaks": "This interactive AI development session will terminate immediately."
+        },
+        {
+            "pid": 2422,
+            "user": "darian",
+            "name": "antigravity",
+            "rss": 38764544,
+            "vsz": 52166721536,
+            "cmdline": "/home/darian/Documents/Antigravity-x64/antigravity --type=zygote --no-zygote-sandbox",
+            "rl_role": "The Antigravity AI pair programmer agent context (currently performing system diagnostics).",
+            "what_breaks": "This interactive AI development session will terminate immediately."
+        },
+        {
+            "pid": 2473,
+            "user": "darian",
+            "name": "antigravity",
+            "rss": 69492736,
+            "vsz": 51953164288,
+            "cmdline": "/proc/self/exe --type=utility --utility-sub-type=audio.mojom.AudioService --lang=en-US --service-sandbox-type=none --enable-crash-reporter=543efe0e-99b9-4601-8aac-d61d9f0af32a,no_channel --user-data-dir=/home/darian/.config/Antigravity --standard-schemes=plugin --secure-schemes=plugin --cors-schemes=plugin --fetch-schemes=plugin --service-worker-schemes=plugin --code-cache-schemes=plugin --shared-files=v8_context_snapshot_data:100 --field-trial-handle=3,i,11512375653675579488,11000277727307274072,262144 --enable-features=PdfUseShowSaveFilePicker --disable-features=DropInputEventsWhilePaintHolding,LocalNetworkAccessChecks,ScreenAIOCREnabled,SpareRendererForSitePerProcess,TraceSiteInstanceGetProcessCreation --variations-seed-version --pseudonymization-salt-handle=7,i,15387890543201814933,14344561466586639882,4 --trace-process-track-uuid=3190708991934122588",
+            "rl_role": "Handles Epic Online Services (EOS) authentication, cross-play matchmaking, friends list sync, and multiplayer stats.",
+            "what_breaks": "Multiplayer matchmaking, invite system, and sync with Epic Games servers will be disabled."
+        },
+        {
+            "pid": 2615,
+            "user": "root",
+            "name": "kworker/u32:0-kvfree_rcu_reclaim",
+            "rss": 0,
+            "vsz": 0,
+            "cmdline": "[kworker/u32:0-kvfree_rcu_reclaim]",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 2765,
+            "user": "darian",
+            "name": "antigravity",
+            "rss": 274817024,
+            "vsz": 1498736521216,
+            "cmdline": "/home/darian/Documents/Antigravity-x64/antigravity --type=zygote",
+            "rl_role": "The Antigravity AI pair programmer agent context (currently performing system diagnostics).",
+            "what_breaks": "This interactive AI development session will terminate immediately."
+        },
+        {
+            "pid": 2799,
+            "user": "root",
+            "name": "kworker/5:0-events",
+            "rss": 0,
+            "vsz": 0,
+            "cmdline": "[kworker/5:0-events]",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 2811,
+            "user": "root",
+            "name": "fwupd",
+            "rss": 47357952,
+            "vsz": 494739456,
+            "cmdline": "/usr/libexec/fwupd/fwupd",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 2826,
+            "user": "root",
+            "name": "kworker/3:0-mm_percpu_wq",
+            "rss": 0,
+            "vsz": 0,
+            "cmdline": "[kworker/3:0-mm_percpu_wq]",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 2846,
+            "user": "root",
+            "name": "kworker/2:0-display_unordered",
+            "rss": 0,
+            "vsz": 0,
+            "cmdline": "[kworker/2:0-display_unordered]",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 2879,
+            "user": "root",
+            "name": "kworker/u32:1-kvfree_rcu_reclaim",
+            "rss": 0,
+            "vsz": 0,
+            "cmdline": "[kworker/u32:1-kvfree_rcu_reclaim]",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 2892,
+            "user": "root",
+            "name": "kworker/4:1-mm_percpu_wq",
+            "rss": 0,
+            "vsz": 0,
+            "cmdline": "[kworker/4:1-mm_percpu_wq]",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 2917,
+            "user": "darian",
+            "name": "gvfsd-network",
+            "rss": 9281536,
+            "vsz": 473456640,
+            "cmdline": "/usr/libexec/gvfsd-network --spawner :1.15 /org/gtk/gvfs/exec_spaw/1",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 2927,
+            "user": "darian",
+            "name": "gvfsd-dnssd",
+            "rss": 9637888,
+            "vsz": 399929344,
+            "cmdline": "/usr/libexec/gvfsd-dnssd --spawner :1.15 /org/gtk/gvfs/exec_spaw/2",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 2950,
+            "user": "root",
+            "name": "kworker/7:1-events",
+            "rss": 0,
+            "vsz": 0,
+            "cmdline": "[kworker/7:1-events]",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 2951,
+            "user": "root",
+            "name": "kworker/0:1-events",
+            "rss": 0,
+            "vsz": 0,
+            "cmdline": "[kworker/0:1-events]",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 2980,
+            "user": "darian",
+            "name": "nemo",
+            "rss": 73650176,
+            "vsz": 808181760,
+            "cmdline": "/usr/bin/nemo",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 3009,
+            "user": "darian",
+            "name": "chrome",
+            "rss": 407875584,
+            "vsz": 52587589632,
+            "cmdline": "/opt/google/chrome/chrome /home/darian/Documents/RocketMode/report.html",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 3014,
+            "user": "darian",
+            "name": "cat",
+            "rss": 1957888,
+            "vsz": 8638464,
+            "cmdline": "cat",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 3015,
+            "user": "darian",
+            "name": "cat",
+            "rss": 1961984,
+            "vsz": 8638464,
+            "cmdline": "cat",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 3017,
+            "user": "darian",
+            "name": "chrome_crashpad",
+            "rss": 4141056,
+            "vsz": 51563282432,
+            "cmdline": "/opt/google/chrome/chrome_crashpad_handler --monitor-self --monitor-self-annotation=ptype=crashpad-handler --database=/home/darian/.config/google-chrome/Crash Reports --metrics-dir=/home/darian/.config/google-chrome --url=https://clients2.google.com/cr/report --annotation=channel= --annotation=lsb-release=Linux Mint 22.3 --annotation=plat=Linux --annotation=prod=Chrome_Linux --annotation=ver=148.0.7778.178 --initial-client-fd=5 --shared-client-connection",
+            "rl_role": "Linux system daemon/shell providing basic OS infrastructure, hardware polling, and environment capabilities.",
+            "what_breaks": "The operating system will become unstable or crash, taking Rocket League and Heroic Launcher down with it."
+        },
+        {
+            "pid": 3019,
+            "user": "darian",
+            "name": "chrome_crashpad",
+            "rss": 3616768,
+            "vsz": 51553824768,
+            "cmdline": "/opt/google/chrome/chrome_crashpad_handler --no-periodic-tasks --monitor-self-annotation=ptype=crashpad-handler --database=/home/darian/.config/google-chrome/Crash Reports --url=https://clients2.google.com/cr/report --annotation=channel= --annotation=lsb-release=Linux Mint 22.3 --annotation=plat=Linux --annotation=prod=Chrome_Linux --annotation=ver=148.0.7778.178 --initial-client-fd=4 --shared-client-connection",
+            "rl_role": "Linux system daemon/shell providing basic OS infrastructure, hardware polling, and environment capabilities.",
+            "what_breaks": "The operating system will become unstable or crash, taking Rocket League and Heroic Launcher down with it."
+        },
+        {
+            "pid": 3025,
+            "user": "darian",
+            "name": "chrome",
+            "rss": 68009984,
+            "vsz": 51972198400,
+            "cmdline": "/opt/google/chrome/chrome --type=zygote --no-zygote-sandbox --crashpad-handler-pid=3017 --enable-crash-reporter=919aeacf-0c32-45c7-945e-02c822188bae, --change-stack-guard-on-fork=enable",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 3026,
+            "user": "darian",
+            "name": "chrome",
+            "rss": 67956736,
+            "vsz": 51972190208,
+            "cmdline": "/opt/google/chrome/chrome --type=zygote --crashpad-handler-pid=3017 --enable-crash-reporter=919aeacf-0c32-45c7-945e-02c822188bae, --change-stack-guard-on-fork=enable",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 3028,
+            "user": "darian",
+            "name": "chrome",
+            "rss": 19251200,
+            "vsz": 51972214784,
+            "cmdline": "/opt/google/chrome/chrome --type=zygote --crashpad-handler-pid=3017 --enable-crash-reporter=919aeacf-0c32-45c7-945e-02c822188bae, --change-stack-guard-on-fork=enable",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 3054,
+            "user": "darian",
+            "name": "chrome",
+            "rss": 283316224,
+            "vsz": 52490342400,
+            "cmdline": "/opt/google/chrome/chrome --type=gpu-process --ozone-platform=x11 --crashpad-handler-pid=3017 --enable-crash-reporter=919aeacf-0c32-45c7-945e-02c822188bae, --change-stack-guard-on-fork=enable --gpu-preferences=UAAAAAAAAAAgAQAEAAAAAAAAAAAAAGAAAQAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAYAAAAAAAAABgAAAAAAAAAAQAAAAAAAAAIAAAAAAAAAAgAAAAAAAAA --shared-files --metrics-shmem-handle=4,i,2774368832912208703,9987466219705179130,262144 --field-trial-handle=3,i,10180873471828716191,4894366534507706301,262144 --variations-seed-version=20260522-090043.833000-production --pseudonymization-salt-handle=7,i,14735261064513921724,1411451801939245954,4 --trace-process-track-uuid=3190708988185955192",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 3055,
+            "user": "darian",
+            "name": "chrome",
+            "rss": 126791680,
+            "vsz": 51991023616,
+            "cmdline": "/opt/google/chrome/chrome --type=utility --utility-sub-type=network.mojom.NetworkService --lang=en-US --service-sandbox-type=none --crashpad-handler-pid=3017 --enable-crash-reporter=919aeacf-0c32-45c7-945e-02c822188bae, --change-stack-guard-on-fork=enable --shared-files=v8_context_snapshot_data:100 --metrics-shmem-handle=4,i,7516619413818149806,9105968119700905995,524288 --field-trial-handle=3,i,10180873471828716191,4894366534507706301,262144 --variations-seed-version=20260522-090043.833000-production --pseudonymization-salt-handle=7,i,14735261064513921724,1411451801939245954,4 --trace-process-track-uuid=3190708989122997041",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 3069,
+            "user": "darian",
+            "name": "chrome",
+            "rss": 44773376,
+            "vsz": 52316766208,
+            "cmdline": "/opt/google/chrome/chrome --type=broker",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 3077,
+            "user": "darian",
+            "name": "chrome",
+            "rss": 59334656,
+            "vsz": 52023644160,
+            "cmdline": "/opt/google/chrome/chrome --type=utility --utility-sub-type=storage.mojom.StorageService --lang=en-US --service-sandbox-type=utility --crashpad-handler-pid=3017 --enable-crash-reporter=919aeacf-0c32-45c7-945e-02c822188bae, --change-stack-guard-on-fork=enable --shared-files=v8_context_snapshot_data:100 --metrics-shmem-handle=4,i,8710901382139347990,17382565096066581166,524288 --field-trial-handle=3,i,10180873471828716191,4894366534507706301,262144 --variations-seed-version=20260522-090043.833000-production --pseudonymization-salt-handle=7,i,14735261064513921724,1411451801939245954,4 --trace-process-track-uuid=3190708990060038890",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 3094,
+            "user": "darian",
+            "name": "chrome",
+            "rss": 152797184,
+            "vsz": 1554939035648,
+            "cmdline": "/opt/google/chrome/chrome --type=renderer --top-chrome-webui --crashpad-handler-pid=3017 --enable-crash-reporter=919aeacf-0c32-45c7-945e-02c822188bae, --change-stack-guard-on-fork=enable --ozone-platform=x11 --lang=en-US --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=5 --time-ticks-at-unix-epoch=-1779538178036508 --launch-time-ticks=1628239780 --shared-files=v8_context_snapshot_data:100 --metrics-shmem-handle=4,i,2702484468076972529,8163027251245025231,2097152 --field-trial-handle=3,i,10180873471828716191,4894366534507706301,262144 --variations-seed-version=20260522-090043.833000-production --pseudonymization-salt-handle=7,i,14735261064513921724,1411451801939245954,4 --trace-process-track-uuid=3190708990997080739",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 3101,
+            "user": "darian",
+            "name": "chrome",
+            "rss": 140849152,
+            "vsz": 1554947952640,
+            "cmdline": "/opt/google/chrome/chrome --type=renderer --crashpad-handler-pid=3017 --enable-crash-reporter=919aeacf-0c32-45c7-945e-02c822188bae, --change-stack-guard-on-fork=enable --ozone-platform=x11 --lang=en-US --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=6 --time-ticks-at-unix-epoch=-1779538178036508 --launch-time-ticks=1628841684 --shared-files=v8_context_snapshot_data:100 --metrics-shmem-handle=4,i,2921741948859901051,12354788191118094958,2097152 --field-trial-handle=3,i,10180873471828716191,4894366534507706301,262144 --variations-seed-version=20260522-090043.833000-production --pseudonymization-salt-handle=7,i,14735261064513921724,1411451801939245954,4 --trace-process-track-uuid=3190708991934122588",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 3119,
+            "user": "darian",
+            "name": "chrome",
+            "rss": 241426432,
+            "vsz": 1556961632256,
+            "cmdline": "/opt/google/chrome/chrome --type=renderer --crashpad-handler-pid=3017 --enable-crash-reporter=919aeacf-0c32-45c7-945e-02c822188bae, --extension-process --change-stack-guard-on-fork=enable --ozone-platform=x11 --lang=en-US --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=8 --time-ticks-at-unix-epoch=-1779538178036508 --launch-time-ticks=1628861648 --shared-files=v8_context_snapshot_data:100 --metrics-shmem-handle=4,i,8067871779454701307,4331098875516572994,2097152 --field-trial-handle=3,i,10180873471828716191,4894366534507706301,262144 --variations-seed-version=20260522-090043.833000-production --pseudonymization-salt-handle=7,i,14735261064513921724,1411451801939245954,4 --trace-process-track-uuid=3190708993808206286",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 3222,
+            "user": "darian",
+            "name": "chrome",
+            "rss": 130895872,
+            "vsz": 1556959248384,
+            "cmdline": "/opt/google/chrome/chrome --type=renderer --crashpad-handler-pid=3017 --enable-crash-reporter=919aeacf-0c32-45c7-945e-02c822188bae, --extension-process --change-stack-guard-on-fork=enable --ozone-platform=x11 --lang=en-US --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=12 --time-ticks-at-unix-epoch=-1779538178036508 --launch-time-ticks=1632852137 --shared-files=v8_context_snapshot_data:100 --metrics-shmem-handle=4,i,13839731364809054920,2436997251394322009,2097152 --field-trial-handle=3,i,10180873471828716191,4894366534507706301,262144 --variations-seed-version=20260522-090043.833000-production --pseudonymization-salt-handle=7,i,14735261064513921724,1411451801939245954,4 --trace-process-track-uuid=3190708997556373682",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 3232,
+            "user": "darian",
+            "name": "chrome",
+            "rss": 198000640,
+            "vsz": 1557011640320,
+            "cmdline": "/opt/google/chrome/chrome --type=renderer --crashpad-handler-pid=3017 --enable-crash-reporter=919aeacf-0c32-45c7-945e-02c822188bae, --change-stack-guard-on-fork=enable --ozone-platform=x11 --lang=en-US --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=13 --time-ticks-at-unix-epoch=-1779538178036508 --launch-time-ticks=1634617675 --shared-files=v8_context_snapshot_data:100 --metrics-shmem-handle=4,i,14650559697163935029,13652411657235733724,2097152 --field-trial-handle=3,i,10180873471828716191,4894366534507706301,262144 --variations-seed-version=20260522-090043.833000-production --pseudonymization-salt-handle=7,i,14735261064513921724,1411451801939245954,4 --trace-process-track-uuid=3190708998493415531",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 3255,
+            "user": "darian",
+            "name": "chrome",
+            "rss": 80887808,
+            "vsz": 1554894585856,
+            "cmdline": "/opt/google/chrome/chrome --type=renderer --crashpad-handler-pid=3017 --enable-crash-reporter=919aeacf-0c32-45c7-945e-02c822188bae, --change-stack-guard-on-fork=enable --ozone-platform=x11 --lang=en-US --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=15 --time-ticks-at-unix-epoch=-1779538178036508 --launch-time-ticks=1637078631 --shared-files=v8_context_snapshot_data:100 --metrics-shmem-handle=4,i,8496108869017297349,8391618459765753193,2097152 --field-trial-handle=3,i,10180873471828716191,4894366534507706301,262144 --variations-seed-version=20260522-090043.833000-production --pseudonymization-salt-handle=7,i,14735261064513921724,1411451801939245954,4 --trace-process-track-uuid=3190709000367499229",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 3311,
+            "user": "root",
+            "name": "kworker/4:2",
+            "rss": 0,
+            "vsz": 0,
+            "cmdline": "[kworker/4:2]",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 3312,
+            "user": "root",
+            "name": "kworker/u32:4-events_unbound",
+            "rss": 0,
+            "vsz": 0,
+            "cmdline": "[kworker/u32:4-events_unbound]",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 3313,
+            "user": "root",
+            "name": "kworker/1:1",
+            "rss": 0,
+            "vsz": 0,
+            "cmdline": "[kworker/1:1]",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 3316,
+            "user": "root",
+            "name": "kworker/7:2-display_unordered",
+            "rss": 0,
+            "vsz": 0,
+            "cmdline": "[kworker/7:2-display_unordered]",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 3327,
+            "user": "darian",
+            "name": "gnome-terminal-",
+            "rss": 45371392,
+            "vsz": 708177920,
+            "cmdline": "/usr/libexec/gnome-terminal-server",
+            "rl_role": "Non-critical background system process or application running concurrently with your game session.",
+            "what_breaks": "No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance."
+        },
+        {
+            "pid": 3339,
+            "user": "darian",
+            "name": "bash",
+            "rss": 5705728,
+            "vsz": 11407360,
+            "cmdline": "bash",
+            "rl_role": "Linux system daemon/shell providing basic OS infrastructure, hardware polling, and environment capabilities.",
+            "what_breaks": "The operating system will become unstable or crash, taking Rocket League and Heroic Launcher down with it."
+        },
+        {
+            "pid": 3352,
+            "user": "darian",
+            "name": "python3",
+            "rss": 14532608,
+            "vsz": 24346624,
+            "cmdline": "python3 ./RocketMode/ram_inspector.py -o RocketMode/report.html -m RocketMode/report.md -j RocketMode/report.json",
+            "rl_role": "Linux system daemon/shell providing basic OS infrastructure, hardware polling, and environment capabilities.",
+            "what_breaks": "The operating system will become unstable or crash, taking Rocket League and Heroic Launcher down with it."
+        }
+    ]
+}

@@ -1,0 +1,591 @@
+
+--- Gaming Environment Cleanup: 2026-05-23 13:35:54 (Mode: DRY-RUN) ---
+2026-05-23 13:35:54 - PID 1553 ((sd-pam)) - Not whitelisted - Command: (sd-pam)
+2026-05-23 13:35:54 - PID 1567 (gnome-keyring-d) - Not whitelisted - Command: /usr/bin/gnome-keyring-daemon --foreground --components=pkcs11,secrets --control-directory=/run/user/1000/keyring
+2026-05-23 13:35:54 - PID 1726 (ibus-extension-) - Not whitelisted - Command: /usr/libexec/ibus-extension-gtk3
+2026-05-23 13:35:54 - PID 1748 (at-spi-bus-laun) - Not whitelisted - Command: /usr/libexec/at-spi-bus-launcher
+2026-05-23 13:35:54 - PID 1759 (at-spi2-registr) - Not whitelisted - Command: /usr/libexec/at-spi2-registryd --use-gnome-session
+2026-05-23 13:35:54 - PID 1764 (xdg-desktop-por) - Not whitelisted - Command: /usr/libexec/xdg-desktop-portal
+2026-05-23 13:35:54 - PID 1778 (xdg-permission-) - Not whitelisted - Command: /usr/libexec/xdg-permission-store
+2026-05-23 13:35:54 - PID 1786 (xdg-document-po) - Not whitelisted - Command: /usr/libexec/xdg-document-portal
+2026-05-23 13:35:54 - PID 1787 (ssh-agent) - Not whitelisted - Command: /usr/bin/ssh-agent -s
+2026-05-23 13:35:54 - PID 1796 (fusermount3) - Not whitelisted - Command: fusermount3 -o rw,nosuid,nodev,fsname=portal,auto_unmount,subtype=portal -- /run/user/1000/doc
+2026-05-23 13:35:54 - PID 1799 (xdg-desktop-por) - Not whitelisted - Command: /usr/libexec/xdg-desktop-portal-gtk
+2026-05-23 13:35:54 - PID 1805 (gpg-agent) - Not whitelisted - Command: /usr/bin/gpg-agent --supervised
+2026-05-23 13:35:54 - PID 1820 (xdg-desktop-por) - Not whitelisted - Command: /usr/libexec/xdg-desktop-portal-xapp
+2026-05-23 13:35:54 - PID 1829 (ibus-engine-sim) - Not whitelisted - Command: /usr/libexec/ibus-engine-simple
+2026-05-23 13:35:54 - PID 1846 (Thunar) - Not whitelisted - Command: Thunar --daemon
+2026-05-23 13:35:54 - PID 1860 (panel-8-systray) - Not whitelisted - Command: /usr/lib/x86_64-linux-gnu/xfce4/panel/wrapper-2.0 /usr/lib/x86_64-linux-gnu/xfce4/panel/plugins/libsystray.so 8 23068680 systray Status Tray Plugin Provides status notifier items (application indicators) and legacy systray items
+2026-05-23 13:35:54 - PID 1861 (panel-9-notific) - Not whitelisted - Command: /usr/lib/x86_64-linux-gnu/xfce4/panel/wrapper-2.0 /usr/lib/x86_64-linux-gnu/xfce4/panel/plugins/libnotification-plugin.so 9 23068681 notification-plugin Notification Plugin Notification plugin for the Xfce panel
+2026-05-23 13:35:54 - PID 1862 (panel-11-power-) - Not whitelisted - Command: /usr/lib/x86_64-linux-gnu/xfce4/panel/wrapper-2.0 /usr/lib/x86_64-linux-gnu/xfce4/panel/plugins/libxfce4powermanager.so 11 23068682 power-manager-plugin Power Manager Plugin Display the battery levels of your devices and control the brightness of your display
+2026-05-23 13:35:54 - PID 1863 (panel-12-pulsea) - Not whitelisted - Command: /usr/lib/x86_64-linux-gnu/xfce4/panel/wrapper-2.0 /usr/lib/x86_64-linux-gnu/xfce4/panel/plugins/libpulseaudio-plugin.so 12 23068683 pulseaudio PulseAudio Plugin Adjust the audio volume of the PulseAudio sound system
+2026-05-23 13:35:54 - PID 1875 (bash) - Not whitelisted - Command: bash /home/darian/Documents/RocketMode/rocket_booster_daemon.sh
+2026-05-23 13:35:54 - PID 1889 (touchegg) - Not whitelisted - Command: touchegg
+2026-05-23 13:35:54 - PID 1895 (agent) - Not whitelisted - Command: /usr/libexec/geoclue-2.0/demos/agent
+2026-05-23 13:35:54 - PID 1915 (light-locker) - Not whitelisted - Command: light-locker
+2026-05-23 13:35:54 - PID 1927 (polkit-gnome-au) - Not whitelisted - Command: /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1
+2026-05-23 13:35:54 - PID 1928 (nm-applet) - Not whitelisted - Command: nm-applet
+2026-05-23 13:35:54 - PID 1946 (xiccd) - Not whitelisted - Command: xiccd
+2026-05-23 13:35:54 - PID 1985 (xfce4-power-man) - Not whitelisted - Command: xfce4-power-manager
+2026-05-23 13:35:54 - PID 2456 (gvfs-udisks2-vo) - Not whitelisted - Command: /usr/libexec/gvfs-udisks2-volume-monitor
+2026-05-23 13:35:54 - PID 2472 (gvfs-mtp-volume) - Not whitelisted - Command: /usr/libexec/gvfs-mtp-volume-monitor
+2026-05-23 13:35:54 - PID 2589 (flatpak-session) - Not whitelisted - Command: /usr/libexec/flatpak-session-helper
+2026-05-23 13:35:54 - PID 2594 (p11-kit-server) - Not whitelisted - Command: server --sh -n /run/user/1000/.flatpak-helper/pkcs11-flatpak-2589 --provider p11-kit-trust.so pkcs11:model=p11-kit-trust?write-protected=yes
+2026-05-23 13:35:54 - PID 2639 (zypak-sandbox) - Not whitelisted - Command: 
+2026-05-23 13:35:54 - PID 2641 (cat) - Not whitelisted - Command: cat
+2026-05-23 13:35:54 - PID 2642 (cat) - Not whitelisted - Command: cat
+2026-05-23 13:35:54 - PID 5082 (antigravity) - Not whitelisted - Command: /home/darian/Documents/Antigravity-x64/antigravity --type=zygote --no-zygote-sandbox
+2026-05-23 13:35:54 - PID 5083 (antigravity) - Not whitelisted - Command: /home/darian/Documents/Antigravity-x64/antigravity --type=zygote
+2026-05-23 13:35:54 - PID 5085 (antigravity) - Not whitelisted - Command: /home/darian/Documents/Antigravity-x64/antigravity --type=zygote
+2026-05-23 13:35:54 - PID 5121 (antigravity) - Not whitelisted - Command: /proc/self/exe --type=utility --utility-sub-type=network.mojom.NetworkService --lang=en-US --service-sandbox-type=none --enable-crash-reporter=543efe0e-99b9-4601-8aac-d61d9f0af32a,no_channel --user-data-dir=/home/darian/.config/Antigravity --standard-schemes=plugin --secure-schemes=plugin --cors-schemes=plugin --fetch-schemes=plugin --service-worker-schemes=plugin --code-cache-schemes=plugin --shared-files=v8_context_snapshot_data:100 --field-trial-handle=3,i,14077503729035131396,6567938346815524436,262144 --enable-features=PdfUseShowSaveFilePicker --disable-features=DropInputEventsWhilePaintHolding,LocalNetworkAccessChecks,ScreenAIOCREnabled,SpareRendererForSitePerProcess,TraceSiteInstanceGetProcessCreation --variations-seed-version --pseudonymization-salt-handle=7,i,14033068562505717474,1663845804566815938,4 --trace-process-track-uuid=3190708989122997041
+2026-05-23 13:35:54 - PID 5190 (antigravity) - Not whitelisted - Command: /home/darian/Documents/Antigravity-x64/antigravity --type=zygote
+2026-05-23 13:35:54 - PID 5259 (antigravity) - Not whitelisted - Command: /proc/self/exe --type=utility --utility-sub-type=audio.mojom.AudioService --lang=en-US --service-sandbox-type=none --enable-crash-reporter=543efe0e-99b9-4601-8aac-d61d9f0af32a,no_channel --user-data-dir=/home/darian/.config/Antigravity --standard-schemes=plugin --secure-schemes=plugin --cors-schemes=plugin --fetch-schemes=plugin --service-worker-schemes=plugin --code-cache-schemes=plugin --shared-files=v8_context_snapshot_data:100 --field-trial-handle=3,i,14077503729035131396,6567938346815524436,262144 --enable-features=PdfUseShowSaveFilePicker --disable-features=DropInputEventsWhilePaintHolding,LocalNetworkAccessChecks,ScreenAIOCREnabled,SpareRendererForSitePerProcess,TraceSiteInstanceGetProcessCreation --variations-seed-version --pseudonymization-salt-handle=7,i,14033068562505717474,1663845804566815938,4 --trace-process-track-uuid=3190708991934122588
+2026-05-23 13:35:54 - PID 12848 (antigravity) - Not whitelisted - Command: /home/darian/Documents/Antigravity-x64/antigravity --type=zygote --no-zygote-sandbox
+2026-05-23 13:35:54 - PID 12866 (antigravity) - Not whitelisted - Command: /home/darian/Documents/Antigravity-x64/antigravity --type=zygote --no-zygote-sandbox
+2026-05-23 13:35:54 - PID 13988 (antigravity) - Not whitelisted - Command: /home/darian/Documents/Antigravity-x64/antigravity --type=zygote
+2026-05-23 13:35:54 - PID 20062 (gvfsd-metadata) - Not whitelisted - Command: /usr/libexec/gvfsd-metadata
+2026-05-23 13:35:54 - PID 20067 (gvfsd-trash) - Not whitelisted - Command: /usr/libexec/gvfsd-trash --spawner :1.17 /org/gtk/gvfs/exec_spaw/0
+2026-05-23 13:35:54 - PID 20082 (tumblerd) - Not whitelisted - Command: /usr/lib/x86_64-linux-gnu/tumbler-1/tumblerd
+2026-05-23 13:35:54 - PID 20396 (sleep) - Not whitelisted - Command: sleep 2
+2026-05-23 13:35:54 - PID 20397 (antigravity) - Not whitelisted - Command: /proc/self/exe --type=utility --utility-sub-type=video_capture.mojom.VideoCaptureService --lang=en-US --service-sandbox-type=none --message-loop-type-ui --enable-crash-reporter=543efe0e-99b9-4601-8aac-d61d9f0af32a,no_channel --user-data-dir=/home/darian/.config/Antigravity --standard-schemes=plugin --secure-schemes=plugin --cors-schemes=plugin --fetch-schemes=plugin --service-worker-schemes=plugin --code-cache-schemes=plugin --shared-files=v8_context_snapshot_data:100 --field-trial-handle=3,i,14077503729035131396,6567938346815524436,262144 --enable-features=PdfUseShowSaveFilePicker --disable-features=DropInputEventsWhilePaintHolding,LocalNetworkAccessChecks,ScreenAIOCREnabled,SpareRendererForSitePerProcess,TraceSiteInstanceGetProcessCreation --variations-seed-version --pseudonymization-salt-handle=7,i,14033068562505717474,1663845804566815938,4 --trace-process-track-uuid=3190709035038047642
+2026-05-23 13:35:54 - Dry-run completed. No processes were killed.
+
+--- Gaming Environment Cleanup: 2026-05-23 13:36:04 (Mode: DRY-RUN) ---
+2026-05-23 13:36:04 - Dry-run completed. No processes were killed.
+
+--- Gaming Environment Cleanup: 2026-05-23 13:36:13 (Mode: DRY-RUN) ---
+2026-05-23 13:36:13 - PID 1764 (xdg-desktop-por) - Not whitelisted - Command: /usr/libexec/xdg-desktop-portal
+2026-05-23 13:36:13 - PID 1778 (xdg-permission-) - Not whitelisted - Command: /usr/libexec/xdg-permission-store
+2026-05-23 13:36:13 - PID 1786 (xdg-document-po) - Not whitelisted - Command: /usr/libexec/xdg-document-portal
+2026-05-23 13:36:13 - PID 1796 (fusermount3) - Not whitelisted - Command: fusermount3 -o rw,nosuid,nodev,fsname=portal,auto_unmount,subtype=portal -- /run/user/1000/doc
+2026-05-23 13:36:13 - PID 1799 (xdg-desktop-por) - Not whitelisted - Command: /usr/libexec/xdg-desktop-portal-gtk
+2026-05-23 13:36:13 - PID 1820 (xdg-desktop-por) - Not whitelisted - Command: /usr/libexec/xdg-desktop-portal-xapp
+2026-05-23 13:36:13 - PID 1846 (Thunar) - Not whitelisted - Command: Thunar --daemon
+2026-05-23 13:36:13 - PID 1875 (bash) - Not whitelisted - Command: bash /home/darian/Documents/RocketMode/rocket_booster_daemon.sh
+2026-05-23 13:36:13 - PID 1889 (touchegg) - Not whitelisted - Command: touchegg
+2026-05-23 13:36:13 - PID 1895 (agent) - Not whitelisted - Command: /usr/libexec/geoclue-2.0/demos/agent
+2026-05-23 13:36:13 - PID 1915 (light-locker) - Not whitelisted - Command: light-locker
+2026-05-23 13:36:13 - PID 20082 (tumblerd) - Not whitelisted - Command: /usr/lib/x86_64-linux-gnu/tumbler-1/tumblerd
+2026-05-23 13:36:13 - PID 20441 (sleep) - Not whitelisted - Command: sleep 2
+2026-05-23 13:36:13 - Dry-run completed. No processes were killed.
+
+--- Gaming Environment Cleanup: 2026-05-23 13:36:17 (Mode: DRY-RUN) ---
+2026-05-23 13:36:17 - PID 1846 (Thunar) - Not whitelisted - Command: Thunar --daemon
+2026-05-23 13:36:17 - PID 1875 (bash) - Not whitelisted - Command: bash /home/darian/Documents/RocketMode/rocket_booster_daemon.sh
+2026-05-23 13:36:17 - PID 1889 (touchegg) - Not whitelisted - Command: touchegg
+2026-05-23 13:36:17 - PID 1895 (agent) - Not whitelisted - Command: /usr/libexec/geoclue-2.0/demos/agent
+2026-05-23 13:36:17 - PID 1915 (light-locker) - Not whitelisted - Command: light-locker
+2026-05-23 13:36:17 - PID 20082 (tumblerd) - Not whitelisted - Command: /usr/lib/x86_64-linux-gnu/tumbler-1/tumblerd
+2026-05-23 13:36:17 - PID 20450 (sleep) - Not whitelisted - Command: sleep 2
+2026-05-23 13:36:17 - Dry-run completed. No processes were killed.
+
+--- Gaming Environment Cleanup: 2026-05-23 13:39:29 (Mode: DRY-RUN) ---
+2026-05-23 13:39:29 - PID 1567 (gnome-keyring-d) - Not whitelisted - Command: /usr/bin/gnome-keyring-daemon --foreground --components=pkcs11,secrets --control-directory=/run/user/1000/keyring
+2026-05-23 13:39:29 - PID 1692 (ibus-daemon) - Not whitelisted - Command: /usr/bin/ibus-daemon --daemonize --xim
+2026-05-23 13:39:29 - PID 1704 (gvfsd) - Not whitelisted - Command: /usr/libexec/gvfsd
+2026-05-23 13:39:29 - PID 1711 (gvfsd-fuse) - Not whitelisted - Command: /usr/libexec/gvfsd-fuse /run/user/1000/gvfs -f
+2026-05-23 13:39:29 - PID 1713 (ibus-memconf) - Not whitelisted - Command: /usr/libexec/ibus-memconf
+2026-05-23 13:39:29 - PID 1722 (ibus-ui-gtk3) - Not whitelisted - Command: /usr/libexec/ibus-ui-gtk3
+2026-05-23 13:39:29 - PID 1726 (ibus-extension-) - Not whitelisted - Command: /usr/libexec/ibus-extension-gtk3
+2026-05-23 13:39:29 - PID 1728 (ibus-x11) - Not whitelisted - Command: /usr/libexec/ibus-x11 --kill-daemon
+2026-05-23 13:39:29 - PID 1731 (ibus-portal) - Not whitelisted - Command: /usr/libexec/ibus-portal
+2026-05-23 13:39:29 - PID 1748 (at-spi-bus-laun) - Not whitelisted - Command: /usr/libexec/at-spi-bus-launcher
+2026-05-23 13:39:29 - PID 1759 (at-spi2-registr) - Not whitelisted - Command: /usr/libexec/at-spi2-registryd --use-gnome-session
+2026-05-23 13:39:29 - PID 1787 (ssh-agent) - Not whitelisted - Command: /usr/bin/ssh-agent -s
+2026-05-23 13:39:29 - PID 1805 (gpg-agent) - Not whitelisted - Command: /usr/bin/gpg-agent --supervised
+2026-05-23 13:39:29 - PID 1829 (ibus-engine-sim) - Not whitelisted - Command: /usr/libexec/ibus-engine-simple
+2026-05-23 13:39:29 - PID 1846 (Thunar) - Not whitelisted - Command: Thunar --daemon
+2026-05-23 13:39:29 - PID 1875 (bash) - Not whitelisted - Command: bash /home/darian/Documents/RocketMode/rocket_booster_daemon.sh
+2026-05-23 13:39:29 - PID 1889 (touchegg) - Not whitelisted - Command: touchegg
+2026-05-23 13:39:29 - PID 1895 (agent) - Not whitelisted - Command: /usr/libexec/geoclue-2.0/demos/agent
+2026-05-23 13:39:29 - PID 1915 (light-locker) - Not whitelisted - Command: light-locker
+2026-05-23 13:39:29 - PID 1921 (xfce4-notifyd) - Not whitelisted - Command: /usr/lib/x86_64-linux-gnu/xfce4/notifyd/xfce4-notifyd
+2026-05-23 13:39:29 - PID 1927 (polkit-gnome-au) - Not whitelisted - Command: /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1
+2026-05-23 13:39:29 - PID 1928 (nm-applet) - Not whitelisted - Command: nm-applet
+2026-05-23 13:39:29 - PID 1946 (xiccd) - Not whitelisted - Command: xiccd
+2026-05-23 13:39:29 - PID 1985 (xfce4-power-man) - Not whitelisted - Command: xfce4-power-manager
+2026-05-23 13:39:29 - PID 2456 (gvfs-udisks2-vo) - Not whitelisted - Command: /usr/libexec/gvfs-udisks2-volume-monitor
+2026-05-23 13:39:29 - PID 2472 (gvfs-mtp-volume) - Not whitelisted - Command: /usr/libexec/gvfs-mtp-volume-monitor
+2026-05-23 13:39:29 - PID 5082 (antigravity) - Not whitelisted - Command: /home/darian/Documents/Antigravity-x64/antigravity --type=zygote --no-zygote-sandbox
+2026-05-23 13:39:29 - PID 5083 (antigravity) - Not whitelisted - Command: /home/darian/Documents/Antigravity-x64/antigravity --type=zygote
+2026-05-23 13:39:29 - PID 5085 (antigravity) - Not whitelisted - Command: /home/darian/Documents/Antigravity-x64/antigravity --type=zygote
+2026-05-23 13:39:29 - PID 5121 (antigravity) - Not whitelisted - Command: /proc/self/exe --type=utility --utility-sub-type=network.mojom.NetworkService --lang=en-US --service-sandbox-type=none --enable-crash-reporter=543efe0e-99b9-4601-8aac-d61d9f0af32a,no_channel --user-data-dir=/home/darian/.config/Antigravity --standard-schemes=plugin --secure-schemes=plugin --cors-schemes=plugin --fetch-schemes=plugin --service-worker-schemes=plugin --code-cache-schemes=plugin --shared-files=v8_context_snapshot_data:100 --field-trial-handle=3,i,14077503729035131396,6567938346815524436,262144 --enable-features=PdfUseShowSaveFilePicker --disable-features=DropInputEventsWhilePaintHolding,LocalNetworkAccessChecks,ScreenAIOCREnabled,SpareRendererForSitePerProcess,TraceSiteInstanceGetProcessCreation --variations-seed-version --pseudonymization-salt-handle=7,i,14033068562505717474,1663845804566815938,4 --trace-process-track-uuid=3190708989122997041
+2026-05-23 13:39:29 - PID 5190 (antigravity) - Not whitelisted - Command: /home/darian/Documents/Antigravity-x64/antigravity --type=zygote
+2026-05-23 13:39:29 - PID 5259 (antigravity) - Not whitelisted - Command: /proc/self/exe --type=utility --utility-sub-type=audio.mojom.AudioService --lang=en-US --service-sandbox-type=none --enable-crash-reporter=543efe0e-99b9-4601-8aac-d61d9f0af32a,no_channel --user-data-dir=/home/darian/.config/Antigravity --standard-schemes=plugin --secure-schemes=plugin --cors-schemes=plugin --fetch-schemes=plugin --service-worker-schemes=plugin --code-cache-schemes=plugin --shared-files=v8_context_snapshot_data:100 --field-trial-handle=3,i,14077503729035131396,6567938346815524436,262144 --enable-features=PdfUseShowSaveFilePicker --disable-features=DropInputEventsWhilePaintHolding,LocalNetworkAccessChecks,ScreenAIOCREnabled,SpareRendererForSitePerProcess,TraceSiteInstanceGetProcessCreation --variations-seed-version --pseudonymization-salt-handle=7,i,14033068562505717474,1663845804566815938,4 --trace-process-track-uuid=3190708991934122588
+2026-05-23 13:39:29 - PID 12848 (antigravity) - Not whitelisted - Command: /home/darian/Documents/Antigravity-x64/antigravity --type=zygote --no-zygote-sandbox
+2026-05-23 13:39:29 - PID 12866 (antigravity) - Not whitelisted - Command: /home/darian/Documents/Antigravity-x64/antigravity --type=zygote --no-zygote-sandbox
+2026-05-23 13:39:29 - PID 13988 (antigravity) - Not whitelisted - Command: /home/darian/Documents/Antigravity-x64/antigravity --type=zygote
+2026-05-23 13:39:29 - PID 20062 (gvfsd-metadata) - Not whitelisted - Command: /usr/libexec/gvfsd-metadata
+2026-05-23 13:39:29 - PID 20067 (gvfsd-trash) - Not whitelisted - Command: /usr/libexec/gvfsd-trash --spawner :1.17 /org/gtk/gvfs/exec_spaw/0
+2026-05-23 13:39:29 - PID 20838 (sleep) - Not whitelisted - Command: sleep 2
+2026-05-23 13:39:29 - Dry-run completed. No processes were killed.
+
+--- Gaming Environment Cleanup: 2026-05-23 13:41:21 (Mode: ACTIVE) ---
+2026-05-23 13:41:21 - PID 1567 (gnome-keyring-d) - Not whitelisted - Command: /usr/bin/gnome-keyring-daemon --foreground --components=pkcs11,secrets --control-directory=/run/user/1000/keyring
+2026-05-23 13:41:21 - PID 1692 (ibus-daemon) - Not whitelisted - Command: /usr/bin/ibus-daemon --daemonize --xim
+2026-05-23 13:41:21 - PID 1704 (gvfsd) - Not whitelisted - Command: /usr/libexec/gvfsd
+2026-05-23 13:41:21 - PID 1711 (gvfsd-fuse) - Not whitelisted - Command: /usr/libexec/gvfsd-fuse /run/user/1000/gvfs -f
+2026-05-23 13:41:21 - PID 1713 (ibus-memconf) - Not whitelisted - Command: /usr/libexec/ibus-memconf
+2026-05-23 13:41:21 - PID 1722 (ibus-ui-gtk3) - Not whitelisted - Command: /usr/libexec/ibus-ui-gtk3
+2026-05-23 13:41:21 - PID 1726 (ibus-extension-) - Not whitelisted - Command: /usr/libexec/ibus-extension-gtk3
+2026-05-23 13:41:21 - PID 1728 (ibus-x11) - Not whitelisted - Command: /usr/libexec/ibus-x11 --kill-daemon
+2026-05-23 13:41:21 - PID 1731 (ibus-portal) - Not whitelisted - Command: /usr/libexec/ibus-portal
+2026-05-23 13:41:21 - PID 1748 (at-spi-bus-laun) - Not whitelisted - Command: /usr/libexec/at-spi-bus-launcher
+2026-05-23 13:41:21 - PID 1759 (at-spi2-registr) - Not whitelisted - Command: /usr/libexec/at-spi2-registryd --use-gnome-session
+2026-05-23 13:41:21 - PID 1787 (ssh-agent) - Not whitelisted - Command: /usr/bin/ssh-agent -s
+2026-05-23 13:41:21 - PID 1805 (gpg-agent) - Not whitelisted - Command: /usr/bin/gpg-agent --supervised
+2026-05-23 13:41:21 - PID 1829 (ibus-engine-sim) - Not whitelisted - Command: /usr/libexec/ibus-engine-simple
+2026-05-23 13:41:21 - PID 1846 (Thunar) - Not whitelisted - Command: Thunar --daemon
+2026-05-23 13:41:21 - PID 1875 (bash) - Not whitelisted - Command: bash /home/darian/Documents/RocketMode/rocket_booster_daemon.sh
+2026-05-23 13:41:21 - PID 1889 (touchegg) - Not whitelisted - Command: touchegg
+2026-05-23 13:41:21 - PID 1895 (agent) - Not whitelisted - Command: /usr/libexec/geoclue-2.0/demos/agent
+2026-05-23 13:41:21 - PID 1915 (light-locker) - Not whitelisted - Command: light-locker
+2026-05-23 13:41:21 - PID 1921 (xfce4-notifyd) - Not whitelisted - Command: /usr/lib/x86_64-linux-gnu/xfce4/notifyd/xfce4-notifyd
+2026-05-23 13:41:21 - PID 1927 (polkit-gnome-au) - Not whitelisted - Command: /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1
+2026-05-23 13:41:21 - PID 1928 (nm-applet) - Not whitelisted - Command: nm-applet
+2026-05-23 13:41:21 - PID 1946 (xiccd) - Not whitelisted - Command: xiccd
+2026-05-23 13:41:21 - PID 1985 (xfce4-power-man) - Not whitelisted - Command: xfce4-power-manager
+2026-05-23 13:41:21 - PID 2456 (gvfs-udisks2-vo) - Not whitelisted - Command: /usr/libexec/gvfs-udisks2-volume-monitor
+2026-05-23 13:41:21 - PID 2472 (gvfs-mtp-volume) - Not whitelisted - Command: /usr/libexec/gvfs-mtp-volume-monitor
+2026-05-23 13:41:21 - PID 5077 (antigravity) - Not whitelisted - Command: /home/darian/Documents/Antigravity-x64/antigravity
+2026-05-23 13:41:21 - PID 5082 (antigravity) - Not whitelisted - Command: /home/darian/Documents/Antigravity-x64/antigravity --type=zygote --no-zygote-sandbox
+2026-05-23 13:41:21 - PID 5083 (antigravity) - Not whitelisted - Command: /home/darian/Documents/Antigravity-x64/antigravity --type=zygote
+2026-05-23 13:41:21 - PID 5085 (antigravity) - Not whitelisted - Command: /home/darian/Documents/Antigravity-x64/antigravity --type=zygote
+2026-05-23 13:41:21 - PID 5121 (antigravity) - Not whitelisted - Command: /proc/self/exe --type=utility --utility-sub-type=network.mojom.NetworkService --lang=en-US --service-sandbox-type=none --enable-crash-reporter=543efe0e-99b9-4601-8aac-d61d9f0af32a,no_channel --user-data-dir=/home/darian/.config/Antigravity --standard-schemes=plugin --secure-schemes=plugin --cors-schemes=plugin --fetch-schemes=plugin --service-worker-schemes=plugin --code-cache-schemes=plugin --shared-files=v8_context_snapshot_data:100 --field-trial-handle=3,i,14077503729035131396,6567938346815524436,262144 --enable-features=PdfUseShowSaveFilePicker --disable-features=DropInputEventsWhilePaintHolding,LocalNetworkAccessChecks,ScreenAIOCREnabled,SpareRendererForSitePerProcess,TraceSiteInstanceGetProcessCreation --variations-seed-version --pseudonymization-salt-handle=7,i,14033068562505717474,1663845804566815938,4 --trace-process-track-uuid=3190708989122997041
+2026-05-23 13:41:21 - PID 5174 (language_server) - Not whitelisted - Command: /home/darian/Documents/Antigravity-x64/resources/bin/language_server --standalone --override_ide_name antigravity --subclient_type hub --override_ide_version 2.0.6 --override_user_agent_name antigravity --https_server_port 0 --csrf_token 7d2181a0-4104-481b-bbea-ebf6a9f39826 --app_data_dir antigravity --api_server_url https://generativelanguage.googleapis.com --cloud_code_endpoint https://daily-cloudcode-pa.googleapis.com --enable_sidecars
+2026-05-23 13:41:21 - PID 5190 (antigravity) - Not whitelisted - Command: /home/darian/Documents/Antigravity-x64/antigravity --type=zygote
+2026-05-23 13:41:21 - PID 5259 (antigravity) - Not whitelisted - Command: /proc/self/exe --type=utility --utility-sub-type=audio.mojom.AudioService --lang=en-US --service-sandbox-type=none --enable-crash-reporter=543efe0e-99b9-4601-8aac-d61d9f0af32a,no_channel --user-data-dir=/home/darian/.config/Antigravity --standard-schemes=plugin --secure-schemes=plugin --cors-schemes=plugin --fetch-schemes=plugin --service-worker-schemes=plugin --code-cache-schemes=plugin --shared-files=v8_context_snapshot_data:100 --field-trial-handle=3,i,14077503729035131396,6567938346815524436,262144 --enable-features=PdfUseShowSaveFilePicker --disable-features=DropInputEventsWhilePaintHolding,LocalNetworkAccessChecks,ScreenAIOCREnabled,SpareRendererForSitePerProcess,TraceSiteInstanceGetProcessCreation --variations-seed-version --pseudonymization-salt-handle=7,i,14033068562505717474,1663845804566815938,4 --trace-process-track-uuid=3190708991934122588
+2026-05-23 13:41:21 - PID 12848 (antigravity) - Not whitelisted - Command: /home/darian/Documents/Antigravity-x64/antigravity --type=zygote --no-zygote-sandbox
+2026-05-23 13:41:21 - PID 12866 (antigravity) - Not whitelisted - Command: /home/darian/Documents/Antigravity-x64/antigravity --type=zygote --no-zygote-sandbox
+2026-05-23 13:41:21 - PID 13988 (antigravity) - Not whitelisted - Command: /home/darian/Documents/Antigravity-x64/antigravity --type=zygote
+2026-05-23 13:41:21 - PID 20062 (gvfsd-metadata) - Not whitelisted - Command: /usr/libexec/gvfsd-metadata
+2026-05-23 13:41:21 - PID 20067 (gvfsd-trash) - Not whitelisted - Command: /usr/libexec/gvfsd-trash --spawner :1.17 /org/gtk/gvfs/exec_spaw/0
+2026-05-23 13:41:21 - PID 21080 (sleep) - Not whitelisted - Command: sleep 2
+2026-05-23 13:41:21 - Cleanup finished. Successfully killed 40 processes.
+
+--- Gaming Environment Cleanup: 2026-05-23 18:21:28 (Mode: ACTIVE) ---
+2026-05-23 18:21:28 - PID 21106 (gvfsd) - Not whitelisted - Command: /usr/libexec/gvfsd
+2026-05-23 18:21:28 - PID 21111 (gnome-keyring-d) - Not whitelisted - Command: /usr/bin/gnome-keyring-daemon --foreground --components=pkcs11,secrets --control-directory=/run/user/1000/keyring
+2026-05-23 18:21:28 - PID 21118 (at-spi-bus-laun) - Not whitelisted - Command: /usr/libexec/at-spi-bus-launcher
+2026-05-23 18:21:28 - PID 22573 (Thunar) - Not whitelisted - Command: /usr/bin/Thunar --daemon
+2026-05-23 18:21:28 - PID 22580 (at-spi2-registr) - Not whitelisted - Command: /usr/libexec/at-spi2-registryd --use-gnome-session
+2026-05-23 18:21:28 - PID 22587 (antigravity) - Not whitelisted - Command: /home/darian/Documents/Antigravity-x64/antigravity
+2026-05-23 18:21:28 - PID 22590 (antigravity) - Not whitelisted - Command: /home/darian/Documents/Antigravity-x64/antigravity --type=zygote --no-zygote-sandbox
+2026-05-23 18:21:28 - PID 22591 (antigravity) - Not whitelisted - Command: /home/darian/Documents/Antigravity-x64/antigravity --type=zygote
+2026-05-23 18:21:28 - PID 22593 (antigravity) - Not whitelisted - Command: /home/darian/Documents/Antigravity-x64/antigravity --type=zygote
+2026-05-23 18:21:28 - PID 22620 (antigravity) - Not whitelisted - Command: /home/darian/Documents/Antigravity-x64/antigravity --type=zygote --no-zygote-sandbox
+2026-05-23 18:21:28 - PID 22627 (antigravity) - Not whitelisted - Command: /proc/self/exe --type=utility --utility-sub-type=network.mojom.NetworkService --lang=en-US --service-sandbox-type=none --enable-crash-reporter=543efe0e-99b9-4601-8aac-d61d9f0af32a,no_channel --user-data-dir=/home/darian/.config/Antigravity --standard-schemes=plugin --secure-schemes=plugin --cors-schemes=plugin --fetch-schemes=plugin --service-worker-schemes=plugin --code-cache-schemes=plugin --shared-files=v8_context_snapshot_data:100 --field-trial-handle=3,i,3418941687223934154,255819682410342506,262144 --enable-features=PdfUseShowSaveFilePicker --disable-features=DropInputEventsWhilePaintHolding,LocalNetworkAccessChecks,ScreenAIOCREnabled,SpareRendererForSitePerProcess,TraceSiteInstanceGetProcessCreation --variations-seed-version --pseudonymization-salt-handle=7,i,173651094021966898,11096749449504963869,4 --trace-process-track-uuid=3190708989122997041
+2026-05-23 18:21:28 - PID 22671 (language_server) - Not whitelisted - Command: /home/darian/Documents/Antigravity-x64/resources/bin/language_server --standalone --override_ide_name antigravity --subclient_type hub --override_ide_version 2.0.6 --override_user_agent_name antigravity --https_server_port 0 --csrf_token a71a1c36-eede-465c-9e07-b70bf1a562b6 --app_data_dir antigravity --api_server_url https://generativelanguage.googleapis.com --cloud_code_endpoint https://daily-cloudcode-pa.googleapis.com --enable_sidecars
+2026-05-23 18:21:28 - PID 22687 (antigravity) - Not whitelisted - Command: /home/darian/Documents/Antigravity-x64/antigravity --type=zygote
+2026-05-23 18:21:28 - PID 22714 (antigravity) - Not whitelisted - Command: /home/darian/Documents/Antigravity-x64/antigravity --type=zygote --no-zygote-sandbox
+2026-05-23 18:21:28 - PID 22745 (antigravity) - Not whitelisted - Command: /proc/self/exe --type=utility --utility-sub-type=audio.mojom.AudioService --lang=en-US --service-sandbox-type=none --enable-crash-reporter=543efe0e-99b9-4601-8aac-d61d9f0af32a,no_channel --user-data-dir=/home/darian/.config/Antigravity --standard-schemes=plugin --secure-schemes=plugin --cors-schemes=plugin --fetch-schemes=plugin --service-worker-schemes=plugin --code-cache-schemes=plugin --shared-files=v8_context_snapshot_data:100 --field-trial-handle=3,i,3418941687223934154,255819682410342506,262144 --enable-features=PdfUseShowSaveFilePicker --disable-features=DropInputEventsWhilePaintHolding,LocalNetworkAccessChecks,ScreenAIOCREnabled,SpareRendererForSitePerProcess,TraceSiteInstanceGetProcessCreation --variations-seed-version --pseudonymization-salt-handle=7,i,173651094021966898,11096749449504963869,4 --trace-process-track-uuid=3190708991934122588
+2026-05-23 18:21:28 - PID 22804 (xfce4-notifyd) - Not whitelisted - Command: /usr/lib/x86_64-linux-gnu/xfce4/notifyd/xfce4-notifyd
+2026-05-23 18:21:28 - Cleanup finished. Successfully killed 16 processes.
+
+--- Gaming Environment Cleanup: 2026-05-23 19:25:04 (Mode: ACTIVE) ---
+2026-05-23 19:25:04 - PID 22893 (gvfsd) - Not whitelisted - Command: /usr/libexec/gvfsd
+2026-05-23 19:25:04 - PID 22895 (gnome-keyring-d) - Not whitelisted - Command: /usr/bin/gnome-keyring-daemon --foreground --components=pkcs11,secrets --control-directory=/run/user/1000/keyring
+2026-05-23 19:25:04 - PID 22906 (at-spi-bus-laun) - Not whitelisted - Command: /usr/libexec/at-spi-bus-launcher
+2026-05-23 19:25:04 - PID 23666 (Thunar) - Not whitelisted - Command: /usr/bin/Thunar --daemon
+2026-05-23 19:25:04 - PID 23673 (at-spi2-registr) - Not whitelisted - Command: /usr/libexec/at-spi2-registryd --use-gnome-session
+2026-05-23 19:25:04 - PID 23678 (gvfsd-metadata) - Not whitelisted - Command: /usr/libexec/gvfsd-metadata
+2026-05-23 19:25:04 - PID 23682 (antigravity) - Not whitelisted - Command: /home/darian/Documents/Antigravity-x64/antigravity
+2026-05-23 19:25:04 - PID 23685 (antigravity) - Not whitelisted - Command: /home/darian/Documents/Antigravity-x64/antigravity --type=zygote --no-zygote-sandbox
+2026-05-23 19:25:04 - PID 23686 (antigravity) - Not whitelisted - Command: /home/darian/Documents/Antigravity-x64/antigravity --type=zygote
+2026-05-23 19:25:04 - PID 23688 (antigravity) - Not whitelisted - Command: /home/darian/Documents/Antigravity-x64/antigravity --type=zygote
+2026-05-23 19:25:04 - PID 23715 (antigravity) - Not whitelisted - Command: /home/darian/Documents/Antigravity-x64/antigravity --type=zygote --no-zygote-sandbox
+2026-05-23 19:25:04 - PID 23723 (antigravity) - Not whitelisted - Command: /proc/self/exe --type=utility --utility-sub-type=network.mojom.NetworkService --lang=en-US --service-sandbox-type=none --enable-crash-reporter=543efe0e-99b9-4601-8aac-d61d9f0af32a,no_channel --user-data-dir=/home/darian/.config/Antigravity --standard-schemes=plugin --secure-schemes=plugin --cors-schemes=plugin --fetch-schemes=plugin --service-worker-schemes=plugin --code-cache-schemes=plugin --shared-files=v8_context_snapshot_data:100 --field-trial-handle=3,i,8954497850057460109,11218224400895813235,262144 --enable-features=PdfUseShowSaveFilePicker --disable-features=DropInputEventsWhilePaintHolding,LocalNetworkAccessChecks,ScreenAIOCREnabled,SpareRendererForSitePerProcess,TraceSiteInstanceGetProcessCreation --variations-seed-version --pseudonymization-salt-handle=7,i,10205457341527004874,1558167878622031056,4 --trace-process-track-uuid=3190708989122997041
+2026-05-23 19:25:04 - PID 23766 (language_server) - Not whitelisted - Command: /home/darian/Documents/Antigravity-x64/resources/bin/language_server --standalone --override_ide_name antigravity --subclient_type hub --override_ide_version 2.0.6 --override_user_agent_name antigravity --https_server_port 0 --csrf_token 4573b211-1b6f-43a5-b7fc-78e0e884283a --app_data_dir antigravity --api_server_url https://generativelanguage.googleapis.com --cloud_code_endpoint https://daily-cloudcode-pa.googleapis.com --enable_sidecars
+2026-05-23 19:25:04 - PID 23783 (antigravity) - Not whitelisted - Command: /home/darian/Documents/Antigravity-x64/antigravity --type=zygote
+2026-05-23 19:25:04 - PID 23800 (antigravity) - Not whitelisted - Command: /home/darian/Documents/Antigravity-x64/antigravity --type=zygote --no-zygote-sandbox
+2026-05-23 19:25:04 - PID 23841 (antigravity) - Not whitelisted - Command: /proc/self/exe --type=utility --utility-sub-type=audio.mojom.AudioService --lang=en-US --service-sandbox-type=none --enable-crash-reporter=543efe0e-99b9-4601-8aac-d61d9f0af32a,no_channel --user-data-dir=/home/darian/.config/Antigravity --standard-schemes=plugin --secure-schemes=plugin --cors-schemes=plugin --fetch-schemes=plugin --service-worker-schemes=plugin --code-cache-schemes=plugin --shared-files=v8_context_snapshot_data:100 --field-trial-handle=3,i,8954497850057460109,11218224400895813235,262144 --enable-features=PdfUseShowSaveFilePicker --disable-features=DropInputEventsWhilePaintHolding,LocalNetworkAccessChecks,ScreenAIOCREnabled,SpareRendererForSitePerProcess,TraceSiteInstanceGetProcessCreation --variations-seed-version --pseudonymization-salt-handle=7,i,10205457341527004874,1558167878622031056,4 --trace-process-track-uuid=3190708991934122588
+2026-05-23 19:25:04 - PID 23908 (xfce4-notifyd) - Not whitelisted - Command: /usr/lib/x86_64-linux-gnu/xfce4/notifyd/xfce4-notifyd
+2026-05-23 19:25:04 - Cleanup finished. Successfully killed 17 processes.
+
+--- Gaming Environment Cleanup: 2026-05-23 22:08:04 (Mode: ACTIVE) ---
+2026-05-23 22:08:04 - PID 1547 (gnome-keyring-d) - Not whitelisted - Command: /usr/bin/gnome-keyring-daemon --foreground --components=pkcs11,secrets --control-directory=/run/user/1000/keyring
+2026-05-23 22:08:04 - PID 1672 (ibus-daemon) - Not whitelisted - Command: /usr/bin/ibus-daemon --daemonize --xim
+2026-05-23 22:08:04 - PID 1684 (gvfsd) - Not whitelisted - Command: /usr/libexec/gvfsd
+2026-05-23 22:08:04 - PID 1691 (gvfsd-fuse) - Not whitelisted - Command: /usr/libexec/gvfsd-fuse /run/user/1000/gvfs -f
+2026-05-23 22:08:04 - PID 1693 (ibus-memconf) - Not whitelisted - Command: /usr/libexec/ibus-memconf
+2026-05-23 22:08:04 - PID 1702 (ibus-ui-gtk3) - Not whitelisted - Command: /usr/libexec/ibus-ui-gtk3
+2026-05-23 22:08:04 - PID 1706 (ibus-extension-) - Not whitelisted - Command: /usr/libexec/ibus-extension-gtk3
+2026-05-23 22:08:04 - PID 1708 (ibus-x11) - Not whitelisted - Command: /usr/libexec/ibus-x11 --kill-daemon
+2026-05-23 22:08:04 - PID 1711 (ibus-portal) - Not whitelisted - Command: /usr/libexec/ibus-portal
+2026-05-23 22:08:04 - PID 1725 (at-spi-bus-laun) - Not whitelisted - Command: /usr/libexec/at-spi-bus-launcher
+2026-05-23 22:08:04 - PID 1740 (at-spi2-registr) - Not whitelisted - Command: /usr/libexec/at-spi2-registryd --use-gnome-session
+2026-05-23 22:08:04 - PID 1764 (ssh-agent) - Not whitelisted - Command: /usr/bin/ssh-agent -s
+2026-05-23 22:08:04 - PID 1783 (gpg-agent) - Not whitelisted - Command: /usr/bin/gpg-agent --supervised
+2026-05-23 22:08:04 - PID 1807 (ibus-engine-sim) - Not whitelisted - Command: /usr/libexec/ibus-engine-simple
+2026-05-23 22:08:04 - PID 1824 (Thunar) - Not whitelisted - Command: Thunar --daemon
+2026-05-23 22:08:04 - PID 1836 (tumblerd) - Not whitelisted - Command: /usr/lib/x86_64-linux-gnu/tumbler-1/tumblerd
+2026-05-23 22:08:04 - PID 1862 (touchegg) - Not whitelisted - Command: touchegg
+2026-05-23 22:08:04 - PID 1863 (agent) - Not whitelisted - Command: /usr/libexec/geoclue-2.0/demos/agent
+2026-05-23 22:08:04 - PID 1881 (light-locker) - Not whitelisted - Command: light-locker
+2026-05-23 22:08:04 - PID 1893 (polkit-gnome-au) - Not whitelisted - Command: /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1
+2026-05-23 22:08:04 - PID 1912 (nm-applet) - Not whitelisted - Command: nm-applet
+2026-05-23 22:08:04 - PID 1928 (xiccd) - Not whitelisted - Command: xiccd
+2026-05-23 22:08:04 - PID 1977 (xfce4-notifyd) - Not whitelisted - Command: /usr/lib/x86_64-linux-gnu/xfce4/notifyd/xfce4-notifyd
+2026-05-23 22:08:04 - PID 1978 (xfce4-power-man) - Not whitelisted - Command: xfce4-power-manager
+2026-05-23 22:08:04 - PID 2355 (gvfs-udisks2-vo) - Not whitelisted - Command: /usr/libexec/gvfs-udisks2-volume-monitor
+2026-05-23 22:08:04 - PID 2430 (gvfs-mtp-volume) - Not whitelisted - Command: /usr/libexec/gvfs-mtp-volume-monitor
+2026-05-23 22:08:04 - PID 2782 (sleep) - Not whitelisted - Command: sleep 2
+2026-05-23 22:08:04 - Cleanup finished. Successfully killed 27 processes.
+
+--- Gaming Environment Cleanup: 2026-05-23 22:58:35 (Mode: ACTIVE) ---
+2026-05-23 22:58:35 - PID 1531 (gnome-keyring-d) - Not whitelisted - Command: /usr/bin/gnome-keyring-daemon --foreground --components=pkcs11,secrets --control-directory=/run/user/1000/keyring
+2026-05-23 22:58:35 - PID 1654 (ibus-daemon) - Not whitelisted - Command: /usr/bin/ibus-daemon --daemonize --xim
+2026-05-23 22:58:35 - PID 1666 (gvfsd) - Not whitelisted - Command: /usr/libexec/gvfsd
+2026-05-23 22:58:35 - PID 1673 (gvfsd-fuse) - Not whitelisted - Command: /usr/libexec/gvfsd-fuse /run/user/1000/gvfs -f
+2026-05-23 22:58:35 - PID 1675 (ibus-memconf) - Not whitelisted - Command: /usr/libexec/ibus-memconf
+2026-05-23 22:58:35 - PID 1684 (ibus-ui-gtk3) - Not whitelisted - Command: /usr/libexec/ibus-ui-gtk3
+2026-05-23 22:58:35 - PID 1688 (ibus-extension-) - Not whitelisted - Command: /usr/libexec/ibus-extension-gtk3
+2026-05-23 22:58:35 - PID 1690 (ibus-x11) - Not whitelisted - Command: /usr/libexec/ibus-x11 --kill-daemon
+2026-05-23 22:58:35 - PID 1693 (ibus-portal) - Not whitelisted - Command: /usr/libexec/ibus-portal
+2026-05-23 22:58:35 - PID 1710 (at-spi-bus-laun) - Not whitelisted - Command: /usr/libexec/at-spi-bus-launcher
+2026-05-23 22:58:35 - PID 1722 (at-spi2-registr) - Not whitelisted - Command: /usr/libexec/at-spi2-registryd --use-gnome-session
+2026-05-23 22:58:35 - PID 1747 (ssh-agent) - Not whitelisted - Command: /usr/bin/ssh-agent -s
+2026-05-23 22:58:35 - PID 1765 (gpg-agent) - Not whitelisted - Command: /usr/bin/gpg-agent --supervised
+2026-05-23 22:58:35 - PID 1792 (ibus-engine-sim) - Not whitelisted - Command: /usr/libexec/ibus-engine-simple
+2026-05-23 22:58:35 - PID 1809 (Thunar) - Not whitelisted - Command: Thunar --daemon
+2026-05-23 22:58:35 - PID 1846 (xfce4-notifyd) - Not whitelisted - Command: /usr/lib/x86_64-linux-gnu/xfce4/notifyd/xfce4-notifyd
+2026-05-23 22:58:35 - PID 1869 (touchegg) - Not whitelisted - Command: touchegg
+2026-05-23 22:58:35 - PID 1874 (agent) - Not whitelisted - Command: /usr/libexec/geoclue-2.0/demos/agent
+2026-05-23 22:58:35 - PID 1892 (light-locker) - Not whitelisted - Command: light-locker
+2026-05-23 22:58:35 - PID 1895 (polkit-gnome-au) - Not whitelisted - Command: /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1
+2026-05-23 22:58:35 - PID 1905 (nm-applet) - Not whitelisted - Command: nm-applet
+2026-05-23 22:58:35 - PID 1923 (xiccd) - Not whitelisted - Command: xiccd
+2026-05-23 22:58:35 - PID 1928 (xfce4-power-man) - Not whitelisted - Command: xfce4-power-manager
+2026-05-23 22:58:35 - PID 2342 (gvfs-udisks2-vo) - Not whitelisted - Command: /usr/libexec/gvfs-udisks2-volume-monitor
+2026-05-23 22:58:35 - PID 2418 (gvfs-mtp-volume) - Not whitelisted - Command: /usr/libexec/gvfs-mtp-volume-monitor
+2026-05-23 22:58:35 - PID 4710 (sleep) - Not whitelisted - Command: sleep 2
+2026-05-23 22:58:35 - Cleanup finished. Successfully killed 26 processes.
+
+--- Gaming Environment Cleanup: 2026-05-24 20:59:11 (Mode: ACTIVE) ---
+2026-05-24 20:59:11 - PID 4741 (gnome-keyring-d) - Not whitelisted - Command: /usr/bin/gnome-keyring-daemon --foreground --components=pkcs11,secrets --control-directory=/run/user/1000/keyring
+2026-05-24 20:59:11 - PID 4742 (gvfsd) - Not whitelisted - Command: /usr/libexec/gvfsd
+2026-05-24 20:59:11 - PID 4761 (at-spi-bus-laun) - Not whitelisted - Command: /usr/libexec/at-spi-bus-launcher
+2026-05-24 20:59:11 - PID 4908 (at-spi2-registr) - Not whitelisted - Command: /usr/libexec/at-spi2-registryd --use-gnome-session
+2026-05-24 20:59:11 - Cleanup finished. Successfully killed 4 processes.
+
+--- Gaming Environment Cleanup: 2026-05-24 22:01:38 (Mode: ACTIVE) ---
+2026-05-24 22:01:38 - PID 44108 (gnome-keyring-d) - Not whitelisted - Command: /usr/bin/gnome-keyring-daemon --foreground --components=pkcs11,secrets --control-directory=/run/user/1000/keyring
+2026-05-24 22:01:38 - PID 44117 (gvfsd) - Not whitelisted - Command: /usr/libexec/gvfsd
+2026-05-24 22:01:38 - PID 44128 (at-spi-bus-laun) - Not whitelisted - Command: /usr/libexec/at-spi-bus-launcher
+2026-05-24 22:01:38 - PID 44379 (at-spi2-registr) - Not whitelisted - Command: /usr/libexec/at-spi2-registryd --use-gnome-session
+2026-05-24 22:01:38 - Cleanup finished. Successfully killed 4 processes.
+
+--- Gaming Environment Cleanup: 2026-05-24 22:13:31 (Mode: ACTIVE) ---
+2026-05-24 22:13:31 - PID 47292 (gnome-keyring-d) - Not whitelisted - Command: /usr/bin/gnome-keyring-daemon --foreground --components=pkcs11,secrets --control-directory=/run/user/1000/keyring
+2026-05-24 22:13:31 - PID 47301 (gvfsd) - Not whitelisted - Command: /usr/libexec/gvfsd
+2026-05-24 22:13:31 - PID 47308 (at-spi-bus-laun) - Not whitelisted - Command: /usr/libexec/at-spi-bus-launcher
+2026-05-24 22:13:31 - PID 48895 (ibus-daemon) - Not whitelisted - Command: /usr/bin/ibus-daemon --daemonize --xim
+2026-05-24 22:13:31 - PID 48907 (ibus-memconf) - Not whitelisted - Command: /usr/libexec/ibus-memconf
+2026-05-24 22:13:31 - PID 48912 (ibus-ui-gtk3) - Not whitelisted - Command: /usr/libexec/ibus-ui-gtk3
+2026-05-24 22:13:31 - PID 48916 (ibus-extension-) - Not whitelisted - Command: /usr/libexec/ibus-extension-gtk3
+2026-05-24 22:13:31 - PID 48919 (ibus-x11) - Not whitelisted - Command: /usr/libexec/ibus-x11 --kill-daemon
+2026-05-24 22:13:31 - PID 48921 (ibus-portal) - Not whitelisted - Command: /usr/libexec/ibus-portal
+2026-05-24 22:13:31 - PID 48941 (at-spi2-registr) - Not whitelisted - Command: /usr/libexec/at-spi2-registryd --use-gnome-session
+2026-05-24 22:13:31 - PID 48951 (ssh-agent) - Not whitelisted - Command: /usr/bin/ssh-agent -s
+2026-05-24 22:13:31 - PID 48962 (gpg-agent) - Not whitelisted - Command: /usr/bin/gpg-agent --supervised
+2026-05-24 22:13:31 - PID 48979 (ibus-engine-sim) - Not whitelisted - Command: /usr/libexec/ibus-engine-simple
+2026-05-24 22:13:31 - PID 48995 (Thunar) - Not whitelisted - Command: Thunar --daemon
+2026-05-24 22:13:31 - PID 49019 (tumblerd) - Not whitelisted - Command: /usr/lib/x86_64-linux-gnu/tumbler-1/tumblerd
+2026-05-24 22:13:31 - PID 49058 (touchegg) - Not whitelisted - Command: touchegg
+2026-05-24 22:13:31 - PID 49065 (agent) - Not whitelisted - Command: /usr/libexec/geoclue-2.0/demos/agent
+2026-05-24 22:13:31 - PID 49077 (xfce4-notifyd) - Not whitelisted - Command: /usr/lib/x86_64-linux-gnu/xfce4/notifyd/xfce4-notifyd
+2026-05-24 22:13:31 - PID 49099 (light-locker) - Not whitelisted - Command: light-locker
+2026-05-24 22:13:31 - PID 49110 (polkit-gnome-au) - Not whitelisted - Command: /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1
+2026-05-24 22:13:31 - PID 49114 (nm-applet) - Not whitelisted - Command: nm-applet
+2026-05-24 22:13:31 - PID 49124 (xiccd) - Not whitelisted - Command: xiccd
+2026-05-24 22:13:31 - PID 49158 (xfce4-power-man) - Not whitelisted - Command: xfce4-power-manager
+2026-05-24 22:13:31 - PID 49455 (gvfs-udisks2-vo) - Not whitelisted - Command: /usr/libexec/gvfs-udisks2-volume-monitor
+2026-05-24 22:13:31 - PID 49466 (gvfs-mtp-volume) - Not whitelisted - Command: /usr/libexec/gvfs-mtp-volume-monitor
+2026-05-24 22:13:31 - PID 49926 (sleep) - Not whitelisted - Command: sleep 2
+2026-05-24 22:13:31 - Cleanup finished. Successfully killed 26 processes.
+
+--- Gaming Environment Cleanup: 2026-05-24 22:44:51 (Mode: DRY-RUN) ---
+2026-05-24 22:44:51 - PID 49948 (gnome-keyring-d) - Not whitelisted - Command: /usr/bin/gnome-keyring-daemon --foreground --components=pkcs11,secrets --control-directory=/run/user/1000/keyring
+2026-05-24 22:44:51 - PID 49957 (gvfsd) - Not whitelisted - Command: /usr/libexec/gvfsd
+2026-05-24 22:44:51 - PID 49965 (at-spi-bus-laun) - Not whitelisted - Command: /usr/libexec/at-spi-bus-launcher
+2026-05-24 22:44:51 - PID 50021 (at-spi2-registr) - Not whitelisted - Command: /usr/libexec/at-spi2-registryd --use-gnome-session
+2026-05-24 22:44:51 - PID 50995 (antigravity) - Not whitelisted - Command: /home/darian/Documents/Antigravity-x64/antigravity --type=zygote --no-zygote-sandbox
+2026-05-24 22:44:51 - PID 50996 (antigravity) - Not whitelisted - Command: /home/darian/Documents/Antigravity-x64/antigravity --type=zygote
+2026-05-24 22:44:51 - PID 50998 (antigravity) - Not whitelisted - Command: /home/darian/Documents/Antigravity-x64/antigravity --type=zygote
+2026-05-24 22:44:51 - PID 51025 (antigravity) - Not whitelisted - Command: /home/darian/Documents/Antigravity-x64/antigravity --type=zygote --no-zygote-sandbox
+2026-05-24 22:44:51 - PID 51033 (antigravity) - Not whitelisted - Command: /proc/self/exe --type=utility --utility-sub-type=network.mojom.NetworkService --lang=en-US --service-sandbox-type=none --enable-crash-reporter=543efe0e-99b9-4601-8aac-d61d9f0af32a,no_channel --user-data-dir=/home/darian/.config/Antigravity --standard-schemes=plugin --secure-schemes=plugin --cors-schemes=plugin --fetch-schemes=plugin --service-worker-schemes=plugin --code-cache-schemes=plugin --shared-files=v8_context_snapshot_data:100 --field-trial-handle=3,i,1140724559906381985,15226991175820309209,262144 --enable-features=PdfUseShowSaveFilePicker --disable-features=DropInputEventsWhilePaintHolding,LocalNetworkAccessChecks,ScreenAIOCREnabled,SpareRendererForSitePerProcess,TraceSiteInstanceGetProcessCreation --variations-seed-version --pseudonymization-salt-handle=7,i,106576956258458818,2162651288838983669,4 --trace-process-track-uuid=3190708989122997041
+2026-05-24 22:44:51 - PID 51097 (antigravity) - Not whitelisted - Command: /home/darian/Documents/Antigravity-x64/antigravity --type=zygote
+2026-05-24 22:44:51 - PID 51116 (antigravity) - Not whitelisted - Command: /home/darian/Documents/Antigravity-x64/antigravity --type=zygote --no-zygote-sandbox
+2026-05-24 22:44:51 - PID 51330 (antigravity) - Not whitelisted - Command: /home/darian/Documents/Antigravity-x64/antigravity --type=zygote
+2026-05-24 22:44:51 - PID 51354 (antigravity) - Not whitelisted - Command: /proc/self/exe --type=utility --utility-sub-type=audio.mojom.AudioService --lang=en-US --service-sandbox-type=none --enable-crash-reporter=543efe0e-99b9-4601-8aac-d61d9f0af32a,no_channel --user-data-dir=/home/darian/.config/Antigravity --standard-schemes=plugin --secure-schemes=plugin --cors-schemes=plugin --fetch-schemes=plugin --service-worker-schemes=plugin --code-cache-schemes=plugin --shared-files=v8_context_snapshot_data:100 --field-trial-handle=3,i,1140724559906381985,15226991175820309209,262144 --enable-features=PdfUseShowSaveFilePicker --disable-features=DropInputEventsWhilePaintHolding,LocalNetworkAccessChecks,ScreenAIOCREnabled,SpareRendererForSitePerProcess,TraceSiteInstanceGetProcessCreation --variations-seed-version --pseudonymization-salt-handle=7,i,106576956258458818,2162651288838983669,4 --trace-process-track-uuid=3190708994745248135
+2026-05-24 22:44:51 - PID 51912 (xfce4-notifyd) - Not whitelisted - Command: /usr/lib/x86_64-linux-gnu/xfce4/notifyd/xfce4-notifyd
+2026-05-24 22:44:51 - PID 52143 (antigravity) - Not whitelisted - Command: /proc/self/exe --type=utility --utility-sub-type=video_capture.mojom.VideoCaptureService --lang=en-US --service-sandbox-type=none --message-loop-type-ui --enable-crash-reporter=543efe0e-99b9-4601-8aac-d61d9f0af32a,no_channel --user-data-dir=/home/darian/.config/Antigravity --standard-schemes=plugin --secure-schemes=plugin --cors-schemes=plugin --fetch-schemes=plugin --service-worker-schemes=plugin --code-cache-schemes=plugin --shared-files=v8_context_snapshot_data:100 --field-trial-handle=3,i,1140724559906381985,15226991175820309209,262144 --enable-features=PdfUseShowSaveFilePicker --disable-features=DropInputEventsWhilePaintHolding,LocalNetworkAccessChecks,ScreenAIOCREnabled,SpareRendererForSitePerProcess,TraceSiteInstanceGetProcessCreation --variations-seed-version --pseudonymization-salt-handle=7,i,106576956258458818,2162651288838983669,4 --trace-process-track-uuid=3190708999430457380
+2026-05-24 22:44:51 - Dry-run completed. No processes were killed.
+
+--- Gaming Environment Cleanup: 2026-05-24 23:10:11 (Mode: ACTIVE) ---
+2026-05-24 23:10:11 - PID 49948 (gnome-keyring-d) - Not whitelisted - Command: /usr/bin/gnome-keyring-daemon --foreground --components=pkcs11,secrets --control-directory=/run/user/1000/keyring
+2026-05-24 23:10:11 - PID 49957 (gvfsd) - Not whitelisted - Command: /usr/libexec/gvfsd
+2026-05-24 23:10:11 - PID 49965 (at-spi-bus-laun) - Not whitelisted - Command: /usr/libexec/at-spi-bus-launcher
+2026-05-24 23:10:11 - PID 50021 (at-spi2-registr) - Not whitelisted - Command: /usr/libexec/at-spi2-registryd --use-gnome-session
+2026-05-24 23:10:11 - PID 50984 (Thunar) - Not whitelisted - Command: /usr/bin/Thunar --daemon
+2026-05-24 23:10:11 - PID 50991 (antigravity) - Not whitelisted - Command: /home/darian/Documents/Antigravity-x64/antigravity
+2026-05-24 23:10:11 - PID 50995 (antigravity) - Not whitelisted - Command: /home/darian/Documents/Antigravity-x64/antigravity --type=zygote --no-zygote-sandbox
+2026-05-24 23:10:11 - PID 50996 (antigravity) - Not whitelisted - Command: /home/darian/Documents/Antigravity-x64/antigravity --type=zygote
+2026-05-24 23:10:11 - PID 50998 (antigravity) - Not whitelisted - Command: /home/darian/Documents/Antigravity-x64/antigravity --type=zygote
+2026-05-24 23:10:11 - PID 51025 (antigravity) - Not whitelisted - Command: /home/darian/Documents/Antigravity-x64/antigravity --type=zygote --no-zygote-sandbox
+2026-05-24 23:10:11 - PID 51033 (antigravity) - Not whitelisted - Command: /proc/self/exe --type=utility --utility-sub-type=network.mojom.NetworkService --lang=en-US --service-sandbox-type=none --enable-crash-reporter=543efe0e-99b9-4601-8aac-d61d9f0af32a,no_channel --user-data-dir=/home/darian/.config/Antigravity --standard-schemes=plugin --secure-schemes=plugin --cors-schemes=plugin --fetch-schemes=plugin --service-worker-schemes=plugin --code-cache-schemes=plugin --shared-files=v8_context_snapshot_data:100 --field-trial-handle=3,i,1140724559906381985,15226991175820309209,262144 --enable-features=PdfUseShowSaveFilePicker --disable-features=DropInputEventsWhilePaintHolding,LocalNetworkAccessChecks,ScreenAIOCREnabled,SpareRendererForSitePerProcess,TraceSiteInstanceGetProcessCreation --variations-seed-version --pseudonymization-salt-handle=7,i,106576956258458818,2162651288838983669,4 --trace-process-track-uuid=3190708989122997041
+2026-05-24 23:10:11 - PID 51081 (language_server) - Not whitelisted - Command: /home/darian/Documents/Antigravity-x64/resources/bin/language_server --standalone --override_ide_name antigravity --subclient_type hub --override_ide_version 2.0.6 --override_user_agent_name antigravity --https_server_port 0 --csrf_token d9c2e578-9617-4c26-8443-c34cabf7cdd5 --app_data_dir antigravity --api_server_url https://generativelanguage.googleapis.com --cloud_code_endpoint https://daily-cloudcode-pa.googleapis.com --enable_sidecars
+2026-05-24 23:10:11 - PID 51097 (antigravity) - Not whitelisted - Command: /home/darian/Documents/Antigravity-x64/antigravity --type=zygote
+2026-05-24 23:10:11 - PID 51116 (antigravity) - Not whitelisted - Command: /home/darian/Documents/Antigravity-x64/antigravity --type=zygote --no-zygote-sandbox
+2026-05-24 23:10:11 - PID 51330 (antigravity) - Not whitelisted - Command: /home/darian/Documents/Antigravity-x64/antigravity --type=zygote
+2026-05-24 23:10:11 - PID 51354 (antigravity) - Not whitelisted - Command: /proc/self/exe --type=utility --utility-sub-type=audio.mojom.AudioService --lang=en-US --service-sandbox-type=none --enable-crash-reporter=543efe0e-99b9-4601-8aac-d61d9f0af32a,no_channel --user-data-dir=/home/darian/.config/Antigravity --standard-schemes=plugin --secure-schemes=plugin --cors-schemes=plugin --fetch-schemes=plugin --service-worker-schemes=plugin --code-cache-schemes=plugin --shared-files=v8_context_snapshot_data:100 --field-trial-handle=3,i,1140724559906381985,15226991175820309209,262144 --enable-features=PdfUseShowSaveFilePicker --disable-features=DropInputEventsWhilePaintHolding,LocalNetworkAccessChecks,ScreenAIOCREnabled,SpareRendererForSitePerProcess,TraceSiteInstanceGetProcessCreation --variations-seed-version --pseudonymization-salt-handle=7,i,106576956258458818,2162651288838983669,4 --trace-process-track-uuid=3190708994745248135
+2026-05-24 23:10:11 - PID 51912 (xfce4-notifyd) - Not whitelisted - Command: /usr/lib/x86_64-linux-gnu/xfce4/notifyd/xfce4-notifyd
+2026-05-24 23:10:11 - Cleanup finished. Successfully killed 17 processes.
+
+--- Gaming Environment Cleanup: 2026-05-25 14:41:01 (Mode: ACTIVE) ---
+2026-05-25 14:41:01 - PID 1559 (gnome-keyring-d) - Not whitelisted - Command: /usr/bin/gnome-keyring-daemon --foreground --components=pkcs11,secrets --control-directory=/run/user/1000/keyring
+2026-05-25 14:41:01 - PID 1682 (ibus-daemon) - Not whitelisted - Command: /usr/bin/ibus-daemon --daemonize --xim
+2026-05-25 14:41:01 - PID 1693 (gvfsd) - Not whitelisted - Command: /usr/libexec/gvfsd
+2026-05-25 14:41:01 - PID 1701 (gvfsd-fuse) - Not whitelisted - Command: /usr/libexec/gvfsd-fuse /run/user/1000/gvfs -f
+2026-05-25 14:41:01 - PID 1703 (ibus-memconf) - Not whitelisted - Command: /usr/libexec/ibus-memconf
+2026-05-25 14:41:01 - PID 1712 (ibus-ui-gtk3) - Not whitelisted - Command: /usr/libexec/ibus-ui-gtk3
+2026-05-25 14:41:01 - PID 1716 (ibus-extension-) - Not whitelisted - Command: /usr/libexec/ibus-extension-gtk3
+2026-05-25 14:41:01 - PID 1718 (ibus-x11) - Not whitelisted - Command: /usr/libexec/ibus-x11 --kill-daemon
+2026-05-25 14:41:01 - PID 1721 (ibus-portal) - Not whitelisted - Command: /usr/libexec/ibus-portal
+2026-05-25 14:41:01 - PID 1738 (at-spi-bus-laun) - Not whitelisted - Command: /usr/libexec/at-spi-bus-launcher
+2026-05-25 14:41:01 - PID 1750 (at-spi2-registr) - Not whitelisted - Command: /usr/libexec/at-spi2-registryd --use-gnome-session
+2026-05-25 14:41:01 - PID 1775 (ssh-agent) - Not whitelisted - Command: /usr/bin/ssh-agent -s
+2026-05-25 14:41:01 - PID 1793 (gpg-agent) - Not whitelisted - Command: /usr/bin/gpg-agent --supervised
+2026-05-25 14:41:01 - PID 1817 (ibus-engine-sim) - Not whitelisted - Command: /usr/libexec/ibus-engine-simple
+2026-05-25 14:41:01 - PID 1834 (Thunar) - Not whitelisted - Command: Thunar --daemon
+2026-05-25 14:41:01 - PID 1869 (tumblerd) - Not whitelisted - Command: /usr/lib/x86_64-linux-gnu/tumbler-1/tumblerd
+2026-05-25 14:41:01 - PID 1874 (touchegg) - Not whitelisted - Command: touchegg
+2026-05-25 14:41:01 - PID 1876 (agent) - Not whitelisted - Command: /usr/libexec/geoclue-2.0/demos/agent
+2026-05-25 14:41:01 - PID 1889 (light-locker) - Not whitelisted - Command: light-locker
+2026-05-25 14:41:01 - PID 1904 (polkit-gnome-au) - Not whitelisted - Command: /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1
+2026-05-25 14:41:01 - PID 1912 (nm-applet) - Not whitelisted - Command: nm-applet
+2026-05-25 14:41:01 - PID 1926 (xiccd) - Not whitelisted - Command: xiccd
+2026-05-25 14:41:01 - PID 1928 (xfce4-power-man) - Not whitelisted - Command: xfce4-power-manager
+2026-05-25 14:41:01 - PID 1929 (xfce4-notifyd) - Not whitelisted - Command: /usr/lib/x86_64-linux-gnu/xfce4/notifyd/xfce4-notifyd
+2026-05-25 14:41:01 - PID 2435 (gvfs-udisks2-vo) - Not whitelisted - Command: /usr/libexec/gvfs-udisks2-volume-monitor
+2026-05-25 14:41:01 - PID 2451 (gvfs-mtp-volume) - Not whitelisted - Command: /usr/libexec/gvfs-mtp-volume-monitor
+2026-05-25 14:41:01 - PID 2608 (sleep) - Not whitelisted - Command: sleep 2
+2026-05-25 14:41:01 - Cleanup finished. Successfully killed 27 processes.
+
+--- Gaming Environment Cleanup: 2026-05-25 23:14:04 (Mode: DRY-RUN) ---
+2026-05-25 23:14:04 - PID 1534 (gnome-keyring-d) - Not whitelisted - Command: /usr/bin/gnome-keyring-daemon --foreground --components=pkcs11,secrets --control-directory=/run/user/1000/keyring
+2026-05-25 23:14:04 - PID 1659 (ibus-daemon) - Not whitelisted - Command: /usr/bin/ibus-daemon --daemonize --xim
+2026-05-25 23:14:04 - PID 1672 (gvfsd) - Not whitelisted - Command: /usr/libexec/gvfsd
+2026-05-25 23:14:04 - PID 1678 (gvfsd-fuse) - Not whitelisted - Command: /usr/libexec/gvfsd-fuse /run/user/1000/gvfs -f
+2026-05-25 23:14:04 - PID 1680 (ibus-memconf) - Not whitelisted - Command: /usr/libexec/ibus-memconf
+2026-05-25 23:14:04 - PID 1689 (ibus-ui-gtk3) - Not whitelisted - Command: /usr/libexec/ibus-ui-gtk3
+2026-05-25 23:14:04 - PID 1693 (ibus-extension-) - Not whitelisted - Command: /usr/libexec/ibus-extension-gtk3
+2026-05-25 23:14:04 - PID 1695 (ibus-x11) - Not whitelisted - Command: /usr/libexec/ibus-x11 --kill-daemon
+2026-05-25 23:14:04 - PID 1698 (ibus-portal) - Not whitelisted - Command: /usr/libexec/ibus-portal
+2026-05-25 23:14:04 - PID 1715 (at-spi-bus-laun) - Not whitelisted - Command: /usr/libexec/at-spi-bus-launcher
+2026-05-25 23:14:04 - PID 1727 (at-spi2-registr) - Not whitelisted - Command: /usr/libexec/at-spi2-registryd --use-gnome-session
+2026-05-25 23:14:04 - PID 1747 (ssh-agent) - Not whitelisted - Command: /usr/bin/ssh-agent -s
+2026-05-25 23:14:04 - PID 1765 (gpg-agent) - Not whitelisted - Command: /usr/bin/gpg-agent --supervised
+2026-05-25 23:14:04 - PID 1794 (ibus-engine-sim) - Not whitelisted - Command: /usr/libexec/ibus-engine-simple
+2026-05-25 23:14:04 - PID 1811 (Thunar) - Not whitelisted - Command: Thunar --daemon
+2026-05-25 23:14:04 - PID 1837 (touchegg) - Not whitelisted - Command: touchegg
+2026-05-25 23:14:04 - PID 1842 (agent) - Not whitelisted - Command: /usr/libexec/geoclue-2.0/demos/agent
+2026-05-25 23:14:04 - PID 1862 (light-locker) - Not whitelisted - Command: light-locker
+2026-05-25 23:14:04 - PID 1871 (polkit-gnome-au) - Not whitelisted - Command: /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1
+2026-05-25 23:14:04 - PID 1875 (nm-applet) - Not whitelisted - Command: nm-applet
+2026-05-25 23:14:04 - PID 1882 (xiccd) - Not whitelisted - Command: xiccd
+2026-05-25 23:14:04 - PID 1891 (xfce4-notifyd) - Not whitelisted - Command: /usr/lib/x86_64-linux-gnu/xfce4/notifyd/xfce4-notifyd
+2026-05-25 23:14:04 - PID 1911 (xfce4-power-man) - Not whitelisted - Command: xfce4-power-manager
+2026-05-25 23:14:04 - PID 2338 (gvfs-udisks2-vo) - Not whitelisted - Command: /usr/libexec/gvfs-udisks2-volume-monitor
+2026-05-25 23:14:04 - PID 2372 (gvfs-mtp-volume) - Not whitelisted - Command: /usr/libexec/gvfs-mtp-volume-monitor
+2026-05-25 23:14:04 - PID 2577 (antigravity) - Not whitelisted - Command: /home/darian/Documents/Antigravity-x64/antigravity --type=zygote --no-zygote-sandbox
+2026-05-25 23:14:04 - PID 2578 (antigravity) - Not whitelisted - Command: /home/darian/Documents/Antigravity-x64/antigravity --type=zygote
+2026-05-25 23:14:04 - PID 2580 (antigravity) - Not whitelisted - Command: /home/darian/Documents/Antigravity-x64/antigravity --type=zygote
+2026-05-25 23:14:04 - PID 2611 (antigravity) - Not whitelisted - Command: /home/darian/Documents/Antigravity-x64/antigravity --type=zygote --no-zygote-sandbox
+2026-05-25 23:14:04 - PID 2618 (antigravity) - Not whitelisted - Command: /proc/self/exe --type=utility --utility-sub-type=network.mojom.NetworkService --lang=en-US --service-sandbox-type=none --enable-crash-reporter=543efe0e-99b9-4601-8aac-d61d9f0af32a,no_channel --user-data-dir=/home/darian/.config/Antigravity --standard-schemes=plugin --secure-schemes=plugin --cors-schemes=plugin --fetch-schemes=plugin --service-worker-schemes=plugin --code-cache-schemes=plugin --shared-files=v8_context_snapshot_data:100 --field-trial-handle=3,i,6749185462194626836,10129953569672852440,262144 --enable-features=PdfUseShowSaveFilePicker --disable-features=DropInputEventsWhilePaintHolding,LocalNetworkAccessChecks,ScreenAIOCREnabled,SpareRendererForSitePerProcess,TraceSiteInstanceGetProcessCreation --variations-seed-version --pseudonymization-salt-handle=7,i,12944450731903051390,16233010894533471987,4 --trace-process-track-uuid=3190708989122997041
+2026-05-25 23:14:04 - PID 2658 (antigravity) - Not whitelisted - Command: /home/darian/Documents/Antigravity-x64/antigravity --type=zygote --no-zygote-sandbox
+2026-05-25 23:14:04 - PID 2697 (antigravity) - Not whitelisted - Command: /home/darian/Documents/Antigravity-x64/antigravity --type=zygote
+2026-05-25 23:14:04 - PID 2750 (antigravity) - Not whitelisted - Command: /proc/self/exe --type=utility --utility-sub-type=audio.mojom.AudioService --lang=en-US --service-sandbox-type=none --enable-crash-reporter=543efe0e-99b9-4601-8aac-d61d9f0af32a,no_channel --user-data-dir=/home/darian/.config/Antigravity --standard-schemes=plugin --secure-schemes=plugin --cors-schemes=plugin --fetch-schemes=plugin --service-worker-schemes=plugin --code-cache-schemes=plugin --shared-files=v8_context_snapshot_data:100 --field-trial-handle=3,i,6749185462194626836,10129953569672852440,262144 --enable-features=PdfUseShowSaveFilePicker --disable-features=DropInputEventsWhilePaintHolding,LocalNetworkAccessChecks,ScreenAIOCREnabled,SpareRendererForSitePerProcess,TraceSiteInstanceGetProcessCreation --variations-seed-version --pseudonymization-salt-handle=7,i,12944450731903051390,16233010894533471987,4 --trace-process-track-uuid=3190708991934122588
+2026-05-25 23:14:04 - PID 3795 (tumblerd) - Not whitelisted - Command: /usr/lib/x86_64-linux-gnu/tumbler-1/tumblerd
+2026-05-25 23:14:04 - PID 3978 (sleep) - Not whitelisted - Command: sleep 2
+2026-05-25 23:14:04 - Dry-run completed. No processes were killed.
+
+--- Gaming Environment Cleanup: 2026-05-25 23:18:58 (Mode: ACTIVE) ---
+2026-05-25 23:18:58 - PID 1659 (ibus-daemon) - Not whitelisted - Command: /usr/bin/ibus-daemon --daemonize --xim
+2026-05-25 23:18:58 - PID 1680 (ibus-memconf) - Not whitelisted - Command: /usr/libexec/ibus-memconf
+2026-05-25 23:18:58 - PID 1689 (ibus-ui-gtk3) - Not whitelisted - Command: /usr/libexec/ibus-ui-gtk3
+2026-05-25 23:18:58 - PID 1693 (ibus-extension-) - Not whitelisted - Command: /usr/libexec/ibus-extension-gtk3
+2026-05-25 23:18:58 - PID 1695 (ibus-x11) - Not whitelisted - Command: /usr/libexec/ibus-x11 --kill-daemon
+2026-05-25 23:18:58 - PID 1698 (ibus-portal) - Not whitelisted - Command: /usr/libexec/ibus-portal
+2026-05-25 23:18:58 - PID 1747 (ssh-agent) - Not whitelisted - Command: /usr/bin/ssh-agent -s
+2026-05-25 23:18:58 - PID 1794 (ibus-engine-sim) - Not whitelisted - Command: /usr/libexec/ibus-engine-simple
+2026-05-25 23:18:58 - PID 1811 (Thunar) - Not whitelisted - Command: Thunar --daemon
+2026-05-25 23:18:58 - PID 1837 (touchegg) - Not whitelisted - Command: touchegg
+2026-05-25 23:18:58 - PID 1842 (agent) - Not whitelisted - Command: /usr/libexec/geoclue-2.0/demos/agent
+2026-05-25 23:18:58 - PID 1862 (light-locker) - Not whitelisted - Command: light-locker
+2026-05-25 23:18:58 - PID 1871 (polkit-gnome-au) - Not whitelisted - Command: /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1
+2026-05-25 23:18:58 - PID 1875 (nm-applet) - Not whitelisted - Command: nm-applet
+2026-05-25 23:18:58 - PID 1882 (xiccd) - Not whitelisted - Command: xiccd
+2026-05-25 23:18:58 - PID 1911 (xfce4-power-man) - Not whitelisted - Command: xfce4-power-manager
+2026-05-25 23:18:58 - PID 4602 (sleep) - Not whitelisted - Command: sleep 2
+2026-05-25 23:18:58 - Cleanup finished. Successfully killed 17 processes.
+
+--- Gaming Environment Cleanup: 2026-05-25 23:35:30 (Mode: ACTIVE) ---
+2026-05-25 23:35:30 - Cleanup finished. Successfully killed 0 processes.
+
+--- Gaming Environment Cleanup: 2026-05-25 23:39:37 (Mode: ACTIVE) ---
+2026-05-25 23:39:37 - Cleanup finished. Successfully killed 0 processes.
+
+--- Gaming Environment Cleanup: 2026-05-25 23:45:50 (Mode: ACTIVE) ---
+2026-05-25 23:45:50 - PID 1665 (ibus-daemon) - Not whitelisted - Command: /usr/bin/ibus-daemon --daemonize --xim
+2026-05-25 23:45:50 - PID 1681 (ibus-memconf) - Not whitelisted - Command: /usr/libexec/ibus-memconf
+2026-05-25 23:45:50 - PID 1695 (ibus-ui-gtk3) - Not whitelisted - Command: /usr/libexec/ibus-ui-gtk3
+2026-05-25 23:45:50 - PID 1699 (ibus-extension-) - Not whitelisted - Command: /usr/libexec/ibus-extension-gtk3
+2026-05-25 23:45:50 - PID 1701 (ibus-x11) - Not whitelisted - Command: /usr/libexec/ibus-x11 --kill-daemon
+2026-05-25 23:45:50 - PID 1704 (ibus-portal) - Not whitelisted - Command: /usr/libexec/ibus-portal
+2026-05-25 23:45:50 - PID 1758 (ssh-agent) - Not whitelisted - Command: /usr/bin/ssh-agent -s
+2026-05-25 23:45:50 - PID 1803 (ibus-engine-sim) - Not whitelisted - Command: /usr/libexec/ibus-engine-simple
+2026-05-25 23:45:50 - PID 1820 (Thunar) - Not whitelisted - Command: Thunar --daemon
+2026-05-25 23:45:50 - PID 1862 (tumblerd) - Not whitelisted - Command: /usr/lib/x86_64-linux-gnu/tumbler-1/tumblerd
+2026-05-25 23:45:50 - PID 1867 (touchegg) - Not whitelisted - Command: touchegg
+2026-05-25 23:45:50 - PID 1872 (agent) - Not whitelisted - Command: /usr/libexec/geoclue-2.0/demos/agent
+2026-05-25 23:45:50 - PID 1894 (light-locker) - Not whitelisted - Command: light-locker
+2026-05-25 23:45:50 - PID 1904 (polkit-gnome-au) - Not whitelisted - Command: /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1
+2026-05-25 23:45:50 - PID 1908 (nm-applet) - Not whitelisted - Command: nm-applet
+2026-05-25 23:45:50 - PID 1923 (xiccd) - Not whitelisted - Command: xiccd
+2026-05-25 23:45:50 - PID 1927 (xfce4-power-man) - Not whitelisted - Command: xfce4-power-manager
+2026-05-25 23:45:50 - PID 2603 (sleep) - Not whitelisted - Command: sleep 2
+2026-05-25 23:45:50 - Cleanup finished. Successfully killed 18 processes.
+
+--- Gaming Environment Cleanup: 2026-05-26 08:50:36 (Mode: ACTIVE) ---
+2026-05-26 08:50:36 - Cleanup finished. Successfully killed 0 processes.
+
+--- Gaming Environment Cleanup: 2026-05-26 09:10:26 (Mode: DRY-RUN) ---
+2026-05-26 09:10:26 - PID 1547 (gnome-keyring-d) - Not whitelisted - Command: /usr/bin/gnome-keyring-daemon --foreground --components=pkcs11,secrets --control-directory=/run/user/1000/keyring
+2026-05-26 09:10:26 - PID 1672 (ibus-daemon) - Not whitelisted - Command: /usr/bin/ibus-daemon --daemonize --xim
+2026-05-26 09:10:26 - PID 1685 (gvfsd) - Not whitelisted - Command: /usr/libexec/gvfsd
+2026-05-26 09:10:26 - PID 1691 (gvfsd-fuse) - Not whitelisted - Command: /usr/libexec/gvfsd-fuse /run/user/1000/gvfs -f
+2026-05-26 09:10:26 - PID 1693 (ibus-memconf) - Not whitelisted - Command: /usr/libexec/ibus-memconf
+2026-05-26 09:10:26 - PID 1702 (ibus-ui-gtk3) - Not whitelisted - Command: /usr/libexec/ibus-ui-gtk3
+2026-05-26 09:10:26 - PID 1706 (ibus-extension-) - Not whitelisted - Command: /usr/libexec/ibus-extension-gtk3
+2026-05-26 09:10:26 - PID 1708 (ibus-x11) - Not whitelisted - Command: /usr/libexec/ibus-x11 --kill-daemon
+2026-05-26 09:10:26 - PID 1711 (ibus-portal) - Not whitelisted - Command: /usr/libexec/ibus-portal
+2026-05-26 09:10:26 - PID 1731 (at-spi-bus-laun) - Not whitelisted - Command: /usr/libexec/at-spi-bus-launcher
+2026-05-26 09:10:26 - PID 1742 (at-spi2-registr) - Not whitelisted - Command: /usr/libexec/at-spi2-registryd --use-gnome-session
+2026-05-26 09:10:26 - PID 1767 (ssh-agent) - Not whitelisted - Command: /usr/bin/ssh-agent -s
+2026-05-26 09:10:26 - PID 1785 (gpg-agent) - Not whitelisted - Command: /usr/bin/gpg-agent --supervised
+2026-05-26 09:10:26 - PID 1810 (ibus-engine-sim) - Not whitelisted - Command: /usr/libexec/ibus-engine-simple
+2026-05-26 09:10:26 - PID 1826 (Thunar) - Not whitelisted - Command: Thunar --daemon
+2026-05-26 09:10:26 - PID 1863 (xfce4-notifyd) - Not whitelisted - Command: /usr/lib/x86_64-linux-gnu/xfce4/notifyd/xfce4-notifyd
+2026-05-26 09:10:26 - PID 1890 (touchegg) - Not whitelisted - Command: touchegg
+2026-05-26 09:10:26 - PID 1891 (agent) - Not whitelisted - Command: /usr/libexec/geoclue-2.0/demos/agent
+2026-05-26 09:10:26 - PID 1909 (light-locker) - Not whitelisted - Command: light-locker
+2026-05-26 09:10:26 - PID 1915 (polkit-gnome-au) - Not whitelisted - Command: /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1
+2026-05-26 09:10:26 - PID 1920 (nm-applet) - Not whitelisted - Command: nm-applet
+2026-05-26 09:10:26 - PID 1933 (xiccd) - Not whitelisted - Command: xiccd
+2026-05-26 09:10:26 - PID 1935 (xfce4-power-man) - Not whitelisted - Command: xfce4-power-manager
+2026-05-26 09:10:26 - PID 2324 (gvfs-udisks2-vo) - Not whitelisted - Command: /usr/libexec/gvfs-udisks2-volume-monitor
+2026-05-26 09:10:26 - PID 2345 (gvfs-mtp-volume) - Not whitelisted - Command: /usr/libexec/gvfs-mtp-volume-monitor
+2026-05-26 09:10:26 - PID 2555 (bash) - Not whitelisted - Command: bash
+2026-05-26 09:10:26 - PID 2715 (antigravity) - Not whitelisted - Command: /home/darian/Documents/Antigravity-x64/antigravity --type=zygote --no-zygote-sandbox
+2026-05-26 09:10:26 - PID 2716 (antigravity) - Not whitelisted - Command: /home/darian/Documents/Antigravity-x64/antigravity --type=zygote
+2026-05-26 09:10:26 - PID 2718 (antigravity) - Not whitelisted - Command: /home/darian/Documents/Antigravity-x64/antigravity --type=zygote
+2026-05-26 09:10:26 - PID 2744 (antigravity) - Not whitelisted - Command: /home/darian/Documents/Antigravity-x64/antigravity --type=zygote --no-zygote-sandbox
+2026-05-26 09:10:26 - PID 2752 (antigravity) - Not whitelisted - Command: /proc/self/exe --type=utility --utility-sub-type=network.mojom.NetworkService --lang=en-US --service-sandbox-type=none --enable-crash-reporter=543efe0e-99b9-4601-8aac-d61d9f0af32a,no_channel --user-data-dir=/home/darian/.config/Antigravity --standard-schemes=plugin --secure-schemes=plugin --cors-schemes=plugin --fetch-schemes=plugin --service-worker-schemes=plugin --code-cache-schemes=plugin --shared-files=v8_context_snapshot_data:100 --field-trial-handle=3,i,7129481834454796180,11175179940719190545,262144 --enable-features=PdfUseShowSaveFilePicker --disable-features=DropInputEventsWhilePaintHolding,LocalNetworkAccessChecks,ScreenAIOCREnabled,SpareRendererForSitePerProcess,TraceSiteInstanceGetProcessCreation --variations-seed-version --pseudonymization-salt-handle=7,i,4718565213361049552,16654922382823010053,4 --trace-process-track-uuid=3190708989122997041
+2026-05-26 09:10:26 - PID 2817 (antigravity) - Not whitelisted - Command: /home/darian/Documents/Antigravity-x64/antigravity --type=zygote --no-zygote-sandbox
+2026-05-26 09:10:26 - PID 2828 (antigravity) - Not whitelisted - Command: /home/darian/Documents/Antigravity-x64/antigravity --type=zygote
+2026-05-26 09:10:26 - PID 2884 (antigravity) - Not whitelisted - Command: /proc/self/exe --type=utility --utility-sub-type=audio.mojom.AudioService --lang=en-US --service-sandbox-type=none --enable-crash-reporter=543efe0e-99b9-4601-8aac-d61d9f0af32a,no_channel --user-data-dir=/home/darian/.config/Antigravity --standard-schemes=plugin --secure-schemes=plugin --cors-schemes=plugin --fetch-schemes=plugin --service-worker-schemes=plugin --code-cache-schemes=plugin --shared-files=v8_context_snapshot_data:100 --field-trial-handle=3,i,7129481834454796180,11175179940719190545,262144 --enable-features=PdfUseShowSaveFilePicker --disable-features=DropInputEventsWhilePaintHolding,LocalNetworkAccessChecks,ScreenAIOCREnabled,SpareRendererForSitePerProcess,TraceSiteInstanceGetProcessCreation --variations-seed-version --pseudonymization-salt-handle=7,i,4718565213361049552,16654922382823010053,4 --trace-process-track-uuid=3190708991934122588
+2026-05-26 09:10:26 - PID 4076 (antigravity) - Not whitelisted - Command: /proc/self/exe --type=utility --utility-sub-type=video_capture.mojom.VideoCaptureService --lang=en-US --service-sandbox-type=none --message-loop-type-ui --enable-crash-reporter=543efe0e-99b9-4601-8aac-d61d9f0af32a,no_channel --user-data-dir=/home/darian/.config/Antigravity --standard-schemes=plugin --secure-schemes=plugin --cors-schemes=plugin --fetch-schemes=plugin --service-worker-schemes=plugin --code-cache-schemes=plugin --shared-files=v8_context_snapshot_data:100 --field-trial-handle=3,i,7129481834454796180,11175179940719190545,262144 --enable-features=PdfUseShowSaveFilePicker --disable-features=DropInputEventsWhilePaintHolding,LocalNetworkAccessChecks,ScreenAIOCREnabled,SpareRendererForSitePerProcess,TraceSiteInstanceGetProcessCreation --variations-seed-version --pseudonymization-salt-handle=7,i,4718565213361049552,16654922382823010053,4 --trace-process-track-uuid=3190708996619331833
+2026-05-26 09:10:26 - PID 4108 (sleep) - Not whitelisted - Command: sleep 2
+2026-05-26 09:10:26 - Dry-run completed. No processes were killed.
+
+--- Gaming Environment Cleanup: 2026-05-26 09:11:40 (Mode: ACTIVE) ---
+2026-05-26 09:11:40 - PID 1672 (ibus-daemon) - Not whitelisted - Command: /usr/bin/ibus-daemon --daemonize --xim
+2026-05-26 09:11:40 - PID 1693 (ibus-memconf) - Not whitelisted - Command: /usr/libexec/ibus-memconf
+2026-05-26 09:11:40 - PID 1702 (ibus-ui-gtk3) - Not whitelisted - Command: /usr/libexec/ibus-ui-gtk3
+2026-05-26 09:11:40 - PID 1706 (ibus-extension-) - Not whitelisted - Command: /usr/libexec/ibus-extension-gtk3
+2026-05-26 09:11:40 - PID 1708 (ibus-x11) - Not whitelisted - Command: /usr/libexec/ibus-x11 --kill-daemon
+2026-05-26 09:11:40 - PID 1711 (ibus-portal) - Not whitelisted - Command: /usr/libexec/ibus-portal
+2026-05-26 09:11:40 - PID 1767 (ssh-agent) - Not whitelisted - Command: /usr/bin/ssh-agent -s
+2026-05-26 09:11:40 - PID 1810 (ibus-engine-sim) - Not whitelisted - Command: /usr/libexec/ibus-engine-simple
+2026-05-26 09:11:40 - PID 1826 (Thunar) - Not whitelisted - Command: Thunar --daemon
+2026-05-26 09:11:40 - PID 1890 (touchegg) - Not whitelisted - Command: touchegg
+2026-05-26 09:11:40 - PID 1891 (agent) - Not whitelisted - Command: /usr/libexec/geoclue-2.0/demos/agent
+2026-05-26 09:11:40 - PID 1909 (light-locker) - Not whitelisted - Command: light-locker
+2026-05-26 09:11:40 - PID 1915 (polkit-gnome-au) - Not whitelisted - Command: /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1
+2026-05-26 09:11:40 - PID 1920 (nm-applet) - Not whitelisted - Command: nm-applet
+2026-05-26 09:11:40 - PID 1933 (xiccd) - Not whitelisted - Command: xiccd
+2026-05-26 09:11:40 - PID 1935 (xfce4-power-man) - Not whitelisted - Command: xfce4-power-manager
+2026-05-26 09:11:40 - PID 2555 (bash) - Not whitelisted - Command: bash
+2026-05-26 09:11:40 - PID 2707 (antigravity) - Not whitelisted - Command: /home/darian/Documents/Antigravity-x64/antigravity --fullscreen
+2026-05-26 09:11:40 - PID 2715 (antigravity) - Not whitelisted - Command: /home/darian/Documents/Antigravity-x64/antigravity --type=zygote --no-zygote-sandbox
+2026-05-26 09:11:40 - PID 2716 (antigravity) - Not whitelisted - Command: /home/darian/Documents/Antigravity-x64/antigravity --type=zygote
+2026-05-26 09:11:40 - PID 2718 (antigravity) - Not whitelisted - Command: /home/darian/Documents/Antigravity-x64/antigravity --type=zygote
+2026-05-26 09:11:40 - PID 2744 (antigravity) - Not whitelisted - Command: /home/darian/Documents/Antigravity-x64/antigravity --type=zygote --no-zygote-sandbox
+2026-05-26 09:11:40 - PID 2752 (antigravity) - Not whitelisted - Command: /proc/self/exe --type=utility --utility-sub-type=network.mojom.NetworkService --lang=en-US --service-sandbox-type=none --enable-crash-reporter=543efe0e-99b9-4601-8aac-d61d9f0af32a,no_channel --user-data-dir=/home/darian/.config/Antigravity --standard-schemes=plugin --secure-schemes=plugin --cors-schemes=plugin --fetch-schemes=plugin --service-worker-schemes=plugin --code-cache-schemes=plugin --shared-files=v8_context_snapshot_data:100 --field-trial-handle=3,i,7129481834454796180,11175179940719190545,262144 --enable-features=PdfUseShowSaveFilePicker --disable-features=DropInputEventsWhilePaintHolding,LocalNetworkAccessChecks,ScreenAIOCREnabled,SpareRendererForSitePerProcess,TraceSiteInstanceGetProcessCreation --variations-seed-version --pseudonymization-salt-handle=7,i,4718565213361049552,16654922382823010053,4 --trace-process-track-uuid=3190708989122997041
+2026-05-26 09:11:40 - PID 2805 (language_server) - Not whitelisted - Command: /home/darian/Documents/Antigravity-x64/resources/bin/language_server --standalone --override_ide_name antigravity --subclient_type hub --override_ide_version 2.0.6 --override_user_agent_name antigravity --https_server_port 0 --csrf_token 516ea5d0-3071-49c2-b2a7-fbc52092df26 --app_data_dir antigravity --api_server_url https://generativelanguage.googleapis.com --cloud_code_endpoint https://daily-cloudcode-pa.googleapis.com --enable_sidecars
+2026-05-26 09:11:40 - PID 2817 (antigravity) - Not whitelisted - Command: /home/darian/Documents/Antigravity-x64/antigravity --type=zygote --no-zygote-sandbox
+2026-05-26 09:11:40 - PID 2828 (antigravity) - Not whitelisted - Command: /home/darian/Documents/Antigravity-x64/antigravity --type=zygote
+2026-05-26 09:11:40 - PID 2884 (antigravity) - Not whitelisted - Command: /proc/self/exe --type=utility --utility-sub-type=audio.mojom.AudioService --lang=en-US --service-sandbox-type=none --enable-crash-reporter=543efe0e-99b9-4601-8aac-d61d9f0af32a,no_channel --user-data-dir=/home/darian/.config/Antigravity --standard-schemes=plugin --secure-schemes=plugin --cors-schemes=plugin --fetch-schemes=plugin --service-worker-schemes=plugin --code-cache-schemes=plugin --shared-files=v8_context_snapshot_data:100 --field-trial-handle=3,i,7129481834454796180,11175179940719190545,262144 --enable-features=PdfUseShowSaveFilePicker --disable-features=DropInputEventsWhilePaintHolding,LocalNetworkAccessChecks,ScreenAIOCREnabled,SpareRendererForSitePerProcess,TraceSiteInstanceGetProcessCreation --variations-seed-version --pseudonymization-salt-handle=7,i,4718565213361049552,16654922382823010053,4 --trace-process-track-uuid=3190708991934122588
+2026-05-26 09:11:40 - PID 4288 (sleep) - Not whitelisted - Command: sleep 2
+2026-05-26 09:11:40 - Cleanup finished. Successfully killed 28 processes.
+
+--- Gaming Environment Cleanup: 2026-05-26 09:28:43 (Mode: ACTIVE) ---
+2026-05-26 09:28:43 - PID 5166 (language_server) - Not whitelisted - Command: /home/darian/Documents/Antigravity-x64/resources/bin/language_server --standalone --override_ide_name antigravity --subclient_type hub --override_ide_version 2.0.6 --override_user_agent_name antigravity --https_server_port 0 --csrf_token 27228c8c-9047-4e73-b765-c9d3e67e5260 --app_data_dir antigravity --api_server_url https://generativelanguage.googleapis.com --cloud_code_endpoint https://daily-cloudcode-pa.googleapis.com --enable_sidecars
+2026-05-26 09:28:43 - Cleanup finished. Successfully killed 1 processes.
+
+--- Gaming Environment Cleanup: 2026-05-26 09:44:53 (Mode: DRY-RUN) ---
+2026-05-26 09:44:53 - PID 5388 (at-spi-bus-laun) - Not whitelisted - Command: /usr/libexec/at-spi-bus-launcher
+2026-05-26 09:44:53 - PID 5522 (at-spi2-registr) - Not whitelisted - Command: /usr/libexec/at-spi2-registryd --use-gnome-session
+2026-05-26 09:44:53 - PID 6241 (gvfsd) - Not whitelisted - Command: /usr/libexec/gvfsd
+2026-05-26 09:44:53 - PID 6247 (gvfsd-fuse) - Not whitelisted - Command: /usr/libexec/gvfsd-fuse /run/user/1000/gvfs -f
+2026-05-26 09:44:53 - PID 6272 (antigravity) - Not whitelisted - Command: /home/darian/Documents/Antigravity-x64/antigravity --type=zygote --no-zygote-sandbox
+2026-05-26 09:44:53 - PID 6273 (antigravity) - Not whitelisted - Command: /home/darian/Documents/Antigravity-x64/antigravity --type=zygote
+2026-05-26 09:44:53 - PID 6275 (antigravity) - Not whitelisted - Command: /home/darian/Documents/Antigravity-x64/antigravity --type=zygote
+2026-05-26 09:44:53 - PID 6305 (antigravity) - Not whitelisted - Command: /home/darian/Documents/Antigravity-x64/antigravity --type=zygote --no-zygote-sandbox
+2026-05-26 09:44:53 - PID 6310 (antigravity) - Not whitelisted - Command: /proc/self/exe --type=utility --utility-sub-type=network.mojom.NetworkService --lang=en-US --service-sandbox-type=none --enable-crash-reporter=543efe0e-99b9-4601-8aac-d61d9f0af32a,no_channel --user-data-dir=/home/darian/.config/Antigravity --standard-schemes=plugin --secure-schemes=plugin --cors-schemes=plugin --fetch-schemes=plugin --service-worker-schemes=plugin --code-cache-schemes=plugin --shared-files=v8_context_snapshot_data:100 --field-trial-handle=3,i,7087292944185749299,818915078331227894,262144 --enable-features=PdfUseShowSaveFilePicker --disable-features=DropInputEventsWhilePaintHolding,LocalNetworkAccessChecks,ScreenAIOCREnabled,SpareRendererForSitePerProcess,TraceSiteInstanceGetProcessCreation --variations-seed-version --pseudonymization-salt-handle=7,i,7193330636729343240,10961450875052976505,4 --trace-process-track-uuid=3190708989122997041
+2026-05-26 09:44:53 - PID 6374 (antigravity) - Not whitelisted - Command: /home/darian/Documents/Antigravity-x64/antigravity --type=zygote
+2026-05-26 09:44:53 - PID 6389 (antigravity) - Not whitelisted - Command: /home/darian/Documents/Antigravity-x64/antigravity --type=zygote --no-zygote-sandbox
+2026-05-26 09:44:53 - PID 6406 (gnome-keyring-d) - Not whitelisted - Command: /usr/bin/gnome-keyring-daemon --start --foreground --components=secrets
+2026-05-26 09:44:53 - PID 6407 (gnome-keyring-d) - Not whitelisted - Command: /usr/bin/gnome-keyring-daemon --foreground --components=pkcs11,secrets --control-directory=/run/user/1000/keyring
+2026-05-26 09:44:53 - PID 6439 (antigravity) - Not whitelisted - Command: /proc/self/exe --type=utility --utility-sub-type=audio.mojom.AudioService --lang=en-US --service-sandbox-type=none --enable-crash-reporter=543efe0e-99b9-4601-8aac-d61d9f0af32a,no_channel --user-data-dir=/home/darian/.config/Antigravity --standard-schemes=plugin --secure-schemes=plugin --cors-schemes=plugin --fetch-schemes=plugin --service-worker-schemes=plugin --code-cache-schemes=plugin --shared-files=v8_context_snapshot_data:100 --field-trial-handle=3,i,7087292944185749299,818915078331227894,262144 --enable-features=PdfUseShowSaveFilePicker --disable-features=DropInputEventsWhilePaintHolding,LocalNetworkAccessChecks,ScreenAIOCREnabled,SpareRendererForSitePerProcess,TraceSiteInstanceGetProcessCreation --variations-seed-version --pseudonymization-salt-handle=7,i,7193330636729343240,10961450875052976505,4 --trace-process-track-uuid=3190708991934122588
+2026-05-26 09:44:53 - PID 6512 (xfce4-notifyd) - Not whitelisted - Command: /usr/lib/x86_64-linux-gnu/xfce4/notifyd/xfce4-notifyd
+2026-05-26 09:44:53 - PID 6534 (antigravity) - Not whitelisted - Command: /proc/self/exe --type=utility --utility-sub-type=video_capture.mojom.VideoCaptureService --lang=en-US --service-sandbox-type=none --message-loop-type-ui --enable-crash-reporter=543efe0e-99b9-4601-8aac-d61d9f0af32a,no_channel --user-data-dir=/home/darian/.config/Antigravity --standard-schemes=plugin --secure-schemes=plugin --cors-schemes=plugin --fetch-schemes=plugin --service-worker-schemes=plugin --code-cache-schemes=plugin --shared-files=v8_context_snapshot_data:100 --field-trial-handle=3,i,7087292944185749299,818915078331227894,262144 --enable-features=PdfUseShowSaveFilePicker --disable-features=DropInputEventsWhilePaintHolding,LocalNetworkAccessChecks,ScreenAIOCREnabled,SpareRendererForSitePerProcess,TraceSiteInstanceGetProcessCreation --variations-seed-version --pseudonymization-salt-handle=7,i,7193330636729343240,10961450875052976505,4 --trace-process-track-uuid=3190708998493415531
+2026-05-26 09:44:53 - Dry-run completed. No processes were killed.
+
+--- Gaming Environment Cleanup: 2026-05-26 10:00:58 (Mode: ACTIVE) ---
+2026-05-26 10:00:58 - PID 6269 (antigravity) - Not whitelisted - Command: /home/darian/Documents/Antigravity-x64/antigravity --fullscreen
+2026-05-26 10:00:58 - PID 6272 (antigravity) - Not whitelisted - Command: /home/darian/Documents/Antigravity-x64/antigravity --type=zygote --no-zygote-sandbox
+2026-05-26 10:00:58 - PID 6273 (antigravity) - Not whitelisted - Command: /home/darian/Documents/Antigravity-x64/antigravity --type=zygote
+2026-05-26 10:00:58 - PID 6275 (antigravity) - Not whitelisted - Command: /home/darian/Documents/Antigravity-x64/antigravity --type=zygote
+2026-05-26 10:00:58 - PID 6305 (antigravity) - Not whitelisted - Command: /home/darian/Documents/Antigravity-x64/antigravity --type=zygote --no-zygote-sandbox
+2026-05-26 10:00:58 - PID 6310 (antigravity) - Not whitelisted - Command: /proc/self/exe --type=utility --utility-sub-type=network.mojom.NetworkService --lang=en-US --service-sandbox-type=none --enable-crash-reporter=543efe0e-99b9-4601-8aac-d61d9f0af32a,no_channel --user-data-dir=/home/darian/.config/Antigravity --standard-schemes=plugin --secure-schemes=plugin --cors-schemes=plugin --fetch-schemes=plugin --service-worker-schemes=plugin --code-cache-schemes=plugin --shared-files=v8_context_snapshot_data:100 --field-trial-handle=3,i,7087292944185749299,818915078331227894,262144 --enable-features=PdfUseShowSaveFilePicker --disable-features=DropInputEventsWhilePaintHolding,LocalNetworkAccessChecks,ScreenAIOCREnabled,SpareRendererForSitePerProcess,TraceSiteInstanceGetProcessCreation --variations-seed-version --pseudonymization-salt-handle=7,i,7193330636729343240,10961450875052976505,4 --trace-process-track-uuid=3190708989122997041
+2026-05-26 10:00:58 - PID 6356 (language_server) - Not whitelisted - Command: /home/darian/Documents/Antigravity-x64/resources/bin/language_server --standalone --override_ide_name antigravity --subclient_type hub --override_ide_version 2.0.6 --override_user_agent_name antigravity --https_server_port 0 --csrf_token b915e319-b612-4dc3-bd3b-4553e2464457 --app_data_dir antigravity --api_server_url https://generativelanguage.googleapis.com --cloud_code_endpoint https://daily-cloudcode-pa.googleapis.com --enable_sidecars
+2026-05-26 10:00:58 - PID 6374 (antigravity) - Not whitelisted - Command: /home/darian/Documents/Antigravity-x64/antigravity --type=zygote
+2026-05-26 10:00:58 - PID 6389 (antigravity) - Not whitelisted - Command: /home/darian/Documents/Antigravity-x64/antigravity --type=zygote --no-zygote-sandbox
+2026-05-26 10:00:58 - PID 6439 (antigravity) - Not whitelisted - Command: /proc/self/exe --type=utility --utility-sub-type=audio.mojom.AudioService --lang=en-US --service-sandbox-type=none --enable-crash-reporter=543efe0e-99b9-4601-8aac-d61d9f0af32a,no_channel --user-data-dir=/home/darian/.config/Antigravity --standard-schemes=plugin --secure-schemes=plugin --cors-schemes=plugin --fetch-schemes=plugin --service-worker-schemes=plugin --code-cache-schemes=plugin --shared-files=v8_context_snapshot_data:100 --field-trial-handle=3,i,7087292944185749299,818915078331227894,262144 --enable-features=PdfUseShowSaveFilePicker --disable-features=DropInputEventsWhilePaintHolding,LocalNetworkAccessChecks,ScreenAIOCREnabled,SpareRendererForSitePerProcess,TraceSiteInstanceGetProcessCreation --variations-seed-version --pseudonymization-salt-handle=7,i,7193330636729343240,10961450875052976505,4 --trace-process-track-uuid=3190708991934122588
+2026-05-26 10:00:58 - Cleanup finished. Successfully killed 10 processes.
+
+--- Gaming Environment Cleanup: 2026-05-26 19:34:37 (Mode: ACTIVE) ---
+2026-05-26 19:34:37 - PID 1787 (ibus-daemon) - Not whitelisted - Command: /usr/bin/ibus-daemon --daemonize --xim
+2026-05-26 19:34:37 - PID 1808 (ibus-memconf) - Not whitelisted - Command: /usr/libexec/ibus-memconf
+2026-05-26 19:34:37 - PID 1817 (ibus-ui-gtk3) - Not whitelisted - Command: /usr/libexec/ibus-ui-gtk3
+2026-05-26 19:34:37 - PID 1821 (ibus-extension-) - Not whitelisted - Command: /usr/libexec/ibus-extension-gtk3
+2026-05-26 19:34:37 - PID 1823 (ibus-x11) - Not whitelisted - Command: /usr/libexec/ibus-x11 --kill-daemon
+2026-05-26 19:34:37 - PID 1826 (ibus-portal) - Not whitelisted - Command: /usr/libexec/ibus-portal
+2026-05-26 19:34:37 - PID 1879 (ssh-agent) - Not whitelisted - Command: /usr/bin/ssh-agent -s
+2026-05-26 19:34:37 - PID 1922 (ibus-engine-sim) - Not whitelisted - Command: /usr/libexec/ibus-engine-simple
+2026-05-26 19:34:37 - PID 1939 (Thunar) - Not whitelisted - Command: Thunar --daemon
+2026-05-26 19:34:37 - PID 1971 (tumblerd) - Not whitelisted - Command: /usr/lib/x86_64-linux-gnu/tumbler-1/tumblerd
+2026-05-26 19:34:37 - PID 1983 (touchegg) - Not whitelisted - Command: touchegg
+2026-05-26 19:34:37 - PID 1984 (agent) - Not whitelisted - Command: /usr/libexec/geoclue-2.0/demos/agent
+2026-05-26 19:34:37 - PID 1996 (light-locker) - Not whitelisted - Command: light-locker
+2026-05-26 19:34:37 - PID 2016 (polkit-gnome-au) - Not whitelisted - Command: /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1
+2026-05-26 19:34:37 - PID 2022 (nm-applet) - Not whitelisted - Command: nm-applet
+2026-05-26 19:34:37 - PID 2032 (xiccd) - Not whitelisted - Command: xiccd
+2026-05-26 19:34:37 - PID 2036 (xfce4-power-man) - Not whitelisted - Command: xfce4-power-manager
+2026-05-26 19:34:37 - PID 2684 (sleep) - Not whitelisted - Command: sleep 2
+2026-05-26 19:34:37 - Cleanup finished. Successfully killed 18 processes.
+
+--- Gaming Environment Cleanup: 2026-05-27 09:58:53 (Mode: ACTIVE) ---
+2026-05-27 09:58:53 - Cleanup finished. Successfully killed 0 processes.

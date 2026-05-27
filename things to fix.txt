@@ -1,0 +1,7 @@
+
+Gtk-Message: 10:01:17.791: Failed to load module "xapp-gtk3-module"
+
+
+🛑 Terminating any lingering Flatpak, Heroic, and Wine/Proton processes...
+error: com.heroicgameslauncher.hgl is not running
+♻️ Restoring background systemd user services...

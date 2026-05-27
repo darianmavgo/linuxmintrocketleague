@@ -1,0 +1,1515 @@
+
+========================================
+🎮 ROCKET LEAGUE SESSION TELEMETRY
+Start Time: 2026-05-23 18:19:58
+End Time:   2026-05-23 18:20:06
+========================================
+
+1. KILLED PROCESSES DURING CLEANUP (40)
+   - PID 1567: gnome-keyring-d (Reason: Not whitelisted) -> /usr/bin/gnome-keyring-daemon --foreground --components=pkcs11,secrets --control-directory=/run/user
+   - PID 1692: ibus-daemon (Reason: Not whitelisted) -> /usr/bin/ibus-daemon --daemonize --xim
+   - PID 1704: gvfsd (Reason: Not whitelisted) -> /usr/libexec/gvfsd
+   - PID 1711: gvfsd-fuse (Reason: Not whitelisted) -> /usr/libexec/gvfsd-fuse /run/user/1000/gvfs -f
+   - PID 1713: ibus-memconf (Reason: Not whitelisted) -> /usr/libexec/ibus-memconf
+   - PID 1722: ibus-ui-gtk3 (Reason: Not whitelisted) -> /usr/libexec/ibus-ui-gtk3
+   - PID 1726: ibus-extension- (Reason: Not whitelisted) -> /usr/libexec/ibus-extension-gtk3
+   - PID 1728: ibus-x11 (Reason: Not whitelisted) -> /usr/libexec/ibus-x11 --kill-daemon
+   - PID 1731: ibus-portal (Reason: Not whitelisted) -> /usr/libexec/ibus-portal
+   - PID 1748: at-spi-bus-laun (Reason: Not whitelisted) -> /usr/libexec/at-spi-bus-launcher
+   - PID 1759: at-spi2-registr (Reason: Not whitelisted) -> /usr/libexec/at-spi2-registryd --use-gnome-session
+   - PID 1787: ssh-agent (Reason: Not whitelisted) -> /usr/bin/ssh-agent -s
+   - PID 1805: gpg-agent (Reason: Not whitelisted) -> /usr/bin/gpg-agent --supervised
+   - PID 1829: ibus-engine-sim (Reason: Not whitelisted) -> /usr/libexec/ibus-engine-simple
+   - PID 1846: Thunar (Reason: Not whitelisted) -> Thunar --daemon
+   - PID 1875: bash (Reason: Not whitelisted) -> bash /home/darian/Documents/RocketMode/rocket_booster_daemon.sh
+   - PID 1889: touchegg (Reason: Not whitelisted) -> touchegg
+   - PID 1895: agent (Reason: Not whitelisted) -> /usr/libexec/geoclue-2.0/demos/agent
+   - PID 1915: light-locker (Reason: Not whitelisted) -> light-locker
+   - PID 1921: xfce4-notifyd (Reason: Not whitelisted) -> /usr/lib/x86_64-linux-gnu/xfce4/notifyd/xfce4-notifyd
+   - PID 1927: polkit-gnome-au (Reason: Not whitelisted) -> /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1
+   - PID 1928: nm-applet (Reason: Not whitelisted) -> nm-applet
+   - PID 1946: xiccd (Reason: Not whitelisted) -> xiccd
+   - PID 1985: xfce4-power-man (Reason: Not whitelisted) -> xfce4-power-manager
+   - PID 2456: gvfs-udisks2-vo (Reason: Not whitelisted) -> /usr/libexec/gvfs-udisks2-volume-monitor
+   - PID 2472: gvfs-mtp-volume (Reason: Not whitelisted) -> /usr/libexec/gvfs-mtp-volume-monitor
+   - PID 5077: antigravity (Reason: Not whitelisted) -> /home/darian/Documents/Antigravity-x64/antigravity
+   - PID 5082: antigravity (Reason: Not whitelisted) -> /home/darian/Documents/Antigravity-x64/antigravity --type=zygote --no-zygote-sandbox
+   - PID 5083: antigravity (Reason: Not whitelisted) -> /home/darian/Documents/Antigravity-x64/antigravity --type=zygote
+   - PID 5085: antigravity (Reason: Not whitelisted) -> /home/darian/Documents/Antigravity-x64/antigravity --type=zygote
+   - PID 5121: antigravity (Reason: Not whitelisted) -> /proc/self/exe --type=utility --utility-sub-type=network.mojom.NetworkService --lang=en-US --service
+   - PID 5174: language_server (Reason: Not whitelisted) -> /home/darian/Documents/Antigravity-x64/resources/bin/language_server --standalone --override_ide_nam
+   - PID 5190: antigravity (Reason: Not whitelisted) -> /home/darian/Documents/Antigravity-x64/antigravity --type=zygote
+   - PID 5259: antigravity (Reason: Not whitelisted) -> /proc/self/exe --type=utility --utility-sub-type=audio.mojom.AudioService --lang=en-US --service-san
+   - PID 12848: antigravity (Reason: Not whitelisted) -> /home/darian/Documents/Antigravity-x64/antigravity --type=zygote --no-zygote-sandbox
+   - PID 12866: antigravity (Reason: Not whitelisted) -> /home/darian/Documents/Antigravity-x64/antigravity --type=zygote --no-zygote-sandbox
+   - PID 13988: antigravity (Reason: Not whitelisted) -> /home/darian/Documents/Antigravity-x64/antigravity --type=zygote
+   - PID 20062: gvfsd-metadata (Reason: Not whitelisted) -> /usr/libexec/gvfsd-metadata
+   - PID 20067: gvfsd-trash (Reason: Not whitelisted) -> /usr/libexec/gvfsd-trash --spawner :1.17 /org/gtk/gvfs/exec_spaw/0
+   - PID 21080: sleep (Reason: Not whitelisted) -> sleep 2
+
+2. PROCESSES THAT USED ZRAM (PEAK SWAP)
+   - PID 21185: heroic (Peak: 79320 kB) -> /app/bin/heroic/heroic --type=zygote --no-zygote-sandbox
+   - PID 2620: heroic (Peak: 75212 kB) -> /app/bin/heroic/heroic
+   - PID 2778: heroic (Peak: 48140 kB) -> /proc/self/exe --type=renderer --enable-crash-reporter=a73c5469-6ab9-469e-ab46-0b82b5e42347,no_chann
+   - PID 1352: Xorg (Peak: 45856 kB) -> /usr/lib/xorg/Xorg -core :0 -seat seat0 -auth /var/run/lightdm/root/:0 -nolisten tcp vt7 -novtswitch
+   - PID 1852: xfdesktop (Peak: 35436 kB) -> xfdesktop
+   - PID 21223: heroic (Peak: 24448 kB) -> /app/bin/heroic/heroic --type=zygote --no-zygote-sandbox
+   - PID 1808: xfwm4 (Peak: 23380 kB) -> xfwm4
+   - PID 1882: nvidia-prime (Peak: 14860 kB) -> /usr/bin/python3 /usr/lib/nvidia-prime-applet/nvidia-prime
+   - PID 2747: heroic (Peak: 9884 kB) -> /proc/self/exe --type=utility --utility-sub-type=network.mojom.NetworkService --lang=en-US --service
+   - PID 2637: heroic (Peak: 9776 kB) -> /app/bin/heroic/heroic --type=zygote --no-zygote-sandbox
+   - PID 2700: heroic (Peak: 8928 kB) -> /app/bin/heroic/heroic --type=zygote
+   - PID 1862: panel-11-power- (Peak: 5400 kB) -> /usr/lib/x86_64-linux-gnu/xfce4/panel/wrapper-2.0 /usr/lib/x86_64-linux-gnu/xfce4/panel/plugins/libx
+   - PID 1861: panel-9-notific (Peak: 5376 kB) -> /usr/lib/x86_64-linux-gnu/xfce4/panel/wrapper-2.0 /usr/lib/x86_64-linux-gnu/xfce4/panel/plugins/libn
+   - PID 1863: panel-12-pulsea (Peak: 5168 kB) -> /usr/lib/x86_64-linux-gnu/xfce4/panel/wrapper-2.0 /usr/lib/x86_64-linux-gnu/xfce4/panel/plugins/libp
+   - PID 1837: xfsettingsd (Peak: 5132 kB) -> xfsettingsd
+   - PID 1565: wireplumber (Peak: 4988 kB) -> /usr/bin/wireplumber
+   - PID 1593: xfce4-session (Peak: 4788 kB) -> xfce4-session
+   - PID 1820: xdg-desktop-por (Peak: 4572 kB) -> /usr/libexec/xdg-desktop-portal-xapp
+   - PID 1996: colord (Peak: 4332 kB) -> /usr/libexec/colord
+   - PID 1799: xdg-desktop-por (Peak: 4168 kB) -> /usr/libexec/xdg-desktop-portal-gtk
+   - PID 1856: panel-1-whisker (Peak: 4096 kB) -> /usr/lib/x86_64-linux-gnu/xfce4/panel/wrapper-2.0 /usr/lib/x86_64-linux-gnu/xfce4/panel/plugins/libw
+   - PID 1860: panel-8-systray (Peak: 3752 kB) -> /usr/lib/x86_64-linux-gnu/xfce4/panel/wrapper-2.0 /usr/lib/x86_64-linux-gnu/xfce4/panel/plugins/libs
+   - PID 1841: xfce4-panel (Peak: 3484 kB) -> xfce4-panel
+   - PID 1764: xdg-desktop-por (Peak: 2260 kB) -> /usr/libexec/xdg-desktop-portal
+   - PID 3772: fwupd (Peak: 2092 kB) -> /usr/libexec/fwupd/fwupd
+   - PID 1562: pipewire (Peak: 2016 kB) -> /usr/bin/pipewire
+   - PID 1553: (sd-pam) (Peak: 1900 kB) -> (sd-pam)
+   - PID 2625: flatpak-portal (Peak: 1756 kB) -> /usr/libexec/flatpak-portal
+   - PID 1522: upowerd (Peak: 1472 kB) -> /usr/libexec/upowerd
+   - PID 1531: lightdm (Peak: 1384 kB) -> lightdm --session-child 14 21
+   - PID 1187: wpa_supplicant (Peak: 1336 kB) -> /usr/sbin/wpa_supplicant -u -s -O DIR=/run/wpa_supplicant GROUP=netdev
+   - PID 1186: NetworkManager (Peak: 1268 kB) -> /usr/sbin/NetworkManager --no-daemon
+   - PID 1: systemd (Peak: 1084 kB) -> /sbin/init splash
+   - PID 1054: udisksd (Peak: 1076 kB) -> /usr/libexec/udisks2/udisksd
+   - PID 952: systemd-resolve (Peak: 1072 kB) -> /usr/lib/systemd/systemd-resolved
+   - PID 1552: systemd (Peak: 1008 kB) -> /usr/lib/systemd/systemd --user
+   - PID 1334: lightdm (Peak: 880 kB) -> /usr/sbin/lightdm
+   - PID 1566: pipewire-pulse (Peak: 860 kB) -> /usr/bin/pipewire-pulse
+   - PID 1150: rsyslogd (Peak: 844 kB) -> /usr/sbin/rsyslogd -n -iNONE
+   - PID 440: systemd-journal (Peak: 824 kB) -> /usr/lib/systemd/systemd-journald
+   - PID 1563: pipewire (Peak: 780 kB) -> /usr/bin/pipewire -c filter-chain.conf
+   - PID 957: systemd-timesyn (Peak: 688 kB) -> /usr/lib/systemd/systemd-timesyncd
+   - PID 500: systemd-udevd (Peak: 644 kB) -> /usr/lib/systemd/systemd-udevd
+   - PID 1051: systemd-logind (Peak: 608 kB) -> /usr/lib/systemd/systemd-logind
+   - PID 1189: polkitd (Peak: 560 kB) -> /usr/lib/polkit-1/polkitd --no-debug
+   - PID 1052: thermald (Peak: 492 kB) -> /usr/sbin/thermald --systemd --dbus-enable --adaptive
+   - PID 1021: dbus-daemon (Peak: 360 kB) -> @dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+   - PID 2609: heroic-run (Peak: 360 kB) -> /bin/sh /app/bin/heroic-run
+   - PID 1936: dconf-service (Peak: 332 kB) -> /usr/libexec/dconf-service
+   - PID 1094: kerneloops (Peak: 308 kB) -> /usr/sbin/kerneloops --test
+   - PID 1786: xdg-document-po (Peak: 304 kB) -> /usr/libexec/xdg-document-portal
+   - PID 2589: flatpak-session (Peak: 304 kB) -> /usr/libexec/flatpak-session-helper
+   - PID 1047: power-profiles- (Peak: 280 kB) -> /usr/libexec/power-profiles-daemon
+   - PID 21106: gvfsd (Peak: 276 kB) -> /usr/libexec/gvfsd
+   - PID 2598: xdg-dbus-proxy (Peak: 256 kB) -> xdg-dbus-proxy --args=50
+   - PID 2607: bwrap (Peak: 256 kB) -> bwrap --args 47 -- heroic-run
+   - PID 1138: kerneloops (Peak: 248 kB) -> /usr/sbin/kerneloops
+   - PID 1778: xdg-permission- (Peak: 224 kB) -> /usr/libexec/xdg-permission-store
+   - PID 1010: accounts-daemon (Peak: 220 kB) -> /usr/libexec/accounts-daemon
+   - PID 2585: bwrap (Peak: 216 kB) -> bwrap --args 47 -- heroic-run
+   - PID 2594: p11-kit-server (Peak: 208 kB) -> server --sh -n /run/user/1000/.flatpak-helper/pkcs11-flatpak-2589 --provider p11-kit-trust.so pkcs11
+   - PID 1028: irqbalance (Peak: 196 kB) -> /usr/sbin/irqbalance
+   - PID 1572: dbus-daemon (Peak: 192 kB) -> /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog
+   - PID 21118: at-spi-bus-laun (Peak: 192 kB) -> /usr/libexec/at-spi-bus-launcher
+   - PID 1050: switcheroo-cont (Peak: 184 kB) -> /usr/libexec/switcheroo-control
+   - PID 3154: gamemoded (Peak: 184 kB) -> /usr/bin/gamemoded
+   - PID 2597: bwrap (Peak: 140 kB) -> bwrap --args 47 -- xdg-dbus-proxy --args=50
+   - PID 2699: bwrap (Peak: 140 kB) -> bwrap --args 46 -- /app/bin/zypak-helper child - /app/bin/heroic/heroic --type=zygote
+   - PID 1452: rtkit-daemon (Peak: 112 kB) -> /usr/libexec/rtkit-daemon
+   - PID 2642: cat (Peak: 112 kB) -> cat
+   - PID 2641: cat (Peak: 108 kB) -> cat
+   - PID 2643: bwrap (Peak: 100 kB) -> bwrap --args 46 -- /app/bin/zypak-helper child - /app/bin/heroic/heroic --type=zygote
+   - PID 1356: agetty (Peak: 96 kB) -> /sbin/agetty -o -p -- \u --noclear - linux
+   - PID 1141: nvidia-persiste (Peak: 84 kB) -> /usr/bin/nvidia-persistenced --user nvidia-persistenced --no-persistence-mode --verbose
+   - PID 1019: cron (Peak: 48 kB) -> /usr/sbin/cron -f -P
+   - PID 21111: gnome-keyring-d (Peak: 8 kB) -> /usr/bin/gnome-keyring-daemon --foreground --components=pkcs11,secrets --control-directory=/run/user
+
+3. PROCESSES LAUNCHED BY HEROIC / ROCKET LEAGUE (7)
+   - PID 2620: heroic (First seen: 18:19:58) -> /app/bin/heroic/heroic
+   - PID 2637: heroic (First seen: 18:19:58) -> /app/bin/heroic/heroic --type=zygote --no-zygote-sandbox
+   - PID 2639: zypak-sandbox (First seen: 18:19:58) -> zypak-sandbox
+   - PID 2747: heroic (First seen: 18:19:58) -> /proc/self/exe --type=utility --utility-sub-type=network.mojom.NetworkService --lang=en-US --service
+   - PID 2778: heroic (First seen: 18:19:58) -> /proc/self/exe --type=renderer --enable-crash-reporter=a73c5469-6ab9-469e-ab46-0b82b5e42347,no_chann
+   - PID 21185: heroic (First seen: 18:19:58) -> /app/bin/heroic/heroic --type=zygote --no-zygote-sandbox
+   - PID 21223: heroic (First seen: 18:19:58) -> /app/bin/heroic/heroic --type=zygote --no-zygote-sandbox
+
+4. PROCESSES UTILIZING NVIDIA GPU
+   - PID 1352: /usr/lib/xorg/Xorg (Type: G, Peak GPU Memory: 281MiB)
+   - PID 22620: ...cuments/Antigravity-x64/antigravity (Type: G, Peak GPU Memory: 79MiB)
+   - PID 21185: /app/bin/heroic/heroic (Type: G, Peak GPU Memory: 61MiB)
+   - PID 1808: xfwm4 (Type: G, Peak GPU Memory: 1MiB)
+
+
+
+========================================
+🎮 ROCKET LEAGUE SESSION TELEMETRY
+Start Time: 2026-05-23 18:21:28
+End Time:   2026-05-23 18:21:55
+========================================
+
+1. KILLED PROCESSES DURING CLEANUP (16)
+   - PID 21106: gvfsd (Reason: Not whitelisted) -> /usr/libexec/gvfsd
+   - PID 21111: gnome-keyring-d (Reason: Not whitelisted) -> /usr/bin/gnome-keyring-daemon --foreground --components=pkcs11,secrets --control-directory=/run/user
+   - PID 21118: at-spi-bus-laun (Reason: Not whitelisted) -> /usr/libexec/at-spi-bus-launcher
+   - PID 22573: Thunar (Reason: Not whitelisted) -> /usr/bin/Thunar --daemon
+   - PID 22580: at-spi2-registr (Reason: Not whitelisted) -> /usr/libexec/at-spi2-registryd --use-gnome-session
+   - PID 22587: antigravity (Reason: Not whitelisted) -> /home/darian/Documents/Antigravity-x64/antigravity
+   - PID 22590: antigravity (Reason: Not whitelisted) -> /home/darian/Documents/Antigravity-x64/antigravity --type=zygote --no-zygote-sandbox
+   - PID 22591: antigravity (Reason: Not whitelisted) -> /home/darian/Documents/Antigravity-x64/antigravity --type=zygote
+   - PID 22593: antigravity (Reason: Not whitelisted) -> /home/darian/Documents/Antigravity-x64/antigravity --type=zygote
+   - PID 22620: antigravity (Reason: Not whitelisted) -> /home/darian/Documents/Antigravity-x64/antigravity --type=zygote --no-zygote-sandbox
+   - PID 22627: antigravity (Reason: Not whitelisted) -> /proc/self/exe --type=utility --utility-sub-type=network.mojom.NetworkService --lang=en-US --service
+   - PID 22671: language_server (Reason: Not whitelisted) -> /home/darian/Documents/Antigravity-x64/resources/bin/language_server --standalone --override_ide_nam
+   - PID 22687: antigravity (Reason: Not whitelisted) -> /home/darian/Documents/Antigravity-x64/antigravity --type=zygote
+   - PID 22714: antigravity (Reason: Not whitelisted) -> /home/darian/Documents/Antigravity-x64/antigravity --type=zygote --no-zygote-sandbox
+   - PID 22745: antigravity (Reason: Not whitelisted) -> /proc/self/exe --type=utility --utility-sub-type=audio.mojom.AudioService --lang=en-US --service-san
+   - PID 22804: xfce4-notifyd (Reason: Not whitelisted) -> /usr/lib/x86_64-linux-gnu/xfce4/notifyd/xfce4-notifyd
+
+2. PROCESSES THAT USED ZRAM (PEAK SWAP)
+   - PID 21185: heroic (Peak: 79316 kB) -> /app/bin/heroic/heroic --type=zygote --no-zygote-sandbox
+   - PID 2620: heroic (Peak: 75212 kB) -> /app/bin/heroic/heroic
+   - PID 2778: heroic (Peak: 48140 kB) -> /proc/self/exe --type=renderer --enable-crash-reporter=a73c5469-6ab9-469e-ab46-0b82b5e42347,no_chann
+   - PID 1352: Xorg (Peak: 45816 kB) -> /usr/lib/xorg/Xorg -core :0 -seat seat0 -auth /var/run/lightdm/root/:0 -nolisten tcp vt7 -novtswitch
+   - PID 1852: xfdesktop (Peak: 35432 kB) -> xfdesktop
+   - PID 21223: heroic (Peak: 24448 kB) -> /app/bin/heroic/heroic --type=zygote --no-zygote-sandbox
+   - PID 1808: xfwm4 (Peak: 23376 kB) -> xfwm4
+   - PID 1882: nvidia-prime (Peak: 14860 kB) -> /usr/bin/python3 /usr/lib/nvidia-prime-applet/nvidia-prime
+   - PID 2747: heroic (Peak: 9884 kB) -> /proc/self/exe --type=utility --utility-sub-type=network.mojom.NetworkService --lang=en-US --service
+   - PID 2637: heroic (Peak: 9776 kB) -> /app/bin/heroic/heroic --type=zygote --no-zygote-sandbox
+   - PID 2700: heroic (Peak: 8928 kB) -> /app/bin/heroic/heroic --type=zygote
+   - PID 1862: panel-11-power- (Peak: 5396 kB) -> /usr/lib/x86_64-linux-gnu/xfce4/panel/wrapper-2.0 /usr/lib/x86_64-linux-gnu/xfce4/panel/plugins/libx
+   - PID 1861: panel-9-notific (Peak: 5356 kB) -> /usr/lib/x86_64-linux-gnu/xfce4/panel/wrapper-2.0 /usr/lib/x86_64-linux-gnu/xfce4/panel/plugins/libn
+   - PID 1863: panel-12-pulsea (Peak: 5124 kB) -> /usr/lib/x86_64-linux-gnu/xfce4/panel/wrapper-2.0 /usr/lib/x86_64-linux-gnu/xfce4/panel/plugins/libp
+   - PID 1837: xfsettingsd (Peak: 5032 kB) -> xfsettingsd
+   - PID 1565: wireplumber (Peak: 4988 kB) -> /usr/bin/wireplumber
+   - PID 1593: xfce4-session (Peak: 4744 kB) -> xfce4-session
+   - PID 1820: xdg-desktop-por (Peak: 4572 kB) -> /usr/libexec/xdg-desktop-portal-xapp
+   - PID 1996: colord (Peak: 4332 kB) -> /usr/libexec/colord
+   - PID 1799: xdg-desktop-por (Peak: 4168 kB) -> /usr/libexec/xdg-desktop-portal-gtk
+   - PID 1860: panel-8-systray (Peak: 3740 kB) -> /usr/lib/x86_64-linux-gnu/xfce4/panel/wrapper-2.0 /usr/lib/x86_64-linux-gnu/xfce4/panel/plugins/libs
+   - PID 1841: xfce4-panel (Peak: 3464 kB) -> xfce4-panel
+   - PID 1856: panel-1-whisker (Peak: 3268 kB) -> /usr/lib/x86_64-linux-gnu/xfce4/panel/wrapper-2.0 /usr/lib/x86_64-linux-gnu/xfce4/panel/plugins/libw
+   - PID 1764: xdg-desktop-por (Peak: 2260 kB) -> /usr/libexec/xdg-desktop-portal
+   - PID 3772: fwupd (Peak: 2092 kB) -> /usr/libexec/fwupd/fwupd
+   - PID 1562: pipewire (Peak: 2016 kB) -> /usr/bin/pipewire
+   - PID 1553: (sd-pam) (Peak: 1900 kB) -> (sd-pam)
+   - PID 2625: flatpak-portal (Peak: 1756 kB) -> /usr/libexec/flatpak-portal
+   - PID 1522: upowerd (Peak: 1472 kB) -> /usr/libexec/upowerd
+   - PID 1531: lightdm (Peak: 1384 kB) -> lightdm --session-child 14 21
+   - PID 1187: wpa_supplicant (Peak: 1336 kB) -> /usr/sbin/wpa_supplicant -u -s -O DIR=/run/wpa_supplicant GROUP=netdev
+   - PID 1186: NetworkManager (Peak: 1268 kB) -> /usr/sbin/NetworkManager --no-daemon
+   - PID 1: systemd (Peak: 1084 kB) -> /sbin/init splash
+   - PID 1054: udisksd (Peak: 1076 kB) -> /usr/libexec/udisks2/udisksd
+   - PID 952: systemd-resolve (Peak: 1072 kB) -> /usr/lib/systemd/systemd-resolved
+   - PID 1552: systemd (Peak: 1008 kB) -> /usr/lib/systemd/systemd --user
+   - PID 1334: lightdm (Peak: 880 kB) -> /usr/sbin/lightdm
+   - PID 1566: pipewire-pulse (Peak: 860 kB) -> /usr/bin/pipewire-pulse
+   - PID 1150: rsyslogd (Peak: 844 kB) -> /usr/sbin/rsyslogd -n -iNONE
+   - PID 440: systemd-journal (Peak: 820 kB) -> /usr/lib/systemd/systemd-journald
+   - PID 1563: pipewire (Peak: 780 kB) -> /usr/bin/pipewire -c filter-chain.conf
+   - PID 957: systemd-timesyn (Peak: 688 kB) -> /usr/lib/systemd/systemd-timesyncd
+   - PID 500: systemd-udevd (Peak: 644 kB) -> /usr/lib/systemd/systemd-udevd
+   - PID 1051: systemd-logind (Peak: 608 kB) -> /usr/lib/systemd/systemd-logind
+   - PID 1189: polkitd (Peak: 560 kB) -> /usr/lib/polkit-1/polkitd --no-debug
+   - PID 1052: thermald (Peak: 492 kB) -> /usr/sbin/thermald --systemd --dbus-enable --adaptive
+   - PID 1021: dbus-daemon (Peak: 360 kB) -> @dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+   - PID 2609: heroic-run (Peak: 360 kB) -> /bin/sh /app/bin/heroic-run
+   - PID 1936: dconf-service (Peak: 332 kB) -> /usr/libexec/dconf-service
+   - PID 1094: kerneloops (Peak: 308 kB) -> /usr/sbin/kerneloops --test
+   - PID 1786: xdg-document-po (Peak: 304 kB) -> /usr/libexec/xdg-document-portal
+   - PID 2589: flatpak-session (Peak: 300 kB) -> /usr/libexec/flatpak-session-helper
+   - PID 1047: power-profiles- (Peak: 280 kB) -> /usr/libexec/power-profiles-daemon
+   - PID 2598: xdg-dbus-proxy (Peak: 256 kB) -> xdg-dbus-proxy --args=50
+   - PID 2607: bwrap (Peak: 256 kB) -> bwrap --args 47 -- heroic-run
+   - PID 1138: kerneloops (Peak: 248 kB) -> /usr/sbin/kerneloops
+   - PID 1778: xdg-permission- (Peak: 224 kB) -> /usr/libexec/xdg-permission-store
+   - PID 1010: accounts-daemon (Peak: 220 kB) -> /usr/libexec/accounts-daemon
+   - PID 2585: bwrap (Peak: 216 kB) -> bwrap --args 47 -- heroic-run
+   - PID 2594: p11-kit-server (Peak: 208 kB) -> server --sh -n /run/user/1000/.flatpak-helper/pkcs11-flatpak-2589 --provider p11-kit-trust.so pkcs11
+   - PID 1028: irqbalance (Peak: 196 kB) -> /usr/sbin/irqbalance
+   - PID 1572: dbus-daemon (Peak: 192 kB) -> /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog
+   - PID 1050: switcheroo-cont (Peak: 184 kB) -> /usr/libexec/switcheroo-control
+   - PID 3154: gamemoded (Peak: 184 kB) -> /usr/bin/gamemoded
+   - PID 2597: bwrap (Peak: 140 kB) -> bwrap --args 47 -- xdg-dbus-proxy --args=50
+   - PID 2699: bwrap (Peak: 140 kB) -> bwrap --args 46 -- /app/bin/zypak-helper child - /app/bin/heroic/heroic --type=zygote
+   - PID 1452: rtkit-daemon (Peak: 112 kB) -> /usr/libexec/rtkit-daemon
+   - PID 2642: cat (Peak: 112 kB) -> cat
+   - PID 2641: cat (Peak: 108 kB) -> cat
+   - PID 2643: bwrap (Peak: 100 kB) -> bwrap --args 46 -- /app/bin/zypak-helper child - /app/bin/heroic/heroic --type=zygote
+   - PID 1356: agetty (Peak: 96 kB) -> /sbin/agetty -o -p -- \u --noclear - linux
+   - PID 1141: nvidia-persiste (Peak: 84 kB) -> /usr/bin/nvidia-persistenced --user nvidia-persistenced --no-persistence-mode --verbose
+   - PID 1019: cron (Peak: 48 kB) -> /usr/sbin/cron -f -P
+
+3. PROCESSES LAUNCHED BY HEROIC / ROCKET LEAGUE (19)
+   - PID 2620: heroic (First seen: 18:21:28) -> /app/bin/heroic/heroic
+   - PID 2637: heroic (First seen: 18:21:28) -> /app/bin/heroic/heroic --type=zygote --no-zygote-sandbox
+   - PID 2639: zypak-sandbox (First seen: 18:21:28) -> zypak-sandbox
+   - PID 2747: heroic (First seen: 18:21:28) -> /proc/self/exe --type=utility --utility-sub-type=network.mojom.NetworkService --lang=en-US --service
+   - PID 2778: heroic (First seen: 18:21:28) -> /proc/self/exe --type=renderer --enable-crash-reporter=a73c5469-6ab9-469e-ab46-0b82b5e42347,no_chann
+   - PID 21185: heroic (First seen: 18:21:28) -> /app/bin/heroic/heroic --type=zygote --no-zygote-sandbox
+   - PID 21223: heroic (First seen: 18:21:28) -> /app/bin/heroic/heroic --type=zygote --no-zygote-sandbox
+   - PID 22920: bwrap (First seen: 18:21:30) -> bwrap --args 48 -- heroic-run --launch Sugar
+   - PID 22921: heroic-run (First seen: 18:21:30) -> /bin/sh /app/bin/heroic-run --launch Sugar
+   - PID 22933: heroic (First seen: 18:21:30) -> /app/bin/heroic/heroic --launch Sugar
+   - PID 22941: heroic (First seen: 18:21:32) -> /app/bin/heroic/heroic --type=zygote --no-zygote-sandbox
+   - PID 22943: zypak-sandbox (First seen: 18:21:32) -> zypak-sandbox
+   - PID 22945: cat (First seen: 18:21:32) -> cat
+   - PID 22946: cat (First seen: 18:21:32) -> cat
+   - PID 22952: bwrap (First seen: 18:21:32) -> bwrap --args 32 ldconfig -X -C /run/ld-so-cache-dir/e8aea12804ee0eb231915154e1e9ed670b17220be56616d6
+   - PID 22953: bwrap (First seen: 18:21:32) -> bwrap --args 32 ldconfig -X -C /run/ld-so-cache-dir/e8aea12804ee0eb231915154e1e9ed670b17220be56616d6
+   - PID 22954: ldconfig (First seen: 18:21:32) -> ldconfig -X -C /run/ld-so-cache-dir/e8aea12804ee0eb231915154e1e9ed670b17220be56616d67f1c806ef2d9323d
+   - PID 22970: bwrap (First seen: 18:21:53) -> bwrap --args 46 -- /app/bin/zypak-helper child - /app/bin/heroic/heroic --type=zygote
+   - PID 22971: heroic (First seen: 18:21:53) -> /app/bin/heroic/heroic --type=zygote
+
+4. PROCESSES UTILIZING NVIDIA GPU
+   - PID 1352: /usr/lib/xorg/Xorg (Type: G, Peak GPU Memory: 303MiB)
+   - PID 21185: /app/bin/heroic/heroic (Type: G, Peak GPU Memory: 87MiB)
+   - PID 1808: xfwm4 (Type: G, Peak GPU Memory: 1MiB)
+
+
+
+========================================
+🎮 ROCKET LEAGUE SESSION TELEMETRY
+Start Time: 2026-05-23 19:25:05
+End Time:   2026-05-23 19:25:34
+========================================
+
+1. KILLED PROCESSES DURING CLEANUP (17)
+   - PID 22893: gvfsd (Reason: Not whitelisted) -> /usr/libexec/gvfsd
+   - PID 22895: gnome-keyring-d (Reason: Not whitelisted) -> /usr/bin/gnome-keyring-daemon --foreground --components=pkcs11,secrets --control-directory=/run/user
+   - PID 22906: at-spi-bus-laun (Reason: Not whitelisted) -> /usr/libexec/at-spi-bus-launcher
+   - PID 23666: Thunar (Reason: Not whitelisted) -> /usr/bin/Thunar --daemon
+   - PID 23673: at-spi2-registr (Reason: Not whitelisted) -> /usr/libexec/at-spi2-registryd --use-gnome-session
+   - PID 23678: gvfsd-metadata (Reason: Not whitelisted) -> /usr/libexec/gvfsd-metadata
+   - PID 23682: antigravity (Reason: Not whitelisted) -> /home/darian/Documents/Antigravity-x64/antigravity
+   - PID 23685: antigravity (Reason: Not whitelisted) -> /home/darian/Documents/Antigravity-x64/antigravity --type=zygote --no-zygote-sandbox
+   - PID 23686: antigravity (Reason: Not whitelisted) -> /home/darian/Documents/Antigravity-x64/antigravity --type=zygote
+   - PID 23688: antigravity (Reason: Not whitelisted) -> /home/darian/Documents/Antigravity-x64/antigravity --type=zygote
+   - PID 23715: antigravity (Reason: Not whitelisted) -> /home/darian/Documents/Antigravity-x64/antigravity --type=zygote --no-zygote-sandbox
+   - PID 23723: antigravity (Reason: Not whitelisted) -> /proc/self/exe --type=utility --utility-sub-type=network.mojom.NetworkService --lang=en-US --service
+   - PID 23766: language_server (Reason: Not whitelisted) -> /home/darian/Documents/Antigravity-x64/resources/bin/language_server --standalone --override_ide_nam
+   - PID 23783: antigravity (Reason: Not whitelisted) -> /home/darian/Documents/Antigravity-x64/antigravity --type=zygote
+   - PID 23800: antigravity (Reason: Not whitelisted) -> /home/darian/Documents/Antigravity-x64/antigravity --type=zygote --no-zygote-sandbox
+   - PID 23841: antigravity (Reason: Not whitelisted) -> /proc/self/exe --type=utility --utility-sub-type=audio.mojom.AudioService --lang=en-US --service-san
+   - PID 23908: xfce4-notifyd (Reason: Not whitelisted) -> /usr/lib/x86_64-linux-gnu/xfce4/notifyd/xfce4-notifyd
+
+2. PROCESSES THAT USED ZRAM (PEAK SWAP)
+   - PID 21185: heroic (Peak: 92624 kB) -> /app/bin/heroic/heroic --type=zygote --no-zygote-sandbox
+   - PID 2620: heroic (Peak: 73516 kB) -> /app/bin/heroic/heroic
+   - PID 2778: heroic (Peak: 48484 kB) -> /proc/self/exe --type=renderer --enable-crash-reporter=a73c5469-6ab9-469e-ab46-0b82b5e42347,no_chann
+   - PID 1352: Xorg (Peak: 43316 kB) -> /usr/lib/xorg/Xorg -core :0 -seat seat0 -auth /var/run/lightdm/root/:0 -nolisten tcp vt7 -novtswitch
+   - PID 1852: xfdesktop (Peak: 36208 kB) -> xfdesktop
+   - PID 1808: xfwm4 (Peak: 24504 kB) -> xfwm4
+   - PID 21223: heroic (Peak: 24480 kB) -> /app/bin/heroic/heroic --type=zygote --no-zygote-sandbox
+   - PID 1882: nvidia-prime (Peak: 14588 kB) -> /usr/bin/python3 /usr/lib/nvidia-prime-applet/nvidia-prime
+   - PID 2747: heroic (Peak: 9928 kB) -> /proc/self/exe --type=utility --utility-sub-type=network.mojom.NetworkService --lang=en-US --service
+   - PID 2637: heroic (Peak: 9784 kB) -> /app/bin/heroic/heroic --type=zygote --no-zygote-sandbox
+   - PID 2700: heroic (Peak: 9708 kB) -> /app/bin/heroic/heroic --type=zygote
+   - PID 1565: wireplumber (Peak: 5872 kB) -> /usr/bin/wireplumber
+   - PID 1799: xdg-desktop-por (Peak: 5328 kB) -> /usr/libexec/xdg-desktop-portal-gtk
+   - PID 1820: xdg-desktop-por (Peak: 5048 kB) -> /usr/libexec/xdg-desktop-portal-xapp
+   - PID 1593: xfce4-session (Peak: 4800 kB) -> xfce4-session
+   - PID 22846: xfce4-terminal (Peak: 3820 kB) -> xfce4-terminal
+   - PID 500: systemd-udevd (Peak: 3052 kB) -> /usr/lib/systemd/systemd-udevd
+   - PID 1562: pipewire (Peak: 2692 kB) -> /usr/bin/pipewire
+   - PID 1764: xdg-desktop-por (Peak: 2548 kB) -> /usr/libexec/xdg-desktop-portal
+   - PID 2625: flatpak-portal (Peak: 2220 kB) -> /usr/libexec/flatpak-portal
+   - PID 1186: NetworkManager (Peak: 2008 kB) -> /usr/sbin/NetworkManager --no-daemon
+   - PID 1553: (sd-pam) (Peak: 1924 kB) -> (sd-pam)
+   - PID 1187: wpa_supplicant (Peak: 1504 kB) -> /usr/sbin/wpa_supplicant -u -s -O DIR=/run/wpa_supplicant GROUP=netdev
+   - PID 952: systemd-resolve (Peak: 1464 kB) -> /usr/lib/systemd/systemd-resolved
+   - PID 1531: lightdm (Peak: 1192 kB) -> lightdm --session-child 14 21
+   - PID 1552: systemd (Peak: 1076 kB) -> /usr/lib/systemd/systemd --user
+   - PID 1: systemd (Peak: 984 kB) -> /sbin/init splash
+   - PID 1566: pipewire-pulse (Peak: 920 kB) -> /usr/bin/pipewire-pulse
+   - PID 1051: systemd-logind (Peak: 844 kB) -> /usr/lib/systemd/systemd-logind
+   - PID 957: systemd-timesyn (Peak: 816 kB) -> /usr/lib/systemd/systemd-timesyncd
+   - PID 440: systemd-journal (Peak: 792 kB) -> /usr/lib/systemd/systemd-journald
+   - PID 1563: pipewire (Peak: 780 kB) -> /usr/bin/pipewire -c filter-chain.conf
+   - PID 22853: bash (Peak: 752 kB) -> bash
+   - PID 1052: thermald (Peak: 692 kB) -> /usr/sbin/thermald --systemd --dbus-enable --adaptive
+   - PID 1334: lightdm (Peak: 608 kB) -> /usr/sbin/lightdm
+   - PID 24146: (udev-worker) (Peak: 592 kB) -> (udev-worker)
+   - PID 1189: polkitd (Peak: 568 kB) -> /usr/lib/polkit-1/polkitd --no-debug
+   - PID 1021: dbus-daemon (Peak: 468 kB) -> @dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+   - PID 1047: power-profiles- (Peak: 412 kB) -> /usr/libexec/power-profiles-daemon
+   - PID 2609: heroic-run (Peak: 360 kB) -> /bin/sh /app/bin/heroic-run
+   - PID 1786: xdg-document-po (Peak: 344 kB) -> /usr/libexec/xdg-document-portal
+   - PID 1936: dconf-service (Peak: 332 kB) -> /usr/libexec/dconf-service
+   - PID 2589: flatpak-session (Peak: 324 kB) -> /usr/libexec/flatpak-session-helper
+   - PID 1572: dbus-daemon (Peak: 320 kB) -> /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog
+   - PID 2598: xdg-dbus-proxy (Peak: 260 kB) -> xdg-dbus-proxy --args=50
+   - PID 2607: bwrap (Peak: 256 kB) -> bwrap --args 47 -- heroic-run
+   - PID 1778: xdg-permission- (Peak: 244 kB) -> /usr/libexec/xdg-permission-store
+   - PID 1028: irqbalance (Peak: 240 kB) -> /usr/sbin/irqbalance
+   - PID 2699: bwrap (Peak: 232 kB) -> bwrap --args 46 -- /app/bin/zypak-helper child - /app/bin/heroic/heroic --type=zygote
+   - PID 2585: bwrap (Peak: 216 kB) -> bwrap --args 47 -- heroic-run
+   - PID 2594: p11-kit-server (Peak: 212 kB) -> server --sh -n /run/user/1000/.flatpak-helper/pkcs11-flatpak-2589 --provider p11-kit-trust.so pkcs11
+   - PID 2643: bwrap (Peak: 192 kB) -> bwrap --args 46 -- /app/bin/zypak-helper child - /app/bin/heroic/heroic --type=zygote
+   - PID 3154: gamemoded (Peak: 192 kB) -> /usr/bin/gamemoded
+   - PID 2597: bwrap (Peak: 140 kB) -> bwrap --args 47 -- xdg-dbus-proxy --args=50
+   - PID 1452: rtkit-daemon (Peak: 112 kB) -> /usr/libexec/rtkit-daemon
+   - PID 1796: fusermount3 (Peak: 112 kB) -> fusermount3 -o rw,nosuid,nodev,fsname=portal,auto_unmount,subtype=portal -- /run/user/1000/doc
+   - PID 2642: cat (Peak: 112 kB) -> cat
+   - PID 2641: cat (Peak: 108 kB) -> cat
+   - PID 1141: nvidia-persiste (Peak: 96 kB) -> /usr/bin/nvidia-persistenced --user nvidia-persistenced --no-persistence-mode --verbose
+   - PID 1356: agetty (Peak: 96 kB) -> /sbin/agetty -o -p -- \u --noclear - linux
+
+3. PROCESSES LAUNCHED BY HEROIC / ROCKET LEAGUE (19)
+   - PID 2620: heroic (First seen: 19:25:05) -> /app/bin/heroic/heroic
+   - PID 2637: heroic (First seen: 19:25:05) -> /app/bin/heroic/heroic --type=zygote --no-zygote-sandbox
+   - PID 2639: zypak-sandbox (First seen: 19:25:05) -> zypak-sandbox
+   - PID 2747: heroic (First seen: 19:25:05) -> /proc/self/exe --type=utility --utility-sub-type=network.mojom.NetworkService --lang=en-US --service
+   - PID 2778: heroic (First seen: 19:25:05) -> /proc/self/exe --type=renderer --enable-crash-reporter=a73c5469-6ab9-469e-ab46-0b82b5e42347,no_chann
+   - PID 21185: heroic (First seen: 19:25:05) -> /app/bin/heroic/heroic --type=zygote --no-zygote-sandbox
+   - PID 21223: heroic (First seen: 19:25:05) -> /app/bin/heroic/heroic --type=zygote --no-zygote-sandbox
+   - PID 24110: bwrap (First seen: 19:25:09) -> bwrap --args 47 -- heroic-run --launch Sugar
+   - PID 24111: heroic-run (First seen: 19:25:09) -> /bin/sh /app/bin/heroic-run --launch Sugar
+   - PID 24124: heroic (First seen: 19:25:09) -> /app/bin/heroic/heroic --launch Sugar
+   - PID 24133: heroic (First seen: 19:25:11) -> /app/bin/heroic/heroic --type=zygote --no-zygote-sandbox
+   - PID 24135: zypak-sandbox (First seen: 19:25:11) -> zypak-sandbox
+   - PID 24137: cat (First seen: 19:25:11) -> cat
+   - PID 24138: cat (First seen: 19:25:11) -> cat
+   - PID 24144: bwrap (First seen: 19:25:11) -> bwrap --args 32 ldconfig -X -C /run/ld-so-cache-dir/e8aea12804ee0eb231915154e1e9ed670b17220be56616d6
+   - PID 24145: bwrap (First seen: 19:25:11) -> bwrap --args 32 ldconfig -X -C /run/ld-so-cache-dir/e8aea12804ee0eb231915154e1e9ed670b17220be56616d6
+   - PID 24147: ldconfig (First seen: 19:25:11) -> ldconfig -X -C /run/ld-so-cache-dir/e8aea12804ee0eb231915154e1e9ed670b17220be56616d67f1c806ef2d9323d
+   - PID 24164: bwrap (First seen: 19:25:32) -> bwrap --args 46 -- /app/bin/zypak-helper child - /app/bin/heroic/heroic --type=zygote
+   - PID 24165: heroic (First seen: 19:25:32) -> /app/bin/heroic/heroic --type=zygote
+
+4. PROCESSES UTILIZING NVIDIA GPU
+   - PID 1352: /usr/lib/xorg/Xorg (Type: G, Peak GPU Memory: 353MiB)
+   - PID 21185: /app/bin/heroic/heroic (Type: G, Peak GPU Memory: 137MiB)
+   - PID 1808: xfwm4 (Type: G, Peak GPU Memory: 1MiB)
+
+
+
+========================================
+🎮 ROCKET LEAGUE SESSION TELEMETRY
+Start Time: 2026-05-23 22:58:36
+End Time:   2026-05-24 20:59:05
+========================================
+
+1. KILLED PROCESSES DURING CLEANUP (26)
+   - PID 1531: gnome-keyring-d (Reason: Not whitelisted) -> /usr/bin/gnome-keyring-daemon --foreground --components=pkcs11,secrets --control-directory=/run/user
+   - PID 1654: ibus-daemon (Reason: Not whitelisted) -> /usr/bin/ibus-daemon --daemonize --xim
+   - PID 1666: gvfsd (Reason: Not whitelisted) -> /usr/libexec/gvfsd
+   - PID 1673: gvfsd-fuse (Reason: Not whitelisted) -> /usr/libexec/gvfsd-fuse /run/user/1000/gvfs -f
+   - PID 1675: ibus-memconf (Reason: Not whitelisted) -> /usr/libexec/ibus-memconf
+   - PID 1684: ibus-ui-gtk3 (Reason: Not whitelisted) -> /usr/libexec/ibus-ui-gtk3
+   - PID 1688: ibus-extension- (Reason: Not whitelisted) -> /usr/libexec/ibus-extension-gtk3
+   - PID 1690: ibus-x11 (Reason: Not whitelisted) -> /usr/libexec/ibus-x11 --kill-daemon
+   - PID 1693: ibus-portal (Reason: Not whitelisted) -> /usr/libexec/ibus-portal
+   - PID 1710: at-spi-bus-laun (Reason: Not whitelisted) -> /usr/libexec/at-spi-bus-launcher
+   - PID 1722: at-spi2-registr (Reason: Not whitelisted) -> /usr/libexec/at-spi2-registryd --use-gnome-session
+   - PID 1747: ssh-agent (Reason: Not whitelisted) -> /usr/bin/ssh-agent -s
+   - PID 1765: gpg-agent (Reason: Not whitelisted) -> /usr/bin/gpg-agent --supervised
+   - PID 1792: ibus-engine-sim (Reason: Not whitelisted) -> /usr/libexec/ibus-engine-simple
+   - PID 1809: Thunar (Reason: Not whitelisted) -> Thunar --daemon
+   - PID 1846: xfce4-notifyd (Reason: Not whitelisted) -> /usr/lib/x86_64-linux-gnu/xfce4/notifyd/xfce4-notifyd
+   - PID 1869: touchegg (Reason: Not whitelisted) -> touchegg
+   - PID 1874: agent (Reason: Not whitelisted) -> /usr/libexec/geoclue-2.0/demos/agent
+   - PID 1892: light-locker (Reason: Not whitelisted) -> light-locker
+   - PID 1895: polkit-gnome-au (Reason: Not whitelisted) -> /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1
+   - PID 1905: nm-applet (Reason: Not whitelisted) -> nm-applet
+   - PID 1923: xiccd (Reason: Not whitelisted) -> xiccd
+   - PID 1928: xfce4-power-man (Reason: Not whitelisted) -> xfce4-power-manager
+   - PID 2342: gvfs-udisks2-vo (Reason: Not whitelisted) -> /usr/libexec/gvfs-udisks2-volume-monitor
+   - PID 2418: gvfs-mtp-volume (Reason: Not whitelisted) -> /usr/libexec/gvfs-mtp-volume-monitor
+   - PID 4710: sleep (Reason: Not whitelisted) -> sleep 2
+
+2. PROCESSES THAT USED ZRAM (PEAK SWAP)
+   - PID 5391: RocketLeague.ex (Peak: 3354112 kB) -> S:\Games\Heroic\rocketleague\Binaries\Win64\RocketLeague.exe -AUTH_LOGIN=unused -AUTH_PASSWORD=23545
+   - PID 1324: Xorg (Peak: 89972 kB) -> /usr/lib/xorg/Xorg -core :0 -seat seat0 -auth /var/run/lightdm/root/:0 -nolisten tcp vt7 -novtswitch
+   - PID 4859: heroic (Peak: 83564 kB) -> /app/bin/heroic/heroic --type=zygote --no-zygote-sandbox
+   - PID 4787: heroic (Peak: 83280 kB) -> /app/bin/heroic/heroic --launch Sugar
+   - PID 4898: heroic (Peak: 73700 kB) -> /proc/self/exe --type=renderer --enable-crash-reporter=a73c5469-6ab9-469e-ab46-0b82b5e42347,no_chann
+   - PID 1815: xfdesktop (Peak: 50592 kB) -> xfdesktop
+   - PID 1768: xfwm4 (Peak: 32360 kB) -> xfwm4
+   - PID 5421: explorer.exe (Peak: 31168 kB) -> C:\windows\system32\explorer.exe /desktop
+   - PID 4959: heroic (Peak: 24508 kB) -> /app/bin/heroic/heroic --type=zygote --no-zygote-sandbox
+   - PID 5204: python3 (Peak: 20968 kB) -> python3 /home/darian/.var/app/com.heroicgameslauncher.hgl/config/heroic/tools/runtimes/umu/umu_run.p
+   - PID 1865: nvidia-prime (Peak: 16196 kB) -> /usr/bin/python3 /usr/lib/nvidia-prime-applet/nvidia-prime
+   - PID 5325: winedevice.exe (Peak: 13872 kB) -> C:\windows\system32\winedevice.exe
+   - PID 5303: wineserver (Peak: 13672 kB) -> /home/darian/.var/app/com.heroicgameslauncher.hgl/config/heroic/tools/proton/GE-Proton9-20/files/bin
+   - PID 5316: winedevice.exe (Peak: 12872 kB) -> C:\windows\system32\winedevice.exe
+   - PID 5307: services.exe (Peak: 11136 kB) -> C:\windows\system32\services.exe
+   - PID 4874: heroic (Peak: 10532 kB) -> /proc/self/exe --type=utility --utility-sub-type=network.mojom.NetworkService --lang=en-US --service
+   - PID 4802: heroic (Peak: 9772 kB) -> /app/bin/heroic/heroic --type=zygote --no-zygote-sandbox
+   - PID 2555: xfce4-terminal (Peak: 8484 kB) -> xfce4-terminal
+   - PID 1819: panel-1-whisker (Peak: 7988 kB) -> /usr/lib/x86_64-linux-gnu/xfce4/panel/wrapper-2.0 /usr/lib/x86_64-linux-gnu/xfce4/panel/plugins/libw
+   - PID 5335: plugplay.exe (Peak: 7872 kB) -> C:\windows\system32\plugplay.exe
+   - PID 5369: rpcss.exe (Peak: 7816 kB) -> C:\windows\system32\rpcss.exe
+   - PID 1826: panel-12-pulsea (Peak: 7616 kB) -> /usr/lib/x86_64-linux-gnu/xfce4/panel/wrapper-2.0 /usr/lib/x86_64-linux-gnu/xfce4/panel/plugins/libp
+   - PID 1825: panel-11-power- (Peak: 7304 kB) -> /usr/lib/x86_64-linux-gnu/xfce4/panel/wrapper-2.0 /usr/lib/x86_64-linux-gnu/xfce4/panel/plugins/libx
+   - PID 5429: tabtip.exe (Peak: 7240 kB) -> C:\windows\system32\tabtip.exe
+   - PID 1824: panel-9-notific (Peak: 7236 kB) -> /usr/lib/x86_64-linux-gnu/xfce4/panel/wrapper-2.0 /usr/lib/x86_64-linux-gnu/xfce4/panel/plugins/libn
+   - PID 1804: xfce4-panel (Peak: 6628 kB) -> xfce4-panel
+   - PID 1823: panel-8-systray (Peak: 6432 kB) -> /usr/lib/x86_64-linux-gnu/xfce4/panel/wrapper-2.0 /usr/lib/x86_64-linux-gnu/xfce4/panel/plugins/libs
+   - PID 1800: xfsettingsd (Peak: 6260 kB) -> xfsettingsd
+   - PID 1559: xfce4-session (Peak: 6080 kB) -> xfce4-session
+   - PID 1962: colord (Peak: 4924 kB) -> /usr/libexec/colord
+   - PID 4736: python3 (Peak: 4468 kB) -> /usr/bin/python3 /home/darian/Documents/RocketMode/game_logger.py --daemon
+   - PID 5310: svchost.exe (Peak: 3748 kB) -> C:\windows\system32\svchost.exe -k LocalServiceNetworkRestricted
+   - PID 1529: wireplumber (Peak: 2864 kB) -> /usr/bin/wireplumber
+   - PID 1526: pipewire (Peak: 2624 kB) -> /usr/bin/pipewire
+   - PID 1760: xdg-desktop-por (Peak: 2520 kB) -> /usr/libexec/xdg-desktop-portal-gtk
+   - PID 4793: flatpak-portal (Peak: 2128 kB) -> /usr/libexec/flatpak-portal
+   - PID 1727: xdg-desktop-por (Peak: 1704 kB) -> /usr/libexec/xdg-desktop-portal
+   - PID 1: systemd (Peak: 1604 kB) -> /sbin/init splash
+   - PID 2564: bash (Peak: 1548 kB) -> bash
+   - PID 4832: heroic (Peak: 1528 kB) -> /app/bin/heroic/heroic --type=zygote
+   - PID 1066: udisksd (Peak: 1400 kB) -> /usr/libexec/udisks2/udisksd
+   - PID 1495: lightdm (Peak: 1368 kB) -> lightdm --session-child 14 21
+   - PID 1780: xdg-desktop-por (Peak: 1204 kB) -> /usr/libexec/xdg-desktop-portal-xapp
+   - PID 963: systemd-resolve (Peak: 1104 kB) -> /usr/lib/systemd/systemd-resolved
+   - PID 1063: systemd-logind (Peak: 984 kB) -> /usr/lib/systemd/systemd-logind
+   - PID 1530: pipewire-pulse (Peak: 924 kB) -> /usr/bin/pipewire-pulse
+   - PID 1313: lightdm (Peak: 876 kB) -> /usr/sbin/lightdm
+   - PID 445: systemd-journal (Peak: 848 kB) -> /usr/lib/systemd/systemd-journald
+   - PID 1180: NetworkManager (Peak: 788 kB) -> /usr/sbin/NetworkManager --no-daemon
+   - PID 1181: wpa_supplicant (Peak: 716 kB) -> /usr/sbin/wpa_supplicant -u -s -O DIR=/run/wpa_supplicant GROUP=netdev
+   - PID 1486: upowerd (Peak: 628 kB) -> /usr/libexec/upowerd
+   - PID 5223: steam-runtime-l (Peak: 588 kB) -> /home/darian/.local/share/umu/steamrt3/pressure-vessel/bin/steam-runtime-launch-client --pass-env-ma
+   - PID 1517: (sd-pam) (Peak: 556 kB) -> (sd-pam)
+   - PID 4771: xdg-dbus-proxy (Peak: 540 kB) -> xdg-dbus-proxy --args=50
+   - PID 1062: switcheroo-cont (Peak: 492 kB) -> /usr/libexec/switcheroo-control
+   - PID 5263: xdg-dbus-proxy (Peak: 492 kB) -> xdg-dbus-proxy --args=41
+   - PID 5268: pv-adverb (Peak: 444 kB) -> /usr/lib/pressure-vessel/from-host/libexec/steam-runtime-tools-0/pv-adverb --prefix=/usr/lib/pressur
+   - PID 5195: gamemoderun (Peak: 392 kB) -> /bin/bash /app/bin/gamemoderun /home/darian/.var/app/com.heroicgameslauncher.hgl/config/heroic/tools
+   - PID 1746: xdg-document-po (Peak: 392 kB) -> /usr/libexec/xdg-document-portal
+   - PID 1906: dconf-service (Peak: 388 kB) -> /usr/libexec/dconf-service
+   - PID 4742: gvfsd (Peak: 372 kB) -> /usr/libexec/gvfsd
+   - PID 4761: at-spi-bus-laun (Peak: 372 kB) -> /usr/libexec/at-spi-bus-launcher
+   - PID 4776: heroic-run (Peak: 372 kB) -> /bin/sh /app/bin/heroic-run --launch Sugar
+   - PID 1088: kerneloops (Peak: 356 kB) -> /usr/sbin/kerneloops --test
+   - PID 5267: bwrap (Peak: 316 kB) -> bwrap --args 41 -- /usr/lib/pressure-vessel/from-host/libexec/steam-runtime-tools-0/pv-adverb --pref
+   - PID 4775: bwrap (Peak: 284 kB) -> bwrap --args 47 -- heroic-run --launch Sugar
+   - PID 4711: bash (Peak: 276 kB) -> bash ./launch_rocket_league.sh
+   - PID 5257: bwrap (Peak: 260 kB) -> bwrap --args 41 -- /usr/lib/pressure-vessel/from-host/libexec/steam-runtime-tools-0/pv-adverb --pref
+   - PID 1030: irqbalance (Peak: 256 kB) -> /usr/sbin/irqbalance
+   - PID 5207: gamemoded (Peak: 256 kB) -> /usr/bin/gamemoded
+   - PID 964: systemd-timesyn (Peak: 252 kB) -> /usr/lib/systemd/systemd-timesyncd
+   - PID 1183: polkitd (Peak: 236 kB) -> /usr/lib/polkit-1/polkitd --no-debug
+   - PID 1064: thermald (Peak: 228 kB) -> /usr/sbin/thermald --systemd --dbus-enable --adaptive
+   - PID 4737: bwrap (Peak: 220 kB) -> bwrap --args 47 -- heroic-run --launch Sugar
+   - PID 4831: bwrap (Peak: 204 kB) -> bwrap --args 46 -- /app/bin/zypak-helper child - /app/bin/heroic/heroic --type=zygote
+   - PID 1537: dbus-daemon (Peak: 196 kB) -> /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog
+   - PID 4741: gnome-keyring-d (Peak: 192 kB) -> /usr/bin/gnome-keyring-daemon --foreground --components=pkcs11,secrets --control-directory=/run/user
+   - PID 4808: bwrap (Peak: 176 kB) -> bwrap --args 46 -- /app/bin/zypak-helper child - /app/bin/heroic/heroic --type=zygote
+   - PID 1738: xdg-permission- (Peak: 164 kB) -> /usr/libexec/xdg-permission-store
+   - PID 1516: systemd (Peak: 156 kB) -> /usr/lib/systemd/systemd --user
+   - PID 4770: bwrap (Peak: 144 kB) -> bwrap --args 47 -- xdg-dbus-proxy --args=50
+   - PID 5262: bwrap (Peak: 140 kB) -> bwrap --args 39 -- xdg-dbus-proxy --args=41
+   - PID 1527: pipewire (Peak: 128 kB) -> /usr/bin/pipewire -c filter-chain.conf
+   - PID 4807: cat (Peak: 116 kB) -> cat
+   - PID 4806: cat (Peak: 112 kB) -> cat
+   - PID 5991: fwupd (Peak: 96 kB) -> /usr/libexec/fwupd/fwupd
+   - PID 1145: rsyslogd (Peak: 80 kB) -> /usr/sbin/rsyslogd -n -iNONE
+   - PID 1327: agetty (Peak: 64 kB) -> /sbin/agetty -o -p -- \u --noclear - linux
+   - PID 1059: power-profiles- (Peak: 32 kB) -> /usr/libexec/power-profiles-daemon
+   - PID 499: systemd-udevd (Peak: 12 kB) -> /usr/lib/systemd/systemd-udevd
+   - PID 1024: dbus-daemon (Peak: 12 kB) -> @dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+   - PID 7542: (udev-worker) (Peak: 8 kB) -> (udev-worker)
+   - PID 1091: kerneloops (Peak: 4 kB) -> /usr/sbin/kerneloops
+   - PID 4754: flatpak-session (Peak: 4 kB) -> /usr/libexec/flatpak-session-helper
+
+3. PROCESSES LAUNCHED BY HEROIC / ROCKET LEAGUE (62)
+   - PID 7202: python3 (First seen: 02:10:54) -> python3 ./legendary list --third-party
+   - PID 7209: file (First seen: 02:11:00) -> file -b /usr/bin/python3.13
+   - PID 4775: bwrap (First seen: 22:58:38) -> bwrap --args 47 -- heroic-run --launch Sugar
+   - PID 4776: heroic-run (First seen: 22:58:38) -> /bin/sh /app/bin/heroic-run --launch Sugar
+   - PID 4787: zypak-helper (First seen: 22:58:38) -> /app/bin/zypak-helper host - /app/bin/heroic/heroic --launch Sugar
+   - PID 4802: heroic (First seen: 22:58:42) -> /app/bin/heroic/heroic --type=zygote --no-zygote-sandbox
+   - PID 4804: zypak-sandbox (First seen: 22:58:42) -> zypak-sandbox
+   - PID 4806: cat (First seen: 22:58:42) -> cat
+   - PID 4807: cat (First seen: 22:58:42) -> cat
+   - PID 4812: bwrap (First seen: 22:58:42) -> bwrap --args 32 ldconfig -X -C /run/ld-so-cache-dir/e8aea12804ee0eb231915154e1e9ed670b17220be56616d6
+   - PID 4813: bwrap (First seen: 22:58:42) -> bwrap --args 32 ldconfig -X -C /run/ld-so-cache-dir/e8aea12804ee0eb231915154e1e9ed670b17220be56616d6
+   - PID 4814: ldconfig (First seen: 22:58:42) -> ldconfig -X -C /run/ld-so-cache-dir/e8aea12804ee0eb231915154e1e9ed670b17220be56616d67f1c806ef2d9323d
+   - PID 4831: bwrap (First seen: 22:59:05) -> bwrap --args 46 -- /app/bin/zypak-helper child - /app/bin/heroic/heroic --type=zygote
+   - PID 4832: heroic (First seen: 22:59:05) -> /app/bin/heroic/heroic --type=zygote
+   - PID 4859: heroic (First seen: 22:59:09) -> /app/bin/heroic/heroic --type=zygote --no-zygote-sandbox
+   - PID 4874: heroic (First seen: 22:59:09) -> /proc/self/exe --type=utility --utility-sub-type=network.mojom.NetworkService --lang=en-US --service
+   - PID 4887: which (First seen: 22:59:09) -> which
+   - PID 4898: heroic (First seen: 22:59:09) -> /proc/self/exe --type=renderer --enable-crash-reporter=a73c5469-6ab9-469e-ab46-0b82b5e42347,no_chann
+   - PID 4933: python3 (First seen: 22:59:11) -> python3 ./legendary --version
+   - PID 4936: nile (First seen: 22:59:11) -> ./nile --version
+   - PID 4947: nile (First seen: 22:59:11) -> ./nile --version
+   - PID 4949: file (First seen: 22:59:11) -> file -b /app/bin/heroic/resources/app.asar.unpacked/build/bin/x64/linux/nile
+   - PID 4959: heroic (First seen: 22:59:13) -> /app/bin/heroic/heroic --type=zygote --no-zygote-sandbox
+   - PID 4981: python3 (First seen: 22:59:13) -> python3 ./legendary list --third-party
+   - PID 5006: python3 (First seen: 22:59:21) -> python3 ./legendary list --third-party
+   - PID 5042: python3 (First seen: 22:59:32) -> python3 /home/darian/.var/app/com.heroicgameslauncher.hgl/config/heroic/tools/runtimes/umu/umu_run.p
+   - PID 5050: pressure-vessel (First seen: 22:59:32) -> pressure-vessel
+   - PID 5093: bwrap (First seen: 22:59:36) -> bwrap --args 41 -- /usr/lib/pressure-vessel/from-host/libexec/steam-runtime-tools-0/pv-adverb --pref
+   - PID 5094: pv-adverb (First seen: 22:59:36) -> /usr/lib/pressure-vessel/from-host/libexec/steam-runtime-tools-0/pv-adverb --prefix=/usr/lib/pressur
+   - PID 5095: ldconfig (First seen: 22:59:36) -> /sbin/ldconfig -f /run/user/1000/pressure-vessel/ldso/ld.so.conf -C /run/user/1000/pressure-vessel/l
+   - PID 5122: python3 (First seen: 22:59:44) -> python3 /home/darian/.var/app/com.heroicgameslauncher.hgl/config/heroic/tools/proton/GE-Proton9-20/p
+   - PID 5124: steam-runtime-l (First seen: 22:59:46) -> steam-runtime-launcher-interface-0 proton /home/darian/.var/app/com.heroicgameslauncher.hgl/config/h
+   - PID 5131: wine64 (First seen: 22:59:48) -> /home/darian/.var/app/com.heroicgameslauncher.hgl/config/heroic/tools/proton/GE-Proton9-20/files/bin
+   - PID 5133: wineserver (First seen: 22:59:48) -> /home/darian/.var/app/com.heroicgameslauncher.hgl/config/heroic/tools/proton/GE-Proton9-20/files/bin
+   - PID 5135: wineboot.exe (First seen: 22:59:48) -> C:\windows\system32\wineboot.exe --init
+   - PID 5137: services.exe (First seen: 22:59:48) -> C:\windows\system32\services.exe
+   - PID 5140: svchost.exe (First seen: 22:59:48) -> C:\windows\system32\svchost.exe -k LocalServiceNetworkRestricted
+   - PID 5146: winedevice.exe (First seen: 22:59:48) -> C:\windows\system32\winedevice.exe
+   - PID 5155: winedevice.exe (First seen: 22:59:48) -> C:\windows\system32\winedevice.exe
+   - PID 5195: gamemoderun (First seen: 22:59:54) -> /bin/bash /app/bin/gamemoderun /home/darian/.var/app/com.heroicgameslauncher.hgl/config/heroic/tools
+   - PID 5199: find (First seen: 22:59:54) -> find /home/darian/Games/Heroic/rocketleague -name *.cfg -o -name *.conf -o -name *.ini
+   - PID 5200: xargs (First seen: 22:59:54) -> xargs grep -l -i midi\|timidity\|mpu-401\|sound.*midi
+   - PID 5201: grep (First seen: 22:59:54) -> grep -q .
+   - PID 5204: python3 (First seen: 22:59:57) -> python3 /home/darian/.var/app/com.heroicgameslauncher.hgl/config/heroic/tools/runtimes/umu/umu_run.p
+   - PID 5223: steam-runtime-l (First seen: 22:59:57) -> /home/darian/.local/share/umu/steamrt3/pressure-vessel/bin/steam-runtime-launch-client --pass-env-ma
+   - PID 5267: bwrap (First seen: 22:59:57) -> bwrap --args 41 -- /usr/lib/pressure-vessel/from-host/libexec/steam-runtime-tools-0/pv-adverb --pref
+   - PID 5268: pv-adverb (First seen: 22:59:57) -> /usr/lib/pressure-vessel/from-host/libexec/steam-runtime-tools-0/pv-adverb --prefix=/usr/lib/pressur
+   - PID 5269: ldconfig (First seen: 22:59:57) -> /sbin/ldconfig -f /run/user/1000/pressure-vessel/ldso/ld.so.conf -C /run/user/1000/pressure-vessel/l
+   - PID 5303: wineserver (First seen: 22:59:59) -> /home/darian/.var/app/com.heroicgameslauncher.hgl/config/heroic/tools/proton/GE-Proton9-20/files/bin
+   - PID 5307: services.exe (First seen: 22:59:59) -> C:\windows\system32\services.exe
+   - PID 5310: svchost.exe (First seen: 22:59:59) -> C:\windows\system32\svchost.exe -k LocalServiceNetworkRestricted
+   - PID 5316: winedevice.exe (First seen: 22:59:59) -> C:\windows\system32\winedevice.exe
+   - PID 5325: winedevice.exe (First seen: 22:59:59) -> C:\windows\system32\winedevice.exe
+   - PID 5335: plugplay.exe (First seen: 22:59:59) -> C:\windows\system32\plugplay.exe
+   - PID 5348: Launcher.exe (First seen: 22:59:59) -> S:\Games\Heroic\rocketleague\Binaries\Win64\Launcher.exe -AUTH_LOGIN=unused -AUTH_PASSWORD=2354556e6
+   - PID 5353: RocketLeague_EA (First seen: 22:59:59) -> RocketLeague_EAC.exe -AUTH_LOGIN=unused -AUTH_PASSWORD=2354556e6a2e4852b3dee1edd6d45449 -AUTH_TYPE=e
+   - PID 5357: explorer.exe (First seen: 22:59:59) -> C:\windows\system32\explorer.exe /desktop
+   - PID 5369: rpcss.exe (First seen: 23:00:01) -> C:\windows\system32\rpcss.exe
+   - PID 5379: tabtip.exe (First seen: 23:00:01) -> C:\windows\system32\tabtip.exe
+   - PID 5391: RocketLeague.ex (First seen: 23:00:03) -> S:\Games\Heroic\rocketleague\Binaries\Win64\RocketLeague.exe -AUTH_LOGIN=unused -AUTH_PASSWORD=23545
+   - PID 5421: explorer.exe (First seen: 23:00:07) -> C:\windows\system32\explorer.exe /desktop
+   - PID 5429: tabtip.exe (First seen: 23:00:07) -> C:\windows\system32\tabtip.exe
+
+4. PROCESSES UTILIZING NVIDIA GPU
+   - PID 5391: ...gue\Binaries\Win64\RocketLeague.exe (Type: C+G, Peak GPU Memory: 1596MiB)
+   - PID 1324: /usr/lib/xorg/Xorg (Type: G, Peak GPU Memory: 372MiB)
+   - PID 4859: /app/bin/heroic/heroic (Type: G, Peak GPU Memory: 62MiB)
+   - PID 1768: xfwm4 (Type: G, Peak GPU Memory: 1MiB)
+
+
+
+========================================
+🎮 ROCKET LEAGUE SESSION TELEMETRY
+Start Time: 2026-05-25 23:18:58
+End Time:   2026-05-25 23:35:12
+========================================
+
+1. KILLED PROCESSES DURING CLEANUP (17)
+   - PID 1659: ibus-daemon (Reason: Not whitelisted) -> /usr/bin/ibus-daemon --daemonize --xim
+   - PID 1680: ibus-memconf (Reason: Not whitelisted) -> /usr/libexec/ibus-memconf
+   - PID 1689: ibus-ui-gtk3 (Reason: Not whitelisted) -> /usr/libexec/ibus-ui-gtk3
+   - PID 1693: ibus-extension- (Reason: Not whitelisted) -> /usr/libexec/ibus-extension-gtk3
+   - PID 1695: ibus-x11 (Reason: Not whitelisted) -> /usr/libexec/ibus-x11 --kill-daemon
+   - PID 1698: ibus-portal (Reason: Not whitelisted) -> /usr/libexec/ibus-portal
+   - PID 1747: ssh-agent (Reason: Not whitelisted) -> /usr/bin/ssh-agent -s
+   - PID 1794: ibus-engine-sim (Reason: Not whitelisted) -> /usr/libexec/ibus-engine-simple
+   - PID 1811: Thunar (Reason: Not whitelisted) -> Thunar --daemon
+   - PID 1837: touchegg (Reason: Not whitelisted) -> touchegg
+   - PID 1842: agent (Reason: Not whitelisted) -> /usr/libexec/geoclue-2.0/demos/agent
+   - PID 1862: light-locker (Reason: Not whitelisted) -> light-locker
+   - PID 1871: polkit-gnome-au (Reason: Not whitelisted) -> /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1
+   - PID 1875: nm-applet (Reason: Not whitelisted) -> nm-applet
+   - PID 1882: xiccd (Reason: Not whitelisted) -> xiccd
+   - PID 1911: xfce4-power-man (Reason: Not whitelisted) -> xfce4-power-manager
+   - PID 4602: sleep (Reason: Not whitelisted) -> sleep 2
+
+2. PROCESSES THAT USED ZRAM (PEAK SWAP)
+   - PID 5357: RocketLeague.ex (Peak: 2453864 kB) -> S:\Games\Heroic\rocketleague\Binaries\Win64\RocketLeague.exe -AUTH_LOGIN=unused -AUTH_PASSWORD=4c81c
+   - PID 4797: heroic (Peak: 80388 kB) -> /app/bin/heroic/heroic --type=zygote --no-zygote-sandbox
+   - PID 1317: Xorg (Peak: 79808 kB) -> /usr/lib/xorg/Xorg -core :0 -seat seat0 -auth /var/run/lightdm/root/:0 -nolisten tcp vt7 -novtswitch
+   - PID 4695: heroic (Peak: 78828 kB) -> /app/bin/heroic/heroic --launch Sugar
+   - PID 4835: heroic (Peak: 75132 kB) -> /proc/self/exe --type=renderer --enable-crash-reporter=a73c5469-6ab9-469e-ab46-0b82b5e42347,no_chann
+   - PID 1817: xfdesktop (Peak: 49512 kB) -> xfdesktop
+   - PID 5386: explorer.exe (Peak: 28728 kB) -> C:\windows\system32\explorer.exe /desktop
+   - PID 1773: xfwm4 (Peak: 27960 kB) -> xfwm4
+   - PID 4895: heroic (Peak: 24388 kB) -> /app/bin/heroic/heroic --type=zygote --no-zygote-sandbox
+   - PID 5170: python3 (Peak: 20964 kB) -> python3 /home/darian/.var/app/com.heroicgameslauncher.hgl/config/heroic/tools/runtimes/umu/umu_run.p
+   - PID 1830: nvidia-prime (Peak: 16048 kB) -> /usr/bin/python3 /usr/lib/nvidia-prime-applet/nvidia-prime
+   - PID 5269: wineserver (Peak: 13620 kB) -> /home/darian/.var/app/com.heroicgameslauncher.hgl/config/heroic/tools/proton/GE-Proton9-20/files/bin
+   - PID 5291: winedevice.exe (Peak: 12304 kB) -> C:\windows\system32\winedevice.exe
+   - PID 5273: services.exe (Peak: 11148 kB) -> C:\windows\system32\services.exe
+   - PID 5282: winedevice.exe (Peak: 10220 kB) -> C:\windows\system32\winedevice.exe
+   - PID 4811: heroic (Peak: 9924 kB) -> /proc/self/exe --type=utility --utility-sub-type=network.mojom.NetworkService --lang=en-US --service
+   - PID 4712: heroic (Peak: 9660 kB) -> /app/bin/heroic/heroic --type=zygote --no-zygote-sandbox
+   - PID 1850: panel-8-systray (Peak: 9200 kB) -> /usr/lib/x86_64-linux-gnu/xfce4/panel/wrapper-2.0 /usr/lib/x86_64-linux-gnu/xfce4/panel/plugins/libs
+   - PID 1821: panel-1-whisker (Peak: 8544 kB) -> /usr/lib/x86_64-linux-gnu/xfce4/panel/wrapper-2.0 /usr/lib/x86_64-linux-gnu/xfce4/panel/plugins/libw
+   - PID 5336: rpcss.exe (Peak: 7816 kB) -> C:\windows\system32\rpcss.exe
+   - PID 1852: panel-11-power- (Peak: 7316 kB) -> /usr/lib/x86_64-linux-gnu/xfce4/panel/wrapper-2.0 /usr/lib/x86_64-linux-gnu/xfce4/panel/plugins/libx
+   - PID 5395: tabtip.exe (Peak: 7260 kB) -> C:\windows\system32\tabtip.exe
+   - PID 1851: panel-9-notific (Peak: 7232 kB) -> /usr/lib/x86_64-linux-gnu/xfce4/panel/wrapper-2.0 /usr/lib/x86_64-linux-gnu/xfce4/panel/plugins/libn
+   - PID 4572: xfce4-terminal (Peak: 6896 kB) -> xfce4-terminal
+   - PID 1853: panel-12-pulsea (Peak: 6788 kB) -> /usr/lib/x86_64-linux-gnu/xfce4/panel/wrapper-2.0 /usr/lib/x86_64-linux-gnu/xfce4/panel/plugins/libp
+   - PID 1806: xfce4-panel (Peak: 6464 kB) -> xfce4-panel
+   - PID 1802: xfsettingsd (Peak: 6256 kB) -> xfsettingsd
+   - PID 1560: xfce4-session (Peak: 6076 kB) -> xfce4-session
+   - PID 1785: xdg-desktop-por (Peak: 5844 kB) -> /usr/libexec/xdg-desktop-portal-xapp
+   - PID 5302: plugplay.exe (Peak: 5548 kB) -> C:\windows\system32\plugplay.exe
+   - PID 4632: python3 (Peak: 4268 kB) -> /usr/bin/python3 /home/darian/Documents/RocketMode/game_logger.py --daemon
+   - PID 5276: svchost.exe (Peak: 3748 kB) -> C:\windows\system32\svchost.exe -k LocalServiceNetworkRestricted
+   - PID 4700: flatpak-portal (Peak: 2000 kB) -> /usr/libexec/flatpak-portal
+   - PID 4581: bash (Peak: 1548 kB) -> bash
+   - PID 439: systemd-journal (Peak: 1120 kB) -> /usr/lib/systemd/systemd-journald
+   - PID 1945: colord (Peak: 1084 kB) -> /usr/libexec/colord
+   - PID 1132: rsyslogd (Peak: 980 kB) -> /usr/sbin/rsyslogd -n -iNONE
+   - PID 4667: at-spi-bus-laun (Peak: 816 kB) -> /usr/libexec/at-spi-bus-launcher
+   - PID 1307: lightdm (Peak: 776 kB) -> /usr/sbin/lightdm
+   - PID 4646: gvfsd-fuse (Peak: 772 kB) -> /usr/libexec/gvfsd-fuse /run/user/1000/gvfs -f
+   - PID 4639: gvfsd (Peak: 752 kB) -> /usr/libexec/gvfsd
+   - PID 1493: lightdm (Peak: 632 kB) -> lightdm --session-child 14 21
+   - PID 5190: steam-runtime-l (Peak: 588 kB) -> /home/darian/.local/share/umu/steamrt3/pressure-vessel/bin/steam-runtime-launch-client --pass-env-ma
+   - PID 1530: pipewire (Peak: 556 kB) -> /usr/bin/pipewire -c filter-chain.conf
+   - PID 4677: xdg-dbus-proxy (Peak: 532 kB) -> xdg-dbus-proxy --args=50
+   - PID 5230: xdg-dbus-proxy (Peak: 492 kB) -> xdg-dbus-proxy --args=41
+   - PID 5235: pv-adverb (Peak: 448 kB) -> /usr/lib/pressure-vessel/from-host/libexec/steam-runtime-tools-0/pv-adverb --prefix=/usr/lib/pressur
+   - PID 5162: gamemoderun (Peak: 400 kB) -> /bin/bash /app/bin/gamemoderun /home/darian/.var/app/com.heroicgameslauncher.hgl/config/heroic/tools
+   - PID 4682: heroic-run (Peak: 376 kB) -> /bin/sh /app/bin/heroic-run --launch Sugar
+   - PID 5234: bwrap (Peak: 312 kB) -> bwrap --args 41 -- /usr/lib/pressure-vessel/from-host/libexec/steam-runtime-tools-0/pv-adverb --pref
+   - PID 4603: bash (Peak: 284 kB) -> bash ./launch_rocket_league.sh
+   - PID 4681: bwrap (Peak: 280 kB) -> bwrap --args 47 -- heroic-run --launch Sugar
+   - PID 4674: dbus-daemon (Peak: 268 kB) -> /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-a
+   - PID 5224: bwrap (Peak: 264 kB) -> bwrap --args 41 -- /usr/lib/pressure-vessel/from-host/libexec/steam-runtime-tools-0/pv-adverb --pref
+   - PID 1018: power-profiles- (Peak: 260 kB) -> /usr/libexec/power-profiles-daemon
+   - PID 1076: kerneloops (Peak: 240 kB) -> /usr/sbin/kerneloops --test
+   - PID 4634: bwrap (Peak: 220 kB) -> bwrap --args 47 -- heroic-run --launch Sugar
+   - PID 1533: pipewire-pulse (Peak: 216 kB) -> /usr/bin/pipewire-pulse
+   - PID 1755: xdg-document-po (Peak: 196 kB) -> /usr/libexec/xdg-document-portal
+   - PID 4676: bwrap (Peak: 144 kB) -> bwrap --args 47 -- xdg-dbus-proxy --args=50
+   - PID 4767: bwrap (Peak: 144 kB) -> bwrap --args 46 -- /app/bin/zypak-helper child - /app/bin/heroic/heroic --type=zygote
+   - PID 5229: bwrap (Peak: 140 kB) -> bwrap --args 39 -- xdg-dbus-proxy --args=41
+   - PID 496: systemd-udevd (Peak: 128 kB) -> /usr/lib/systemd/systemd-udevd
+   - PID 5664: (udev-worker) (Peak: 128 kB) -> (udev-worker)
+   - PID 5799: (udev-worker) (Peak: 128 kB) -> (udev-worker)
+   - PID 5951: (udev-worker) (Peak: 128 kB) -> (udev-worker)
+   - PID 5990: (udev-worker) (Peak: 128 kB) -> (udev-worker)
+   - PID 1: systemd (Peak: 124 kB) -> /sbin/init splash
+   - PID 4716: cat (Peak: 112 kB) -> cat
+   - PID 4717: cat (Peak: 112 kB) -> cat
+   - PID 4850: at-spi2-registr (Peak: 108 kB) -> /usr/libexec/at-spi2-registryd --use-gnome-session
+   - PID 4718: bwrap (Peak: 92 kB) -> bwrap --args 46 -- /app/bin/zypak-helper child - /app/bin/heroic/heroic --type=zygote
+   - PID 1532: wireplumber (Peak: 68 kB) -> /usr/bin/wireplumber
+   - PID 1520: (sd-pam) (Peak: 64 kB) -> (sd-pam)
+   - PID 857: systemd-timesyn (Peak: 40 kB) -> /usr/lib/systemd/systemd-timesyncd
+   - PID 1529: pipewire (Peak: 24 kB) -> /usr/bin/pipewire
+   - PID 1030: thermald (Peak: 20 kB) -> /usr/sbin/thermald --systemd --dbus-enable --adaptive
+   - PID 1004: irqbalance (Peak: 12 kB) -> /usr/sbin/irqbalance
+   - PID 1890: dconf-service (Peak: 12 kB) -> /usr/libexec/dconf-service
+   - PID 995: cron (Peak: 8 kB) -> /usr/sbin/cron -f -P
+   - PID 1519: systemd (Peak: 4 kB) -> /usr/lib/systemd/systemd --user
+
+3. PROCESSES LAUNCHED BY HEROIC / ROCKET LEAGUE (67)
+   - PID 4681: bwrap (First seen: 23:19:01) -> bwrap --args 47 -- heroic-run --launch Sugar
+   - PID 4682: heroic-run (First seen: 23:19:01) -> /bin/sh /app/bin/heroic-run --launch Sugar
+   - PID 4695: zypak-helper (First seen: 23:19:01) -> /app/bin/zypak-helper host - /app/bin/heroic/heroic --launch Sugar
+   - PID 4712: heroic (First seen: 23:19:05) -> /app/bin/heroic/heroic --type=zygote --no-zygote-sandbox
+   - PID 4714: zypak-sandbox (First seen: 23:19:05) -> zypak-sandbox
+   - PID 4716: cat (First seen: 23:19:05) -> cat
+   - PID 4717: cat (First seen: 23:19:05) -> cat
+   - PID 4722: bwrap (First seen: 23:19:05) -> bwrap --args 32 ldconfig -X -C /run/ld-so-cache-dir/e8aea12804ee0eb231915154e1e9ed670b17220be56616d6
+   - PID 4723: bwrap (First seen: 23:19:05) -> bwrap --args 32 ldconfig -X -C /run/ld-so-cache-dir/e8aea12804ee0eb231915154e1e9ed670b17220be56616d6
+   - PID 4724: ldconfig (First seen: 23:19:05) -> ldconfig -X -C /run/ld-so-cache-dir/e8aea12804ee0eb231915154e1e9ed670b17220be56616d67f1c806ef2d9323d
+   - PID 4767: bwrap (First seen: 23:19:28) -> bwrap --args 46 -- /app/bin/zypak-helper child - /app/bin/heroic/heroic --type=zygote
+   - PID 4768: heroic (First seen: 23:19:28) -> /app/bin/heroic/heroic --type=zygote
+   - PID 4797: heroic (First seen: 23:19:32) -> /app/bin/heroic/heroic --type=zygote --no-zygote-sandbox
+   - PID 4811: heroic (First seen: 23:19:32) -> /proc/self/exe --type=utility --utility-sub-type=network.mojom.NetworkService --lang=en-US --service
+   - PID 4826: which (First seen: 23:19:32) -> which
+   - PID 4835: heroic (First seen: 23:19:32) -> /proc/self/exe --type=renderer --enable-crash-reporter=a73c5469-6ab9-469e-ab46-0b82b5e42347,no_chann
+   - PID 4877: nile (First seen: 23:19:34) -> ./nile --version
+   - PID 4879: python3 (First seen: 23:19:34) -> python3 ./legendary --version
+   - PID 4882: gogdl (First seen: 23:19:34) -> ./gogdl --auth-config-path /home/darian/.var/app/com.heroicgameslauncher.hgl/config/heroic/gog_store
+   - PID 4884: nile (First seen: 23:19:34) -> ./nile --version
+   - PID 4885: gogdl (First seen: 23:19:34) -> ./gogdl --auth-config-path /home/darian/.var/app/com.heroicgameslauncher.hgl/config/heroic/gog_store
+   - PID 4886: file (First seen: 23:19:34) -> file -b /app/bin/heroic/resources/app.asar.unpacked/build/bin/x64/linux/nile
+   - PID 4892: vulkan-helper (First seen: 23:19:34) -> vulkan-helper
+   - PID 4895: heroic (First seen: 23:19:36) -> /app/bin/heroic/heroic --type=zygote --no-zygote-sandbox
+   - PID 4932: python3 (First seen: 23:19:36) -> python3 ./legendary list --third-party
+   - PID 4954: python3 (First seen: 23:19:42) -> python3 ./legendary list --third-party
+   - PID 4981: python3 (First seen: 23:19:48) -> python3 ./legendary info Sugar --json --platform Windows
+   - PID 4999: python3 (First seen: 23:19:50) -> python3 ./legendary eos-overlay info --prefix /home/darian/Games/Heroic/Prefixes/Rocket League/pfx
+   - PID 5001: python3 (First seen: 23:19:50) -> python3 /home/darian/.var/app/com.heroicgameslauncher.hgl/config/heroic/tools/runtimes/umu/umu_run.p
+   - PID 5012: pressure-vessel (First seen: 23:19:53) -> /home/darian/.local/share/umu/steamrt3/pressure-vessel/bin/pressure-vessel-wrap --env-if-host=PRESSU
+   - PID 5036: i386-linux-gnu- (First seen: 23:19:53) -> /home/darian/.local/share/umu/steamrt3/pressure-vessel/libexec/steam-runtime-tools-0/i386-linux-gnu-
+   - PID 5054: bwrap (First seen: 23:19:55) -> bwrap --args 41 -- /usr/lib/pressure-vessel/from-host/libexec/steam-runtime-tools-0/pv-adverb --pref
+   - PID 5055: pv-adverb (First seen: 23:19:55) -> /usr/lib/pressure-vessel/from-host/libexec/steam-runtime-tools-0/pv-adverb --prefix=/usr/lib/pressur
+   - PID 5056: ldconfig (First seen: 23:19:55) -> /sbin/ldconfig -f /run/user/1000/pressure-vessel/ldso/ld.so.conf -C /run/user/1000/pressure-vessel/l
+   - PID 5090: python3 (First seen: 23:20:03) -> python3 /home/darian/.var/app/com.heroicgameslauncher.hgl/config/heroic/tools/proton/GE-Proton9-20/p
+   - PID 5091: x86_64-linux-gn (First seen: 23:20:03) -> /usr/lib/pressure-vessel/from-host/libexec/steam-runtime-tools-0/x86_64-linux-gnu-srt-launcher-servi
+   - PID 5097: wine64 (First seen: 23:20:03) -> /home/darian/.var/app/com.heroicgameslauncher.hgl/config/heroic/tools/proton/GE-Proton9-20/files/bin
+   - PID 5099: wineserver (First seen: 23:20:03) -> /home/darian/.var/app/com.heroicgameslauncher.hgl/config/heroic/tools/proton/GE-Proton9-20/files/bin
+   - PID 5102: wineboot.exe (First seen: 23:20:05) -> C:\windows\system32\wineboot.exe --init
+   - PID 5104: services.exe (First seen: 23:20:05) -> C:\windows\system32\services.exe
+   - PID 5107: svchost.exe (First seen: 23:20:05) -> C:\windows\system32\svchost.exe -k LocalServiceNetworkRestricted
+   - PID 5113: winedevice.exe (First seen: 23:20:05) -> C:\windows\system32\winedevice.exe
+   - PID 5122: winedevice.exe (First seen: 23:20:05) -> C:\windows\system32\winedevice.exe
+   - PID 5162: gamemoderun (First seen: 23:20:11) -> /bin/bash /app/bin/gamemoderun /home/darian/.var/app/com.heroicgameslauncher.hgl/config/heroic/tools
+   - PID 5170: python3 (First seen: 23:20:11) -> python3 /home/darian/.var/app/com.heroicgameslauncher.hgl/config/heroic/tools/runtimes/umu/umu_run.p
+   - PID 5190: steam-runtime-l (First seen: 23:20:13) -> /home/darian/.local/share/umu/steamrt3/pressure-vessel/bin/steam-runtime-launch-client --pass-env-ma
+   - PID 5234: bwrap (First seen: 23:20:13) -> bwrap --args 41 -- /usr/lib/pressure-vessel/from-host/libexec/steam-runtime-tools-0/pv-adverb --pref
+   - PID 5235: pv-adverb (First seen: 23:20:13) -> /usr/lib/pressure-vessel/from-host/libexec/steam-runtime-tools-0/pv-adverb --prefix=/usr/lib/pressur
+   - PID 5259: python3 (First seen: 23:20:13) -> python3 /home/darian/.var/app/com.heroicgameslauncher.hgl/config/heroic/tools/proton/GE-Proton9-20/p
+   - PID 5261: x86_64-linux-gn (First seen: 23:20:13) -> /usr/lib/pressure-vessel/from-host/libexec/steam-runtime-tools-0/x86_64-linux-gnu-srt-launcher-servi
+   - PID 5267: wine64 (First seen: 23:20:13) -> /home/darian/.var/app/com.heroicgameslauncher.hgl/config/heroic/tools/proton/GE-Proton9-20/files/bin
+   - PID 5269: wineserver (First seen: 23:20:13) -> /home/darian/.var/app/com.heroicgameslauncher.hgl/config/heroic/tools/proton/GE-Proton9-20/files/bin
+   - PID 5271: wineboot.exe (First seen: 23:20:13) -> C:\windows\system32\wineboot.exe --init
+   - PID 5273: services.exe (First seen: 23:20:13) -> C:\windows\system32\services.exe
+   - PID 5276: svchost.exe (First seen: 23:20:13) -> C:\windows\system32\svchost.exe -k LocalServiceNetworkRestricted
+   - PID 5282: winedevice.exe (First seen: 23:20:13) -> C:\windows\system32\winedevice.exe
+   - PID 5291: winedevice.exe (First seen: 23:20:15) -> C:\windows\system32\winedevice.exe
+   - PID 5302: plugplay.exe (First seen: 23:20:15) -> C:\windows\system32\plugplay.exe
+   - PID 5315: Launcher.exe (First seen: 23:20:15) -> S:\Games\Heroic\rocketleague\Binaries\Win64\Launcher.exe -AUTH_LOGIN=unused -AUTH_PASSWORD=4c81ca1ae
+   - PID 5320: RocketLeague_EA (First seen: 23:20:15) -> RocketLeague_EAC.exe -AUTH_LOGIN=unused -AUTH_PASSWORD=4c81ca1ae0994f4292d9e54f37882410 -AUTH_TYPE=e
+   - PID 5324: explorer.exe (First seen: 23:20:15) -> C:\windows\system32\explorer.exe /desktop
+   - PID 5336: rpcss.exe (First seen: 23:20:17) -> C:\windows\system32\rpcss.exe
+   - PID 5346: tabtip.exe (First seen: 23:20:17) -> C:\windows\system32\tabtip.exe
+   - PID 5357: RocketLeague.ex (First seen: 23:20:20) -> S:\Games\Heroic\rocketleague\Binaries\Win64\RocketLeague.exe -AUTH_LOGIN=unused -AUTH_PASSWORD=4c81c
+   - PID 5386: explorer.exe (First seen: 23:20:22) -> C:\windows\system32\explorer.exe /desktop
+   - PID 5395: tabtip.exe (First seen: 23:20:24) -> C:\windows\system32\tabtip.exe
+   - PID 6074: python3 (First seen: 23:34:53) -> python3 ./legendary list --third-party
+
+4. PROCESSES UTILIZING NVIDIA GPU
+   - PID 5357: ...gue\Binaries\Win64\RocketLeague.exe (Type: C+G, Peak GPU Memory: 1566MiB)
+   - PID 1317: /usr/lib/xorg/Xorg (Type: G, Peak GPU Memory: 342MiB)
+   - PID 4797: /app/bin/heroic/heroic (Type: G, Peak GPU Memory: 62MiB)
+   - PID 1773: xfwm4 (Type: G, Peak GPU Memory: 1MiB)
+
+
+
+========================================
+🎮 ROCKET LEAGUE SESSION TELEMETRY
+Start Time: 2026-05-25 23:45:50
+End Time:   2026-05-26 08:50:24
+========================================
+
+1. KILLED PROCESSES DURING CLEANUP (18)
+   - PID 1665: ibus-daemon (Reason: Not whitelisted) -> /usr/bin/ibus-daemon --daemonize --xim
+   - PID 1681: ibus-memconf (Reason: Not whitelisted) -> /usr/libexec/ibus-memconf
+   - PID 1695: ibus-ui-gtk3 (Reason: Not whitelisted) -> /usr/libexec/ibus-ui-gtk3
+   - PID 1699: ibus-extension- (Reason: Not whitelisted) -> /usr/libexec/ibus-extension-gtk3
+   - PID 1701: ibus-x11 (Reason: Not whitelisted) -> /usr/libexec/ibus-x11 --kill-daemon
+   - PID 1704: ibus-portal (Reason: Not whitelisted) -> /usr/libexec/ibus-portal
+   - PID 1758: ssh-agent (Reason: Not whitelisted) -> /usr/bin/ssh-agent -s
+   - PID 1803: ibus-engine-sim (Reason: Not whitelisted) -> /usr/libexec/ibus-engine-simple
+   - PID 1820: Thunar (Reason: Not whitelisted) -> Thunar --daemon
+   - PID 1862: tumblerd (Reason: Not whitelisted) -> /usr/lib/x86_64-linux-gnu/tumbler-1/tumblerd
+   - PID 1867: touchegg (Reason: Not whitelisted) -> touchegg
+   - PID 1872: agent (Reason: Not whitelisted) -> /usr/libexec/geoclue-2.0/demos/agent
+   - PID 1894: light-locker (Reason: Not whitelisted) -> light-locker
+   - PID 1904: polkit-gnome-au (Reason: Not whitelisted) -> /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1
+   - PID 1908: nm-applet (Reason: Not whitelisted) -> nm-applet
+   - PID 1923: xiccd (Reason: Not whitelisted) -> xiccd
+   - PID 1927: xfce4-power-man (Reason: Not whitelisted) -> xfce4-power-manager
+   - PID 2603: sleep (Reason: Not whitelisted) -> sleep 2
+
+2. PROCESSES THAT USED ZRAM (PEAK SWAP)
+   - PID 3433: RocketLeague.ex (Peak: 3354108 kB) -> S:\Games\Heroic\rocketleague\Binaries\Win64\RocketLeague.exe -AUTH_LOGIN=unused -AUTH_PASSWORD=d9071
+   - PID 2790: heroic (Peak: 82572 kB) -> /app/bin/heroic/heroic --type=zygote --no-zygote-sandbox
+   - PID 2690: heroic (Peak: 79288 kB) -> /app/bin/heroic/heroic --launch Sugar
+   - PID 2833: heroic (Peak: 78956 kB) -> /proc/self/exe --type=renderer --enable-crash-reporter=a73c5469-6ab9-469e-ab46-0b82b5e42347,no_chann
+   - PID 1327: Xorg (Peak: 66920 kB) -> /usr/lib/xorg/Xorg -core :0 -seat seat0 -auth /var/run/lightdm/root/:0 -nolisten tcp vt7 -novtswitch
+   - PID 1826: xfdesktop (Peak: 50196 kB) -> xfdesktop
+   - PID 3462: explorer.exe (Peak: 28816 kB) -> C:\windows\system32\explorer.exe /desktop
+   - PID 1779: xfwm4 (Peak: 26448 kB) -> xfwm4
+   - PID 2890: heroic (Peak: 24480 kB) -> /app/bin/heroic/heroic --type=zygote --no-zygote-sandbox
+   - PID 3244: python3 (Peak: 20964 kB) -> python3 /home/darian/.var/app/com.heroicgameslauncher.hgl/config/heroic/tools/runtimes/umu/umu_run.p
+   - PID 1863: nvidia-prime (Peak: 16188 kB) -> /usr/bin/python3 /usr/lib/nvidia-prime-applet/nvidia-prime
+   - PID 3365: winedevice.exe (Peak: 13900 kB) -> C:\windows\system32\winedevice.exe
+   - PID 3343: wineserver (Peak: 13672 kB) -> /home/darian/.var/app/com.heroicgameslauncher.hgl/config/heroic/tools/proton/GE-Proton9-20/files/bin
+   - PID 3347: services.exe (Peak: 12184 kB) -> C:\windows\system32\services.exe
+   - PID 3356: winedevice.exe (Peak: 11480 kB) -> C:\windows\system32\winedevice.exe
+   - PID 2806: heroic (Peak: 10128 kB) -> /proc/self/exe --type=utility --utility-sub-type=network.mojom.NetworkService --lang=en-US --service
+   - PID 2761: heroic (Peak: 9928 kB) -> /app/bin/heroic/heroic --type=zygote
+   - PID 2707: heroic (Peak: 9748 kB) -> /app/bin/heroic/heroic --type=zygote --no-zygote-sandbox
+   - PID 3376: plugplay.exe (Peak: 9632 kB) -> C:\windows\system32\plugplay.exe
+   - PID 1830: panel-1-whisker (Peak: 8000 kB) -> /usr/lib/x86_64-linux-gnu/xfce4/panel/wrapper-2.0 /usr/lib/x86_64-linux-gnu/xfce4/panel/plugins/libw
+   - PID 2527: xfce4-terminal (Peak: 7860 kB) -> xfce4-terminal
+   - PID 3411: rpcss.exe (Peak: 7816 kB) -> C:\windows\system32\rpcss.exe
+   - PID 2951: p11-kit-remote (Peak: 7812 kB) -> p11-kit-remote --provider p11-kit-trust.so pkcs11:model=p11-kit-trust?write-protected=yes
+   - PID 1836: panel-11-power- (Peak: 7308 kB) -> /usr/lib/x86_64-linux-gnu/xfce4/panel/wrapper-2.0 /usr/lib/x86_64-linux-gnu/xfce4/panel/plugins/libx
+   - PID 3470: tabtip.exe (Peak: 7248 kB) -> C:\windows\system32\tabtip.exe
+   - PID 1835: panel-9-notific (Peak: 7232 kB) -> /usr/lib/x86_64-linux-gnu/xfce4/panel/wrapper-2.0 /usr/lib/x86_64-linux-gnu/xfce4/panel/plugins/libn
+   - PID 1837: panel-12-pulsea (Peak: 7052 kB) -> /usr/lib/x86_64-linux-gnu/xfce4/panel/wrapper-2.0 /usr/lib/x86_64-linux-gnu/xfce4/panel/plugins/libp
+   - PID 1815: xfce4-panel (Peak: 6452 kB) -> xfce4-panel
+   - PID 1834: panel-8-systray (Peak: 6428 kB) -> /usr/lib/x86_64-linux-gnu/xfce4/panel/wrapper-2.0 /usr/lib/x86_64-linux-gnu/xfce4/panel/plugins/libs
+   - PID 1770: xdg-desktop-por (Peak: 6420 kB) -> /usr/libexec/xdg-desktop-portal-gtk
+   - PID 1538: wireplumber (Peak: 6348 kB) -> /usr/bin/wireplumber
+   - PID 1811: xfsettingsd (Peak: 6272 kB) -> xfsettingsd
+   - PID 1791: xdg-desktop-por (Peak: 6088 kB) -> /usr/libexec/xdg-desktop-portal-xapp
+   - PID 1566: xfce4-session (Peak: 6072 kB) -> xfce4-session
+   - PID 1942: colord (Peak: 4820 kB) -> /usr/libexec/colord
+   - PID 2632: python3 (Peak: 4400 kB) -> /usr/bin/python3 /home/darian/Documents/RocketMode/game_logger.py --daemon
+   - PID 1187: polkitd (Peak: 3980 kB) -> /usr/lib/polkit-1/polkitd --no-debug
+   - PID 3350: svchost.exe (Peak: 3752 kB) -> C:\windows\system32\svchost.exe -k LocalServiceNetworkRestricted
+   - PID 1738: xdg-desktop-por (Peak: 2744 kB) -> /usr/libexec/xdg-desktop-portal
+   - PID 2696: flatpak-portal (Peak: 2560 kB) -> /usr/libexec/flatpak-portal
+   - PID 1535: pipewire (Peak: 2420 kB) -> /usr/bin/pipewire
+   - PID 1184: NetworkManager (Peak: 2044 kB) -> /usr/sbin/NetworkManager --no-daemon
+   - PID 1526: (sd-pam) (Peak: 1924 kB) -> (sd-pam)
+   - PID 1525: systemd (Peak: 1860 kB) -> /usr/lib/systemd/systemd --user
+   - PID 864: systemd-resolve (Peak: 1772 kB) -> /usr/lib/systemd/systemd-resolved
+   - PID 1148: rsyslogd (Peak: 1752 kB) -> /usr/sbin/rsyslogd -n -iNONE
+   - PID 1070: udisksd (Peak: 1556 kB) -> /usr/libexec/udisks2/udisksd
+   - PID 2540: bash (Peak: 1548 kB) -> bash
+   - PID 1: systemd (Peak: 1524 kB) -> /sbin/init splash
+   - PID 1495: upowerd (Peak: 1488 kB) -> /usr/libexec/upowerd
+   - PID 1185: wpa_supplicant (Peak: 1424 kB) -> /usr/sbin/wpa_supplicant -u -s -O DIR=/run/wpa_supplicant GROUP=netdev
+   - PID 1504: lightdm (Peak: 1388 kB) -> lightdm --session-child 14 21
+   - PID 1539: pipewire-pulse (Peak: 1336 kB) -> /usr/bin/pipewire-pulse
+   - PID 497: systemd-udevd (Peak: 1148 kB) -> /usr/lib/systemd/systemd-udevd
+   - PID 5367: (udev-worker) (Peak: 1116 kB) -> (udev-worker)
+   - PID 440: systemd-journal (Peak: 1076 kB) -> /usr/lib/systemd/systemd-journald
+   - PID 1067: systemd-logind (Peak: 1016 kB) -> /usr/lib/systemd/systemd-logind
+   - PID 1317: lightdm (Peak: 860 kB) -> /usr/sbin/lightdm
+   - PID 2662: at-spi-bus-laun (Peak: 812 kB) -> /usr/libexec/at-spi-bus-launcher
+   - PID 4824: (udev-worker) (Peak: 812 kB) -> (udev-worker)
+   - PID 2639: gvfsd (Peak: 804 kB) -> /usr/libexec/gvfsd
+   - PID 865: systemd-timesyn (Peak: 804 kB) -> /usr/lib/systemd/systemd-timesyncd
+   - PID 1068: thermald (Peak: 684 kB) -> /usr/sbin/thermald --systemd --dbus-enable --adaptive
+   - PID 1536: pipewire (Peak: 672 kB) -> /usr/bin/pipewire -c filter-chain.conf
+   - PID 2849: at-spi2-registr (Peak: 668 kB) -> /usr/libexec/at-spi2-registryd --use-gnome-session
+   - PID 3247: gamemoded (Peak: 664 kB) -> /usr/bin/gamemoded
+   - PID 1008: accounts-daemon (Peak: 636 kB) -> /usr/libexec/accounts-daemon
+   - PID 1013: dbus-daemon (Peak: 616 kB) -> @dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+   - PID 3263: steam-runtime-l (Peak: 592 kB) -> /home/darian/.local/share/umu/steamrt3/pressure-vessel/bin/steam-runtime-launch-client --pass-env-ma
+   - PID 2655: flatpak-session (Peak: 580 kB) -> /usr/libexec/flatpak-session-helper
+   - PID 1063: power-profiles- (Peak: 564 kB) -> /usr/libexec/power-profiles-daemon
+   - PID 2646: gvfsd-fuse (Peak: 564 kB) -> /usr/libexec/gvfsd-fuse /run/user/1000/gvfs -f
+   - PID 2672: xdg-dbus-proxy (Peak: 540 kB) -> xdg-dbus-proxy --args=50
+   - PID 3304: xdg-dbus-proxy (Peak: 492 kB) -> xdg-dbus-proxy --args=41
+   - PID 1544: dbus-daemon (Peak: 464 kB) -> /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog
+   - PID 3309: pv-adverb (Peak: 448 kB) -> /usr/lib/pressure-vessel/from-host/libexec/steam-runtime-tools-0/pv-adverb --prefix=/usr/lib/pressur
+   - PID 1757: xdg-document-po (Peak: 424 kB) -> /usr/libexec/xdg-document-portal
+   - PID 3236: gamemoderun (Peak: 400 kB) -> /bin/bash /app/bin/gamemoderun /home/darian/.var/app/com.heroicgameslauncher.hgl/config/heroic/tools
+   - PID 1093: kerneloops (Peak: 376 kB) -> /usr/sbin/kerneloops --test
+   - PID 1096: kerneloops (Peak: 376 kB) -> /usr/sbin/kerneloops
+   - PID 2677: heroic-run (Peak: 372 kB) -> /bin/sh /app/bin/heroic-run --launch Sugar
+   - PID 2669: dbus-daemon (Peak: 352 kB) -> /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-a
+   - PID 1066: switcheroo-cont (Peak: 336 kB) -> /usr/libexec/switcheroo-control
+   - PID 1916: dconf-service (Peak: 332 kB) -> /usr/libexec/dconf-service
+   - PID 3308: bwrap (Peak: 320 kB) -> bwrap --args 41 -- /usr/lib/pressure-vessel/from-host/libexec/steam-runtime-tools-0/pv-adverb --pref
+   - PID 2604: bash (Peak: 288 kB) -> bash ./launch_rocket_league.sh
+   - PID 2676: bwrap (Peak: 280 kB) -> bwrap --args 48 -- heroic-run --launch Sugar
+   - PID 1749: xdg-permission- (Peak: 272 kB) -> /usr/libexec/xdg-permission-store
+   - PID 3298: bwrap (Peak: 268 kB) -> bwrap --args 41 -- /usr/lib/pressure-vessel/from-host/libexec/steam-runtime-tools-0/pv-adverb --pref
+   - PID 1026: irqbalance (Peak: 260 kB) -> /usr/sbin/irqbalance
+   - PID 2634: bwrap (Peak: 224 kB) -> bwrap --args 48 -- heroic-run --launch Sugar
+   - PID 2660: p11-kit-server (Peak: 208 kB) -> server --sh -n /run/user/1000/.flatpak-helper/pkcs11-flatpak-2655 --provider p11-kit-trust.so pkcs11
+   - PID 3769: dbus-daemon (Peak: 184 kB) -> /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog
+   - PID 2671: bwrap (Peak: 144 kB) -> bwrap --args 48 -- xdg-dbus-proxy --args=50
+   - PID 3303: bwrap (Peak: 140 kB) -> bwrap --args 39 -- xdg-dbus-proxy --args=41
+   - PID 2760: bwrap (Peak: 136 kB) -> bwrap --args 46 -- /app/bin/zypak-helper child - /app/bin/heroic/heroic --type=zygote
+   - PID 2711: cat (Peak: 116 kB) -> cat
+   - PID 2712: cat (Peak: 116 kB) -> cat
+   - PID 1767: fusermount3 (Peak: 112 kB) -> fusermount3 -o rw,nosuid,nodev,fsname=portal,auto_unmount,subtype=portal -- /run/user/1000/doc
+   - PID 1428: rtkit-daemon (Peak: 104 kB) -> /usr/libexec/rtkit-daemon
+   - PID 2713: bwrap (Peak: 100 kB) -> bwrap --args 46 -- /app/bin/zypak-helper child - /app/bin/heroic/heroic --type=zygote
+   - PID 1012: cron (Peak: 68 kB) -> /usr/sbin/cron -f -P
+   - PID 1116: nvidia-persiste (Peak: 68 kB) -> /usr/bin/nvidia-persistenced --user nvidia-persistenced --no-persistence-mode --verbose
+
+3. PROCESSES LAUNCHED BY HEROIC / ROCKET LEAGUE (57)
+   - PID 5040: python3 (First seen: 00:33:12) -> python3 ./legendary list --third-party
+   - PID 2676: bwrap (First seen: 23:45:52) -> bwrap --args 48 -- heroic-run --launch Sugar
+   - PID 2677: heroic-run (First seen: 23:45:52) -> /bin/sh /app/bin/heroic-run --launch Sugar
+   - PID 2690: zypak-helper (First seen: 23:45:52) -> /app/bin/zypak-helper host - /app/bin/heroic/heroic --launch Sugar
+   - PID 2707: heroic (First seen: 23:45:57) -> /app/bin/heroic/heroic --type=zygote --no-zygote-sandbox
+   - PID 2709: zypak-sandbox (First seen: 23:45:57) -> zypak-sandbox
+   - PID 2711: cat (First seen: 23:45:57) -> cat
+   - PID 2712: cat (First seen: 23:45:57) -> cat
+   - PID 2717: bwrap (First seen: 23:45:57) -> bwrap --args 32 ldconfig -X -C /run/ld-so-cache-dir/e8aea12804ee0eb231915154e1e9ed670b17220be56616d6
+   - PID 2718: bwrap (First seen: 23:45:57) -> bwrap --args 32 ldconfig -X -C /run/ld-so-cache-dir/e8aea12804ee0eb231915154e1e9ed670b17220be56616d6
+   - PID 2719: ldconfig (First seen: 23:45:57) -> ldconfig -X -C /run/ld-so-cache-dir/e8aea12804ee0eb231915154e1e9ed670b17220be56616d67f1c806ef2d9323d
+   - PID 2760: bwrap (First seen: 23:46:19) -> bwrap --args 46 -- /app/bin/zypak-helper child - /app/bin/heroic/heroic --type=zygote
+   - PID 2761: heroic (First seen: 23:46:19) -> /app/bin/heroic/heroic --type=zygote
+   - PID 2790: heroic (First seen: 23:46:23) -> /app/bin/heroic/heroic --type=zygote --no-zygote-sandbox
+   - PID 2806: heroic (First seen: 23:46:23) -> /proc/self/exe --type=utility --utility-sub-type=network.mojom.NetworkService --lang=en-US --service
+   - PID 2821: which (First seen: 23:46:23) -> which
+   - PID 2833: heroic (First seen: 23:46:25) -> /proc/self/exe --type=renderer --enable-crash-reporter=a73c5469-6ab9-469e-ab46-0b82b5e42347,no_chann
+   - PID 2872: python3 (First seen: 23:46:28) -> python3 ./legendary --version
+   - PID 2890: heroic (First seen: 23:46:28) -> /app/bin/heroic/heroic --type=zygote --no-zygote-sandbox
+   - PID 2928: python3 (First seen: 23:46:30) -> python3 ./legendary list --third-party
+   - PID 3078: python3 (First seen: 23:49:01) -> python3 /home/darian/.var/app/com.heroicgameslauncher.hgl/config/heroic/tools/runtimes/umu/umu_run.p
+   - PID 3086: pressure-vessel (First seen: 23:49:01) -> /home/darian/.local/share/umu/steamrt3/pressure-vessel/bin/pressure-vessel-wrap --env-if-host=PRESSU
+   - PID 3132: bwrap (First seen: 23:49:05) -> bwrap --args 41 -- /usr/lib/pressure-vessel/from-host/libexec/steam-runtime-tools-0/pv-adverb --pref
+   - PID 3133: pv-adverb (First seen: 23:49:05) -> /usr/lib/pressure-vessel/from-host/libexec/steam-runtime-tools-0/pv-adverb --prefix=/usr/lib/pressur
+   - PID 3134: ldconfig (First seen: 23:49:05) -> /sbin/ldconfig -f /run/user/1000/pressure-vessel/ldso/ld.so.conf -C /run/user/1000/pressure-vessel/l
+   - PID 3161: python3 (First seen: 23:49:13) -> python3 /home/darian/.var/app/com.heroicgameslauncher.hgl/config/heroic/tools/proton/GE-Proton9-20/p
+   - PID 3163: x86_64-linux-gn (First seen: 23:49:15) -> /usr/lib/pressure-vessel/from-host/libexec/steam-runtime-tools-0/x86_64-linux-gnu-srt-launcher-servi
+   - PID 3169: wine64 (First seen: 23:49:15) -> /home/darian/.var/app/com.heroicgameslauncher.hgl/config/heroic/tools/proton/GE-Proton9-20/files/bin
+   - PID 3171: wineserver (First seen: 23:49:15) -> /home/darian/.var/app/com.heroicgameslauncher.hgl/config/heroic/tools/proton/GE-Proton9-20/files/bin
+   - PID 3173: wineboot.exe (First seen: 23:49:15) -> C:\windows\system32\wineboot.exe --init
+   - PID 3176: services.exe (First seen: 23:49:17) -> C:\windows\system32\services.exe
+   - PID 3179: svchost.exe (First seen: 23:49:17) -> C:\windows\system32\svchost.exe -k LocalServiceNetworkRestricted
+   - PID 3185: winedevice.exe (First seen: 23:49:17) -> C:\windows\system32\winedevice.exe
+   - PID 3194: winedevice.exe (First seen: 23:49:17) -> C:\windows\system32\winedevice.exe
+   - PID 3208: plugplay.exe (First seen: 23:49:19) -> C:\windows\system32\plugplay.exe
+   - PID 3231: python3 (First seen: 23:49:21) -> python3 ./legendary launch Sugar --no-wine --wrapper /app/bin/gamemoderun "/home/darian/.var/app/com
+   - PID 3236: gamemoderun (First seen: 23:49:23) -> /bin/bash /app/bin/gamemoderun /home/darian/.var/app/com.heroicgameslauncher.hgl/config/heroic/tools
+   - PID 3244: python3 (First seen: 23:49:23) -> python3 /home/darian/.var/app/com.heroicgameslauncher.hgl/config/heroic/tools/runtimes/umu/umu_run.p
+   - PID 3263: pressure-vessel (First seen: 23:49:23) -> /home/darian/.local/share/umu/steamrt3/pressure-vessel/bin/pressure-vessel-wrap --env-if-host=PRESSU
+   - PID 3308: bwrap (First seen: 23:49:25) -> bwrap --args 41 -- /usr/lib/pressure-vessel/from-host/libexec/steam-runtime-tools-0/pv-adverb --pref
+   - PID 3309: pv-adverb (First seen: 23:49:25) -> /usr/lib/pressure-vessel/from-host/libexec/steam-runtime-tools-0/pv-adverb --prefix=/usr/lib/pressur
+   - PID 3333: python3 (First seen: 23:49:25) -> python3 /home/darian/.var/app/com.heroicgameslauncher.hgl/config/heroic/tools/proton/GE-Proton9-20/p
+   - PID 3335: x86_64-linux-gn (First seen: 23:49:25) -> /usr/lib/pressure-vessel/from-host/libexec/steam-runtime-tools-0/x86_64-linux-gnu-srt-launcher-servi
+   - PID 3343: wineserver (First seen: 23:49:25) -> /home/darian/.var/app/com.heroicgameslauncher.hgl/config/heroic/tools/proton/GE-Proton9-20/files/bin
+   - PID 3347: services.exe (First seen: 23:49:25) -> C:\windows\system32\services.exe
+   - PID 3350: svchost.exe (First seen: 23:49:25) -> C:\windows\system32\svchost.exe -k LocalServiceNetworkRestricted
+   - PID 3356: winedevice.exe (First seen: 23:49:25) -> C:\windows\system32\winedevice.exe
+   - PID 3365: winedevice.exe (First seen: 23:49:25) -> C:\windows\system32\winedevice.exe
+   - PID 3376: plugplay.exe (First seen: 23:49:25) -> C:\windows\system32\plugplay.exe
+   - PID 3389: Launcher.exe (First seen: 23:49:25) -> S:\Games\Heroic\rocketleague\Binaries\Win64\Launcher.exe -AUTH_LOGIN=unused -AUTH_PASSWORD=d90710820
+   - PID 3395: RocketLeague_EA (First seen: 23:49:28) -> RocketLeague_EAC.exe -AUTH_LOGIN=unused -AUTH_PASSWORD=d9071082081a4d51b7282d5b823ce98e -AUTH_TYPE=e
+   - PID 3399: explorer.exe (First seen: 23:49:28) -> C:\windows\system32\explorer.exe /desktop
+   - PID 3411: rpcss.exe (First seen: 23:49:30) -> C:\windows\system32\rpcss.exe
+   - PID 3421: tabtip.exe (First seen: 23:49:30) -> C:\windows\system32\tabtip.exe
+   - PID 3433: RocketLeague.ex (First seen: 23:49:32) -> S:\Games\Heroic\rocketleague\Binaries\Win64\RocketLeague.exe -AUTH_LOGIN=unused -AUTH_PASSWORD=d9071
+   - PID 3462: explorer.exe (First seen: 23:49:34) -> C:\windows\system32\explorer.exe /desktop
+   - PID 3470: tabtip.exe (First seen: 23:49:34) -> C:\windows\system32\tabtip.exe
+
+4. PROCESSES UTILIZING NVIDIA GPU
+   - PID 3433: ...gue\Binaries\Win64\RocketLeague.exe (Type: C+G, Peak GPU Memory: 1641MiB)
+   - PID 1327: /usr/lib/xorg/Xorg (Type: G, Peak GPU Memory: 324MiB)
+   - PID 2790: /app/bin/heroic/heroic (Type: G, Peak GPU Memory: 116MiB)
+   - PID 1779: xfwm4 (Type: G, Peak GPU Memory: 1MiB)
+
+
+
+========================================
+🎮 ROCKET LEAGUE SESSION TELEMETRY
+Start Time: 2026-05-26 09:11:40
+End Time:   2026-05-26 09:13:43
+========================================
+
+1. KILLED PROCESSES DURING CLEANUP (28)
+   - PID 1672: ibus-daemon (Reason: Not whitelisted) -> /usr/bin/ibus-daemon --daemonize --xim
+   - PID 1693: ibus-memconf (Reason: Not whitelisted) -> /usr/libexec/ibus-memconf
+   - PID 1702: ibus-ui-gtk3 (Reason: Not whitelisted) -> /usr/libexec/ibus-ui-gtk3
+   - PID 1706: ibus-extension- (Reason: Not whitelisted) -> /usr/libexec/ibus-extension-gtk3
+   - PID 1708: ibus-x11 (Reason: Not whitelisted) -> /usr/libexec/ibus-x11 --kill-daemon
+   - PID 1711: ibus-portal (Reason: Not whitelisted) -> /usr/libexec/ibus-portal
+   - PID 1767: ssh-agent (Reason: Not whitelisted) -> /usr/bin/ssh-agent -s
+   - PID 1810: ibus-engine-sim (Reason: Not whitelisted) -> /usr/libexec/ibus-engine-simple
+   - PID 1826: Thunar (Reason: Not whitelisted) -> Thunar --daemon
+   - PID 1890: touchegg (Reason: Not whitelisted) -> touchegg
+   - PID 1891: agent (Reason: Not whitelisted) -> /usr/libexec/geoclue-2.0/demos/agent
+   - PID 1909: light-locker (Reason: Not whitelisted) -> light-locker
+   - PID 1915: polkit-gnome-au (Reason: Not whitelisted) -> /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1
+   - PID 1920: nm-applet (Reason: Not whitelisted) -> nm-applet
+   - PID 1933: xiccd (Reason: Not whitelisted) -> xiccd
+   - PID 1935: xfce4-power-man (Reason: Not whitelisted) -> xfce4-power-manager
+   - PID 2555: bash (Reason: Not whitelisted) -> bash
+   - PID 2707: antigravity (Reason: Not whitelisted) -> /home/darian/Documents/Antigravity-x64/antigravity --fullscreen
+   - PID 2715: antigravity (Reason: Not whitelisted) -> /home/darian/Documents/Antigravity-x64/antigravity --type=zygote --no-zygote-sandbox
+   - PID 2716: antigravity (Reason: Not whitelisted) -> /home/darian/Documents/Antigravity-x64/antigravity --type=zygote
+   - PID 2718: antigravity (Reason: Not whitelisted) -> /home/darian/Documents/Antigravity-x64/antigravity --type=zygote
+   - PID 2744: antigravity (Reason: Not whitelisted) -> /home/darian/Documents/Antigravity-x64/antigravity --type=zygote --no-zygote-sandbox
+   - PID 2752: antigravity (Reason: Not whitelisted) -> /proc/self/exe --type=utility --utility-sub-type=network.mojom.NetworkService --lang=en-US --service
+   - PID 2805: language_server (Reason: Not whitelisted) -> /home/darian/Documents/Antigravity-x64/resources/bin/language_server --standalone --override_ide_nam
+   - PID 2817: antigravity (Reason: Not whitelisted) -> /home/darian/Documents/Antigravity-x64/antigravity --type=zygote --no-zygote-sandbox
+   - PID 2828: antigravity (Reason: Not whitelisted) -> /home/darian/Documents/Antigravity-x64/antigravity --type=zygote
+   - PID 2884: antigravity (Reason: Not whitelisted) -> /proc/self/exe --type=utility --utility-sub-type=audio.mojom.AudioService --lang=en-US --service-san
+   - PID 4288: sleep (Reason: Not whitelisted) -> sleep 2
+
+2. PROCESSES THAT USED ZRAM (PEAK SWAP)
+   None
+
+3. PROCESSES LAUNCHED BY HEROIC / ROCKET LEAGUE (27)
+   - PID 4382: bwrap (First seen: 09:11:42) -> bwrap --args 48 -- heroic-run --launch Sugar
+   - PID 4383: heroic-run (First seen: 09:11:42) -> /bin/sh /app/bin/heroic-run --launch Sugar
+   - PID 4398: zypak-helper (First seen: 09:11:42) -> /app/bin/zypak-helper host - /app/bin/heroic/heroic --launch Sugar
+   - PID 4417: heroic (First seen: 09:11:47) -> /app/bin/heroic/heroic --type=zygote --no-zygote-sandbox
+   - PID 4419: zypak-sandbox (First seen: 09:11:47) -> zypak-sandbox
+   - PID 4421: cat (First seen: 09:11:47) -> cat
+   - PID 4422: cat (First seen: 09:11:47) -> cat
+   - PID 4427: bwrap (First seen: 09:11:47) -> bwrap --args 32 ldconfig -X -C /run/ld-so-cache-dir/e8aea12804ee0eb231915154e1e9ed670b17220be56616d6
+   - PID 4428: bwrap (First seen: 09:11:47) -> bwrap --args 32 ldconfig -X -C /run/ld-so-cache-dir/e8aea12804ee0eb231915154e1e9ed670b17220be56616d6
+   - PID 4429: ldconfig (First seen: 09:11:47) -> ldconfig -X -C /run/ld-so-cache-dir/e8aea12804ee0eb231915154e1e9ed670b17220be56616d67f1c806ef2d9323d
+   - PID 4494: bwrap (First seen: 09:12:09) -> bwrap --args 46 -- /app/bin/zypak-helper child - /app/bin/heroic/heroic --type=zygote
+   - PID 4495: heroic (First seen: 09:12:09) -> /app/bin/heroic/heroic --type=zygote
+   - PID 4526: heroic (First seen: 09:12:13) -> /app/bin/heroic/heroic --type=zygote --no-zygote-sandbox
+   - PID 4540: heroic (First seen: 09:12:13) -> /proc/self/exe --type=utility --utility-sub-type=network.mojom.NetworkService --lang=en-US --service
+   - PID 4558: which (First seen: 09:12:13) -> which
+   - PID 4567: heroic (First seen: 09:12:15) -> /proc/self/exe --type=renderer --enable-crash-reporter=a73c5469-6ab9-469e-ab46-0b82b5e42347,no_chann
+   - PID 4609: gogdl (First seen: 09:12:15) -> ./gogdl --auth-config-path /home/darian/.var/app/com.heroicgameslauncher.hgl/config/heroic/gog_store
+   - PID 4612: python3 (First seen: 09:12:15) -> python3 ./legendary --version
+   - PID 4614: nile (First seen: 09:12:15) -> ./nile --version
+   - PID 4616: gogdl (First seen: 09:12:15) -> ./gogdl --auth-config-path /home/darian/.var/app/com.heroicgameslauncher.hgl/config/heroic/gog_store
+   - PID 4617: gogdl (First seen: 09:12:15) -> ./gogdl --auth-config-path /home/darian/.var/app/com.heroicgameslauncher.hgl/config/heroic/gog_store
+   - PID 4620: gogdl (First seen: 09:12:15) -> ./gogdl --auth-config-path /home/darian/.var/app/com.heroicgameslauncher.hgl/config/heroic/gog_store
+   - PID 4630: heroic (First seen: 09:12:18) -> /app/bin/heroic/heroic --type=zygote --no-zygote-sandbox
+   - PID 4668: python3 (First seen: 09:12:18) -> python3 ./legendary list --third-party
+   - PID 4928: python3 (First seen: 09:13:40) -> python3 /home/darian/.var/app/com.heroicgameslauncher.hgl/config/heroic/tools/runtimes/umu/umu_run.p
+   - PID 4940: pressure-vessel (First seen: 09:13:40) -> /home/darian/.local/share/umu/steamrt3/pressure-vessel/bin/pressure-vessel-wrap --env-if-host=PRESSU
+   - PID 4966: i386-linux-gnu- (First seen: 09:13:42) -> /home/darian/.local/share/umu/steamrt3/pressure-vessel/libexec/steam-runtime-tools-0/i386-linux-gnu-
+
+4. PROCESSES UTILIZING NVIDIA GPU
+   - PID 1335: /usr/lib/xorg/Xorg (Type: G, Peak GPU Memory: 244MiB)
+   - PID 4526: /app/bin/heroic/heroic (Type: G, Peak GPU Memory: 57MiB)
+   - PID 1788: xfwm4 (Type: G, Peak GPU Memory: 1MiB)
+
+
+
+========================================
+🎮 ROCKET LEAGUE SESSION TELEMETRY
+Start Time: 2026-05-26 09:28:43
+End Time:   2026-05-26 09:31:08
+========================================
+
+1. KILLED PROCESSES DURING CLEANUP (1)
+   - PID 5166: language_server (Reason: Not whitelisted) -> /home/darian/Documents/Antigravity-x64/resources/bin/language_server --standalone --override_ide_nam
+
+2. PROCESSES THAT USED ZRAM (PEAK SWAP)
+   None
+
+3. PROCESSES LAUNCHED BY HEROIC / ROCKET LEAGUE (57)
+   - PID 5402: bwrap (First seen: 09:28:45) -> bwrap --args 46 -- heroic-run --launch Sugar
+   - PID 5403: heroic-run (First seen: 09:28:45) -> /bin/sh /app/bin/heroic-run --launch Sugar
+   - PID 5414: heroic (First seen: 09:28:45) -> /app/bin/heroic/heroic --launch Sugar
+   - PID 5426: heroic (First seen: 09:28:45) -> /app/bin/heroic/heroic --type=zygote --no-zygote-sandbox
+   - PID 5428: zypak-sandbox (First seen: 09:28:45) -> zypak-sandbox
+   - PID 5430: cat (First seen: 09:28:45) -> cat
+   - PID 5431: cat (First seen: 09:28:45) -> cat
+   - PID 5441: bwrap (First seen: 09:28:45) -> bwrap --args 46 -- /app/bin/zypak-helper child - /app/bin/heroic/heroic --type=zygote
+   - PID 5442: heroic (First seen: 09:28:45) -> /app/bin/heroic/heroic --type=zygote
+   - PID 5469: heroic (First seen: 09:28:45) -> /app/bin/heroic/heroic --type=zygote --no-zygote-sandbox
+   - PID 5484: heroic (First seen: 09:28:45) -> /app/bin/heroic/heroic --type=zygote --no-zygote-sandbox
+   - PID 5491: heroic (First seen: 09:28:45) -> /proc/self/exe --type=utility --utility-sub-type=network.mojom.NetworkService --lang=en-US --service
+   - PID 5513: heroic (First seen: 09:28:45) -> /proc/self/exe --type=renderer --enable-crash-reporter=a73c5469-6ab9-469e-ab46-0b82b5e42347,no_chann
+   - PID 5549: gogdl (First seen: 09:28:45) -> ./gogdl --auth-config-path /home/darian/.var/app/com.heroicgameslauncher.hgl/config/heroic/gog_store
+   - PID 5551: python3 (First seen: 09:28:45) -> python3 ./legendary --version
+   - PID 5553: gogdl (First seen: 09:28:45) -> ./gogdl --auth-config-path /home/darian/.var/app/com.heroicgameslauncher.hgl/config/heroic/gog_store
+   - PID 5555: nile (First seen: 09:28:45) -> ./nile --version
+   - PID 5557: gogdl (First seen: 09:28:45) -> ./gogdl --auth-config-path /home/darian/.var/app/com.heroicgameslauncher.hgl/config/heroic/gog_store
+   - PID 5558: gogdl (First seen: 09:28:45) -> ./gogdl --auth-config-path /home/darian/.var/app/com.heroicgameslauncher.hgl/config/heroic/gog_store
+   - PID 5559: nile (First seen: 09:28:45) -> ./nile --version
+   - PID 5603: python3 (First seen: 09:28:47) -> python3 ./legendary list --third-party
+   - PID 5651: python3 (First seen: 09:28:53) -> python3 ./legendary eos-overlay info --prefix /home/darian/Games/Heroic/Prefixes/Rocket League/pfx
+   - PID 5653: python3 (First seen: 09:28:53) -> python3 /home/darian/.var/app/com.heroicgameslauncher.hgl/config/heroic/tools/runtimes/umu/umu_run.p
+   - PID 5666: steam-runtime-l (First seen: 09:28:55) -> /home/darian/.local/share/umu/steamrt3/pressure-vessel/bin/steam-runtime-launch-client --pass-env-ma
+   - PID 5706: bwrap (First seen: 09:28:55) -> bwrap --args 41 -- /usr/lib/pressure-vessel/from-host/libexec/steam-runtime-tools-0/pv-adverb --pref
+   - PID 5707: pv-adverb (First seen: 09:28:55) -> /usr/lib/pressure-vessel/from-host/libexec/steam-runtime-tools-0/pv-adverb --prefix=/usr/lib/pressur
+   - PID 5708: ldconfig (First seen: 09:28:55) -> /sbin/ldconfig -f /run/user/1000/pressure-vessel/ldso/ld.so.conf -C /run/user/1000/pressure-vessel/l
+   - PID 5736: pv-locale-gen (First seen: 09:29:04) -> /bin/sh /usr/lib/pressure-vessel/from-host/libexec/steam-runtime-tools-0/pv-locale-gen --output-dir 
+   - PID 5756: python3 (First seen: 09:29:06) -> python3 /home/darian/.var/app/com.heroicgameslauncher.hgl/config/heroic/tools/proton/GE-Proton9-20/p
+   - PID 5763: x86_64-linux-gn (First seen: 09:29:08) -> /usr/lib/pressure-vessel/from-host/libexec/steam-runtime-tools-0/x86_64-linux-gnu-srt-launcher-servi
+   - PID 5769: wine64 (First seen: 09:29:08) -> /home/darian/.var/app/com.heroicgameslauncher.hgl/config/heroic/tools/proton/GE-Proton9-20/files/bin
+   - PID 5771: wineserver (First seen: 09:29:08) -> /home/darian/.var/app/com.heroicgameslauncher.hgl/config/heroic/tools/proton/GE-Proton9-20/files/bin
+   - PID 5773: wineboot.exe (First seen: 09:29:08) -> C:\windows\system32\wineboot.exe --init
+   - PID 5775: services.exe (First seen: 09:29:08) -> C:\windows\system32\services.exe
+   - PID 5778: svchost.exe (First seen: 09:29:08) -> C:\windows\system32\svchost.exe -k LocalServiceNetworkRestricted
+   - PID 5788: winedevice.exe (First seen: 09:29:08) -> C:\windows\system32\winedevice.exe
+   - PID 5796: winedevice.exe (First seen: 09:29:08) -> C:\windows\system32\winedevice.exe
+   - PID 5845: gamemoderun (First seen: 09:29:14) -> /bin/bash /app/bin/gamemoderun /home/darian/.var/app/com.heroicgameslauncher.hgl/config/heroic/tools
+   - PID 5857: python3 (First seen: 09:29:14) -> python3 /home/darian/.var/app/com.heroicgameslauncher.hgl/config/heroic/tools/runtimes/umu/umu_run.p
+   - PID 5877: steam-runtime-l (First seen: 09:29:16) -> /home/darian/.local/share/umu/steamrt3/pressure-vessel/bin/steam-runtime-launch-client --pass-env-ma
+   - PID 5925: bwrap (First seen: 09:29:16) -> bwrap --args 41 -- /usr/lib/pressure-vessel/from-host/libexec/steam-runtime-tools-0/pv-adverb --pref
+   - PID 5926: pv-adverb (First seen: 09:29:16) -> /usr/lib/pressure-vessel/from-host/libexec/steam-runtime-tools-0/pv-adverb --prefix=/usr/lib/pressur
+   - PID 5950: python3 (First seen: 09:29:16) -> python3 /home/darian/.var/app/com.heroicgameslauncher.hgl/config/heroic/tools/proton/GE-Proton9-20/p
+   - PID 5960: wineserver (First seen: 09:29:18) -> /home/darian/.var/app/com.heroicgameslauncher.hgl/config/heroic/tools/proton/GE-Proton9-20/files/bin
+   - PID 5965: services.exe (First seen: 09:29:18) -> C:\windows\system32\services.exe
+   - PID 5968: svchost.exe (First seen: 09:29:18) -> C:\windows\system32\svchost.exe -k LocalServiceNetworkRestricted
+   - PID 5974: winedevice.exe (First seen: 09:29:18) -> C:\windows\system32\winedevice.exe
+   - PID 5982: winedevice.exe (First seen: 09:29:18) -> C:\windows\system32\winedevice.exe
+   - PID 5993: plugplay.exe (First seen: 09:29:18) -> C:\windows\system32\plugplay.exe
+   - PID 6006: Launcher.exe (First seen: 09:29:18) -> S:\Games\Heroic\rocketleague\Binaries\Win64\Launcher.exe -AUTH_LOGIN=unused -AUTH_PASSWORD=28d006fcc
+   - PID 6015: RocketLeague_EA (First seen: 09:29:18) -> RocketLeague_EAC.exe -AUTH_LOGIN=unused -AUTH_PASSWORD=28d006fcc3b74d2bb7bcfc1c170e7f9d -AUTH_TYPE=e
+   - PID 6019: explorer.exe (First seen: 09:29:18) -> C:\windows\system32\explorer.exe /desktop
+   - PID 6035: rpcss.exe (First seen: 09:29:20) -> C:\windows\system32\rpcss.exe
+   - PID 6045: tabtip.exe (First seen: 09:29:20) -> C:\windows\system32\tabtip.exe
+   - PID 6060: RocketLeague.ex (First seen: 09:29:22) -> S:\Games\Heroic\rocketleague\Binaries\Win64\RocketLeague.exe -AUTH_LOGIN=unused -AUTH_PASSWORD=28d00
+   - PID 6099: explorer.exe (First seen: 09:29:26) -> C:\windows\system32\explorer.exe /desktop
+   - PID 6109: tabtip.exe (First seen: 09:29:26) -> C:\windows\system32\tabtip.exe
+
+4. PROCESSES UTILIZING NVIDIA GPU
+   - PID 1335: /usr/lib/xorg/Xorg (Type: G, Peak GPU Memory: 244MiB)
+   - PID 5469: /app/bin/heroic/heroic (Type: G, Peak GPU Memory: 58MiB)
+   - PID 1788: xfwm4 (Type: G, Peak GPU Memory: 1MiB)
+
+
+
+========================================
+🎮 ROCKET LEAGUE SESSION TELEMETRY
+Start Time: 2026-05-26 10:00:59
+End Time:   2026-05-26 10:03:01
+========================================
+
+1. KILLED PROCESSES DURING CLEANUP (10)
+   - PID 6269: antigravity (Reason: Not whitelisted) -> /home/darian/Documents/Antigravity-x64/antigravity --fullscreen
+   - PID 6272: antigravity (Reason: Not whitelisted) -> /home/darian/Documents/Antigravity-x64/antigravity --type=zygote --no-zygote-sandbox
+   - PID 6273: antigravity (Reason: Not whitelisted) -> /home/darian/Documents/Antigravity-x64/antigravity --type=zygote
+   - PID 6275: antigravity (Reason: Not whitelisted) -> /home/darian/Documents/Antigravity-x64/antigravity --type=zygote
+   - PID 6305: antigravity (Reason: Not whitelisted) -> /home/darian/Documents/Antigravity-x64/antigravity --type=zygote --no-zygote-sandbox
+   - PID 6310: antigravity (Reason: Not whitelisted) -> /proc/self/exe --type=utility --utility-sub-type=network.mojom.NetworkService --lang=en-US --service
+   - PID 6356: language_server (Reason: Not whitelisted) -> /home/darian/Documents/Antigravity-x64/resources/bin/language_server --standalone --override_ide_nam
+   - PID 6374: antigravity (Reason: Not whitelisted) -> /home/darian/Documents/Antigravity-x64/antigravity --type=zygote
+   - PID 6389: antigravity (Reason: Not whitelisted) -> /home/darian/Documents/Antigravity-x64/antigravity --type=zygote --no-zygote-sandbox
+   - PID 6439: antigravity (Reason: Not whitelisted) -> /proc/self/exe --type=utility --utility-sub-type=audio.mojom.AudioService --lang=en-US --service-san
+
+2. PROCESSES THAT USED ZRAM (PEAK SWAP)
+   None
+
+3. PROCESSES LAUNCHED BY HEROIC / ROCKET LEAGUE (26)
+   - PID 6773: bwrap (First seen: 10:01:01) -> bwrap --args 47 -- heroic-run --launch Sugar
+   - PID 6774: heroic-run (First seen: 10:01:01) -> /bin/sh /app/bin/heroic-run --launch Sugar
+   - PID 6785: heroic (First seen: 10:01:01) -> /app/bin/heroic/heroic --launch Sugar
+   - PID 6797: heroic (First seen: 10:01:01) -> /app/bin/heroic/heroic --type=zygote --no-zygote-sandbox
+   - PID 6799: zypak-sandbox (First seen: 10:01:01) -> zypak-sandbox
+   - PID 6801: cat (First seen: 10:01:01) -> cat
+   - PID 6802: cat (First seen: 10:01:01) -> cat
+   - PID 6807: bwrap (First seen: 10:01:01) -> bwrap --args 32 ldconfig -X -C /run/ld-so-cache-dir/e8aea12804ee0eb231915154e1e9ed670b17220be56616d6
+   - PID 6808: bwrap (First seen: 10:01:01) -> bwrap --args 32 ldconfig -X -C /run/ld-so-cache-dir/e8aea12804ee0eb231915154e1e9ed670b17220be56616d6
+   - PID 6809: ldconfig (First seen: 10:01:01) -> ldconfig -X -C /run/ld-so-cache-dir/e8aea12804ee0eb231915154e1e9ed670b17220be56616d67f1c806ef2d9323d
+   - PID 6854: bwrap (First seen: 10:01:17) -> bwrap --args 46 -- /app/bin/zypak-helper child - /app/bin/heroic/heroic --type=zygote
+   - PID 6856: heroic (First seen: 10:01:17) -> /app/bin/heroic/heroic --type=zygote
+   - PID 6887: heroic (First seen: 10:01:19) -> /app/bin/heroic/heroic --type=zygote --no-zygote-sandbox
+   - PID 6900: heroic (First seen: 10:01:19) -> /proc/self/exe --type=utility --utility-sub-type=network.mojom.NetworkService --lang=en-US --service
+   - PID 6918: which (First seen: 10:01:19) -> which
+   - PID 6928: heroic (First seen: 10:01:21) -> /proc/self/exe --type=renderer --enable-crash-reporter=a73c5469-6ab9-469e-ab46-0b82b5e42347,no_chann
+   - PID 6965: python3 (First seen: 10:01:21) -> python3 ./legendary --version
+   - PID 6974: nile (First seen: 10:01:21) -> ./nile --version
+   - PID 6991: heroic (First seen: 10:01:23) -> /app/bin/heroic/heroic --type=zygote --no-zygote-sandbox
+   - PID 7018: python3 (First seen: 10:01:26) -> python3 ./legendary list --third-party
+   - PID 7055: python3 (First seen: 10:01:32) -> python3 ./legendary list --third-party
+   - PID 7304: python3 (First seen: 10:02:55) -> python3 /home/darian/.var/app/com.heroicgameslauncher.hgl/config/heroic/tools/runtimes/umu/umu_run.p
+   - PID 7316: pressure-vessel (First seen: 10:02:55) -> /home/darian/.local/share/umu/steamrt3/pressure-vessel/bin/pressure-vessel-wrap --env-if-host=PRESSU
+   - PID 7365: bwrap (First seen: 10:02:57) -> bwrap --args 41 -- /usr/lib/pressure-vessel/from-host/libexec/steam-runtime-tools-0/pv-adverb --pref
+   - PID 7366: pv-adverb (First seen: 10:02:57) -> /usr/lib/pressure-vessel/from-host/libexec/steam-runtime-tools-0/pv-adverb --prefix=/usr/lib/pressur
+   - PID 7367: ldconfig (First seen: 10:02:57) -> /sbin/ldconfig -f /run/user/1000/pressure-vessel/ldso/ld.so.conf -C /run/user/1000/pressure-vessel/l
+
+4. PROCESSES UTILIZING NVIDIA GPU
+   - PID 1335: /usr/lib/xorg/Xorg (Type: G, Peak GPU Memory: 244MiB)
+   - PID 6887: /app/bin/heroic/heroic (Type: G, Peak GPU Memory: 59MiB)
+   - PID 1788: xfwm4 (Type: G, Peak GPU Memory: 1MiB)
+
+
+
+========================================
+🎮 ROCKET LEAGUE SESSION TELEMETRY
+Start Time: 2026-05-26 19:34:37
+End Time:   2026-05-26 19:42:51
+========================================
+
+1. KILLED PROCESSES DURING CLEANUP (18)
+   - PID 1787: ibus-daemon (Reason: Not whitelisted) -> /usr/bin/ibus-daemon --daemonize --xim
+   - PID 1808: ibus-memconf (Reason: Not whitelisted) -> /usr/libexec/ibus-memconf
+   - PID 1817: ibus-ui-gtk3 (Reason: Not whitelisted) -> /usr/libexec/ibus-ui-gtk3
+   - PID 1821: ibus-extension- (Reason: Not whitelisted) -> /usr/libexec/ibus-extension-gtk3
+   - PID 1823: ibus-x11 (Reason: Not whitelisted) -> /usr/libexec/ibus-x11 --kill-daemon
+   - PID 1826: ibus-portal (Reason: Not whitelisted) -> /usr/libexec/ibus-portal
+   - PID 1879: ssh-agent (Reason: Not whitelisted) -> /usr/bin/ssh-agent -s
+   - PID 1922: ibus-engine-sim (Reason: Not whitelisted) -> /usr/libexec/ibus-engine-simple
+   - PID 1939: Thunar (Reason: Not whitelisted) -> Thunar --daemon
+   - PID 1971: tumblerd (Reason: Not whitelisted) -> /usr/lib/x86_64-linux-gnu/tumbler-1/tumblerd
+   - PID 1983: touchegg (Reason: Not whitelisted) -> touchegg
+   - PID 1984: agent (Reason: Not whitelisted) -> /usr/libexec/geoclue-2.0/demos/agent
+   - PID 1996: light-locker (Reason: Not whitelisted) -> light-locker
+   - PID 2016: polkit-gnome-au (Reason: Not whitelisted) -> /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1
+   - PID 2022: nm-applet (Reason: Not whitelisted) -> nm-applet
+   - PID 2032: xiccd (Reason: Not whitelisted) -> xiccd
+   - PID 2036: xfce4-power-man (Reason: Not whitelisted) -> xfce4-power-manager
+   - PID 2684: sleep (Reason: Not whitelisted) -> sleep 2
+
+2. PROCESSES THAT USED ZRAM (PEAK SWAP)
+   - PID 3555: RocketLeague.ex (Peak: 676676 kB) -> S:\Games\Heroic\rocketleague\Binaries\Win64\RocketLeague.exe -AUTH_LOGIN=unused -AUTH_PASSWORD=a5980
+   - PID 2807: heroic (Peak: 84088 kB) -> /app/bin/heroic/heroic --launch Sugar
+   - PID 2936: heroic (Peak: 82560 kB) -> /app/bin/heroic/heroic --type=zygote --no-zygote-sandbox
+   - PID 2980: heroic (Peak: 81280 kB) -> /proc/self/exe --type=renderer --enable-crash-reporter=a73c5469-6ab9-469e-ab46-0b82b5e42347,no_chann
+   - PID 1329: Xorg (Peak: 69132 kB) -> /usr/lib/xorg/Xorg -core :0 -seat seat0 -auth /var/run/lightdm/root/:0 -nolisten tcp vt7 -novtswitch
+   - PID 1945: xfdesktop (Peak: 48812 kB) -> xfdesktop
+   - PID 3590: explorer.exe (Peak: 30120 kB) -> C:\windows\system32\explorer.exe /desktop
+   - PID 1904: xfwm4 (Peak: 28612 kB) -> xfwm4
+   - PID 3052: heroic (Peak: 24616 kB) -> /app/bin/heroic/heroic --type=zygote --no-zygote-sandbox
+   - PID 3352: python3 (Peak: 20968 kB) -> python3 /home/darian/.var/app/com.heroicgameslauncher.hgl/config/heroic/tools/runtimes/umu/umu_run.p
+   - PID 1975: nvidia-prime (Peak: 16072 kB) -> /usr/bin/python3 /usr/lib/nvidia-prime-applet/nvidia-prime
+   - PID 3460: wineserver (Peak: 13668 kB) -> /home/darian/.var/app/com.heroicgameslauncher.hgl/config/heroic/tools/proton/GE-Proton9-20/files/bin
+   - PID 3481: winedevice.exe (Peak: 12264 kB) -> C:\windows\system32\winedevice.exe
+   - PID 3473: winedevice.exe (Peak: 11744 kB) -> C:\windows\system32\winedevice.exe
+   - PID 3464: services.exe (Peak: 11148 kB) -> C:\windows\system32\services.exe
+   - PID 2954: heroic (Peak: 10088 kB) -> /proc/self/exe --type=utility --utility-sub-type=network.mojom.NetworkService --lang=en-US --service
+   - PID 2826: heroic (Peak: 9872 kB) -> /app/bin/heroic/heroic --type=zygote --no-zygote-sandbox
+   - PID 2646: xfce4-terminal (Peak: 8512 kB) -> xfce4-terminal
+   - PID 1949: panel-1-whisker (Peak: 7944 kB) -> /usr/lib/x86_64-linux-gnu/xfce4/panel/wrapper-2.0 /usr/lib/x86_64-linux-gnu/xfce4/panel/plugins/libw
+   - PID 3530: rpcss.exe (Peak: 7816 kB) -> C:\windows\system32\rpcss.exe
+   - PID 1956: panel-12-pulsea (Peak: 7500 kB) -> /usr/lib/x86_64-linux-gnu/xfce4/panel/wrapper-2.0 /usr/lib/x86_64-linux-gnu/xfce4/panel/plugins/libp
+   - PID 1955: panel-11-power- (Peak: 7260 kB) -> /usr/lib/x86_64-linux-gnu/xfce4/panel/wrapper-2.0 /usr/lib/x86_64-linux-gnu/xfce4/panel/plugins/libx
+   - PID 3598: tabtip.exe (Peak: 7252 kB) -> C:\windows\system32\tabtip.exe
+   - PID 1954: panel-9-notific (Peak: 7232 kB) -> /usr/lib/x86_64-linux-gnu/xfce4/panel/wrapper-2.0 /usr/lib/x86_64-linux-gnu/xfce4/panel/plugins/libn
+   - PID 3492: plugplay.exe (Peak: 6592 kB) -> C:\windows\system32\plugplay.exe
+   - PID 1953: panel-8-systray (Peak: 6424 kB) -> /usr/lib/x86_64-linux-gnu/xfce4/panel/wrapper-2.0 /usr/lib/x86_64-linux-gnu/xfce4/panel/plugins/libs
+   - PID 1692: xfce4-session (Peak: 6092 kB) -> xfce4-session
+   - PID 1909: xdg-desktop-por (Peak: 5928 kB) -> /usr/libexec/xdg-desktop-portal-xapp
+   - PID 1930: xfsettingsd (Peak: 5800 kB) -> xfsettingsd
+   - PID 2905: heroic (Peak: 5740 kB) -> /app/bin/heroic/heroic --type=zygote
+   - PID 2745: python3 (Peak: 4376 kB) -> /usr/bin/python3 /home/darian/Documents/RocketMode/game_logger.py --daemon
+   - PID 1934: xfce4-panel (Peak: 4092 kB) -> xfce4-panel
+   - PID 1891: xdg-desktop-por (Peak: 3892 kB) -> /usr/libexec/xdg-desktop-portal-gtk
+   - PID 3467: svchost.exe (Peak: 3748 kB) -> C:\windows\system32\svchost.exe -k LocalServiceNetworkRestricted
+   - PID 495: systemd-udevd (Peak: 3560 kB) -> /usr/lib/systemd/systemd-udevd
+   - PID 1662: wireplumber (Peak: 3372 kB) -> /usr/bin/wireplumber
+   - PID 2812: flatpak-portal (Peak: 2556 kB) -> /usr/libexec/flatpak-portal
+   - PID 1186: NetworkManager (Peak: 2260 kB) -> /usr/sbin/NetworkManager --no-daemon
+   - PID 1189: polkitd (Peak: 2244 kB) -> /usr/lib/polkit-1/polkitd --no-debug
+   - PID 1650: (sd-pam) (Peak: 1892 kB) -> (sd-pam)
+   - PID 1859: xdg-desktop-por (Peak: 1832 kB) -> /usr/libexec/xdg-desktop-portal
+   - PID 1659: pipewire (Peak: 1724 kB) -> /usr/bin/pipewire
+   - PID 1: systemd (Peak: 1560 kB) -> /sbin/init splash
+   - PID 1187: wpa_supplicant (Peak: 1524 kB) -> /usr/sbin/wpa_supplicant -u -s -O DIR=/run/wpa_supplicant GROUP=netdev
+   - PID 872: systemd-resolve (Peak: 1460 kB) -> /usr/lib/systemd/systemd-resolved
+   - PID 2655: bash (Peak: 1436 kB) -> bash
+   - PID 1508: lightdm (Peak: 1396 kB) -> lightdm --session-child 14 21
+   - PID 1155: rsyslogd (Peak: 1280 kB) -> /usr/sbin/rsyslogd -n -iNONE
+   - PID 1499: upowerd (Peak: 1224 kB) -> /usr/libexec/upowerd
+   - PID 440: systemd-journal (Peak: 1072 kB) -> /usr/lib/systemd/systemd-journald
+   - PID 3996: (udev-worker) (Peak: 1052 kB) -> (udev-worker)
+   - PID 3999: (udev-worker) (Peak: 1040 kB) -> (udev-worker)
+   - PID 4000: (udev-worker) (Peak: 1040 kB) -> (udev-worker)
+   - PID 4003: (udev-worker) (Peak: 1040 kB) -> (udev-worker)
+   - PID 1316: lightdm (Peak: 860 kB) -> /usr/sbin/lightdm
+   - PID 2777: at-spi-bus-laun (Peak: 812 kB) -> /usr/libexec/at-spi-bus-launcher
+   - PID 2755: gvfsd (Peak: 760 kB) -> /usr/libexec/gvfsd
+   - PID 1013: dbus-daemon (Peak: 692 kB) -> @dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+   - PID 4008: (udev-worker) (Peak: 624 kB) -> (udev-worker)
+   - PID 1663: pipewire-pulse (Peak: 612 kB) -> /usr/bin/pipewire-pulse
+   - PID 3376: steam-runtime-l (Peak: 588 kB) -> /home/darian/.local/share/umu/steamrt3/pressure-vessel/bin/steam-runtime-launch-client --pass-env-ma
+   - PID 2787: xdg-dbus-proxy (Peak: 540 kB) -> xdg-dbus-proxy --args=50
+   - PID 3416: xdg-dbus-proxy (Peak: 488 kB) -> xdg-dbus-proxy --args=41
+   - PID 1660: pipewire (Peak: 480 kB) -> /usr/bin/pipewire -c filter-chain.conf
+   - PID 3421: pv-adverb (Peak: 448 kB) -> /usr/lib/pressure-vessel/from-host/libexec/steam-runtime-tools-0/pv-adverb --prefix=/usr/lib/pressur
+   - PID 1878: xdg-document-po (Peak: 416 kB) -> /usr/libexec/xdg-document-portal
+   - PID 1665: dbus-daemon (Peak: 404 kB) -> /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog
+   - PID 3344: gamemoderun (Peak: 400 kB) -> /bin/bash /app/bin/gamemoderun /home/darian/.var/app/com.heroicgameslauncher.hgl/config/heroic/tools
+   - PID 1086: kerneloops (Peak: 380 kB) -> /usr/sbin/kerneloops --test
+   - PID 2792: heroic-run (Peak: 372 kB) -> /bin/sh /app/bin/heroic-run --launch Sugar
+   - PID 2746: bash (Peak: 364 kB) -> bash ./launch_rocket_league.sh
+   - PID 873: systemd-timesyn (Peak: 356 kB) -> /usr/lib/systemd/systemd-timesyncd
+   - PID 2685: bash (Peak: 344 kB) -> bash ./launch_rocket_league.sh
+   - PID 2784: dbus-daemon (Peak: 344 kB) -> /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-a
+   - PID 1052: thermald (Peak: 340 kB) -> /usr/sbin/thermald --systemd --dbus-enable --adaptive
+   - PID 1852: xfconfd (Peak: 332 kB) -> /usr/lib/x86_64-linux-gnu/xfce4/xfconf/xfconfd
+   - PID 1047: power-profiles- (Peak: 320 kB) -> /usr/libexec/power-profiles-daemon
+   - PID 3420: bwrap (Peak: 316 kB) -> bwrap --args 41 -- /usr/lib/pressure-vessel/from-host/libexec/steam-runtime-tools-0/pv-adverb --pref
+   - PID 2021: dconf-service (Peak: 304 kB) -> /usr/libexec/dconf-service
+   - PID 2791: bwrap (Peak: 280 kB) -> bwrap --args 47 -- heroic-run --launch Sugar
+   - PID 3410: bwrap (Peak: 268 kB) -> bwrap --args 41 -- /usr/lib/pressure-vessel/from-host/libexec/steam-runtime-tools-0/pv-adverb --pref
+   - PID 1027: irqbalance (Peak: 256 kB) -> /usr/sbin/irqbalance
+   - PID 1649: systemd (Peak: 244 kB) -> /usr/lib/systemd/systemd --user
+   - PID 2747: bwrap (Peak: 220 kB) -> bwrap --args 47 -- heroic-run --launch Sugar
+   - PID 2904: bwrap (Peak: 204 kB) -> bwrap --args 46 -- /app/bin/zypak-helper child - /app/bin/heroic/heroic --type=zygote
+   - PID 2761: gvfsd-fuse (Peak: 204 kB) -> /usr/libexec/gvfsd-fuse /run/user/1000/gvfs -f
+   - PID 2770: flatpak-session (Peak: 188 kB) -> /usr/libexec/flatpak-session-helper
+   - PID 1094: kerneloops (Peak: 172 kB) -> /usr/sbin/kerneloops
+   - PID 1870: xdg-permission- (Peak: 168 kB) -> /usr/libexec/xdg-permission-store
+   - PID 2832: bwrap (Peak: 156 kB) -> bwrap --args 46 -- /app/bin/zypak-helper child - /app/bin/heroic/heroic --type=zygote
+   - PID 3565: grep (Peak: 156 kB) -> grep -m 1 -E m_uiState:MainMenu|LoadMap: MENU_Main_p
+   - PID 1012: cron (Peak: 148 kB) -> /usr/sbin/cron -f -P
+   - PID 2786: bwrap (Peak: 144 kB) -> bwrap --args 47 -- xdg-dbus-proxy --args=50
+   - PID 3415: bwrap (Peak: 136 kB) -> bwrap --args 39 -- xdg-dbus-proxy --args=41
+   - PID 1054: udisksd (Peak: 132 kB) -> /usr/libexec/udisks2/udisksd
+   - PID 1008: accounts-daemon (Peak: 120 kB) -> /usr/libexec/accounts-daemon
+   - PID 2831: cat (Peak: 116 kB) -> cat
+   - PID 2830: cat (Peak: 112 kB) -> cat
+   - PID 3564: tail (Peak: 112 kB) -> tail -f -n +1 /home/darian/Games/Heroic/Prefixes/Rocket League/drive_c/users/steamuser/Documents/My 
+   - PID 1050: switcheroo-cont (Peak: 76 kB) -> /usr/libexec/switcheroo-control
+   - PID 1430: rtkit-daemon (Peak: 76 kB) -> /usr/libexec/rtkit-daemon
+   - PID 2989: at-spi2-registr (Peak: 64 kB) -> /usr/libexec/at-spi2-registryd --use-gnome-session
+
+3. PROCESSES LAUNCHED BY HEROIC / ROCKET LEAGUE (60)
+   - PID 2791: bwrap (First seen: 19:34:40) -> bwrap --args 47 -- heroic-run --launch Sugar
+   - PID 2792: heroic-run (First seen: 19:34:40) -> /bin/sh /app/bin/heroic-run --launch Sugar
+   - PID 2807: zypak-helper (First seen: 19:34:40) -> /app/bin/zypak-helper host - /app/bin/heroic/heroic --launch Sugar
+   - PID 2826: heroic (First seen: 19:34:44) -> /app/bin/heroic/heroic --type=zygote --no-zygote-sandbox
+   - PID 2828: zypak-sandbox (First seen: 19:34:44) -> zypak-sandbox
+   - PID 2830: cat (First seen: 19:34:44) -> cat
+   - PID 2831: cat (First seen: 19:34:44) -> cat
+   - PID 2836: bwrap (First seen: 19:34:44) -> bwrap --args 32 ldconfig -X -C /run/ld-so-cache-dir/e8aea12804ee0eb231915154e1e9ed670b17220be56616d6
+   - PID 2837: bwrap (First seen: 19:34:44) -> bwrap --args 32 ldconfig -X -C /run/ld-so-cache-dir/e8aea12804ee0eb231915154e1e9ed670b17220be56616d6
+   - PID 2838: ldconfig (First seen: 19:34:44) -> ldconfig -X -C /run/ld-so-cache-dir/e8aea12804ee0eb231915154e1e9ed670b17220be56616d67f1c806ef2d9323d
+   - PID 2904: bwrap (First seen: 19:35:07) -> bwrap --args 46 -- /app/bin/zypak-helper child - /app/bin/heroic/heroic --type=zygote
+   - PID 2905: heroic (First seen: 19:35:07) -> /app/bin/heroic/heroic --type=zygote
+   - PID 2936: heroic (First seen: 19:35:11) -> /app/bin/heroic/heroic --type=zygote --no-zygote-sandbox
+   - PID 2954: heroic (First seen: 19:35:11) -> /proc/self/exe --type=utility --utility-sub-type=network.mojom.NetworkService --lang=en-US --service
+   - PID 2968: which (First seen: 19:35:11) -> which
+   - PID 2980: heroic (First seen: 19:35:13) -> /proc/self/exe --type=renderer --enable-crash-reporter=a73c5469-6ab9-469e-ab46-0b82b5e42347,no_chann
+   - PID 3016: gogdl (First seen: 19:35:13) -> ./gogdl --auth-config-path /home/darian/.var/app/com.heroicgameslauncher.hgl/config/heroic/gog_store
+   - PID 3018: nile (First seen: 19:35:13) -> nile
+   - PID 3022: python3 (First seen: 19:35:15) -> python3 ./legendary --version
+   - PID 3052: heroic (First seen: 19:35:15) -> /app/bin/heroic/heroic --type=zygote --no-zygote-sandbox
+   - PID 3071: python3 (First seen: 19:35:17) -> python3 ./legendary list --third-party
+   - PID 3117: python3 (First seen: 19:35:23) -> python3 ./legendary info Sugar --json --platform Windows
+   - PID 3127: python3 (First seen: 19:35:23) -> python3 ./legendary list --third-party
+   - PID 3151: python3 (First seen: 19:35:25) -> python3 /home/darian/.var/app/com.heroicgameslauncher.hgl/config/heroic/tools/runtimes/umu/umu_run.p
+   - PID 3159: pressure-vessel (First seen: 19:35:25) -> /home/darian/.local/share/umu/steamrt3/pressure-vessel/bin/pressure-vessel-wrap --env-if-host=PRESSU
+   - PID 3169: i386-linux-gnu- (First seen: 19:35:25) -> /home/darian/.local/share/umu/steamrt3/pressure-vessel/libexec/steam-runtime-tools-0/i386-linux-gnu-
+   - PID 3210: bwrap (First seen: 19:35:30) -> bwrap --args 41 -- /usr/lib/pressure-vessel/from-host/libexec/steam-runtime-tools-0/pv-adverb --pref
+   - PID 3211: pv-adverb (First seen: 19:35:30) -> /usr/lib/pressure-vessel/from-host/libexec/steam-runtime-tools-0/pv-adverb --prefix=/usr/lib/pressur
+   - PID 3212: ldconfig (First seen: 19:35:30) -> /sbin/ldconfig -f /run/user/1000/pressure-vessel/ldso/ld.so.conf -C /run/user/1000/pressure-vessel/l
+   - PID 3255: python3 (First seen: 19:35:38) -> python3 /home/darian/.var/app/com.heroicgameslauncher.hgl/config/heroic/tools/proton/GE-Proton9-20/p
+   - PID 3261: x86_64-linux-gn (First seen: 19:35:40) -> /usr/lib/pressure-vessel/from-host/libexec/steam-runtime-tools-0/x86_64-linux-gnu-srt-launcher-servi
+   - PID 3267: wine64 (First seen: 19:35:40) -> /home/darian/.var/app/com.heroicgameslauncher.hgl/config/heroic/tools/proton/GE-Proton9-20/files/bin
+   - PID 3269: wineserver (First seen: 19:35:40) -> /home/darian/.var/app/com.heroicgameslauncher.hgl/config/heroic/tools/proton/GE-Proton9-20/files/bin
+   - PID 3271: wineboot.exe (First seen: 19:35:40) -> C:\windows\system32\wineboot.exe --init
+   - PID 3278: services.exe (First seen: 19:35:42) -> C:\windows\system32\services.exe
+   - PID 3281: svchost.exe (First seen: 19:35:42) -> C:\windows\system32\svchost.exe -k LocalServiceNetworkRestricted
+   - PID 3287: winedevice.exe (First seen: 19:35:42) -> C:\windows\system32\winedevice.exe
+   - PID 3295: winedevice.exe (First seen: 19:35:42) -> C:\windows\system32\winedevice.exe
+   - PID 3344: gamemoderun (First seen: 19:35:48) -> /bin/bash /app/bin/gamemoderun /home/darian/.var/app/com.heroicgameslauncher.hgl/config/heroic/tools
+   - PID 3352: python3 (First seen: 19:35:48) -> python3 /home/darian/.var/app/com.heroicgameslauncher.hgl/config/heroic/tools/runtimes/umu/umu_run.p
+   - PID 3376: steam-runtime-l (First seen: 19:35:50) -> /home/darian/.local/share/umu/steamrt3/pressure-vessel/bin/steam-runtime-launch-client --pass-env-ma
+   - PID 3420: bwrap (First seen: 19:35:50) -> bwrap --args 41 -- /usr/lib/pressure-vessel/from-host/libexec/steam-runtime-tools-0/pv-adverb --pref
+   - PID 3421: pv-adverb (First seen: 19:35:50) -> /usr/lib/pressure-vessel/from-host/libexec/steam-runtime-tools-0/pv-adverb --prefix=/usr/lib/pressur
+   - PID 3445: python3 (First seen: 19:35:50) -> python3 /home/darian/.var/app/com.heroicgameslauncher.hgl/config/heroic/tools/proton/GE-Proton9-20/p
+   - PID 3460: wineserver (First seen: 19:35:52) -> /home/darian/.var/app/com.heroicgameslauncher.hgl/config/heroic/tools/proton/GE-Proton9-20/files/bin
+   - PID 3464: services.exe (First seen: 19:35:52) -> C:\windows\system32\services.exe
+   - PID 3467: svchost.exe (First seen: 19:35:52) -> C:\windows\system32\svchost.exe -k LocalServiceNetworkRestricted
+   - PID 3473: winedevice.exe (First seen: 19:35:52) -> C:\windows\system32\winedevice.exe
+   - PID 3481: winedevice.exe (First seen: 19:35:52) -> C:\windows\system32\winedevice.exe
+   - PID 3492: plugplay.exe (First seen: 19:35:52) -> C:\windows\system32\plugplay.exe
+   - PID 3505: Launcher.exe (First seen: 19:35:52) -> S:\Games\Heroic\rocketleague\Binaries\Win64\Launcher.exe -AUTH_LOGIN=unused -AUTH_PASSWORD=a5980b018
+   - PID 3510: RocketLeague_EA (First seen: 19:35:52) -> RocketLeague_EAC.exe -AUTH_LOGIN=unused -AUTH_PASSWORD=a5980b018e9a40faa4b4c24fc07043db -AUTH_TYPE=e
+   - PID 3514: explorer.exe (First seen: 19:35:52) -> C:\windows\system32\explorer.exe /desktop
+   - PID 3530: rpcss.exe (First seen: 19:35:54) -> C:\windows\system32\rpcss.exe
+   - PID 3540: tabtip.exe (First seen: 19:35:54) -> C:\windows\system32\tabtip.exe
+   - PID 3555: RocketLeague.ex (First seen: 19:35:57) -> S:\Games\Heroic\rocketleague\Binaries\Win64\RocketLeague.exe -AUTH_LOGIN=unused -AUTH_PASSWORD=a5980
+   - PID 3590: explorer.exe (First seen: 19:36:01) -> C:\windows\system32\explorer.exe /desktop
+   - PID 3598: tabtip.exe (First seen: 19:36:01) -> C:\windows\system32\tabtip.exe
+   - PID 3702: gdb (First seen: 19:36:43) -> /usr/bin/gdb --nx --batch --readnever -iex set debuginfod enabled off -ex set pagination off -ex set
+   - PID 3728: gdb (First seen: 19:36:47) -> /usr/bin/gdb --nx --batch --readnever -iex set debuginfod enabled off -ex set pagination off -ex set
+
+4. PROCESSES UTILIZING NVIDIA GPU
+   - PID 3555: ...gue\Binaries\Win64\RocketLeague.exe (Type: C+G, Peak GPU Memory: 1251MiB)
+   - PID 1329: /usr/lib/xorg/Xorg (Type: G, Peak GPU Memory: 312MiB)
+   - PID 2936: /app/bin/heroic/heroic (Type: G, Peak GPU Memory: 69MiB)
+   - PID 1904: xfwm4 (Type: G, Peak GPU Memory: 1MiB)
+
+
+
+========================================
+🎮 ROCKET LEAGUE SESSION TELEMETRY
+Start Time: 2026-05-27 09:58:53
+End Time:   2026-05-27 10:00:35
+========================================
+
+1. KILLED PROCESSES DURING CLEANUP (0)
+   None
+
+2. PROCESSES THAT USED ZRAM (PEAK SWAP)
+   - PID 1945: xfdesktop (Peak: 47924 kB) -> xfdesktop
+   - PID 1329: Xorg (Peak: 46020 kB) -> /usr/lib/xorg/Xorg -core :0 -seat seat0 -auth /var/run/lightdm/root/:0 -nolisten tcp vt7 -novtswitch
+   - PID 1904: xfwm4 (Peak: 23756 kB) -> xfwm4
+   - PID 1975: nvidia-prime (Peak: 14936 kB) -> /usr/bin/python3 /usr/lib/nvidia-prime-applet/nvidia-prime
+   - PID 1949: panel-1-whisker (Peak: 6556 kB) -> /usr/lib/x86_64-linux-gnu/xfce4/panel/wrapper-2.0 /usr/lib/x86_64-linux-gnu/xfce4/panel/plugins/libw
+   - PID 1956: panel-12-pulsea (Peak: 6060 kB) -> /usr/lib/x86_64-linux-gnu/xfce4/panel/wrapper-2.0 /usr/lib/x86_64-linux-gnu/xfce4/panel/plugins/libp
+   - PID 1954: panel-9-notific (Peak: 5868 kB) -> /usr/lib/x86_64-linux-gnu/xfce4/panel/wrapper-2.0 /usr/lib/x86_64-linux-gnu/xfce4/panel/plugins/libn
+   - PID 1955: panel-11-power- (Peak: 5784 kB) -> /usr/lib/x86_64-linux-gnu/xfce4/panel/wrapper-2.0 /usr/lib/x86_64-linux-gnu/xfce4/panel/plugins/libx
+   - PID 1909: xdg-desktop-por (Peak: 5368 kB) -> /usr/libexec/xdg-desktop-portal-xapp
+   - PID 1930: xfsettingsd (Peak: 5288 kB) -> xfsettingsd
+   - PID 1692: xfce4-session (Peak: 4672 kB) -> xfce4-session
+   - PID 1953: panel-8-systray (Peak: 4540 kB) -> /usr/lib/x86_64-linux-gnu/xfce4/panel/wrapper-2.0 /usr/lib/x86_64-linux-gnu/xfce4/panel/plugins/libs
+   - PID 2646: xfce4-terminal (Peak: 4340 kB) -> xfce4-terminal
+   - PID 1934: xfce4-panel (Peak: 3588 kB) -> xfce4-panel
+   - PID 1662: wireplumber (Peak: 3372 kB) -> /usr/bin/wireplumber
+   - PID 1891: xdg-desktop-por (Peak: 3268 kB) -> /usr/libexec/xdg-desktop-portal-gtk
+   - PID 1650: (sd-pam) (Peak: 1892 kB) -> (sd-pam)
+   - PID 1859: xdg-desktop-por (Peak: 1576 kB) -> /usr/libexec/xdg-desktop-portal
+   - PID 872: systemd-resolve (Peak: 1420 kB) -> /usr/lib/systemd/systemd-resolved
+   - PID 1508: lightdm (Peak: 1396 kB) -> lightdm --session-child 14 21
+   - PID 1186: NetworkManager (Peak: 1312 kB) -> /usr/sbin/NetworkManager --no-daemon
+   - PID 1187: wpa_supplicant (Peak: 1236 kB) -> /usr/sbin/wpa_supplicant -u -s -O DIR=/run/wpa_supplicant GROUP=netdev
+   - PID 1155: rsyslogd (Peak: 1180 kB) -> /usr/sbin/rsyslogd -n -iNONE
+   - PID 2655: bash (Peak: 1132 kB) -> bash
+   - PID 1659: pipewire (Peak: 1084 kB) -> /usr/bin/pipewire
+   - PID 1316: lightdm (Peak: 860 kB) -> /usr/sbin/lightdm
+   - PID 1499: upowerd (Peak: 780 kB) -> /usr/libexec/upowerd
+   - PID 440: systemd-journal (Peak: 776 kB) -> /usr/lib/systemd/systemd-journald
+   - PID 495: systemd-udevd (Peak: 640 kB) -> /usr/lib/systemd/systemd-udevd
+   - PID 1: systemd (Peak: 628 kB) -> /sbin/init splash
+   - PID 6648: (udev-worker) (Peak: 624 kB) -> (udev-worker)
+   - PID 1663: pipewire-pulse (Peak: 608 kB) -> /usr/bin/pipewire-pulse
+   - PID 1189: polkitd (Peak: 560 kB) -> /usr/lib/polkit-1/polkitd --no-debug
+   - PID 1660: pipewire (Peak: 480 kB) -> /usr/bin/pipewire -c filter-chain.conf
+   - PID 1086: kerneloops (Peak: 380 kB) -> /usr/sbin/kerneloops --test
+   - PID 1013: dbus-daemon (Peak: 368 kB) -> @dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+   - PID 873: systemd-timesyn (Peak: 348 kB) -> /usr/lib/systemd/systemd-timesyncd
+   - PID 1878: xdg-document-po (Peak: 336 kB) -> /usr/libexec/xdg-document-portal
+   - PID 1052: thermald (Peak: 308 kB) -> /usr/sbin/thermald --systemd --dbus-enable --adaptive
+   - PID 2021: dconf-service (Peak: 304 kB) -> /usr/libexec/dconf-service
+   - PID 1665: dbus-daemon (Peak: 280 kB) -> /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog
+   - PID 1047: power-profiles- (Peak: 260 kB) -> /usr/libexec/power-profiles-daemon
+   - PID 1027: irqbalance (Peak: 204 kB) -> /usr/sbin/irqbalance
+   - PID 1094: kerneloops (Peak: 172 kB) -> /usr/sbin/kerneloops
+   - PID 1870: xdg-permission- (Peak: 168 kB) -> /usr/libexec/xdg-permission-store
+   - PID 2770: flatpak-session (Peak: 140 kB) -> /usr/libexec/flatpak-session-helper
+   - PID 1649: systemd (Peak: 124 kB) -> /usr/lib/systemd/systemd --user
+   - PID 1008: accounts-daemon (Peak: 104 kB) -> /usr/libexec/accounts-daemon
+   - PID 1012: cron (Peak: 88 kB) -> /usr/sbin/cron -f -P
+   - PID 1430: rtkit-daemon (Peak: 76 kB) -> /usr/libexec/rtkit-daemon
+   - PID 1054: udisksd (Peak: 56 kB) -> /usr/libexec/udisks2/udisksd
+   - PID 1050: switcheroo-cont (Peak: 32 kB) -> /usr/libexec/switcheroo-control
+
+3. PROCESSES LAUNCHED BY HEROIC / ROCKET LEAGUE (64)
+   - PID 6696: bwrap (First seen: 09:58:55) -> bwrap --args 47 -- heroic-run --launch Sugar
+   - PID 6697: heroic-run (First seen: 09:58:55) -> /bin/sh /app/bin/heroic-run --launch Sugar
+   - PID 6708: heroic (First seen: 09:58:55) -> /app/bin/heroic/heroic --launch Sugar
+   - PID 6726: heroic (First seen: 09:58:58) -> /app/bin/heroic/heroic --type=zygote --no-zygote-sandbox
+   - PID 6728: zypak-sandbox (First seen: 09:58:58) -> zypak-sandbox
+   - PID 6730: cat (First seen: 09:58:58) -> cat
+   - PID 6731: cat (First seen: 09:58:58) -> cat
+   - PID 6736: bwrap (First seen: 09:58:58) -> bwrap --args 32 ldconfig -X -C /run/ld-so-cache-dir/e8aea12804ee0eb231915154e1e9ed670b17220be56616d6
+   - PID 6737: bwrap (First seen: 09:58:58) -> bwrap --args 32 ldconfig -X -C /run/ld-so-cache-dir/e8aea12804ee0eb231915154e1e9ed670b17220be56616d6
+   - PID 6738: ldconfig (First seen: 09:58:58) -> ldconfig -X -C /run/ld-so-cache-dir/e8aea12804ee0eb231915154e1e9ed670b17220be56616d67f1c806ef2d9323d
+   - PID 6796: bwrap (First seen: 09:59:18) -> bwrap --args 46 -- /app/bin/zypak-helper child - /app/bin/heroic/heroic --type=zygote
+   - PID 6797: heroic (First seen: 09:59:18) -> /app/bin/heroic/heroic --type=zygote
+   - PID 6833: heroic (First seen: 09:59:20) -> /app/bin/heroic/heroic --type=zygote --no-zygote-sandbox
+   - PID 6846: heroic (First seen: 09:59:23) -> /proc/self/exe --type=utility --utility-sub-type=network.mojom.NetworkService --lang=en-US --service
+   - PID 6868: heroic (First seen: 09:59:23) -> /proc/self/exe --type=renderer --enable-crash-reporter=a73c5469-6ab9-469e-ab46-0b82b5e42347,no_chann
+   - PID 6909: legendary (First seen: 09:59:23) -> /usr/bin/env python3 ./legendary --version
+   - PID 6912: heroic (First seen: 09:59:23) -> /app/bin/heroic/heroic --launch Sugar
+   - PID 6917: heroic (First seen: 09:59:25) -> /app/bin/heroic/heroic --type=zygote --no-zygote-sandbox
+   - PID 6959: python3 (First seen: 09:59:25) -> python3 ./legendary list --third-party
+   - PID 6963: vulkan-helper (First seen: 09:59:25) -> /app/bin/heroic/resources/app.asar.unpacked/build/bin/x64/linux/vulkan-helper physical-versions
+   - PID 7009: python3 (First seen: 09:59:33) -> python3 ./legendary info Sugar --json --platform Windows
+   - PID 7014: python3 (First seen: 09:59:33) -> python3 ./legendary list --third-party
+   - PID 7036: python3 (First seen: 09:59:35) -> python3 ./legendary eos-overlay info --prefix /home/darian/Games/Heroic/Prefixes/Rocket League/pfx
+   - PID 7038: python3 (First seen: 09:59:35) -> python3 /home/darian/.var/app/com.heroicgameslauncher.hgl/config/heroic/tools/runtimes/umu/umu_run.p
+   - PID 7047: pressure-vessel (First seen: 09:59:37) -> /home/darian/.local/share/umu/steamrt3/pressure-vessel/bin/pressure-vessel-wrap --env-if-host=PRESSU
+   - PID 7070: pressure-vessel (First seen: 09:59:37) -> /home/darian/.local/share/umu/steamrt3/pressure-vessel/bin/pressure-vessel-wrap --env-if-host=PRESSU
+   - PID 7093: bwrap (First seen: 09:59:39) -> bwrap --args 41 -- /usr/lib/pressure-vessel/from-host/libexec/steam-runtime-tools-0/pv-adverb --pref
+   - PID 7094: pv-adverb (First seen: 09:59:39) -> /usr/lib/pressure-vessel/from-host/libexec/steam-runtime-tools-0/pv-adverb --prefix=/usr/lib/pressur
+   - PID 7095: ldconfig (First seen: 09:59:39) -> /sbin/ldconfig -f /run/user/1000/pressure-vessel/ldso/ld.so.conf -C /run/user/1000/pressure-vessel/l
+   - PID 7118: pv-locale-gen (First seen: 09:59:45) -> /bin/sh /usr/lib/pressure-vessel/from-host/libexec/steam-runtime-tools-0/pv-locale-gen --output-dir 
+   - PID 7139: python3 (First seen: 09:59:47) -> python3 /home/darian/.var/app/com.heroicgameslauncher.hgl/config/heroic/tools/proton/GE-Proton9-20/p
+   - PID 7144: x86_64-linux-gn (First seen: 09:59:47) -> /usr/lib/pressure-vessel/from-host/libexec/steam-runtime-tools-0/x86_64-linux-gnu-srt-launcher-servi
+   - PID 7150: wine64 (First seen: 09:59:47) -> /home/darian/.var/app/com.heroicgameslauncher.hgl/config/heroic/tools/proton/GE-Proton9-20/files/bin
+   - PID 7152: wineserver (First seen: 09:59:47) -> /home/darian/.var/app/com.heroicgameslauncher.hgl/config/heroic/tools/proton/GE-Proton9-20/files/bin
+   - PID 7154: wineboot.exe (First seen: 09:59:47) -> C:\windows\system32\wineboot.exe --init
+   - PID 7157: services.exe (First seen: 09:59:50) -> C:\windows\system32\services.exe
+   - PID 7160: svchost.exe (First seen: 09:59:50) -> C:\windows\system32\svchost.exe -k LocalServiceNetworkRestricted
+   - PID 7166: winedevice.exe (First seen: 09:59:50) -> C:\windows\system32\winedevice.exe
+   - PID 7175: winedevice.exe (First seen: 09:59:50) -> C:\windows\system32\winedevice.exe
+   - PID 7195: plugplay.exe (First seen: 09:59:52) -> C:\windows\system32\plugplay.exe
+   - PID 7221: gamemoderun (First seen: 09:59:54) -> /bin/bash /app/bin/gamemoderun /home/darian/.var/app/com.heroicgameslauncher.hgl/config/heroic/tools
+   - PID 7225: find (First seen: 09:59:54) -> find /home/darian/Games/Heroic/rocketleague -name *.cfg -o -name *.conf -o -name *.ini
+   - PID 7226: xargs (First seen: 09:59:54) -> xargs grep -l -i midi\|timidity\|mpu-401\|sound.*midi
+   - PID 7227: grep (First seen: 09:59:54) -> grep -q .
+   - PID 7230: python3 (First seen: 09:59:56) -> python3 /home/darian/.var/app/com.heroicgameslauncher.hgl/config/heroic/tools/runtimes/umu/umu_run.p
+   - PID 7251: steam-runtime-l (First seen: 09:59:56) -> /home/darian/.local/share/umu/steamrt3/pressure-vessel/bin/steam-runtime-launch-client --pass-env-ma
+   - PID 7295: bwrap (First seen: 09:59:56) -> bwrap --args 41 -- /usr/lib/pressure-vessel/from-host/libexec/steam-runtime-tools-0/pv-adverb --pref
+   - PID 7296: pv-adverb (First seen: 09:59:56) -> /usr/lib/pressure-vessel/from-host/libexec/steam-runtime-tools-0/pv-adverb --prefix=/usr/lib/pressur
+   - PID 7331: wineserver (First seen: 09:59:58) -> /home/darian/.var/app/com.heroicgameslauncher.hgl/config/heroic/tools/proton/GE-Proton9-20/files/bin
+   - PID 7335: services.exe (First seen: 09:59:58) -> C:\windows\system32\services.exe
+   - PID 7338: svchost.exe (First seen: 09:59:58) -> C:\windows\system32\svchost.exe -k LocalServiceNetworkRestricted
+   - PID 7344: winedevice.exe (First seen: 09:59:58) -> C:\windows\system32\winedevice.exe
+   - PID 7357: winedevice.exe (First seen: 09:59:58) -> C:\windows\system32\winedevice.exe
+   - PID 7368: plugplay.exe (First seen: 09:59:58) -> C:\windows\system32\plugplay.exe
+   - PID 7381: Launcher.exe (First seen: 09:59:58) -> S:\Games\Heroic\rocketleague\Binaries\Win64\Launcher.exe -AUTH_LOGIN=unused -AUTH_PASSWORD=7adc2e697
+   - PID 7386: RocketLeague_EA (First seen: 09:59:58) -> RocketLeague_EAC.exe -AUTH_LOGIN=unused -AUTH_PASSWORD=7adc2e697ae6454ca63ad46959330856 -AUTH_TYPE=e
+   - PID 7390: explorer.exe (First seen: 09:59:58) -> C:\windows\system32\explorer.exe /desktop
+   - PID 7406: rpcss.exe (First seen: 10:00:00) -> C:\windows\system32\rpcss.exe
+   - PID 7416: tabtip.exe (First seen: 10:00:00) -> C:\windows\system32\tabtip.exe
+   - PID 7431: RocketLeague.ex (First seen: 10:00:02) -> S:\Games\Heroic\rocketleague\Binaries\Win64\RocketLeague.exe -AUTH_LOGIN=unused -AUTH_PASSWORD=7adc2
+   - PID 7447: gdb (First seen: 10:00:04) -> /usr/bin/gdb --nx --batch --readnever -iex set debuginfod enabled off -ex set pagination off -ex set
+   - PID 7458: gdb (First seen: 10:00:04) -> /usr/bin/gdb --nx --batch --readnever -iex set debuginfod enabled off -ex set pagination off -ex set
+   - PID 7488: explorer.exe (First seen: 10:00:06) -> C:\windows\system32\explorer.exe /desktop
+   - PID 7496: tabtip.exe (First seen: 10:00:06) -> C:\windows\system32\tabtip.exe
+
+4. PROCESSES UTILIZING NVIDIA GPU
+   - PID 1329: /usr/lib/xorg/Xorg (Type: G, Peak GPU Memory: 242MiB)
+   - PID 6833: /app/bin/heroic/heroic (Type: G, Peak GPU Memory: 62MiB)
+   - PID 1904: xfwm4 (Type: G, Peak GPU Memory: 1MiB)
+
+

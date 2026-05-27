@@ -1,0 +1,123 @@
+#!/usr/bin/env bash
+# Master launcher for Rocket League with performance optimization.
+set -e
+
+SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+
+# Function to kill all flatpak, wine, proton, and heroic processes
+terminate_game_and_compatibility_layers() {
+    echo "🛑 Terminating any lingering Flatpak, Heroic, and Wine/Proton processes..."
+    flatpak kill com.heroicgameslauncher.hgl || true
+    pkill -u "$USER" -9 -f "wineserver" || true
+    pkill -u "$USER" -9 -f "wine64" || true
+    pkill -u "$USER" -9 -f "winedevice.exe" || true
+    pkill -u "$USER" -9 -f "services.exe" || true
+    pkill -u "$USER" -9 -f "explorer.exe /desktop" || true
+    pkill -u "$USER" -9 -f "rpcss.exe" || true
+    pkill -u "$USER" -9 -f "plugplay.exe" || true
+    pkill -u "$USER" -9 -f "svchost.exe" || true
+    pkill -u "$USER" -9 -f "tabtip.exe" || true
+    pkill -u "$USER" -9 -f "RocketLeague.exe" || true
+    pkill -u "$USER" -9 -f "umu_run" || true
+    pkill -u "$USER" -9 -f "umu-shim" || true
+    pkill -u "$USER" -9 -f "pressure-vessel" || true
+    pkill -u "$USER" -9 -f "pv-adverb" || true
+    pkill -u "$USER" -9 -f "legendary" || true
+    pkill -u "$USER" -9 -f "/app/bin/heroic" || true
+}
+
+# Clean up any leftover processes from previous crashes/runs before starting
+terminate_game_and_compatibility_layers
+
+echo "🧹 Running gaming environment cleanup..."
+python3 "$SCRIPT_DIR/clean_gaming_env.py" "$@"
+
+# If dry-run was requested, exit here
+for arg in "$@"; do
+    if [ "$arg" = "--dry-run" ]; then
+        echo "🧹 Dry-run complete. Skipping telemetry logger and game launch."
+        exit 0
+    fi
+done
+
+# Start the telemetry logger
+python3 "$SCRIPT_DIR/game_logger.py" --start
+
+# Ensure we always stop the logger, terminate game/Wine, and restore systemd user services on exit
+cleanup() {
+    echo "📊 Compiling performance telemetry report..."
+    python3 "$SCRIPT_DIR/game_logger.py" --stop
+    
+    terminate_game_and_compatibility_layers
+    
+    echo "♻️ Restoring background systemd user services..."
+    systemctl --user start gvfs-daemon.service gvfs-mtp-volume-monitor.service gvfs-udisks2-volume-monitor.service gnome-keyring-daemon.service xfce4-notifyd.service at-spi-dbus-bus.service gpg-agent.service || true
+}
+trap cleanup EXIT
+
+echo "🎮 Launching Rocket League via Heroic Games Launcher (with FSR, DXVK, and low-latency audio optimizations)..."
+# Run Flatpak in the foreground but spawn a monitor in the background first
+(
+    # Monitor for the game starting (timeout: 120 seconds)
+    GAME_PID=""
+    for i in {1..60}; do
+        GAME_PID=$(pgrep -u "$USER" -f -i "RocketLeague.exe" | head -n 1 || true)
+        if [ -n "$GAME_PID" ]; then
+            break
+        fi
+        sleep 2
+    done
+
+    if [ -z "$GAME_PID" ]; then
+        echo "⚠️ Rocket League failed to start within 120 seconds."
+        flatpak kill com.heroicgameslauncher.hgl || true
+        exit 1
+    fi
+
+    # Wait for Main Menu / Authentication completion in game logs
+    echo "⏳ Game started (PID: $GAME_PID). Waiting for Main Menu login to complete..."
+    LOG_FILE="/home/darian/Games/Heroic/Prefixes/Rocket League/drive_c/users/steamuser/Documents/My Games/Rocket League/TAGame/Logs/Launch.log"
+    
+    # Wait for log file creation
+    for i in {1..30}; do
+        if [ -f "$LOG_FILE" ]; then
+            break
+        fi
+        sleep 1
+    done
+    
+    if [ -f "$LOG_FILE" ]; then
+        # Tail log until Main Menu or login state is reached
+        tail -f -n +1 "$LOG_FILE" | grep -m 1 -E "m_uiState:MainMenu|LoadMap: MENU_Main_p" > /dev/null || true
+        echo "🎮 Main Menu loaded and authenticated!"
+        
+        # Snapshot RAM and GPU VRAM State
+        echo "📸 Capturing RAM core dump and GPU allocation snapshot..."
+        nvidia-smi -q -d MEMORY,PIDS > "/home/darian/Documents/RocketMode/nvidia_vram_snapshot.txt" 2>&1 || true
+        gcore -o "/home/darian/Documents/RocketMode/rocketleague_ram.dump" "$GAME_PID" || true
+        echo "📸 Snapshot complete (saved in /home/darian/Documents/RocketMode/)."
+    fi
+    
+    # Terminate Heroic UI to reclaim ~400MB RAM since game is now running
+    echo "🧹 Reclaiming RAM: Terminating Heroic Games Launcher UI..."
+    pkill -u "$USER" -f "/app/bin/heroic/heroic" || true
+
+    # Now block/wait until the game PID exits
+    echo "🎮 Rocket League session active. Monitoring game process..."
+    while kill -0 "$GAME_PID" 2>/dev/null; do
+        sleep 2
+    done
+
+    echo "🚀 Rocket League has closed."
+    flatpak kill com.heroicgameslauncher.hgl || true
+) &
+
+# Run Flatpak in the foreground
+flatpak run \
+    --env=WINE_FULLSCREEN_FSR=1 \
+    --env=WINE_FULLSCREEN_FSR_STRENGTH=2 \
+    --env=DXVK_CONFIG="dxvk.maxChunkSize=32 dxvk.numCompilerThreads=4" \
+    --env=PIPEWIRE_LATENCY="128/48000" \
+    com.heroicgameslauncher.hgl --launch Sugar
+
+echo "🚀 Workstation session remains active."

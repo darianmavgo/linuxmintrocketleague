@@ -1,0 +1,2201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RocketMode - System Memory Diagnostics</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #080c14;
+            --card-bg: rgba(17, 24, 39, 0.7);
+            --border-color: rgba(255, 255, 255, 0.08);
+            --text-primary: #f3f4f6;
+            --text-secondary: #9ca3af;
+            --accent-cyan: #06b6d4;
+            --accent-blue: #3b82f6;
+            --accent-purple: #a855f7;
+            --accent-pink: #ec4899;
+            --accent-green: #10b981;
+            --accent-yellow: #f59e0b;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            background-image: 
+                radial-gradient(at 10% 20%, rgba(59, 130, 246, 0.05) 0px, transparent 50%),
+                radial-gradient(at 90% 80%, rgba(168, 85, 247, 0.05) 0px, transparent 50%);
+            background-attachment: fixed;
+            color: var(--text-primary);
+            font-family: 'Outfit', sans-serif;
+            line-height: 1.5;
+            padding: 2rem;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        header {
+            margin-bottom: 2.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 1.5rem;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .logo h1 {
+            font-size: 2rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, var(--accent-cyan), var(--accent-blue));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            letter-spacing: -0.5px;
+        }
+
+        .badge {
+            background: rgba(6, 182, 212, 0.1);
+            color: var(--accent-cyan);
+            border: 1px solid rgba(6, 182, 212, 0.2);
+            padding: 4px 10px;
+            border-radius: 9999px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        .timestamp {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+        }
+
+        /* Grid Layout */
+        .dashboard-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        @media (max-width: 1024px) {
+            .dashboard-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .card {
+            background: var(--card-bg);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            padding: 1.75rem;
+            box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+            transition: transform 0.2s, border-color 0.2s;
+        }
+
+        .card:hover {
+            border-color: rgba(255, 255, 255, 0.15);
+        }
+
+        .card-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        /* Memory Distribution Bar */
+        .memory-bar {
+            display: flex;
+            height: 28px;
+            border-radius: 8px;
+            overflow: hidden;
+            margin-bottom: 1.5rem;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .bar-segment {
+            height: 100%;
+            transition: width 0.3s ease;
+            position: relative;
+        }
+
+        .bar-used { background: linear-gradient(90deg, #3b82f6, #06b6d4); }
+        .bar-cache { background: #f59e0b; }
+        .bar-slab { background: #a855f7; }
+        .bar-pagetable { background: #ec4899; }
+        .bar-free { background: #10b981; }
+
+        .legend {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 1rem;
+        }
+
+        .legend-item {
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+            background: rgba(255, 255, 255, 0.02);
+            border-radius: 8px;
+            border: 1px solid rgba(255, 255, 255, 0.04);
+        }
+
+        .legend-label {
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 4px;
+        }
+
+        .legend-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            display: inline-block;
+        }
+
+        .dot-used { background-color: var(--accent-cyan); }
+        .dot-cache { background-color: var(--accent-yellow); }
+        .dot-slab { background-color: var(--accent-purple); }
+        .dot-pagetable { background-color: var(--accent-pink); }
+        .dot-free { background-color: var(--accent-green); }
+
+        .legend-value {
+            font-size: 1.1rem;
+            font-weight: 600;
+        }
+
+        .legend-sub {
+            font-size: 0.75rem;
+            color: var(--text-secondary);
+        }
+
+        /* Table Styling */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: left;
+        }
+
+        th {
+            padding: 12px 16px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            border-bottom: 1px solid var(--border-color);
+            cursor: pointer;
+            user-select: none;
+        }
+
+        th:hover {
+            color: var(--text-primary);
+        }
+
+        td {
+            padding: 12px 16px;
+            font-size: 0.9rem;
+            border-bottom: 1px solid var(--border-color);
+            vertical-align: middle;
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        tr:hover td {
+            background: rgba(255, 255, 255, 0.02);
+        }
+
+        .progress-container {
+            background: rgba(255, 255, 255, 0.05);
+            height: 6px;
+            border-radius: 3px;
+            width: 80px;
+            display: inline-block;
+            margin-right: 8px;
+            overflow: hidden;
+        }
+
+        .progress-bar-fill {
+            background: var(--accent-cyan);
+            height: 100%;
+            border-radius: 3px;
+        }
+
+        .percent-label {
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+
+        .user-badge {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            font-family: monospace;
+        }
+
+        .proc-name {
+            font-weight: 500;
+            color: #ffffff;
+        }
+
+        .percentage-pill {
+            background: rgba(6, 182, 212, 0.1);
+            color: var(--accent-cyan);
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-weight: 600;
+            font-size: 0.8rem;
+        }
+
+        .cmd-cell {
+            font-family: monospace;
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+            max-width: 400px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .cmd-cell code {
+            background: rgba(0, 0, 0, 0.2);
+            padding: 2px 4px;
+            border-radius: 4px;
+        }
+
+        /* Search Panel */
+        .table-controls {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1.25rem;
+            gap: 1rem;
+        }
+
+        .search-wrapper {
+            position: relative;
+            flex-grow: 1;
+            max-width: 400px;
+        }
+
+        .search-input {
+            width: 100%;
+            background: rgba(0, 0, 0, 0.3);
+            border: 1px solid var(--border-color);
+            padding: 10px 16px;
+            border-radius: 8px;
+            color: var(--text-primary);
+            font-family: inherit;
+            font-size: 0.9rem;
+            outline: none;
+            transition: border-color 0.2s, box-shadow 0.2s;
+        }
+
+        .search-input:focus {
+            border-color: var(--accent-cyan);
+            box-shadow: 0 0 0 2px rgba(6, 182, 212, 0.2);
+        }
+
+        .stats-count {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+        }
+
+        .process-section {
+            margin-top: 1.5rem;
+        }
+
+        .table-container {
+            max-height: 600px;
+            overflow-y: auto;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+        }
+
+        /* Scrollbar Styling */
+        ::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: rgba(0, 0, 0, 0.1);
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 4px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <h1>RocketMode RAM Diagnostics</h1>
+                <span class="badge">SYSTEM RAM REPORT</span>
+            </div>
+            <div class="timestamp">
+                Last checked: <strong>2026-05-23 08:42:18</strong>
+            </div>
+        </header>
+
+        <div class="dashboard-grid">
+            <!-- Summary card -->
+            <div class="card">
+                <div class="card-title">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--accent-cyan)"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect><rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect><line x1="6" y1="6" x2="6.01" y2="6"></line><line x1="6" y1="18" x2="6.01" y2="18"></line></svg>
+                    Physical Memory Distribution
+                </div>
+                <div class="memory-bar">
+                    <div class="bar-segment bar-used" style="width: 30.629378222650804%;" title="Used: 2.35 GB"></div>
+                    <div class="bar-segment bar-cache" style="width: 41.01856685182381%;" title="Cache/Buffers: 3.14 GB"></div>
+                    <div class="bar-segment bar-slab" style="width: 2.936148678264889%;" title="Kernel Slab: 230.27 MB"></div>
+                    <div class="bar-segment bar-pagetable" style="width: 0.516371265311327%;" title="Page Tables: 40.50 MB"></div>
+                    <div class="bar-segment bar-free" style="width: 31.758700659074428%;" title="Free: 2.43 GB"></div>
+                </div>
+
+                <div class="legend">
+                    <div class="legend-item">
+                        <span class="legend-label"><span class="legend-dot dot-used"></span>Used RAM</span>
+                        <span class="legend-value">2.35 GB</span>
+                        <span class="legend-sub">30.6% of total</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="legend-label"><span class="legend-dot dot-cache"></span>Cache & Buffers</span>
+                        <span class="legend-value">3.14 GB</span>
+                        <span class="legend-sub">41.0% of total</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="legend-label"><span class="legend-dot dot-slab"></span>Kernel Slab</span>
+                        <span class="legend-value">230.27 MB</span>
+                        <span class="legend-sub">2.9% of total</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="legend-label"><span class="legend-dot dot-pagetable"></span>Page Tables</span>
+                        <span class="legend-value">40.50 MB</span>
+                        <span class="legend-sub">0.5% of total</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="legend-label"><span class="legend-dot dot-free"></span>Free RAM</span>
+                        <span class="legend-value">2.43 GB</span>
+                        <span class="legend-sub">31.8% of total</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tmpfs RAM Card -->
+            <div class="card">
+                <div class="card-title">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--accent-yellow)"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+                    RAM Temporary Filesystems (tmpfs)
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Mount Point</th>
+                            <th>Used</th>
+                            <th>Total Size</th>
+                            <th>Usage</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        
+        <tr>
+            <td><code>/run</code></td>
+            <td>1.87 MB</td>
+            <td>784.25 MB</td>
+            <td>
+                <div class="progress-container">
+                    <div class="progress-bar-fill" style="width: 0.23858502642366528%;"></div>
+                </div>
+                <span class="percent-label">0.2%</span>
+            </td>
+        </tr>
+        
+        <tr>
+            <td><code>/dev/shm</code></td>
+            <td>46.00 MB</td>
+            <td>3.83 GB</td>
+            <td>
+                <div class="progress-container">
+                    <div class="progress-bar-fill" style="width: 1.1732042811944627%;"></div>
+                </div>
+                <span class="percent-label">1.2%</span>
+            </td>
+        </tr>
+        
+        <tr>
+            <td><code>/run/lock</code></td>
+            <td>12.00 KB</td>
+            <td>5.00 MB</td>
+            <td>
+                <div class="progress-container">
+                    <div class="progress-bar-fill" style="width: 0.234375%;"></div>
+                </div>
+                <span class="percent-label">0.2%</span>
+            </td>
+        </tr>
+        
+        <tr>
+            <td><code>/run/user/1000</code></td>
+            <td>204.00 KB</td>
+            <td>784.24 MB</td>
+            <td>
+                <div class="progress-container">
+                    <div class="progress-bar-fill" style="width: 0.02540270762977795%;"></div>
+                </div>
+                <span class="percent-label">0.0%</span>
+            </td>
+        </tr>
+        
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Processes Card -->
+        <div class="card process-section">
+            <div class="card-title">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--accent-purple)"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"></path><line x1="4" y1="22" x2="4" y2="15"></line></svg>
+                Running Processes Memory Usage
+            </div>
+            
+            <div class="table-controls">
+                <div class="search-wrapper">
+                    <input type="text" id="proc-search" class="search-input" placeholder="Search processes by PID, Name, User, or Command...">
+                </div>
+                <div class="stats-count">
+                    Showing <strong id="visible-count">295</strong> processes consuming memory out of <strong>295</strong> total processes.
+                </div>
+            </div>
+
+            <div class="table-container">
+                <table id="proc-table">
+                    <thead>
+                        <tr>
+                            <th onclick="sortTable(0)">PID</th>
+                            <th onclick="sortTable(1)">User</th>
+                            <th onclick="sortTable(2)">Process Name</th>
+                            <th onclick="sortTable(3, true)">RSS (Resident)</th>
+                            <th onclick="sortTable(4, true)">VSZ (Virtual)</th>
+                            <th onclick="sortTable(5, true)">% RAM</th>
+                            <th onclick="sortTable(6)">Role in Rocket League / Heroic</th>
+                            <th onclick="sortTable(7)">What Breaks if Missing</th>
+                            <th>Command Line</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        
+        <tr>
+            <td><strong>3009</strong></td>
+            <td><span class="user-badge">darian</span></td>
+            <td><span class="proc-name">chrome</span></td>
+            <td data-value="407875584">388.98 MB</td>
+            <td data-value="52587589632">48.98 GB</td>
+            <td data-value="4.959943496521331"><span class="percentage-pill">4.96%</span></td>
+            <td>Non-critical background system process or application running concurrently with your game session.</td>
+            <td>No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance.</td>
+            <td class="cmd-cell"><code>/opt/google/chrome/chrome /home/darian/Documents/RocketMode/report.html</code></td>
+        </tr>
+        
+        <tr>
+            <td><strong>1909</strong></td>
+            <td><span class="user-badge">darian</span></td>
+            <td><span class="proc-name">cinnamon</span></td>
+            <td data-value="337670144">322.03 MB</td>
+            <td data-value="4699877376">4.38 GB</td>
+            <td data-value="4.10621498418062"><span class="percentage-pill">4.11%</span></td>
+            <td>The display server and window manager rendering Rocket League's graphics on your monitor and capturing inputs.</td>
+            <td>The graphical session terminates, immediately closing Heroic, Rocket League, and all open windows.</td>
+            <td class="cmd-cell"><code>cinnamon --replace</code></td>
+        </tr>
+        
+        <tr>
+            <td><strong>3054</strong></td>
+            <td><span class="user-badge">darian</span></td>
+            <td><span class="proc-name">chrome</span></td>
+            <td data-value="283316224">270.19 MB</td>
+            <td data-value="52490342400">48.89 GB</td>
+            <td data-value="3.445247810390583"><span class="percentage-pill">3.45%</span></td>
+            <td>Non-critical background system process or application running concurrently with your game session.</td>
+            <td>No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance.</td>
+            <td class="cmd-cell"><code>/opt/google/chrome/chrome --type=gpu-process --ozone-platform=x11 --crashpad-handler-pid=3017 --enable-crash-reporter=919aeacf-0c32-45c7-945e-02c822188bae, --change-stack-guard-on-fork=enable --gpu-preferences=UAAAAAAAAAAgAQAEAAAAAAAAAAAAAGAAAQAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAYAAAAAAAAABgAAAAAAAAAAQAAAAAAAAAIAAAAAAAAAAgAAAAAAAAA --shared-files --metrics-shmem-handle=4,i,2774368832912208703,9987466219705179130,262144 --field-trial-handle=3,i,10180873471828716191,4894366534507706301,262144 --variations-seed-version=20260522-090043.833000-production --pseudonymization-salt-handle=7,i,14735261064513921724,1411451801939245954,4 --trace-process-track-uuid=3190708988185955192</code></td>
+        </tr>
+        
+        <tr>
+            <td><strong>2765</strong></td>
+            <td><span class="user-badge">darian</span></td>
+            <td><span class="proc-name">antigravity</span></td>
+            <td data-value="274817024">262.09 MB</td>
+            <td data-value="1498736521216">1.36 TB</td>
+            <td data-value="3.3418938627180643"><span class="percentage-pill">3.34%</span></td>
+            <td>The Antigravity AI pair programmer agent context (currently performing system diagnostics).</td>
+            <td>This interactive AI development session will terminate immediately.</td>
+            <td class="cmd-cell"><code>/home/darian/Documents/Antigravity-x64/antigravity --type=zygote</code></td>
+        </tr>
+        
+        <tr>
+            <td><strong>2314</strong></td>
+            <td><span class="user-badge">darian</span></td>
+            <td><span class="proc-name">antigravity</span></td>
+            <td data-value="266174464">253.84 MB</td>
+            <td data-value="52330307584">48.74 GB</td>
+            <td data-value="3.23679659544625"><span class="percentage-pill">3.24%</span></td>
+            <td>The Antigravity AI pair programmer agent context (currently performing system diagnostics).</td>
+            <td>This interactive AI development session will terminate immediately.</td>
+            <td class="cmd-cell"><code>/home/darian/Documents/Antigravity-x64/antigravity --type=zygote --no-zygote-sandbox</code></td>
+        </tr>
+        
+        <tr>
+            <td><strong>2409</strong></td>
+            <td><span class="user-badge">darian</span></td>
+            <td><span class="proc-name">language_server</span></td>
+            <td data-value="247312384">235.86 MB</td>
+            <td data-value="4923703296">4.59 GB</td>
+            <td data-value="3.0074255453103707"><span class="percentage-pill">3.01%</span></td>
+            <td>The Antigravity AI pair programmer agent context (currently performing system diagnostics).</td>
+            <td>This interactive AI development session will terminate immediately.</td>
+            <td class="cmd-cell"><code>/home/darian/Documents/Antigravity-x64/resources/bin/language_server --standalone --override_ide_name antigravity --subclient_type hub --override_ide_version 2.0.6 --override_user_agent_name antigravity --https_server_port 0 --csrf_token 1fea6b9c-f215-4ddc-a828-4880ed2436d5 --app_data_dir antigravity --api_server_url https://generativelanguage.googleapis.com --cloud_code_endpoint https://daily-cloudcode-pa.googleapis.com --enable_sidecars</code></td>
+        </tr>
+        
+        <tr>
+            <td><strong>2263</strong></td>
+            <td><span class="user-badge">darian</span></td>
+            <td><span class="proc-name">antigravity</span></td>
+            <td data-value="242708480">231.46 MB</td>
+            <td data-value="1494890729472">1.36 TB</td>
+            <td data-value="2.9514400816072808"><span class="percentage-pill">2.95%</span></td>
+            <td>The Antigravity AI pair programmer agent context (currently performing system diagnostics).</td>
+            <td>This interactive AI development session will terminate immediately.</td>
+            <td class="cmd-cell"><code>/home/darian/Documents/Antigravity-x64/antigravity</code></td>
+        </tr>
+        
+        <tr>
+            <td><strong>3119</strong></td>
+            <td><span class="user-badge">darian</span></td>
+            <td><span class="proc-name">chrome</span></td>
+            <td data-value="241426432">230.24 MB</td>
+            <td data-value="1556961632256">1.42 TB</td>
+            <td data-value="2.9358498234764383"><span class="percentage-pill">2.94%</span></td>
+            <td>Non-critical background system process or application running concurrently with your game session.</td>
+            <td>No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance.</td>
+            <td class="cmd-cell"><code>/opt/google/chrome/chrome --type=renderer --crashpad-handler-pid=3017 --enable-crash-reporter=919aeacf-0c32-45c7-945e-02c822188bae, --extension-process --change-stack-guard-on-fork=enable --ozone-platform=x11 --lang=en-US --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=8 --time-ticks-at-unix-epoch=-1779538178036508 --launch-time-ticks=1628861648 --shared-files=v8_context_snapshot_data:100 --metrics-shmem-handle=4,i,8067871779454701307,4331098875516572994,2097152 --field-trial-handle=3,i,10180873471828716191,4894366534507706301,262144 --variations-seed-version=20260522-090043.833000-production --pseudonymization-salt-handle=7,i,14735261064513921724,1411451801939245954,4 --trace-process-track-uuid=3190708993808206286</code></td>
+        </tr>
+        
+        <tr>
+            <td><strong>1342</strong></td>
+            <td><span class="user-badge">root</span></td>
+            <td><span class="proc-name">Xorg</span></td>
+            <td data-value="214700032">204.75 MB</td>
+            <td data-value="26802708480">24.96 GB</td>
+            <td data-value="2.6108452410363485"><span class="percentage-pill">2.61%</span></td>
+            <td>The display server and window manager rendering Rocket League's graphics on your monitor and capturing inputs.</td>
+            <td>The graphical session terminates, immediately closing Heroic, Rocket League, and all open windows.</td>
+            <td class="cmd-cell"><code>/usr/lib/xorg/Xorg -core :0 -seat seat0 -auth /var/run/lightdm/root/:0 -nolisten tcp vt7 -novtswitch</code></td>
+        </tr>
+        
+        <tr>
+            <td><strong>3232</strong></td>
+            <td><span class="user-badge">darian</span></td>
+            <td><span class="proc-name">chrome</span></td>
+            <td data-value="198000640">188.83 MB</td>
+            <td data-value="1557011640320">1.42 TB</td>
+            <td data-value="2.407773412284127"><span class="percentage-pill">2.41%</span></td>
+            <td>Non-critical background system process or application running concurrently with your game session.</td>
+            <td>No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance.</td>
+            <td class="cmd-cell"><code>/opt/google/chrome/chrome --type=renderer --crashpad-handler-pid=3017 --enable-crash-reporter=919aeacf-0c32-45c7-945e-02c822188bae, --change-stack-guard-on-fork=enable --ozone-platform=x11 --lang=en-US --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=13 --time-ticks-at-unix-epoch=-1779538178036508 --launch-time-ticks=1634617675 --shared-files=v8_context_snapshot_data:100 --metrics-shmem-handle=4,i,14650559697163935029,13652411657235733724,2097152 --field-trial-handle=3,i,10180873471828716191,4894366534507706301,262144 --variations-seed-version=20260522-090043.833000-production --pseudonymization-salt-handle=7,i,14735261064513921724,1411451801939245954,4 --trace-process-track-uuid=3190708998493415531</code></td>
+        </tr>
+        
+        <tr>
+            <td><strong>3094</strong></td>
+            <td><span class="user-badge">darian</span></td>
+            <td><span class="proc-name">chrome</span></td>
+            <td data-value="152797184">145.72 MB</td>
+            <td data-value="1554939035648">1.41 TB</td>
+            <td data-value="1.8580798380605519"><span class="percentage-pill">1.86%</span></td>
+            <td>Non-critical background system process or application running concurrently with your game session.</td>
+            <td>No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance.</td>
+            <td class="cmd-cell"><code>/opt/google/chrome/chrome --type=renderer --top-chrome-webui --crashpad-handler-pid=3017 --enable-crash-reporter=919aeacf-0c32-45c7-945e-02c822188bae, --change-stack-guard-on-fork=enable --ozone-platform=x11 --lang=en-US --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=5 --time-ticks-at-unix-epoch=-1779538178036508 --launch-time-ticks=1628239780 --shared-files=v8_context_snapshot_data:100 --metrics-shmem-handle=4,i,2702484468076972529,8163027251245025231,2097152 --field-trial-handle=3,i,10180873471828716191,4894366534507706301,262144 --variations-seed-version=20260522-090043.833000-production --pseudonymization-salt-handle=7,i,14735261064513921724,1411451801939245954,4 --trace-process-track-uuid=3190708990997080739</code></td>
+        </tr>
+        
+        <tr>
+            <td><strong>3101</strong></td>
+            <td><span class="user-badge">darian</span></td>
+            <td><span class="proc-name">chrome</span></td>
+            <td data-value="140849152">134.32 MB</td>
+            <td data-value="1554947952640">1.41 TB</td>
+            <td data-value="1.712786601742124"><span class="percentage-pill">1.71%</span></td>
+            <td>Non-critical background system process or application running concurrently with your game session.</td>
+            <td>No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance.</td>
+            <td class="cmd-cell"><code>/opt/google/chrome/chrome --type=renderer --crashpad-handler-pid=3017 --enable-crash-reporter=919aeacf-0c32-45c7-945e-02c822188bae, --change-stack-guard-on-fork=enable --ozone-platform=x11 --lang=en-US --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=6 --time-ticks-at-unix-epoch=-1779538178036508 --launch-time-ticks=1628841684 --shared-files=v8_context_snapshot_data:100 --metrics-shmem-handle=4,i,2921741948859901051,12354788191118094958,2097152 --field-trial-handle=3,i,10180873471828716191,4894366534507706301,262144 --variations-seed-version=20260522-090043.833000-production --pseudonymization-salt-handle=7,i,14735261064513921724,1411451801939245954,4 --trace-process-track-uuid=3190708991934122588</code></td>
+        </tr>
+        
+        <tr>
+            <td><strong>3222</strong></td>
+            <td><span class="user-badge">darian</span></td>
+            <td><span class="proc-name">chrome</span></td>
+            <td data-value="130895872">124.83 MB</td>
+            <td data-value="1556959248384">1.42 TB</td>
+            <td data-value="1.591750412419608"><span class="percentage-pill">1.59%</span></td>
+            <td>Non-critical background system process or application running concurrently with your game session.</td>
+            <td>No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance.</td>
+            <td class="cmd-cell"><code>/opt/google/chrome/chrome --type=renderer --crashpad-handler-pid=3017 --enable-crash-reporter=919aeacf-0c32-45c7-945e-02c822188bae, --extension-process --change-stack-guard-on-fork=enable --ozone-platform=x11 --lang=en-US --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=12 --time-ticks-at-unix-epoch=-1779538178036508 --launch-time-ticks=1632852137 --shared-files=v8_context_snapshot_data:100 --metrics-shmem-handle=4,i,13839731364809054920,2436997251394322009,2097152 --field-trial-handle=3,i,10180873471828716191,4894366534507706301,262144 --variations-seed-version=20260522-090043.833000-production --pseudonymization-salt-handle=7,i,14735261064513921724,1411451801939245954,4 --trace-process-track-uuid=3190708997556373682</code></td>
+        </tr>
+        
+        <tr>
+            <td><strong>3055</strong></td>
+            <td><span class="user-badge">darian</span></td>
+            <td><span class="proc-name">chrome</span></td>
+            <td data-value="126791680">120.92 MB</td>
+            <td data-value="51991023616">48.42 GB</td>
+            <td data-value="1.5418416627483482"><span class="percentage-pill">1.54%</span></td>
+            <td>Non-critical background system process or application running concurrently with your game session.</td>
+            <td>No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance.</td>
+            <td class="cmd-cell"><code>/opt/google/chrome/chrome --type=utility --utility-sub-type=network.mojom.NetworkService --lang=en-US --service-sandbox-type=none --crashpad-handler-pid=3017 --enable-crash-reporter=919aeacf-0c32-45c7-945e-02c822188bae, --change-stack-guard-on-fork=enable --shared-files=v8_context_snapshot_data:100 --metrics-shmem-handle=4,i,7516619413818149806,9105968119700905995,524288 --field-trial-handle=3,i,10180873471828716191,4894366534507706301,262144 --variations-seed-version=20260522-090043.833000-production --pseudonymization-salt-handle=7,i,14735261064513921724,1411451801939245954,4 --trace-process-track-uuid=3190708989122997041</code></td>
+        </tr>
+        
+        <tr>
+            <td><strong>2322</strong></td>
+            <td><span class="user-badge">darian</span></td>
+            <td><span class="proc-name">antigravity</span></td>
+            <td data-value="84676608">80.75 MB</td>
+            <td data-value="51917688832">48.35 GB</td>
+            <td data-value="1.029704173606739"><span class="percentage-pill">1.03%</span></td>
+            <td>Handles Epic Online Services (EOS) authentication, cross-play matchmaking, friends list sync, and multiplayer stats.</td>
+            <td>Multiplayer matchmaking, invite system, and sync with Epic Games servers will be disabled.</td>
+            <td class="cmd-cell"><code>/proc/self/exe --type=utility --utility-sub-type=network.mojom.NetworkService --lang=en-US --service-sandbox-type=none --enable-crash-reporter=543efe0e-99b9-4601-8aac-d61d9f0af32a,no_channel --user-data-dir=/home/darian/.config/Antigravity --standard-schemes=plugin --secure-schemes=plugin --cors-schemes=plugin --fetch-schemes=plugin --service-worker-schemes=plugin --code-cache-schemes=plugin --shared-files=v8_context_snapshot_data:100 --field-trial-handle=3,i,11512375653675579488,11000277727307274072,262144 --enable-features=PdfUseShowSaveFilePicker --disable-features=DropInputEventsWhilePaintHolding,LocalNetworkAccessChecks,ScreenAIOCREnabled,SpareRendererForSitePerProcess,TraceSiteInstanceGetProcessCreation --variations-seed-version --pseudonymization-salt-handle=7,i,15387890543201814933,14344561466586639882,4 --trace-process-track-uuid=3190708989122997041</code></td>
+        </tr>
+        
+        <tr>
+            <td><strong>3255</strong></td>
+            <td><span class="user-badge">darian</span></td>
+            <td><span class="proc-name">chrome</span></td>
+            <td data-value="80887808">77.14 MB</td>
+            <td data-value="1554894585856">1.41 TB</td>
+            <td data-value="0.9836307270539293"><span class="percentage-pill">0.98%</span></td>
+            <td>Non-critical background system process or application running concurrently with your game session.</td>
+            <td>No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance.</td>
+            <td class="cmd-cell"><code>/opt/google/chrome/chrome --type=renderer --crashpad-handler-pid=3017 --enable-crash-reporter=919aeacf-0c32-45c7-945e-02c822188bae, --change-stack-guard-on-fork=enable --ozone-platform=x11 --lang=en-US --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=15 --time-ticks-at-unix-epoch=-1779538178036508 --launch-time-ticks=1637078631 --shared-files=v8_context_snapshot_data:100 --metrics-shmem-handle=4,i,8496108869017297349,8391618459765753193,2097152 --field-trial-handle=3,i,10180873471828716191,4894366534507706301,262144 --variations-seed-version=20260522-090043.833000-production --pseudonymization-salt-handle=7,i,14735261064513921724,1411451801939245954,4 --trace-process-track-uuid=3190709000367499229</code></td>
+        </tr>
+        
+        <tr>
+            <td><strong>2980</strong></td>
+            <td><span class="user-badge">darian</span></td>
+            <td><span class="proc-name">nemo</span></td>
+            <td data-value="73650176">70.24 MB</td>
+            <td data-value="808181760">770.74 MB</td>
+            <td data-value="0.8956179918552107"><span class="percentage-pill">0.90%</span></td>
+            <td>Non-critical background system process or application running concurrently with your game session.</td>
+            <td>No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance.</td>
+            <td class="cmd-cell"><code>/usr/bin/nemo</code></td>
+        </tr>
+        
+        <tr>
+            <td><strong>2473</strong></td>
+            <td><span class="user-badge">darian</span></td>
+            <td><span class="proc-name">antigravity</span></td>
+            <td data-value="69492736">66.27 MB</td>
+            <td data-value="51953164288">48.39 GB</td>
+            <td data-value="0.8450617234756412"><span class="percentage-pill">0.85%</span></td>
+            <td>Handles Epic Online Services (EOS) authentication, cross-play matchmaking, friends list sync, and multiplayer stats.</td>
+            <td>Multiplayer matchmaking, invite system, and sync with Epic Games servers will be disabled.</td>
+            <td class="cmd-cell"><code>/proc/self/exe --type=utility --utility-sub-type=audio.mojom.AudioService --lang=en-US --service-sandbox-type=none --enable-crash-reporter=543efe0e-99b9-4601-8aac-d61d9f0af32a,no_channel --user-data-dir=/home/darian/.config/Antigravity --standard-schemes=plugin --secure-schemes=plugin --cors-schemes=plugin --fetch-schemes=plugin --service-worker-schemes=plugin --code-cache-schemes=plugin --shared-files=v8_context_snapshot_data:100 --field-trial-handle=3,i,11512375653675579488,11000277727307274072,262144 --enable-features=PdfUseShowSaveFilePicker --disable-features=DropInputEventsWhilePaintHolding,LocalNetworkAccessChecks,ScreenAIOCREnabled,SpareRendererForSitePerProcess,TraceSiteInstanceGetProcessCreation --variations-seed-version --pseudonymization-salt-handle=7,i,15387890543201814933,14344561466586639882,4 --trace-process-track-uuid=3190708991934122588</code></td>
+        </tr>
+        
+        <tr>
+            <td><strong>3025</strong></td>
+            <td><span class="user-badge">darian</span></td>
+            <td><span class="proc-name">chrome</span></td>
+            <td data-value="68009984">64.86 MB</td>
+            <td data-value="51972198400">48.40 GB</td>
+            <td data-value="0.827030817905785"><span class="percentage-pill">0.83%</span></td>
+            <td>Non-critical background system process or application running concurrently with your game session.</td>
+            <td>No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance.</td>
+            <td class="cmd-cell"><code>/opt/google/chrome/chrome --type=zygote --no-zygote-sandbox --crashpad-handler-pid=3017 --enable-crash-reporter=919aeacf-0c32-45c7-945e-02c822188bae, --change-stack-guard-on-fork=enable</code></td>
+        </tr>
+        
+        <tr>
+            <td><strong>3026</strong></td>
+            <td><span class="user-badge">darian</span></td>
+            <td><span class="proc-name">chrome</span></td>
+            <td data-value="67956736">64.81 MB</td>
+            <td data-value="51972190208">48.40 GB</td>
+            <td data-value="0.8263832991974753"><span class="percentage-pill">0.83%</span></td>
+            <td>Non-critical background system process or application running concurrently with your game session.</td>
+            <td>No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance.</td>
+            <td class="cmd-cell"><code>/opt/google/chrome/chrome --type=zygote --crashpad-handler-pid=3017 --enable-crash-reporter=919aeacf-0c32-45c7-945e-02c822188bae, --change-stack-guard-on-fork=enable</code></td>
+        </tr>
+        
+        <tr>
+            <td><strong>1951</strong></td>
+            <td><span class="user-badge">darian</span></td>
+            <td><span class="proc-name">evolution-alarm</span></td>
+            <td data-value="65048576">62.04 MB</td>
+            <td data-value="922079232">879.36 MB</td>
+            <td data-value="0.7910188158974809"><span class="percentage-pill">0.79%</span></td>
+            <td>Non-critical background system process or application running concurrently with your game session.</td>
+            <td>No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance.</td>
+            <td class="cmd-cell"><code>/usr/libexec/evolution-data-server/evolution-alarm-notify</code></td>
+        </tr>
+        
+        <tr>
+            <td><strong>1945</strong></td>
+            <td><span class="user-badge">darian</span></td>
+            <td><span class="proc-name">nemo-desktop</span></td>
+            <td data-value="62988288">60.07 MB</td>
+            <td data-value="720928768">687.53 MB</td>
+            <td data-value="0.7659648227990341"><span class="percentage-pill">0.77%</span></td>
+            <td>Non-critical background system process or application running concurrently with your game session.</td>
+            <td>No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance.</td>
+            <td class="cmd-cell"><code>/usr/bin/nemo-desktop</code></td>
+        </tr>
+        
+        <tr>
+            <td><strong>3077</strong></td>
+            <td><span class="user-badge">darian</span></td>
+            <td><span class="proc-name">chrome</span></td>
+            <td data-value="59334656">56.59 MB</td>
+            <td data-value="52023644160">48.45 GB</td>
+            <td data-value="0.7215350775827031"><span class="percentage-pill">0.72%</span></td>
+            <td>Non-critical background system process or application running concurrently with your game session.</td>
+            <td>No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance.</td>
+            <td class="cmd-cell"><code>/opt/google/chrome/chrome --type=utility --utility-sub-type=storage.mojom.StorageService --lang=en-US --service-sandbox-type=utility --crashpad-handler-pid=3017 --enable-crash-reporter=919aeacf-0c32-45c7-945e-02c822188bae, --change-stack-guard-on-fork=enable --shared-files=v8_context_snapshot_data:100 --metrics-shmem-handle=4,i,8710901382139347990,17382565096066581166,524288 --field-trial-handle=3,i,10180873471828716191,4894366534507706301,262144 --variations-seed-version=20260522-090043.833000-production --pseudonymization-salt-handle=7,i,14735261064513921724,1411451801939245954,4 --trace-process-track-uuid=3190708990060038890</code></td>
+        </tr>
+        
+        <tr>
+            <td><strong>2267</strong></td>
+            <td><span class="user-badge">darian</span></td>
+            <td><span class="proc-name">antigravity</span></td>
+            <td data-value="57487360">54.82 MB</td>
+            <td data-value="51822657536">48.26 GB</td>
+            <td data-value="0.6990711593174954"><span class="percentage-pill">0.70%</span></td>
+            <td>The Antigravity AI pair programmer agent context (currently performing system diagnostics).</td>
+            <td>This interactive AI development session will terminate immediately.</td>
+            <td class="cmd-cell"><code>/home/darian/Documents/Antigravity-x64/antigravity --type=zygote --no-zygote-sandbox</code></td>
+        </tr>
+        
+        <tr>
+            <td><strong>2268</strong></td>
+            <td><span class="user-badge">darian</span></td>
+            <td><span class="proc-name">antigravity</span></td>
+            <td data-value="56754176">54.12 MB</td>
+            <td data-value="51822645248">48.26 GB</td>
+            <td data-value="0.6901553247953841"><span class="percentage-pill">0.69%</span></td>
+            <td>The Antigravity AI pair programmer agent context (currently performing system diagnostics).</td>
+            <td>This interactive AI development session will terminate immediately.</td>
+            <td class="cmd-cell"><code>/home/darian/Documents/Antigravity-x64/antigravity --type=zygote</code></td>
+        </tr>
+        
+        <tr>
+            <td><strong>2811</strong></td>
+            <td><span class="user-badge">root</span></td>
+            <td><span class="proc-name">fwupd</span></td>
+            <td data-value="47357952">45.16 MB</td>
+            <td data-value="494739456">471.82 MB</td>
+            <td data-value="0.5758931773444163"><span class="percentage-pill">0.58%</span></td>
+            <td>Non-critical background system process or application running concurrently with your game session.</td>
+            <td>No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance.</td>
+            <td class="cmd-cell"><code>/usr/libexec/fwupd/fwupd</code></td>
+        </tr>
+        
+        <tr>
+            <td><strong>2388</strong></td>
+            <td><span class="user-badge">darian</span></td>
+            <td><span class="proc-name">xdg-desktop-por</span></td>
+            <td data-value="47341568">45.15 MB</td>
+            <td data-value="704614400">671.97 MB</td>
+            <td data-value="0.5756939408187824"><span class="percentage-pill">0.58%</span></td>
+            <td>Non-critical background system process or application running concurrently with your game session.</td>
+            <td>No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance.</td>
+            <td class="cmd-cell"><code>/usr/libexec/xdg-desktop-portal-gtk</code></td>
+        </tr>
+        
+        <tr>
+            <td><strong>3327</strong></td>
+            <td><span class="user-badge">darian</span></td>
+            <td><span class="proc-name">gnome-terminal-</span></td>
+            <td data-value="45371392">43.27 MB</td>
+            <td data-value="708177920">675.37 MB</td>
+            <td data-value="0.5517357486113215"><span class="percentage-pill">0.55%</span></td>
+            <td>Non-critical background system process or application running concurrently with your game session.</td>
+            <td>No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance.</td>
+            <td class="cmd-cell"><code>/usr/libexec/gnome-terminal-server</code></td>
+        </tr>
+        
+        <tr>
+            <td><strong>1691</strong></td>
+            <td><span class="user-badge">darian</span></td>
+            <td><span class="proc-name">ibus-ui-gtk3</span></td>
+            <td data-value="45223936">43.13 MB</td>
+            <td data-value="474984448">452.98 MB</td>
+            <td data-value="0.5499426198806174"><span class="percentage-pill">0.55%</span></td>
+            <td>Non-critical background system process or application running concurrently with your game session.</td>
+            <td>No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance.</td>
+            <td class="cmd-cell"><code>/usr/libexec/ibus-ui-gtk3</code></td>
+        </tr>
+        
+        <tr>
+            <td><strong>3069</strong></td>
+            <td><span class="user-badge">darian</span></td>
+            <td><span class="proc-name">chrome</span></td>
+            <td data-value="44773376">42.70 MB</td>
+            <td data-value="52316766208">48.72 GB</td>
+            <td data-value="0.5444636154256888"><span class="percentage-pill">0.54%</span></td>
+            <td>Non-critical background system process or application running concurrently with your game session.</td>
+            <td>No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance.</td>
+            <td class="cmd-cell"><code>/opt/google/chrome/chrome --type=broker</code></td>
+        </tr>
+        
+        <tr>
+            <td><strong>2066</strong></td>
+            <td><span class="user-badge">darian</span></td>
+            <td><span class="proc-name">evolution-sourc</span></td>
+            <td data-value="44257280">42.21 MB</td>
+            <td data-value="613834752">585.40 MB</td>
+            <td data-value="0.5381876648682249"><span class="percentage-pill">0.54%</span></td>
+            <td>Non-critical background system process or application running concurrently with your game session.</td>
+            <td>No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance.</td>
+            <td class="cmd-cell"><code>/usr/libexec/evolution-source-registry</code></td>
+        </tr>
+        
+        <tr>
+            <td><strong>1735</strong></td>
+            <td><span class="user-badge">darian</span></td>
+            <td><span class="proc-name">csd-background</span></td>
+            <td data-value="42471424">40.50 MB</td>
+            <td data-value="520613888">496.50 MB</td>
+            <td data-value="0.516470883574144"><span class="percentage-pill">0.52%</span></td>
+            <td>Non-critical background system process or application running concurrently with your game session.</td>
+            <td>No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance.</td>
+            <td class="cmd-cell"><code>/usr/bin/csd-background</code></td>
+        </tr>
+        
+        <tr>
+            <td><strong>1876</strong></td>
+            <td><span class="user-badge">darian</span></td>
+            <td><span class="proc-name">cinnamon-launch</span></td>
+            <td data-value="41828352">39.89 MB</td>
+            <td data-value="554885120">529.18 MB</td>
+            <td data-value="0.5086508499430183"><span class="percentage-pill">0.51%</span></td>
+            <td>The display server and window manager rendering Rocket League's graphics on your monitor and capturing inputs.</td>
+            <td>The graphical session terminates, immediately closing Heroic, Rocket League, and all open windows.</td>
+            <td class="cmd-cell"><code>cinnamon-launcher</code></td>
+        </tr>
+        
+        <tr>
+            <td><strong>1949</strong></td>
+            <td><span class="user-badge">darian</span></td>
+            <td><span class="proc-name">cinnamon-killer</span></td>
+            <td data-value="39325696">37.50 MB</td>
+            <td data-value="401678336">383.07 MB</td>
+            <td data-value="0.4782174706524598"><span class="percentage-pill">0.48%</span></td>
+            <td>The display server and window manager rendering Rocket League's graphics on your monitor and capturing inputs.</td>
+            <td>The graphical session terminates, immediately closing Heroic, Rocket League, and all open windows.</td>
+            <td class="cmd-cell"><code>cinnamon-killer-daemon</code></td>
+        </tr>
+        
+        <tr>
+            <td><strong>2422</strong></td>
+            <td><span class="user-badge">darian</span></td>
+            <td><span class="proc-name">antigravity</span></td>
+            <td data-value="38764544">36.97 MB</td>
+            <td data-value="52166721536">48.58 GB</td>
+            <td data-value="0.47139361964950316"><span class="percentage-pill">0.47%</span></td>
+            <td>The Antigravity AI pair programmer agent context (currently performing system diagnostics).</td>
+            <td>This interactive AI development session will terminate immediately.</td>
+            <td class="cmd-cell"><code>/home/darian/Documents/Antigravity-x64/antigravity --type=zygote --no-zygote-sandbox</code></td>
+        </tr>
+        
+        <tr>
+            <td><strong>2037</strong></td>
+            <td><span class="user-badge">darian</span></td>
+            <td><span class="proc-name">xapp-sn-watcher</span></td>
+            <td data-value="36999168">35.29 MB</td>
+            <td data-value="482963456">460.59 MB</td>
+            <td data-value="0.44992588401246425"><span class="percentage-pill">0.45%</span></td>
+            <td>Non-critical background system process or application running concurrently with your game session.</td>
+            <td>No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance.</td>
+            <td class="cmd-cell"><code>/usr/lib/x86_64-linux-gnu/xapps/xapp-sn-watcher</code></td>
+        </tr>
+        
+        <tr>
+            <td><strong>1695</strong></td>
+            <td><span class="user-badge">darian</span></td>
+            <td><span class="proc-name">ibus-extension-</span></td>
+            <td data-value="34164736">32.58 MB</td>
+            <td data-value="392556544">374.37 MB</td>
+            <td data-value="0.4154579650778218"><span class="percentage-pill">0.42%</span></td>
+            <td>Non-critical background system process or application running concurrently with your game session.</td>
+            <td>No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance.</td>
+            <td class="cmd-cell"><code>/usr/libexec/ibus-extension-gtk3</code></td>
+        </tr>
+        
+        <tr>
+            <td><strong>2147</strong></td>
+            <td><span class="user-badge">darian</span></td>
+            <td><span class="proc-name">evolution-addre</span></td>
+            <td data-value="31657984">30.19 MB</td>
+            <td data-value="845422592">806.26 MB</td>
+            <td data-value="0.3849747766558548"><span class="percentage-pill">0.38%</span></td>
+            <td>Non-critical background system process or application running concurrently with your game session.</td>
+            <td>No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance.</td>
+            <td class="cmd-cell"><code>/usr/libexec/evolution-addressbook-factory</code></td>
+        </tr>
+        
+        <tr>
+            <td><strong>1748</strong></td>
+            <td><span class="user-badge">darian</span></td>
+            <td><span class="proc-name">csd-media-keys</span></td>
+            <td data-value="28811264">27.48 MB</td>
+            <td data-value="608051200">579.88 MB</td>
+            <td data-value="0.35035743032698696"><span class="percentage-pill">0.35%</span></td>
+            <td>Non-critical background system process or application running concurrently with your game session.</td>
+            <td>No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance.</td>
+            <td class="cmd-cell"><code>/usr/bin/csd-media-keys</code></td>
+        </tr>
+        
+        <tr>
+            <td><strong>1739</strong></td>
+            <td><span class="user-badge">darian</span></td>
+            <td><span class="proc-name">csd-color</span></td>
+            <td data-value="28389376">27.07 MB</td>
+            <td data-value="550883328">525.36 MB</td>
+            <td data-value="0.3452270897919174"><span class="percentage-pill">0.35%</span></td>
+            <td>Non-critical background system process or application running concurrently with your game session.</td>
+            <td>No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance.</td>
+            <td class="cmd-cell"><code>/usr/bin/csd-color</code></td>
+        </tr>
+        
+        <tr>
+            <td><strong>1750</strong></td>
+            <td><span class="user-badge">darian</span></td>
+            <td><span class="proc-name">csd-xsettings</span></td>
+            <td data-value="27688960">26.41 MB</td>
+            <td data-value="386560000">368.65 MB</td>
+            <td data-value="0.33670972832107365"><span class="percentage-pill">0.34%</span></td>
+            <td>Non-critical background system process or application running concurrently with your game session.</td>
+            <td>No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance.</td>
+            <td class="cmd-cell"><code>/usr/bin/csd-xsettings</code></td>
+        </tr>
+        
+        <tr>
+            <td><strong>1745</strong></td>
+            <td><span class="user-badge">darian</span></td>
+            <td><span class="proc-name">csd-power</span></td>
+            <td data-value="27549696">26.27 MB</td>
+            <td data-value="612720640">584.34 MB</td>
+            <td data-value="0.3350162178531866"><span class="percentage-pill">0.34%</span></td>
+            <td>Non-critical background system process or application running concurrently with your game session.</td>
+            <td>No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance.</td>
+            <td class="cmd-cell"><code>/usr/bin/csd-power</code></td>
+        </tr>
+        
+        <tr>
+            <td><strong>2364</strong></td>
+            <td><span class="user-badge">darian</span></td>
+            <td><span class="proc-name">xdg-desktop-por</span></td>
+            <td data-value="26595328">25.36 MB</td>
+            <td data-value="461307904">439.94 MB</td>
+            <td data-value="0.3234106902350194"><span class="percentage-pill">0.32%</span></td>
+            <td>Non-critical background system process or application running concurrently with your game session.</td>
+            <td>No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance.</td>
+            <td class="cmd-cell"><code>/usr/libexec/xdg-desktop-portal-xapp</code></td>
+        </tr>
+        
+        <tr>
+            <td><strong>1740</strong></td>
+            <td><span class="user-badge">darian</span></td>
+            <td><span class="proc-name">csd-wacom</span></td>
+            <td data-value="26353664">25.13 MB</td>
+            <td data-value="385376256">367.52 MB</td>
+            <td data-value="0.32047195148192126"><span class="percentage-pill">0.32%</span></td>
+            <td>Non-critical background system process or application running concurrently with your game session.</td>
+            <td>No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance.</td>
+            <td class="cmd-cell"><code>/usr/bin/csd-wacom</code></td>
+        </tr>
+        
+        <tr>
+            <td><strong>1755</strong></td>
+            <td><span class="user-badge">darian</span></td>
+            <td><span class="proc-name">csd-automount</span></td>
+            <td data-value="26308608">25.09 MB</td>
+            <td data-value="460574720">439.24 MB</td>
+            <td data-value="0.3199240510364284"><span class="percentage-pill">0.32%</span></td>
+            <td>Non-critical background system process or application running concurrently with your game session.</td>
+            <td>No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance.</td>
+            <td class="cmd-cell"><code>/usr/bin/csd-automount</code></td>
+        </tr>
+        
+        <tr>
+            <td><strong>1746</strong></td>
+            <td><span class="user-badge">darian</span></td>
+            <td><span class="proc-name">csd-housekeepin</span></td>
+            <td data-value="25939968">24.74 MB</td>
+            <td data-value="384913408">367.08 MB</td>
+            <td data-value="0.31544122920966855"><span class="percentage-pill">0.32%</span></td>
+            <td>Non-critical background system process or application running concurrently with your game session.</td>
+            <td>No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance.</td>
+            <td class="cmd-cell"><code>/usr/bin/csd-housekeeping</code></td>
+        </tr>
+        
+        <tr>
+            <td><strong>1697</strong></td>
+            <td><span class="user-badge">darian</span></td>
+            <td><span class="proc-name">ibus-x11</span></td>
+            <td data-value="25903104">24.70 MB</td>
+            <td data-value="309571584">295.23 MB</td>
+            <td data-value="0.31499294702699254"><span class="percentage-pill">0.31%</span></td>
+            <td>Non-critical background system process or application running concurrently with your game session.</td>
+            <td>No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance.</td>
+            <td class="cmd-cell"><code>/usr/libexec/ibus-x11 --kill-daemon</code></td>
+        </tr>
+        
+        <tr>
+            <td><strong>2115</strong></td>
+            <td><span class="user-badge">darian</span></td>
+            <td><span class="proc-name">evolution-calen</span></td>
+            <td data-value="25829376">24.63 MB</td>
+            <td data-value="912400384">870.13 MB</td>
+            <td data-value="0.3140963826616406"><span class="percentage-pill">0.31%</span></td>
+            <td>Non-critical background system process or application running concurrently with your game session.</td>
+            <td>No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance.</td>
+            <td class="cmd-cell"><code>/usr/libexec/evolution-calendar-factory</code></td>
+        </tr>
+        
+        <tr>
+            <td><strong>1743</strong></td>
+            <td><span class="user-badge">darian</span></td>
+            <td><span class="proc-name">csd-keyboard</span></td>
+            <td data-value="25640960">24.45 MB</td>
+            <td data-value="460345344">439.02 MB</td>
+            <td data-value="0.3118051626168522"><span class="percentage-pill">0.31%</span></td>
+            <td>Non-critical background system process or application running concurrently with your game session.</td>
+            <td>No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance.</td>
+            <td class="cmd-cell"><code>/usr/bin/csd-keyboard</code></td>
+        </tr>
+        
+        <tr>
+            <td><strong>1873</strong></td>
+            <td><span class="user-badge">darian</span></td>
+            <td><span class="proc-name">goa-daemon</span></td>
+            <td data-value="25292800">24.12 MB</td>
+            <td data-value="559538176">533.62 MB</td>
+            <td data-value="0.3075713864471346"><span class="percentage-pill">0.31%</span></td>
+            <td>Non-critical background system process or application running concurrently with your game session.</td>
+            <td>No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance.</td>
+            <td class="cmd-cell"><code>/usr/libexec/goa-daemon</code></td>
+        </tr>
+        
+        <tr>
+            <td><strong>1736</strong></td>
+            <td><span class="user-badge">darian</span></td>
+            <td><span class="proc-name">csd-clipboard</span></td>
+            <td data-value="25288704">24.12 MB</td>
+            <td data-value="308924416">294.61 MB</td>
+            <td data-value="0.30752157731572616"><span class="percentage-pill">0.31%</span></td>
+            <td>Non-critical background system process or application running concurrently with your game session.</td>
+            <td>No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance.</td>
+            <td class="cmd-cell"><code>/usr/bin/csd-clipboard</code></td>
+        </tr>
+        
+        <tr>
+            <td><strong>1370</strong></td>
+            <td><span class="user-badge">cups-browsed</span></td>
+            <td><span class="proc-name">cups-browsed</span></td>
+            <td data-value="20926464">19.96 MB</td>
+            <td data-value="274948096">262.21 MB</td>
+            <td data-value="0.2544748523657345"><span class="percentage-pill">0.25%</span></td>
+            <td>Non-critical background system process or application running concurrently with your game session.</td>
+            <td>No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance.</td>
+            <td class="cmd-cell"><code>/usr/sbin/cups-browsed</code></td>
+        </tr>
+        
+        <tr>
+            <td><strong>1172</strong></td>
+            <td><span class="user-badge">root</span></td>
+            <td><span class="proc-name">NetworkManager</span></td>
+            <td data-value="20717568">19.76 MB</td>
+            <td data-value="344776704">328.80 MB</td>
+            <td data-value="0.25193458666390395"><span class="percentage-pill">0.25%</span></td>
+            <td>Non-critical background system process or application running concurrently with your game session.</td>
+            <td>No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance.</td>
+            <td class="cmd-cell"><code>/usr/sbin/NetworkManager --no-daemon</code></td>
+        </tr>
+        
+        <tr>
+            <td><strong>2339</strong></td>
+            <td><span class="user-badge">darian</span></td>
+            <td><span class="proc-name">xdg-desktop-por</span></td>
+            <td data-value="20025344">19.10 MB</td>
+            <td data-value="577802240">551.04 MB</td>
+            <td data-value="0.24351684345587707"><span class="percentage-pill">0.24%</span></td>
+            <td>Non-critical background system process or application running concurrently with your game session.</td>
+            <td>No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance.</td>
+            <td class="cmd-cell"><code>/usr/libexec/xdg-desktop-portal</code></td>
+        </tr>
+        
+        <tr>
+            <td><strong>1548</strong></td>
+            <td><span class="user-badge">darian</span></td>
+            <td><span class="proc-name">wireplumber</span></td>
+            <td data-value="19992576">19.07 MB</td>
+            <td data-value="416964608">397.65 MB</td>
+            <td data-value="0.2431183704046095"><span class="percentage-pill">0.24%</span></td>
+            <td>Manages the Linux system audio server, routing Rocket League's sound output and mic input.</td>
+            <td>The game will be completely silent, and voice chat will not function.</td>
+            <td class="cmd-cell"><code>/usr/bin/wireplumber</code></td>
+        </tr>
+        
+        <tr>
+            <td><strong>3028</strong></td>
+            <td><span class="user-badge">darian</span></td>
+            <td><span class="proc-name">chrome</span></td>
+            <td data-value="19251200">18.36 MB</td>
+            <td data-value="51972214784">48.40 GB</td>
+            <td data-value="0.23410291761968138"><span class="percentage-pill">0.23%</span></td>
+            <td>Non-critical background system process or application running concurrently with your game session.</td>
+            <td>No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance.</td>
+            <td class="cmd-cell"><code>/opt/google/chrome/chrome --type=zygote --crashpad-handler-pid=3017 --enable-crash-reporter=919aeacf-0c32-45c7-945e-02c822188bae, --change-stack-guard-on-fork=enable</code></td>
+        </tr>
+        
+        <tr>
+            <td><strong>449</strong></td>
+            <td><span class="user-badge">root</span></td>
+            <td><span class="proc-name">systemd-journal</span></td>
+            <td data-value="18698240">17.83 MB</td>
+            <td data-value="51949568">49.54 MB</td>
+            <td data-value="0.22737868487954158"><span class="percentage-pill">0.23%</span></td>
+            <td>Linux system daemon/shell providing basic OS infrastructure, hardware polling, and environment capabilities.</td>
+            <td>The operating system will become unstable or crash, taking Rocket League and Heroic Launcher down with it.</td>
+            <td class="cmd-cell"><code>/usr/lib/systemd/systemd-journald</code></td>
+        </tr>
+        
+        <tr>
+            <td><strong>1549</strong></td>
+            <td><span class="user-badge">darian</span></td>
+            <td><span class="proc-name">pipewire-pulse</span></td>
+            <td data-value="18690048">17.82 MB</td>
+            <td data-value="119881728">114.33 MB</td>
+            <td data-value="0.2272790666167247"><span class="percentage-pill">0.23%</span></td>
+            <td>Manages the Linux system audio server, routing Rocket League's sound output and mic input.</td>
+            <td>The game will be completely silent, and voice chat will not function.</td>
+            <td class="cmd-cell"><code>/usr/bin/pipewire-pulse</code></td>
+        </tr>
+        
+        <tr>
+            <td><strong>998</strong></td>
+            <td><span class="user-badge">root</span></td>
+            <td><span class="proc-name">udisksd</span></td>
+            <td data-value="16310272">15.55 MB</td>
+            <td data-value="481280000">458.98 MB</td>
+            <td data-value="0.1983399612684194"><span class="percentage-pill">0.20%</span></td>
+            <td>Non-critical background system process or application running concurrently with your game session.</td>
+            <td>No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance.</td>
+            <td class="cmd-cell"><code>/usr/libexec/udisks2/udisksd</code></td>
+        </tr>
+        
+        <tr>
+            <td><strong>1578</strong></td>
+            <td><span class="user-badge">darian</span></td>
+            <td><span class="proc-name">cinnamon-sessio</span></td>
+            <td data-value="15798272">15.07 MB</td>
+            <td data-value="564768768">538.61 MB</td>
+            <td data-value="0.19211381984236406"><span class="percentage-pill">0.19%</span></td>
+            <td>The display server and window manager rendering Rocket League's graphics on your monitor and capturing inputs.</td>
+            <td>The graphical session terminates, immediately closing Heroic, Rocket League, and all open windows.</td>
+            <td class="cmd-cell"><code>/usr/lib/x86_64-linux-gnu/cinnamon-session-binary --session cinnamon</code></td>
+        </tr>
+        
+        <tr>
+            <td><strong>1811</strong></td>
+            <td><span class="user-badge">darian</span></td>
+            <td><span class="proc-name">csd-printer</span></td>
+            <td data-value="15679488">14.95 MB</td>
+            <td data-value="426237952">406.49 MB</td>
+            <td data-value="0.19066935503151922"><span class="percentage-pill">0.19%</span></td>
+            <td>Non-critical background system process or application running concurrently with your game session.</td>
+            <td>No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance.</td>
+            <td class="cmd-cell"><code>/usr/libexec/csd-printer</code></td>
+        </tr>
+        
+        <tr>
+            <td><strong>996</strong></td>
+            <td><span class="user-badge">root</span></td>
+            <td><span class="proc-name">touchegg</span></td>
+            <td data-value="15634432">14.91 MB</td>
+            <td data-value="265039872">252.76 MB</td>
+            <td data-value="0.19012145458602636"><span class="percentage-pill">0.19%</span></td>
+            <td>Non-critical background system process or application running concurrently with your game session.</td>
+            <td>No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance.</td>
+            <td class="cmd-cell"><code>/usr/bin/touchegg --daemon</code></td>
+        </tr>
+        
+        <tr>
+            <td><strong>1838</strong></td>
+            <td><span class="user-badge">colord</span></td>
+            <td><span class="proc-name">colord</span></td>
+            <td data-value="15376384">14.66 MB</td>
+            <td data-value="327917568">312.73 MB</td>
+            <td data-value="0.18698347930729445"><span class="percentage-pill">0.19%</span></td>
+            <td>Non-critical background system process or application running concurrently with your game session.</td>
+            <td>No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance.</td>
+            <td class="cmd-cell"><code>/usr/libexec/colord</code></td>
+        </tr>
+        
+        <tr>
+            <td><strong>1545</strong></td>
+            <td><span class="user-badge">darian</span></td>
+            <td><span class="proc-name">pipewire</span></td>
+            <td data-value="14778368">14.09 MB</td>
+            <td data-value="118276096">112.80 MB</td>
+            <td data-value="0.17971134612166179"><span class="percentage-pill">0.18%</span></td>
+            <td>Manages the Linux system audio server, routing Rocket League's sound output and mic input.</td>
+            <td>The game will be completely silent, and voice chat will not function.</td>
+            <td class="cmd-cell"><code>/usr/bin/pipewire</code></td>
+        </tr>
+        
+        <tr>
+            <td><strong>1</strong></td>
+            <td><span class="user-badge">root</span></td>
+            <td><span class="proc-name">systemd</span></td>
+            <td data-value="14606336">13.93 MB</td>
+            <td data-value="23404544">22.32 MB</td>
+            <td data-value="0.17761936260250719"><span class="percentage-pill">0.18%</span></td>
+            <td>Linux system daemon/shell providing basic OS infrastructure, hardware polling, and environment capabilities.</td>
+            <td>The operating system will become unstable or crash, taking Rocket League and Heroic Launcher down with it.</td>
+            <td class="cmd-cell"><code>/sbin/init splash</code></td>
+        </tr>
+        
+        <tr>
+            <td><strong>3352</strong></td>
+            <td><span class="user-badge">darian</span></td>
+            <td><span class="proc-name">python3</span></td>
+            <td data-value="14532608">13.86 MB</td>
+            <td data-value="24346624">23.22 MB</td>
+            <td data-value="0.17672279823715523"><span class="percentage-pill">0.18%</span></td>
+            <td>Linux system daemon/shell providing basic OS infrastructure, hardware polling, and environment capabilities.</td>
+            <td>The operating system will become unstable or crash, taking Rocket League and Heroic Launcher down with it.</td>
+            <td class="cmd-cell"><code>python3 ./RocketMode/ram_inspector.py -o RocketMode/report.html -m RocketMode/report.md -j RocketMode/report.json</code></td>
+        </tr>
+        
+        <tr>
+            <td><strong>2270</strong></td>
+            <td><span class="user-badge">darian</span></td>
+            <td><span class="proc-name">antigravity</span></td>
+            <td data-value="14323712">13.66 MB</td>
+            <td data-value="51822669824">48.26 GB</td>
+            <td data-value="0.17418253253532462"><span class="percentage-pill">0.17%</span></td>
+            <td>The Antigravity AI pair programmer agent context (currently performing system diagnostics).</td>
+            <td>This interactive AI development session will terminate immediately.</td>
+            <td class="cmd-cell"><code>/home/darian/Documents/Antigravity-x64/antigravity --type=zygote</code></td>
+        </tr>
+        
+        <tr>
+            <td><strong>949</strong></td>
+            <td><span class="user-badge">systemd-resolve</span></td>
+            <td><span class="proc-name">systemd-resolve</span></td>
+            <td data-value="14180352">13.52 MB</td>
+            <td data-value="22253568">21.22 MB</td>
+            <td data-value="0.17243921293602912"><span class="percentage-pill">0.17%</span></td>
+            <td>Linux system daemon/shell providing basic OS infrastructure, hardware polling, and environment capabilities.</td>
+            <td>The operating system will become unstable or crash, taking Rocket League and Heroic Launcher down with it.</td>
+            <td class="cmd-cell"><code>/usr/lib/systemd/systemd-resolved</code></td>
+        </tr>
+        
+        <tr>
+            <td><strong>1219</strong></td>
+            <td><span class="user-badge">root</span></td>
+            <td><span class="proc-name">ModemManager</span></td>
+            <td data-value="13545472">12.92 MB</td>
+            <td data-value="401518592">382.92 MB</td>
+            <td data-value="0.16471879756772048"><span class="percentage-pill">0.16%</span></td>
+            <td>Non-critical background system process or application running concurrently with your game session.</td>
+            <td>No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance.</td>
+            <td class="cmd-cell"><code>/usr/sbin/ModemManager</code></td>
+        </tr>
+        
+        <tr>
+            <td><strong>1316</strong></td>
+            <td><span class="user-badge">root</span></td>
+            <td><span class="proc-name">cupsd</span></td>
+            <td data-value="12656640">12.07 MB</td>
+            <td data-value="39333888">37.51 MB</td>
+            <td data-value="0.1539102160520884"><span class="percentage-pill">0.15%</span></td>
+            <td>Non-critical background system process or application running concurrently with your game session.</td>
+            <td>No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance.</td>
+            <td class="cmd-cell"><code>/usr/sbin/cupsd -l</code></td>
+        </tr>
+        
+        <tr>
+            <td><strong>1173</strong></td>
+            <td><span class="user-badge">root</span></td>
+            <td><span class="proc-name">wpa_supplicant</span></td>
+            <td data-value="12505088">11.93 MB</td>
+            <td data-value="18599936">17.74 MB</td>
+            <td data-value="0.152067278189976"><span class="percentage-pill">0.15%</span></td>
+            <td>Non-critical background system process or application running concurrently with your game session.</td>
+            <td>No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance.</td>
+            <td class="cmd-cell"><code>/usr/sbin/wpa_supplicant -u -s -O DIR=/run/wpa_supplicant GROUP=netdev</code></td>
+        </tr>
+        
+        <tr>
+            <td><strong>1532</strong></td>
+            <td><span class="user-badge">darian</span></td>
+            <td><span class="proc-name">systemd</span></td>
+            <td data-value="12259328">11.69 MB</td>
+            <td data-value="21164032">20.18 MB</td>
+            <td data-value="0.14907873030546942"><span class="percentage-pill">0.15%</span></td>
+            <td>Linux system daemon/shell providing basic OS infrastructure, hardware polling, and environment capabilities.</td>
+            <td>The operating system will become unstable or crash, taking Rocket League and Heroic Launcher down with it.</td>
+            <td class="cmd-cell"><code>/usr/lib/systemd/systemd --user</code></td>
+        </tr>
+        
+        <tr>
+            <td><strong>995</strong></td>
+            <td><span class="user-badge">root</span></td>
+            <td><span class="proc-name">thermald</span></td>
+            <td data-value="12050432">11.49 MB</td>
+            <td data-value="435089408">414.93 MB</td>
+            <td data-value="0.14653846460363887"><span class="percentage-pill">0.15%</span></td>
+            <td>Non-critical background system process or application running concurrently with your game session.</td>
+            <td>No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance.</td>
+            <td class="cmd-cell"><code>/usr/sbin/thermald --systemd --dbus-enable --adaptive</code></td>
+        </tr>
+        
+        <tr>
+            <td><strong>1665</strong></td>
+            <td><span class="user-badge">darian</span></td>
+            <td><span class="proc-name">ibus-daemon</span></td>
+            <td data-value="11870208">11.32 MB</td>
+            <td data-value="473718784">451.77 MB</td>
+            <td data-value="0.14434686282166737"><span class="percentage-pill">0.14%</span></td>
+            <td>Non-critical background system process or application running concurrently with your game session.</td>
+            <td>No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance.</td>
+            <td class="cmd-cell"><code>/usr/bin/ibus-daemon --daemonize --xim</code></td>
+        </tr>
+        
+        <tr>
+            <td><strong>1817</strong></td>
+            <td><span class="user-badge">darian</span></td>
+            <td><span class="proc-name">gvfs-udisks2-vo</span></td>
+            <td data-value="11751424">11.21 MB</td>
+            <td data-value="474337280">452.36 MB</td>
+            <td data-value="0.14290239801082252"><span class="percentage-pill">0.14%</span></td>
+            <td>Non-critical background system process or application running concurrently with your game session.</td>
+            <td>No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance.</td>
+            <td class="cmd-cell"><code>/usr/libexec/gvfs-udisks2-volume-monitor</code></td>
+        </tr>
+        
+        <tr>
+            <td><strong>989</strong></td>
+            <td><span class="user-badge">polkitd</span></td>
+            <td><span class="proc-name">polkitd</span></td>
+            <td data-value="11726848">11.18 MB</td>
+            <td data-value="318627840">303.87 MB</td>
+            <td data-value="0.14260354322237187"><span class="percentage-pill">0.14%</span></td>
+            <td>Non-critical background system process or application running concurrently with your game session.</td>
+            <td>No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance.</td>
+            <td class="cmd-cell"><code>/usr/lib/polkit-1/polkitd --no-debug</code></td>
+        </tr>
+        
+        <tr>
+            <td><strong>1742</strong></td>
+            <td><span class="user-badge">darian</span></td>
+            <td><span class="proc-name">csd-print-notif</span></td>
+            <td data-value="11694080">11.15 MB</td>
+            <td data-value="325652480">310.57 MB</td>
+            <td data-value="0.14220507017110431"><span class="percentage-pill">0.14%</span></td>
+            <td>Non-critical background system process or application running concurrently with your game session.</td>
+            <td>No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance.</td>
+            <td class="cmd-cell"><code>/usr/bin/csd-print-notifications</code></td>
+        </tr>
+        
+        <tr>
+            <td><strong>1550</strong></td>
+            <td><span class="user-badge">darian</span></td>
+            <td><span class="proc-name">gnome-keyring-d</span></td>
+            <td data-value="11022336">10.51 MB</td>
+            <td data-value="324239360">309.22 MB</td>
+            <td data-value="0.1340363726201197"><span class="percentage-pill">0.13%</span></td>
+            <td>Non-critical background system process or application running concurrently with your game session.</td>
+            <td>No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance.</td>
+            <td class="cmd-cell"><code>/usr/bin/gnome-keyring-daemon --foreground --components=pkcs11,secrets --control-directory=/run/user/1000/keyring</code></td>
+        </tr>
+        
+        <tr>
+            <td><strong>1503</strong></td>
+            <td><span class="user-badge">root</span></td>
+            <td><span class="proc-name">upowerd</span></td>
+            <td data-value="10211328">9.74 MB</td>
+            <td data-value="324972544">309.92 MB</td>
+            <td data-value="0.12417416460124803"><span class="percentage-pill">0.12%</span></td>
+            <td>Non-critical background system process or application running concurrently with your game session.</td>
+            <td>No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance.</td>
+            <td class="cmd-cell"><code>/usr/libexec/upowerd</code></td>
+        </tr>
+        
+        <tr>
+            <td><strong>1898</strong></td>
+            <td><span class="user-badge">darian</span></td>
+            <td><span class="proc-name">goa-identity-se</span></td>
+            <td data-value="9875456">9.42 MB</td>
+            <td data-value="398471168">380.01 MB</td>
+            <td data-value="0.1200898158257557"><span class="percentage-pill">0.12%</span></td>
+            <td>Non-critical background system process or application running concurrently with your game session.</td>
+            <td>No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance.</td>
+            <td class="cmd-cell"><code>/usr/libexec/goa-identity-service</code></td>
+        </tr>
+        
+        <tr>
+            <td><strong>1512</strong></td>
+            <td><span class="user-badge">root</span></td>
+            <td><span class="proc-name">lightdm</span></td>
+            <td data-value="9838592">9.38 MB</td>
+            <td data-value="242159616">230.94 MB</td>
+            <td data-value="0.11964153364307972"><span class="percentage-pill">0.12%</span></td>
+            <td>Non-critical background system process or application running concurrently with your game session.</td>
+            <td>No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance.</td>
+            <td class="cmd-cell"><code>lightdm --session-child 14 21</code></td>
+        </tr>
+        
+        <tr>
+            <td><strong>2927</strong></td>
+            <td><span class="user-badge">darian</span></td>
+            <td><span class="proc-name">gvfsd-dnssd</span></td>
+            <td data-value="9637888">9.19 MB</td>
+            <td data-value="399929344">381.40 MB</td>
+            <td data-value="0.11720088620406602"><span class="percentage-pill">0.12%</span></td>
+            <td>Non-critical background system process or application running concurrently with your game session.</td>
+            <td>No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance.</td>
+            <td class="cmd-cell"><code>/usr/libexec/gvfsd-dnssd --spawner :1.15 /org/gtk/gvfs/exec_spaw/2</code></td>
+        </tr>
+        
+        <tr>
+            <td><strong>994</strong></td>
+            <td><span class="user-badge">root</span></td>
+            <td><span class="proc-name">systemd-logind</span></td>
+            <td data-value="9584640">9.14 MB</td>
+            <td data-value="18620416">17.76 MB</td>
+            <td data-value="0.11655336749575626"><span class="percentage-pill">0.12%</span></td>
+            <td>Linux system daemon/shell providing basic OS infrastructure, hardware polling, and environment capabilities.</td>
+            <td>The operating system will become unstable or crash, taking Rocket League and Heroic Launcher down with it.</td>
+            <td class="cmd-cell"><code>/usr/lib/systemd/systemd-logind</code></td>
+        </tr>
+        
+        <tr>
+            <td><strong>2121</strong></td>
+            <td><span class="user-badge">darian</span></td>
+            <td><span class="proc-name">gvfsd-trash</span></td>
+            <td data-value="9465856">9.03 MB</td>
+            <td data-value="548573184">523.16 MB</td>
+            <td data-value="0.11510890268491142"><span class="percentage-pill">0.12%</span></td>
+            <td>Linux system daemon/shell providing basic OS infrastructure, hardware polling, and environment capabilities.</td>
+            <td>The operating system will become unstable or crash, taking Rocket League and Heroic Launcher down with it.</td>
+            <td class="cmd-cell"><code>/usr/libexec/gvfsd-trash --spawner :1.15 /org/gtk/gvfs/exec_spaw/0</code></td>
+        </tr>
+        
+        <tr>
+            <td><strong>2917</strong></td>
+            <td><span class="user-badge">darian</span></td>
+            <td><span class="proc-name">gvfsd-network</span></td>
+            <td data-value="9281536">8.85 MB</td>
+            <td data-value="473456640">451.52 MB</td>
+            <td data-value="0.11286749177153149"><span class="percentage-pill">0.11%</span></td>
+            <td>Non-critical background system process or application running concurrently with your game session.</td>
+            <td>No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance.</td>
+            <td class="cmd-cell"><code>/usr/libexec/gvfsd-network --spawner :1.15 /org/gtk/gvfs/exec_spaw/1</code></td>
+        </tr>
+        
+        <tr>
+            <td><strong>1715</strong></td>
+            <td><span class="user-badge">darian</span></td>
+            <td><span class="proc-name">at-spi-bus-laun</span></td>
+            <td data-value="8785920">8.38 MB</td>
+            <td data-value="392302592">374.13 MB</td>
+            <td data-value="0.10684058687110991"><span class="percentage-pill">0.11%</span></td>
+            <td>Non-critical background system process or application running concurrently with your game session.</td>
+            <td>No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance.</td>
+            <td class="cmd-cell"><code>/usr/libexec/at-spi-bus-launcher</code></td>
+        </tr>
+        
+        <tr>
+            <td><strong>506</strong></td>
+            <td><span class="user-badge">root</span></td>
+            <td><span class="proc-name">systemd-udevd</span></td>
+            <td data-value="8552448">8.16 MB</td>
+            <td data-value="30945280">29.51 MB</td>
+            <td data-value="0.10400146638082866"><span class="percentage-pill">0.10%</span></td>
+            <td>Linux system daemon/shell providing basic OS infrastructure, hardware polling, and environment capabilities.</td>
+            <td>The operating system will become unstable or crash, taking Rocket League and Heroic Launcher down with it.</td>
+            <td class="cmd-cell"><code>/usr/lib/systemd/systemd-udevd</code></td>
+        </tr>
+        
+        <tr>
+            <td><strong>1726</strong></td>
+            <td><span class="user-badge">darian</span></td>
+            <td><span class="proc-name">at-spi2-registr</span></td>
+            <td data-value="8552448">8.16 MB</td>
+            <td data-value="241717248">230.52 MB</td>
+            <td data-value="0.10400146638082866"><span class="percentage-pill">0.10%</span></td>
+            <td>Non-critical background system process or application running concurrently with your game session.</td>
+            <td>No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance.</td>
+            <td class="cmd-cell"><code>/usr/libexec/at-spi2-registryd --use-gnome-session</code></td>
+        </tr>
+        
+        <tr>
+            <td><strong>1669</strong></td>
+            <td><span class="user-badge">darian</span></td>
+            <td><span class="proc-name">gvfsd</span></td>
+            <td data-value="8523776">8.13 MB</td>
+            <td data-value="321814528">306.91 MB</td>
+            <td data-value="0.10365280246096957"><span class="percentage-pill">0.10%</span></td>
+            <td>Non-critical background system process or application running concurrently with your game session.</td>
+            <td>No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance.</td>
+            <td class="cmd-cell"><code>/usr/libexec/gvfsd</code></td>
+        </tr>
+        
+        <tr>
+            <td><strong>1845</strong></td>
+            <td><span class="user-badge">darian</span></td>
+            <td><span class="proc-name">gvfs-afc-volume</span></td>
+            <td data-value="8511488">8.12 MB</td>
+            <td data-value="398733312">380.26 MB</td>
+            <td data-value="0.10350337506674423"><span class="percentage-pill">0.10%</span></td>
+            <td>Non-critical background system process or application running concurrently with your game session.</td>
+            <td>No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance.</td>
+            <td class="cmd-cell"><code>/usr/libexec/gvfs-afc-volume-monitor</code></td>
+        </tr>
+        
+        <tr>
+            <td><strong>950</strong></td>
+            <td><span class="user-badge">systemd-timesync</span></td>
+            <td><span class="proc-name">systemd-timesyn</span></td>
+            <td data-value="8372224">7.98 MB</td>
+            <td data-value="93417472">89.09 MB</td>
+            <td data-value="0.10180986459885717"><span class="percentage-pill">0.10%</span></td>
+            <td>Linux system daemon/shell providing basic OS infrastructure, hardware polling, and environment capabilities.</td>
+            <td>The operating system will become unstable or crash, taking Rocket League and Heroic Launcher down with it.</td>
+            <td class="cmd-cell"><code>/usr/lib/systemd/systemd-timesyncd</code></td>
+        </tr>
+        
+        <tr>
+            <td><strong>990</strong></td>
+            <td><span class="user-badge">root</span></td>
+            <td><span class="proc-name">power-profiles-</span></td>
+            <td data-value="8343552">7.96 MB</td>
+            <td data-value="321040384">306.17 MB</td>
+            <td data-value="0.10146120067899807"><span class="percentage-pill">0.10%</span></td>
+            <td>Non-critical background system process or application running concurrently with your game session.</td>
+            <td>No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance.</td>
+            <td class="cmd-cell"><code>/usr/libexec/power-profiles-daemon</code></td>
+        </tr>
+        
+        <tr>
+            <td><strong>958</strong></td>
+            <td><span class="user-badge">root</span></td>
+            <td><span class="proc-name">accounts-daemon</span></td>
+            <td data-value="8224768">7.84 MB</td>
+            <td data-value="320819200">305.96 MB</td>
+            <td data-value="0.10001673586815324"><span class="percentage-pill">0.10%</span></td>
+            <td>Non-critical background system process or application running concurrently with your game session.</td>
+            <td>No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance.</td>
+            <td class="cmd-cell"><code>/usr/libexec/accounts-daemon</code></td>
+        </tr>
+        
+        <tr>
+            <td><strong>2349</strong></td>
+            <td><span class="user-badge">darian</span></td>
+            <td><span class="proc-name">xdg-document-po</span></td>
+            <td data-value="8032256">7.66 MB</td>
+            <td data-value="549654528">524.19 MB</td>
+            <td data-value="0.09767570669195642"><span class="percentage-pill">0.10%</span></td>
+            <td>Non-critical background system process or application running concurrently with your game session.</td>
+            <td>No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance.</td>
+            <td class="cmd-cell"><code>/usr/libexec/xdg-document-portal</code></td>
+        </tr>
+        
+        <tr>
+            <td><strong>1883</strong></td>
+            <td><span class="user-badge">darian</span></td>
+            <td><span class="proc-name">ibus-engine-sim</span></td>
+            <td data-value="7897088">7.53 MB</td>
+            <td data-value="242458624">231.23 MB</td>
+            <td data-value="0.0960320053554778"><span class="percentage-pill">0.10%</span></td>
+            <td>Non-critical background system process or application running concurrently with your game session.</td>
+            <td>No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance.</td>
+            <td class="cmd-cell"><code>/usr/libexec/ibus-engine-simple</code></td>
+        </tr>
+        
+        <tr>
+            <td><strong>1331</strong></td>
+            <td><span class="user-badge">root</span></td>
+            <td><span class="proc-name">lightdm</span></td>
+            <td data-value="7823360">7.46 MB</td>
+            <td data-value="389201920">371.17 MB</td>
+            <td data-value="0.09513544099012584"><span class="percentage-pill">0.10%</span></td>
+            <td>Non-critical background system process or application running concurrently with your game session.</td>
+            <td>No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance.</td>
+            <td class="cmd-cell"><code>/usr/sbin/lightdm</code></td>
+        </tr>
+        
+        <tr>
+            <td><strong>1675</strong></td>
+            <td><span class="user-badge">darian</span></td>
+            <td><span class="proc-name">gvfsd-fuse</span></td>
+            <td data-value="7610368">7.26 MB</td>
+            <td data-value="470749184">448.94 MB</td>
+            <td data-value="0.09254536615688681"><span class="percentage-pill">0.09%</span></td>
+            <td>Non-critical background system process or application running concurrently with your game session.</td>
+            <td>No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance.</td>
+            <td class="cmd-cell"><code>/usr/libexec/gvfsd-fuse /run/user/1000/gvfs -f</code></td>
+        </tr>
+        
+        <tr>
+            <td><strong>1700</strong></td>
+            <td><span class="user-badge">darian</span></td>
+            <td><span class="proc-name">ibus-portal</span></td>
+            <td data-value="7606272">7.25 MB</td>
+            <td data-value="317882368">303.16 MB</td>
+            <td data-value="0.09249555702547838"><span class="percentage-pill">0.09%</span></td>
+            <td>Non-critical background system process or application running concurrently with your game session.</td>
+            <td>No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance.</td>
+            <td class="cmd-cell"><code>/usr/libexec/ibus-portal</code></td>
+        </tr>
+        
+        <tr>
+            <td><strong>1677</strong></td>
+            <td><span class="user-badge">darian</span></td>
+            <td><span class="proc-name">ibus-memconf</span></td>
+            <td data-value="7446528">7.10 MB</td>
+            <td data-value="242331648">231.11 MB</td>
+            <td data-value="0.0905530009005491"><span class="percentage-pill">0.09%</span></td>
+            <td>Non-critical background system process or application running concurrently with your game session.</td>
+            <td>No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance.</td>
+            <td class="cmd-cell"><code>/usr/libexec/ibus-memconf</code></td>
+        </tr>
+        
+        <tr>
+            <td><strong>1837</strong></td>
+            <td><span class="user-badge">darian</span></td>
+            <td><span class="proc-name">gvfs-gphoto2-vo</span></td>
+            <td data-value="7426048">7.08 MB</td>
+            <td data-value="318226432">303.48 MB</td>
+            <td data-value="0.09030395524350689"><span class="percentage-pill">0.09%</span></td>
+            <td>Non-critical background system process or application running concurrently with your game session.</td>
+            <td>No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance.</td>
+            <td class="cmd-cell"><code>/usr/libexec/gvfs-gphoto2-volume-monitor</code></td>
+        </tr>
+        
+        <tr>
+            <td><strong>1346</strong></td>
+            <td><span class="user-badge">lp</span></td>
+            <td><span class="proc-name">dbus</span></td>
+            <td data-value="7262208">6.93 MB</td>
+            <td data-value="17248256">16.45 MB</td>
+            <td data-value="0.08831158998716916"><span class="percentage-pill">0.09%</span></td>
+            <td>Linux system daemon/shell providing basic OS infrastructure, hardware polling, and environment capabilities.</td>
+            <td>The operating system will become unstable or crash, taking Rocket League and Heroic Launcher down with it.</td>
+            <td class="cmd-cell"><code>/usr/lib/cups/notifier/dbus dbus://</code></td>
+        </tr>
+        
+        <tr>
+            <td><strong>1347</strong></td>
+            <td><span class="user-badge">lp</span></td>
+            <td><span class="proc-name">dbus</span></td>
+            <td data-value="7258112">6.92 MB</td>
+            <td data-value="17248256">16.45 MB</td>
+            <td data-value="0.08826178085576072"><span class="percentage-pill">0.09%</span></td>
+            <td>Linux system daemon/shell providing basic OS infrastructure, hardware polling, and environment capabilities.</td>
+            <td>The operating system will become unstable or crash, taking Rocket League and Heroic Launcher down with it.</td>
+            <td class="cmd-cell"><code>/usr/lib/cups/notifier/dbus dbus://</code></td>
+        </tr>
+        
+        <tr>
+            <td><strong>993</strong></td>
+            <td><span class="user-badge">root</span></td>
+            <td><span class="proc-name">switcheroo-cont</span></td>
+            <td data-value="7172096">6.84 MB</td>
+            <td data-value="317161472">302.47 MB</td>
+            <td data-value="0.08721578909618342"><span class="percentage-pill">0.09%</span></td>
+            <td>Non-critical background system process or application running concurrently with your game session.</td>
+            <td>No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance.</td>
+            <td class="cmd-cell"><code>/usr/libexec/switcheroo-control</code></td>
+        </tr>
+        
+        <tr>
+            <td><strong>962</strong></td>
+            <td><span class="user-badge">root</span></td>
+            <td><span class="proc-name">bluetoothd</span></td>
+            <td data-value="7163904">6.83 MB</td>
+            <td data-value="13848576">13.21 MB</td>
+            <td data-value="0.08711617083336655"><span class="percentage-pill">0.09%</span></td>
+            <td>Non-critical background system process or application running concurrently with your game session.</td>
+            <td>No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance.</td>
+            <td class="cmd-cell"><code>/usr/libexec/bluetooth/bluetoothd</code></td>
+        </tr>
+        
+        <tr>
+            <td><strong>965</strong></td>
+            <td><span class="user-badge">messagebus</span></td>
+            <td><span class="proc-name">dbus-daemon</span></td>
+            <td data-value="7057408">6.73 MB</td>
+            <td data-value="11436032">10.91 MB</td>
+            <td data-value="0.08582113341674703"><span class="percentage-pill">0.09%</span></td>
+            <td>Linux system daemon/shell providing basic OS infrastructure, hardware polling, and environment capabilities.</td>
+            <td>The operating system will become unstable or crash, taking Rocket League and Heroic Launcher down with it.</td>
+            <td class="cmd-cell"><code>@dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only</code></td>
+        </tr>
+        
+        <tr>
+            <td><strong>1851</strong></td>
+            <td><span class="user-badge">darian</span></td>
+            <td><span class="proc-name">gvfs-mtp-volume</span></td>
+            <td data-value="7036928">6.71 MB</td>
+            <td data-value="317235200">302.54 MB</td>
+            <td data-value="0.08557208775970482"><span class="percentage-pill">0.09%</span></td>
+            <td>Non-critical background system process or application running concurrently with your game session.</td>
+            <td>No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance.</td>
+            <td class="cmd-cell"><code>/usr/libexec/gvfs-mtp-volume-monitor</code></td>
+        </tr>
+        
+        <tr>
+            <td><strong>1041</strong></td>
+            <td><span class="user-badge">syslog</span></td>
+            <td><span class="proc-name">rsyslogd</span></td>
+            <td data-value="7000064">6.68 MB</td>
+            <td data-value="227856384">217.30 MB</td>
+            <td data-value="0.08512380557702882"><span class="percentage-pill">0.09%</span></td>
+            <td>Linux system daemon/shell providing basic OS infrastructure, hardware polling, and environment capabilities.</td>
+            <td>The operating system will become unstable or crash, taking Rocket League and Heroic Launcher down with it.</td>
+            <td class="cmd-cell"><code>/usr/sbin/rsyslogd -n -iNONE</code></td>
+        </tr>
+        
+        <tr>
+            <td><strong>1749</strong></td>
+            <td><span class="user-badge">darian</span></td>
+            <td><span class="proc-name">csd-a11y-settin</span></td>
+            <td data-value="6959104">6.64 MB</td>
+            <td data-value="312537088">298.06 MB</td>
+            <td data-value="0.0846257142629444"><span class="percentage-pill">0.08%</span></td>
+            <td>Non-critical background system process or application running concurrently with your game session.</td>
+            <td>No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance.</td>
+            <td class="cmd-cell"><code>/usr/bin/csd-a11y-settings</code></td>
+        </tr>
+        
+        <tr>
+            <td><strong>1861</strong></td>
+            <td><span class="user-badge">darian</span></td>
+            <td><span class="proc-name">gvfs-goa-volume</span></td>
+            <td data-value="6889472">6.57 MB</td>
+            <td data-value="317214720">302.52 MB</td>
+            <td data-value="0.08377895902900087"><span class="percentage-pill">0.08%</span></td>
+            <td>Non-critical background system process or application running concurrently with your game session.</td>
+            <td>No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance.</td>
+            <td class="cmd-cell"><code>/usr/libexec/gvfs-goa-volume-monitor</code></td>
+        </tr>
+        
+        <tr>
+            <td><strong>2247</strong></td>
+            <td><span class="user-badge">darian</span></td>
+            <td><span class="proc-name">gvfsd-metadata</span></td>
+            <td data-value="6791168">6.48 MB</td>
+            <td data-value="241946624">230.74 MB</td>
+            <td data-value="0.08258353987519824"><span class="percentage-pill">0.08%</span></td>
+            <td>Non-critical background system process or application running concurrently with your game session.</td>
+            <td>No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance.</td>
+            <td class="cmd-cell"><code>/usr/libexec/gvfsd-metadata</code></td>
+        </tr>
+        
+        <tr>
+            <td><strong>1953</strong></td>
+            <td><span class="user-badge">darian</span></td>
+            <td><span class="proc-name">agent</span></td>
+            <td data-value="6758400">6.45 MB</td>
+            <td data-value="317714432">303.00 MB</td>
+            <td data-value="0.08218506682393069"><span class="percentage-pill">0.08%</span></td>
+            <td>Non-critical background system process or application running concurrently with your game session.</td>
+            <td>No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance.</td>
+            <td class="cmd-cell"><code>/usr/libexec/geoclue-2.0/demos/agent</code></td>
+        </tr>
+        
+        <tr>
+            <td><strong>1744</strong></td>
+            <td><span class="user-badge">darian</span></td>
+            <td><span class="proc-name">csd-settings-re</span></td>
+            <td data-value="6746112">6.43 MB</td>
+            <td data-value="311517184">297.09 MB</td>
+            <td data-value="0.08203563942970538"><span class="percentage-pill">0.08%</span></td>
+            <td>Non-critical background system process or application running concurrently with your game session.</td>
+            <td>No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance.</td>
+            <td class="cmd-cell"><code>/usr/bin/csd-settings-remap</code></td>
+        </tr>
+        
+        <tr>
+            <td><strong>1555</strong></td>
+            <td><span class="user-badge">darian</span></td>
+            <td><span class="proc-name">dbus-daemon</span></td>
+            <td data-value="6569984">6.27 MB</td>
+            <td data-value="10706944">10.21 MB</td>
+            <td data-value="0.07989384677914232"><span class="percentage-pill">0.08%</span></td>
+            <td>Linux system daemon/shell providing basic OS infrastructure, hardware polling, and environment capabilities.</td>
+            <td>The operating system will become unstable or crash, taking Rocket League and Heroic Launcher down with it.</td>
+            <td class="cmd-cell"><code>/usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only</code></td>
+        </tr>
+        
+        <tr>
+            <td><strong>2344</strong></td>
+            <td><span class="user-badge">darian</span></td>
+            <td><span class="proc-name">xdg-permission-</span></td>
+            <td data-value="6541312">6.24 MB</td>
+            <td data-value="316743680">302.07 MB</td>
+            <td data-value="0.07954518285928322"><span class="percentage-pill">0.08%</span></td>
+            <td>Non-critical background system process or application running concurrently with your game session.</td>
+            <td>No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance.</td>
+            <td class="cmd-cell"><code>/usr/libexec/xdg-permission-store</code></td>
+        </tr>
+        
+        <tr>
+            <td><strong>1767</strong></td>
+            <td><span class="user-badge">darian</span></td>
+            <td><span class="proc-name">dconf-service</span></td>
+            <td data-value="6328320">6.04 MB</td>
+            <td data-value="235765760">224.84 MB</td>
+            <td data-value="0.0769551080260442"><span class="percentage-pill">0.08%</span></td>
+            <td>Non-critical background system process or application running concurrently with your game session.</td>
+            <td>No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance.</td>
+            <td class="cmd-cell"><code>/usr/libexec/dconf-service</code></td>
+        </tr>
+        
+        <tr>
+            <td><strong>1546</strong></td>
+            <td><span class="user-badge">darian</span></td>
+            <td><span class="proc-name">pipewire</span></td>
+            <td data-value="6324224">6.03 MB</td>
+            <td data-value="100089856">95.45 MB</td>
+            <td data-value="0.07690529889463575"><span class="percentage-pill">0.08%</span></td>
+            <td>Manages the Linux system audio server, routing Rocket League's sound output and mic input.</td>
+            <td>The game will be completely silent, and voice chat will not function.</td>
+            <td class="cmd-cell"><code>/usr/bin/pipewire -c filter-chain.conf</code></td>
+        </tr>
+        
+        <tr>
+            <td><strong>1741</strong></td>
+            <td><span class="user-badge">darian</span></td>
+            <td><span class="proc-name">csd-screensaver</span></td>
+            <td data-value="6078464">5.80 MB</td>
+            <td data-value="311095296">296.68 MB</td>
+            <td data-value="0.07391675101012918"><span class="percentage-pill">0.07%</span></td>
+            <td>Non-critical background system process or application running concurrently with your game session.</td>
+            <td>No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance.</td>
+            <td class="cmd-cell"><code>/usr/bin/csd-screensaver-proxy</code></td>
+        </tr>
+        
+        <tr>
+            <td><strong>3339</strong></td>
+            <td><span class="user-badge">darian</span></td>
+            <td><span class="proc-name">bash</span></td>
+            <td data-value="5705728">5.44 MB</td>
+            <td data-value="11407360">10.88 MB</td>
+            <td data-value="0.06938412005196089"><span class="percentage-pill">0.07%</span></td>
+            <td>Linux system daemon/shell providing basic OS infrastructure, hardware polling, and environment capabilities.</td>
+            <td>The operating system will become unstable or crash, taking Rocket League and Heroic Launcher down with it.</td>
+            <td class="cmd-cell"><code>bash</code></td>
+        </tr>
+        
+        <tr>
+            <td><strong>1722</strong></td>
+            <td><span class="user-badge">darian</span></td>
+            <td><span class="proc-name">dbus-daemon</span></td>
+            <td data-value="5529600">5.27 MB</td>
+            <td data-value="9797632">9.34 MB</td>
+            <td data-value="0.06724232740139784"><span class="percentage-pill">0.07%</span></td>
+            <td>Linux system daemon/shell providing basic OS infrastructure, hardware polling, and environment capabilities.</td>
+            <td>The operating system will become unstable or crash, taking Rocket League and Heroic Launcher down with it.</td>
+            <td class="cmd-cell"><code>/usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 11 --address=unix:path=/run/user/1000/at-spi/bus_0</code></td>
+        </tr>
+        
+        <tr>
+            <td><strong>960</strong></td>
+            <td><span class="user-badge">avahi</span></td>
+            <td><span class="proc-name">avahi-daemon</span></td>
+            <td data-value="4861952">4.64 MB</td>
+            <td data-value="8912896">8.50 MB</td>
+            <td data-value="0.05912343898182166"><span class="percentage-pill">0.06%</span></td>
+            <td>Non-critical background system process or application running concurrently with your game session.</td>
+            <td>No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance.</td>
+            <td class="cmd-cell"><code>avahi-daemon: running [darian-XPS-8920.local]</code></td>
+        </tr>
+        
+        <tr>
+            <td><strong>975</strong></td>
+            <td><span class="user-badge">root</span></td>
+            <td><span class="proc-name">irqbalance</span></td>
+            <td data-value="4800512">4.58 MB</td>
+            <td data-value="85049344">81.11 MB</td>
+            <td data-value="0.05837630201069501"><span class="percentage-pill">0.06%</span></td>
+            <td>Non-critical background system process or application running concurrently with your game session.</td>
+            <td>No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance.</td>
+            <td class="cmd-cell"><code>/usr/sbin/irqbalance</code></td>
+        </tr>
+        
+        <tr>
+            <td><strong>3017</strong></td>
+            <td><span class="user-badge">darian</span></td>
+            <td><span class="proc-name">chrome_crashpad</span></td>
+            <td data-value="4141056">3.95 MB</td>
+            <td data-value="51563282432">48.02 GB</td>
+            <td data-value="0.05035703185393572"><span class="percentage-pill">0.05%</span></td>
+            <td>Linux system daemon/shell providing basic OS infrastructure, hardware polling, and environment capabilities.</td>
+            <td>The operating system will become unstable or crash, taking Rocket League and Heroic Launcher down with it.</td>
+            <td class="cmd-cell"><code>/opt/google/chrome/chrome_crashpad_handler --monitor-self --monitor-self-annotation=ptype=crashpad-handler --database=/home/darian/.config/google-chrome/Crash Reports --metrics-dir=/home/darian/.config/google-chrome --url=https://clients2.google.com/cr/report --annotation=channel= --annotation=lsb-release=Linux Mint 22.3 --annotation=plat=Linux --annotation=prod=Chrome_Linux --annotation=ver=148.0.7778.178 --initial-client-fd=5 --shared-client-connection</code></td>
+        </tr>
+        
+        <tr>
+            <td><strong>1533</strong></td>
+            <td><span class="user-badge">darian</span></td>
+            <td><span class="proc-name">(sd-pam)</span></td>
+            <td data-value="3866624">3.69 MB</td>
+            <td data-value="23719936">22.62 MB</td>
+            <td data-value="0.047019820049570046"><span class="percentage-pill">0.05%</span></td>
+            <td>Non-critical background system process or application running concurrently with your game session.</td>
+            <td>No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance.</td>
+            <td class="cmd-cell"><code>(sd-pam)</code></td>
+        </tr>
+        
+        <tr>
+            <td><strong>1431</strong></td>
+            <td><span class="user-badge">rtkit</span></td>
+            <td><span class="proc-name">rtkit-daemon</span></td>
+            <td data-value="3694592">3.52 MB</td>
+            <td data-value="23498752">22.41 MB</td>
+            <td data-value="0.044927836530415446"><span class="percentage-pill">0.04%</span></td>
+            <td>Non-critical background system process or application running concurrently with your game session.</td>
+            <td>No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance.</td>
+            <td class="cmd-cell"><code>/usr/libexec/rtkit-daemon</code></td>
+        </tr>
+        
+        <tr>
+            <td><strong>3019</strong></td>
+            <td><span class="user-badge">darian</span></td>
+            <td><span class="proc-name">chrome_crashpad</span></td>
+            <td data-value="3616768">3.45 MB</td>
+            <td data-value="51553824768">48.01 GB</td>
+            <td data-value="0.043981463033655036"><span class="percentage-pill">0.04%</span></td>
+            <td>Linux system daemon/shell providing basic OS infrastructure, hardware polling, and environment capabilities.</td>
+            <td>The operating system will become unstable or crash, taking Rocket League and Heroic Launcher down with it.</td>
+            <td class="cmd-cell"><code>/opt/google/chrome/chrome_crashpad_handler --no-periodic-tasks --monitor-self-annotation=ptype=crashpad-handler --database=/home/darian/.config/google-chrome/Crash Reports --url=https://clients2.google.com/cr/report --annotation=channel= --annotation=lsb-release=Linux Mint 22.3 --annotation=plat=Linux --annotation=prod=Chrome_Linux --annotation=ver=148.0.7778.178 --initial-client-fd=4 --shared-client-connection</code></td>
+        </tr>
+        
+        <tr>
+            <td><strong>963</strong></td>
+            <td><span class="user-badge">root</span></td>
+            <td><span class="proc-name">cron</span></td>
+            <td data-value="2985984">2.85 MB</td>
+            <td data-value="9658368">9.21 MB</td>
+            <td data-value="0.03631085679675484"><span class="percentage-pill">0.04%</span></td>
+            <td>Linux system daemon/shell providing basic OS infrastructure, hardware polling, and environment capabilities.</td>
+            <td>The operating system will become unstable or crash, taking Rocket League and Heroic Launcher down with it.</td>
+            <td class="cmd-cell"><code>/usr/sbin/cron -f -P</code></td>
+        </tr>
+        
+        <tr>
+            <td><strong>1376</strong></td>
+            <td><span class="user-badge">kernoops</span></td>
+            <td><span class="proc-name">kerneloops</span></td>
+            <td data-value="2629632">2.51 MB</td>
+            <td data-value="13058048">12.45 MB</td>
+            <td data-value="0.031977462364220305"><span class="percentage-pill">0.03%</span></td>
+            <td>Non-critical background system process or application running concurrently with your game session.</td>
+            <td>No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance.</td>
+            <td class="cmd-cell"><code>/usr/sbin/kerneloops</code></td>
+        </tr>
+        
+        <tr>
+            <td><strong>1373</strong></td>
+            <td><span class="user-badge">kernoops</span></td>
+            <td><span class="proc-name">kerneloops</span></td>
+            <td data-value="2609152">2.49 MB</td>
+            <td data-value="13058048">12.45 MB</td>
+            <td data-value="0.03172841670717809"><span class="percentage-pill">0.03%</span></td>
+            <td>Non-critical background system process or application running concurrently with your game session.</td>
+            <td>No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance.</td>
+            <td class="cmd-cell"><code>/usr/sbin/kerneloops --test</code></td>
+        </tr>
+        
+        <tr>
+            <td><strong>1024</strong></td>
+            <td><span class="user-badge">nvidia-persistenced</span></td>
+            <td><span class="proc-name">nvidia-persiste</span></td>
+            <td data-value="2187264">2.09 MB</td>
+            <td data-value="5361664">5.11 MB</td>
+            <td data-value="0.02659807617210848"><span class="percentage-pill">0.03%</span></td>
+            <td>Underlying GPU driver/monitoring daemon providing low-level hardware access for Vulkan/OpenGL rendering.</td>
+            <td>Rocket League will drop to software rendering (unplayable slideshow), fail to start, or crash.</td>
+            <td class="cmd-cell"><code>/usr/bin/nvidia-persistenced --user nvidia-persistenced --no-persistence-mode --verbose</code></td>
+        </tr>
+        
+        <tr>
+            <td><strong>2360</strong></td>
+            <td><span class="user-badge">darian</span></td>
+            <td><span class="proc-name">fusermount3</span></td>
+            <td data-value="2142208">2.04 MB</td>
+            <td data-value="2777088">2.65 MB</td>
+            <td data-value="0.02605017572661561"><span class="percentage-pill">0.03%</span></td>
+            <td>Non-critical background system process or application running concurrently with your game session.</td>
+            <td>No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance.</td>
+            <td class="cmd-cell"><code>fusermount3 -o rw,nosuid,nodev,fsname=portal,auto_unmount,subtype=portal -- /run/user/1000/doc</code></td>
+        </tr>
+        
+        <tr>
+            <td><strong>1345</strong></td>
+            <td><span class="user-badge">root</span></td>
+            <td><span class="proc-name">agetty</span></td>
+            <td data-value="2088960">1.99 MB</td>
+            <td data-value="8921088">8.51 MB</td>
+            <td data-value="0.025402657018305852"><span class="percentage-pill">0.03%</span></td>
+            <td>Linux system daemon/shell providing basic OS infrastructure, hardware polling, and environment capabilities.</td>
+            <td>The operating system will become unstable or crash, taking Rocket League and Heroic Launcher down with it.</td>
+            <td class="cmd-cell"><code>/sbin/agetty -o -p -- \u --noclear - linux</code></td>
+        </tr>
+        
+        <tr>
+            <td><strong>3015</strong></td>
+            <td><span class="user-badge">darian</span></td>
+            <td><span class="proc-name">cat</span></td>
+            <td data-value="1961984">1.87 MB</td>
+            <td data-value="8638464">8.24 MB</td>
+            <td data-value="0.023858573944644124"><span class="percentage-pill">0.02%</span></td>
+            <td>Non-critical background system process or application running concurrently with your game session.</td>
+            <td>No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance.</td>
+            <td class="cmd-cell"><code>cat</code></td>
+        </tr>
+        
+        <tr>
+            <td><strong>3014</strong></td>
+            <td><span class="user-badge">darian</span></td>
+            <td><span class="proc-name">cat</span></td>
+            <td data-value="1957888">1.87 MB</td>
+            <td data-value="8638464">8.24 MB</td>
+            <td data-value="0.02380876481323568"><span class="percentage-pill">0.02%</span></td>
+            <td>Non-critical background system process or application running concurrently with your game session.</td>
+            <td>No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance.</td>
+            <td class="cmd-cell"><code>cat</code></td>
+        </tr>
+        
+        <tr>
+            <td><strong>1042</strong></td>
+            <td><span class="user-badge">avahi</span></td>
+            <td><span class="proc-name">avahi-daemon</span></td>
+            <td data-value="1560576">1.49 MB</td>
+            <td data-value="8634368">8.23 MB</td>
+            <td data-value="0.018977279066616726"><span class="percentage-pill">0.02%</span></td>
+            <td>Non-critical background system process or application running concurrently with your game session.</td>
+            <td>No direct impact on Rocket League or Heroic, though reclaiming its RAM might slightly improve game performance.</td>
+            <td class="cmd-cell"><code>avahi-daemon: chroot helper</code></td>
+        </tr>
+        
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Live search filtering
+        const searchInput = document.getElementById('proc-search');
+        const rows = document.querySelectorAll('#proc-table tbody tr');
+        const countDisplay = document.getElementById('visible-count');
+
+        searchInput.addEventListener('input', function() {
+            const query = this.value.toLowerCase().trim();
+            let visibleCount = 0;
+            
+            rows.forEach(row => {
+                const cells = Array.from(row.getElementsByTagName('td'));
+                const match = cells.some(cell => cell.textContent.toLowerCase().includes(query));
+                if (match) {
+                    row.style.display = '';
+                    visibleCount++;
+                } else {
+                    row.style.display = 'none';
+                }
+            });
+            countDisplay.textContent = visibleCount;
+        });
+
+        // Sort table columns
+        let sortDirections = {};
+        function sortTable(columnIndex, isNumeric = false) {
+            const table = document.getElementById("proc-table");
+            const tbody = table.querySelector("tbody");
+            const rowsArray = Array.from(tbody.querySelectorAll("tr"));
+            
+            // Toggle direction
+            const currentDir = sortDirections[columnIndex] || 'desc';
+            const nextDir = currentDir === 'asc' ? 'desc' : 'asc';
+            sortDirections[columnIndex] = nextDir;
+            
+            rowsArray.sort((a, b) => {
+                let valA = a.getElementsByTagName("td")[columnIndex];
+                let valB = b.getElementsByTagName("td")[columnIndex];
+                
+                let textA = valA.getAttribute("data-value") || valA.textContent.trim();
+                let textB = valB.getAttribute("data-value") || valB.textContent.trim();
+                
+                if (isNumeric) {
+                    return nextDir === 'asc' 
+                        ? parseFloat(textA) - parseFloat(textB) 
+                        : parseFloat(textB) - parseFloat(textA);
+                } else {
+                    return nextDir === 'asc' 
+                        ? textA.localeCompare(textB) 
+                        : textB.localeCompare(textA);
+                }
+            });
+            
+            // Re-append sorted rows
+            rowsArray.forEach(row => tbody.appendChild(row));
+            
+            // Reset indicators (visually highlight the sorted column if desired)
+            const headers = table.querySelectorAll("th");
+            headers.forEach((th, idx) => {
+                if (idx === columnIndex) {
+                    th.innerHTML = th.textContent.replace(/[▲▼]/g, '') + (nextDir === 'asc' ? ' ▲' : ' ▼');
+                } else {
+                    th.innerHTML = th.textContent.replace(/[▲▼]/g, '');
+                }
+            });
+        }
+    </script>
+</body>
+</html>

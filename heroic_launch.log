@@ -1,0 +1,84 @@
+Gtk-Message: 09:28:44.179: Failed to load module "xapp-gtk3-module"
+which: no wine in (/app/bin:/app/bin:/app/utils/bin:/usr/bin:/usr/lib/extensions/vulkan/MangoHud/bin:/usr/lib/extensions/vulkan/gamescope/bin:/usr/lib/extensions/vulkan/OBSVkCapture/bin:/app/bin/heroic/resources/app.asar.unpacked/build/bin/linux)
+(09:28:44) [INFO]:    [Connection]:      Connectivity: check-online
+(09:28:44) [INFO]:    [Connection]:      Pinging external endpoints
+(09:28:44) [INFO]:    [Gog]:             Checking for existing gog manifests
+(node:13) [DEP0180] DeprecationWarning: fs.Stats constructor is deprecated.
+(Use `heroic --trace-deprecation ...` to show where the warning was created)
+LaunchProcess: failed to execvp:
+xdg-settings
+(09:28:44) [WARNING]: [Backend]:         Failed to register protocol with OS.
+(09:28:45) [INFO]:    [Connection]:      Connectivity: online
+(09:28:45) [ERROR]:   [Gog]:             Unable to syncQueued playtime, userData not present
+(09:28:45) [DEBUG]:   [Backend]:         Logging to file(s) /home/darian/.var/app/com.heroicgameslauncher.hgl/.local/state/Heroic/logs/runners/gog.log
+(09:28:45) [INFO]:    [Gog]:             Running command: GOGDL_CONFIG_PATH=/home/darian/.var/app/com.heroicgameslauncher.hgl/config/heroic/gogdlConfig /app/bin/heroic/resources/app.asar.unpacked/build/bin/x64/linux/gogdl --auth-config-path /home/darian/.var/app/com.heroicgameslauncher.hgl/config/heroic/gog_store/auth.json auth
+(09:28:45) [DEBUG]:   [Backend]:         Logging to file(s) /home/darian/.var/app/com.heroicgameslauncher.hgl/.local/state/Heroic/logs/runners/legendary.log
+(09:28:45) [DEBUG]:   [Backend]:         Logging to file(s) /home/darian/.var/app/com.heroicgameslauncher.hgl/.local/state/Heroic/logs/runners/gog.log
+(09:28:45) [DEBUG]:   [Backend]:         Logging to file(s) /home/darian/.var/app/com.heroicgameslauncher.hgl/.local/state/Heroic/logs/runners/nile.log
+(09:28:45) [INFO]:    [Legendary]:       Running command: LEGENDARY_CONFIG_PATH=/home/darian/.var/app/com.heroicgameslauncher.hgl/config/heroic/legendaryConfig/legendary /app/bin/heroic/resources/app.asar.unpacked/build/bin/x64/linux/legendary --version
+(09:28:45) [INFO]:    [Gog]:             Running command: GOGDL_CONFIG_PATH=/home/darian/.var/app/com.heroicgameslauncher.hgl/config/heroic/gogdlConfig /app/bin/heroic/resources/app.asar.unpacked/build/bin/x64/linux/gogdl --auth-config-path /home/darian/.var/app/com.heroicgameslauncher.hgl/config/heroic/gog_store/auth.json --version
+(09:28:45) [INFO]:    [Nile]:            Running command: NILE_CONFIG_PATH=/home/darian/.var/app/com.heroicgameslauncher.hgl/config/heroic/nile_config /app/bin/heroic/resources/app.asar.unpacked/build/bin/x64/linux/nile --version
+(09:28:45) [DEBUG]:   [Backend]:         Releases info ready, checking wine releases
+(09:28:45) [DEBUG]:   [Backend]:         Releases info ready, checking anticheat data
+(09:28:45) [DEBUG]:   [Backend]:         AreWeAnticheatYet data did not change. Skipping.
+(09:28:45) [INFO]:    [Frontend]:        Refreshing undefined Library
+(09:28:45) [WARNING]: refresh not implemented on Sideload Library Manager
+(09:28:45) [INFO]:    [Legendary]:       Refreshing library...
+(09:28:45) [INFO]:    [Legendary]:       Refreshing Epic Games...
+(09:28:45) [INFO]:    [Backend]:         Frontend Ready
+(09:28:45) [INFO]:    [Legendary]:       Running command: LEGENDARY_CONFIG_PATH=/home/darian/.var/app/com.heroicgameslauncher.hgl/config/heroic/legendaryConfig/legendary /app/bin/heroic/resources/app.asar.unpacked/build/bin/x64/linux/legendary list --third-party
+(09:28:45) [INFO]:    [Backend]:         Checking for current version changelog
+(09:28:44) [INFO]:    [Backend]:         System Information: CPU: 8x Intel(R) Core(TM) i7-7700 CPU @ 3.60GHz
+Memory: 8.22 GB (used: 1.52 GB)
+GPUs:
+  GPU 0:
+    Name: NVIDIA Corporation GP108 [GeForce GT 1030]
+    IDs: D=1d01 V=10de SD=11c7 SV=1028
+    Driver: nvidia
+  GPU 1:
+    Name: Intel Corporation Kaby Lake-S GT2 [HD Graphics 630]
+    IDs: D=5912 V=8086 SD=07dc SV=1028
+    Driver: i915
+OS: Linux Mint 22.3 (Zena) (linux)
+
+The current system is not a Steam Deck
+We are running inside a Flatpak container
+We are not running from an AppImage
+
+Software Versions:
+  Heroic: 2.22.0 Hajrudin
+  Legendary: 0.20.43 Riding Shotgun (Heroic)
+  gogdl: 1.2.1
+  comet: comet 0.2.0
+  Nile: 1.1.2 Will A. Zeppeli
+(09:28:47) [INFO]:    [Legendary]:       Game list updated, got 4 games & DLCs
+(09:28:47) [WARNING]: listUpdateableGames not implemented on Sideload Library Manager
+(09:28:47) [INFO]:    [Legendary]:       Checking for game updates: LEGENDARY_CONFIG_PATH=/home/darian/.var/app/com.heroicgameslauncher.hgl/config/heroic/legendaryConfig/legendary /app/bin/heroic/resources/app.asar.unpacked/build/bin/x64/linux/legendary list --third-party
+(09:28:47) [DEBUG]:   [Backend]:         Unable to load Steam Libraries, libraryfolders.vdf not found
+which: no wine in (/app/bin:/app/bin:/app/utils/bin:/usr/bin:/usr/lib/extensions/vulkan/MangoHud/bin:/usr/lib/extensions/vulkan/gamescope/bin:/usr/lib/extensions/vulkan/OBSVkCapture/bin:/app/bin/heroic/resources/app.asar.unpacked/build/bin/linux)
+(09:28:47) [INFO]:    [Winetricks]:      Downloading Winetricks
+(09:28:48) [INFO]:    [Legendary]:       Found 0 games to update
+(09:28:50) [INFO]:    [Backend]:         Starting the Download Queue
+(09:28:52) [DEBUG]:   [Legendary]:       Using cached install info
+(09:28:52) [INFO]:    [Backend]:         Launching Rocket League® (Sugar)
+(09:28:52) [INFO]:    [Backend]:         Preventing display from sleep
+(09:28:52) [INFO]:    [Backend]:         Checking if wine version exists: GE-Proton9-20
+(09:28:52) [INFO]:    [Backend]:         Preventing machine to sleep
+(09:28:52) [DEBUG]:   [Backend]:         Logging to file(s) /home/darian/.var/app/com.heroicgameslauncher.hgl/.local/state/Heroic/logs/games/Sugar_legendary/launch.log
+(09:28:53) [INFO]:    [Backend]:         Checking if wine version exists: GE-Proton9-20
+(09:28:53) [INFO]:    [Backend]:         Checking if wine version exists: GE-Proton9-20
+(09:28:53) [INFO]:    [Legendary]:       Checking if EOS Overlay is enabled: LEGENDARY_CONFIG_PATH=/home/darian/.var/app/com.heroicgameslauncher.hgl/config/heroic/legendaryConfig/legendary /app/bin/heroic/resources/app.asar.unpacked/build/bin/x64/linux/legendary eos-overlay info --prefix "/home/darian/Games/Heroic/Prefixes/Rocket League/pfx"
+(09:28:53) [INFO]:    [Backend]:         Checking if wine version exists: GE-Proton9-20
+(09:28:53) [DEBUG]:   [Backend]:         Running Wine command: createprefix
+(09:28:53) [INFO]:    [Legendary]:       Abort command "LEGENDARY_CONFIG_PATH=/home/darian/.var/app/com.heroicgameslauncher.hgl/config/heroic/legendaryConfig/legendary /app/bin/heroic/resources/app.asar.unpacked/build/bin/x64/linux/legendary eos-overlay info --prefix "/home/darian/Games/Heroic/Prefixes/Rocket League/pfx""
+(09:29:12) [INFO]:    [Legendary]:       Launching Rocket League®: WINE_FULLSCREEN_FSR=0 HEROIC_APP_NAME=Sugar HEROIC_APP_RUNNER=legendary GAMEID=umu-252950 HEROIC_APP_SOURCE=epic STORE=egs STEAM_COMPAT_INSTALL_PATH=/home/darian/Games/Heroic/rocketleague LD_PRELOAD= STEAM_COMPAT_CLIENT_INSTALL_PATH=/home/darian/.var/app/com.heroicgameslauncher.hgl/.steam/steam WINEPREFIX="/home/darian/Games/Heroic/Prefixes/Rocket League" STEAM_COMPAT_DATA_PATH="/home/darian/Games/Heroic/Prefixes/Rocket League" PROTONPATH=/home/darian/.var/app/com.heroicgameslauncher.hgl/config/heroic/tools/proton/GE-Proton9-20 PROTON_ENABLE_NVAPI=1 DXVK_NVAPI_ALLOW_OTHER_DRIVERS=1 PROTON_EAC_RUNTIME=/home/darian/.var/app/com.heroicgameslauncher.hgl/config/heroic/tools/runtimes/eac_runtime PROTON_BATTLEYE_RUNTIME=/home/darian/.var/app/com.heroicgameslauncher.hgl/config/heroic/tools/runtimes/battleye_runtime STEAM_COMPAT_APP_ID=0 SteamAppId=0 SteamGameId=heroic-rocketleague PROTON_LOG_DIR=/home/darian/.var/app/com.heroicgameslauncher.hgl WINEDEBUG=+fixme DXVK_LOG_LEVEL=info VKD3D_DEBUG=fixme LEGENDARY_CONFIG_PATH=/home/darian/.var/app/com.heroicgameslauncher.hgl/config/heroic/legendaryConfig/legendary /app/bin/heroic/resources/app.asar.unpacked/build/bin/x64/linux/legendary launch Sugar --no-wine --wrapper "/app/bin/gamemoderun "/home/darian/.var/app/com.heroicgameslauncher.hgl/config/heroic/tools/runtimes/umu/umu_run.py"" --language en
+(09:29:12) [INFO]:    [Backend]:         Preventing display to sleep
+[13 preload-host-spawn-strategy] Failed to let stub process know of exit: Bad file descriptor (errno 9)
+[13:0526/092923.884763:ERROR:content/common/zygote/zygote_communication_linux.cc:291] Failed to send GetTerminationStatus message to zygote
+[13:0526/092923.889627:ERROR:content/browser/gpu/gpu_process_host.cc:990] GPU process launch failed: error_code=1002
+[13:0526/092923.891328:ERROR:content/browser/gpu/gpu_process_host.cc:990] GPU process launch failed: error_code=1002
+[13:0526/092923.892213:ERROR:content/browser/gpu/gpu_process_host.cc:990] GPU process launch failed: error_code=1002
+[13:0526/092923.893098:ERROR:content/browser/gpu/gpu_process_host.cc:990] GPU process launch failed: error_code=1002
+[13:0526/092923.894029:ERROR:content/browser/gpu/gpu_process_host.cc:990] GPU process launch failed: error_code=1002
+[13:0526/092923.894811:ERROR:content/browser/gpu/gpu_process_host.cc:990] GPU process launch failed: error_code=1002
+[13:0526/092923.894838:FATAL:content/browser/gpu/gpu_data_manager_impl_private.cc:417] GPU process isn't usable. Goodbye.
