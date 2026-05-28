@@ -29,8 +29,17 @@ terminate_game_and_compatibility_layers() {
 # Clean up any leftover processes from previous crashes/runs before starting
 terminate_game_and_compatibility_layers
 
+# Check if GUI mode is requested
+GUI_MODE=false
+for arg in "$@"; do
+    if [ "$arg" = "--gui" ]; then
+        GUI_MODE=true
+    fi
+done
+
 echo "🧹 Running gaming environment cleanup..."
 python3 "$SCRIPT_DIR/clean_gaming_env.py" "$@"
+
 
 # If dry-run was requested, exit here
 for arg in "$@"; do
@@ -40,15 +49,27 @@ for arg in "$@"; do
     fi
 done
 
-# Check if wired ethernet has link/carrier
+# Check if wired ethernet has link/carrier and actual internet access
 ETHERNET_STATUS=$(cat /sys/class/net/enp4s0/carrier 2>/dev/null || echo "0")
+WIRED_INTERNET=false
 if [ "$ETHERNET_STATUS" = "1" ]; then
-    echo "🔌 Wired connection detected on enp4s0! Temporarily disabling WiFi to force wired-only connection..."
+    if ping -c 1 -W 2 -I enp4s0 1.1.1.1 >/dev/null 2>&1; then
+        WIRED_INTERNET=true
+    fi
+fi
+
+if [ "$WIRED_INTERNET" = true ]; then
+    echo "🔌 Active wired internet connection detected on enp4s0! Temporarily disabling WiFi to force wired-only connection..."
     nmcli radio wifi off || true
     WIFI_DISABLED_BY_US=true
 else
-    echo "⚠️ WARNING: Wired connection (enp4s0) is not active. Keeping WiFi enabled to prevent going offline."
+    echo "⚠️ WARNING: Wired connection (enp4s0) is not active or has no internet access. Keeping WiFi enabled to prevent going offline."
     WIFI_DISABLED_BY_US=false
+    # Auto-restore WiFi if it was left disabled by a crashed run
+    if [ "$(nmcli radio wifi)" = "disabled" ]; then
+        echo "📡 WiFi was disabled. Re-enabling WiFi to ensure internet access..."
+        nmcli radio wifi on || true
+    fi
 fi
 
 # Start the telemetry logger
@@ -103,18 +124,24 @@ echo "🎮 Launching Rocket League via Heroic Games Launcher (with FSR, DXVK, an
     done
     
     if [ -f "$LOG_FILE" ]; then
-        # Tail log until Main Menu or login state is reached
-        tail -f -n +1 "$LOG_FILE" | grep -m 1 -E "m_uiState:MainMenu|LoadMap: MENU_Main_p" > /dev/null || true
-        echo "🎮 Main Menu loaded and authenticated!"
+        echo "⏳ Monitoring game log for Main Menu load..."
+        # Avoid hanging forever if the game crashes/exits before loading the menu
+        while kill -0 "$GAME_PID" 2>/dev/null; do
+            if grep -q -E "m_uiState:MainMenu|LoadMap: MENU_Main_p" "$LOG_FILE"; then
+                echo "🎮 Main Menu loaded and authenticated!"
+                break
+            fi
+            sleep 1
+        done
         
         # RAM/VRAM snapshots have been moved to the standalone take_ram_snapshot.sh script
         # nvidia-smi -q -d MEMORY,PIDS > "/home/darian/Documents/RocketMode/nvidia_vram_snapshot.txt" 2>&1 || true
         # gcore -o "/home/darian/Documents/RocketMode/rocketleague_ram.dump" "$GAME_PID" || true
     fi
     
-    # Terminate Heroic UI to reclaim ~400MB RAM since game is now running
-    echo "🧹 Reclaiming RAM: Terminating Heroic Games Launcher UI..."
-    pkill -u "$USER" -f "/app/bin/heroic/heroic" || true
+    # Terminate Heroic UI to reclaim ~400MB RAM (disabled: terminating Heroic kills the Flatpak sandbox/game)
+    # echo "🧹 Reclaiming RAM: Terminating Heroic Games Launcher UI..."
+    # pkill -u "$USER" -f "/app/bin/heroic/heroic" || true
 
     # Now block/wait until the game PID exits
     echo "🎮 Rocket League session active. Monitoring game process..."
@@ -127,11 +154,13 @@ echo "🎮 Launching Rocket League via Heroic Games Launcher (with FSR, DXVK, an
 ) &
 
 # Run Flatpak in the foreground
+FLATPAK_ARGS=()
+
 flatpak run \
     --env=WINE_FULLSCREEN_FSR=1 \
     --env=WINE_FULLSCREEN_FSR_STRENGTH=2 \
     --env=DXVK_CONFIG="dxvk.maxChunkSize=32 dxvk.numCompilerThreads=4" \
     --env=PIPEWIRE_LATENCY="128/48000" \
-    com.heroicgameslauncher.hgl --launch Sugar
+    com.heroicgameslauncher.hgl "${FLATPAK_ARGS[@]}" --launch Sugar
 
 echo "🚀 Workstation session remains active."

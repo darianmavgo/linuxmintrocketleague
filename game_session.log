@@ -1733,3 +1733,273 @@ End Time:   2026-05-27 20:47:59
    - PID 1904: xfwm4 (Type: G, Peak GPU Memory: 1MiB)
 
 
+
+========================================
+🎮 ROCKET LEAGUE SESSION TELEMETRY
+Start Time: 2026-05-27 21:23:15
+End Time:   2026-05-27 21:29:32
+Available RAM at Start: 6646.8 MB
+========================================
+
+1. KILLED PROCESSES DURING CLEANUP (28)
+   - PID 1661: ibus-daemon (Reason: Not whitelisted) -> /usr/bin/ibus-daemon --daemonize --xim
+   - PID 1682: ibus-memconf (Reason: Not whitelisted) -> /usr/libexec/ibus-memconf
+   - PID 1691: ibus-ui-gtk3 (Reason: Not whitelisted) -> /usr/libexec/ibus-ui-gtk3
+   - PID 1695: ibus-extension- (Reason: Not whitelisted) -> /usr/libexec/ibus-extension-gtk3
+   - PID 1697: ibus-x11 (Reason: Not whitelisted) -> /usr/libexec/ibus-x11 --kill-daemon
+   - PID 1700: ibus-portal (Reason: Not whitelisted) -> /usr/libexec/ibus-portal
+   - PID 1754: ssh-agent (Reason: Not whitelisted) -> /usr/bin/ssh-agent -s
+   - PID 1796: ibus-engine-sim (Reason: Not whitelisted) -> /usr/libexec/ibus-engine-simple
+   - PID 1813: Thunar (Reason: Not whitelisted) -> Thunar --daemon
+   - PID 1843: tumblerd (Reason: Not whitelisted) -> /usr/lib/x86_64-linux-gnu/tumbler-1/tumblerd
+   - PID 1854: touchegg (Reason: Not whitelisted) -> touchegg
+   - PID 1855: agent (Reason: Not whitelisted) -> /usr/libexec/geoclue-2.0/demos/agent
+   - PID 1880: light-locker (Reason: Not whitelisted) -> light-locker
+   - PID 1889: polkit-gnome-au (Reason: Not whitelisted) -> /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1
+   - PID 1901: nm-applet (Reason: Not whitelisted) -> nm-applet
+   - PID 1914: xiccd (Reason: Not whitelisted) -> xiccd
+   - PID 1929: xfce4-power-man (Reason: Not whitelisted) -> xfce4-power-manager
+   - PID 2545: antigravity (Reason: Not whitelisted) -> /home/darian/Documents/Antigravity-x64/antigravity --fullscreen
+   - PID 2552: antigravity (Reason: Not whitelisted) -> /home/darian/Documents/Antigravity-x64/antigravity --type=zygote --no-zygote-sandbox
+   - PID 2553: antigravity (Reason: Not whitelisted) -> /home/darian/Documents/Antigravity-x64/antigravity --type=zygote
+   - PID 2555: antigravity (Reason: Not whitelisted) -> /home/darian/Documents/Antigravity-x64/antigravity --type=zygote
+   - PID 2586: antigravity (Reason: Not whitelisted) -> /home/darian/Documents/Antigravity-x64/antigravity --type=zygote --no-zygote-sandbox
+   - PID 2593: antigravity (Reason: Not whitelisted) -> /proc/self/exe --type=utility --utility-sub-type=network.mojom.NetworkService --lang=en-US --service
+   - PID 2635: antigravity (Reason: Not whitelisted) -> /home/darian/Documents/Antigravity-x64/antigravity --type=zygote --no-zygote-sandbox
+   - PID 2653: language_server (Reason: Not whitelisted) -> /home/darian/Documents/Antigravity-x64/resources/bin/language_server --standalone --override_ide_nam
+   - PID 2669: antigravity (Reason: Not whitelisted) -> /home/darian/Documents/Antigravity-x64/antigravity --type=zygote
+   - PID 2720: antigravity (Reason: Not whitelisted) -> /proc/self/exe --type=utility --utility-sub-type=audio.mojom.AudioService --lang=en-US --service-san
+   - PID 3133: sleep (Reason: Not whitelisted) -> sleep 2
+
+2. PROCESSES THAT USED ZRAM (PEAK SWAP)
+   None
+
+3. PROCESSES LAUNCHED BY HEROIC / ROCKET LEAGUE (57)
+   - PID 3243: bwrap (First seen: 21:23:17) -> bwrap --args 47 -- heroic-run --launch Sugar
+   - PID 3244: heroic-run (First seen: 21:23:17) -> /bin/sh /app/bin/heroic-run --launch Sugar
+   - PID 3259: zypak-helper (First seen: 21:23:17) -> /app/bin/zypak-helper host - /app/bin/heroic/heroic --launch Sugar
+   - PID 3278: heroic (First seen: 21:23:21) -> /app/bin/heroic/heroic --type=zygote --no-zygote-sandbox
+   - PID 3280: zypak-sandbox (First seen: 21:23:21) -> zypak-sandbox
+   - PID 3282: cat (First seen: 21:23:21) -> cat
+   - PID 3283: cat (First seen: 21:23:21) -> cat
+   - PID 3288: bwrap (First seen: 21:23:21) -> bwrap --args 32 ldconfig -X -C /run/ld-so-cache-dir/e8aea12804ee0eb231915154e1e9ed670b17220be56616d6
+   - PID 3289: bwrap (First seen: 21:23:21) -> bwrap --args 32 ldconfig -X -C /run/ld-so-cache-dir/e8aea12804ee0eb231915154e1e9ed670b17220be56616d6
+   - PID 3290: ldconfig (First seen: 21:23:21) -> ldconfig -X -C /run/ld-so-cache-dir/e8aea12804ee0eb231915154e1e9ed670b17220be56616d67f1c806ef2d9323d
+   - PID 3351: bwrap (First seen: 21:23:44) -> bwrap --args 46 -- /app/bin/zypak-helper child - /app/bin/heroic/heroic --type=zygote
+   - PID 3352: heroic (First seen: 21:23:44) -> /app/bin/heroic/heroic --type=zygote
+   - PID 3386: heroic (First seen: 21:23:46) -> /app/bin/heroic/heroic --type=zygote --no-zygote-sandbox
+   - PID 3402: heroic (First seen: 21:23:48) -> /proc/self/exe --type=utility --utility-sub-type=network.mojom.NetworkService --lang=en-US --service
+   - PID 3428: heroic (First seen: 21:23:48) -> /proc/self/exe --type=renderer --enable-crash-reporter=a73c5469-6ab9-469e-ab46-0b82b5e42347,no_chann
+   - PID 3444: heroic (First seen: 21:23:48) -> /app/bin/heroic/heroic --launch Sugar
+   - PID 3461: python3 (First seen: 21:23:50) -> python3 ./legendary --version
+   - PID 3488: heroic (First seen: 21:23:50) -> /app/bin/heroic/heroic --type=zygote --no-zygote-sandbox
+   - PID 3498: vulkan-helper (First seen: 21:23:50) -> /app/bin/heroic/resources/app.asar.unpacked/build/bin/x64/linux/vulkan-helper physical-versions
+   - PID 3516: python3 (First seen: 21:23:52) -> python3 ./legendary list --third-party
+   - PID 3603: python3 (First seen: 21:23:58) -> python3 /home/darian/.var/app/com.heroicgameslauncher.hgl/config/heroic/tools/runtimes/umu/umu_run.p
+   - PID 3606: python3 (First seen: 21:23:58) -> python3 ./legendary list --third-party
+   - PID 3616: pressure-vessel (First seen: 21:23:58) -> pressure-vessel
+   - PID 3668: bwrap (First seen: 21:24:03) -> bwrap --args 41 -- /usr/lib/pressure-vessel/from-host/libexec/steam-runtime-tools-0/pv-adverb --pref
+   - PID 3669: pv-adverb (First seen: 21:24:03) -> /usr/lib/pressure-vessel/from-host/libexec/steam-runtime-tools-0/pv-adverb --prefix=/usr/lib/pressur
+   - PID 3670: ldconfig (First seen: 21:24:03) -> /sbin/ldconfig -f /run/user/1000/pressure-vessel/ldso/ld.so.conf -C /run/user/1000/pressure-vessel/l
+   - PID 3714: python3 (First seen: 21:24:11) -> python3 /home/darian/.var/app/com.heroicgameslauncher.hgl/config/heroic/tools/proton/GE-Proton9-20/p
+   - PID 3720: x86_64-linux-gn (First seen: 21:24:13) -> /usr/lib/pressure-vessel/from-host/libexec/steam-runtime-tools-0/x86_64-linux-gnu-srt-launcher-servi
+   - PID 3726: wine64 (First seen: 21:24:13) -> /home/darian/.var/app/com.heroicgameslauncher.hgl/config/heroic/tools/proton/GE-Proton9-20/files/bin
+   - PID 3728: wineserver (First seen: 21:24:13) -> /home/darian/.var/app/com.heroicgameslauncher.hgl/config/heroic/tools/proton/GE-Proton9-20/files/bin
+   - PID 3730: wineboot.exe (First seen: 21:24:13) -> C:\windows\system32\wineboot.exe --init
+   - PID 3733: services.exe (First seen: 21:24:15) -> C:\windows\system32\services.exe
+   - PID 3739: svchost.exe (First seen: 21:24:15) -> C:\windows\system32\svchost.exe -k LocalServiceNetworkRestricted
+   - PID 3746: winedevice.exe (First seen: 21:24:15) -> C:\windows\system32\winedevice.exe
+   - PID 3755: winedevice.exe (First seen: 21:24:15) -> C:\windows\system32\winedevice.exe
+   - PID 3809: gamemoderun (First seen: 21:24:21) -> /bin/bash /app/bin/gamemoderun /home/darian/.var/app/com.heroicgameslauncher.hgl/config/heroic/tools
+   - PID 3817: python3 (First seen: 21:24:21) -> python3 /home/darian/.var/app/com.heroicgameslauncher.hgl/config/heroic/tools/runtimes/umu/umu_run.p
+   - PID 3841: steam-runtime-l (First seen: 21:24:23) -> /home/darian/.local/share/umu/steamrt3/pressure-vessel/bin/steam-runtime-launch-client --pass-env-ma
+   - PID 3885: bwrap (First seen: 21:24:23) -> bwrap --args 41 -- /usr/lib/pressure-vessel/from-host/libexec/steam-runtime-tools-0/pv-adverb --pref
+   - PID 3886: pv-adverb (First seen: 21:24:23) -> /usr/lib/pressure-vessel/from-host/libexec/steam-runtime-tools-0/pv-adverb --prefix=/usr/lib/pressur
+   - PID 3910: python3 (First seen: 21:24:23) -> python3 /home/darian/.var/app/com.heroicgameslauncher.hgl/config/heroic/tools/proton/GE-Proton9-20/p
+   - PID 3912: x86_64-linux-gn (First seen: 21:24:23) -> /usr/lib/pressure-vessel/from-host/libexec/steam-runtime-tools-0/x86_64-linux-gnu-srt-launcher-servi
+   - PID 3918: wine64 (First seen: 21:24:23) -> /home/darian/.var/app/com.heroicgameslauncher.hgl/config/heroic/tools/proton/GE-Proton9-20/files/bin
+   - PID 3920: wineserver (First seen: 21:24:23) -> /home/darian/.var/app/com.heroicgameslauncher.hgl/config/heroic/tools/proton/GE-Proton9-20/files/bin
+   - PID 3925: services.exe (First seen: 21:24:25) -> C:\windows\system32\services.exe
+   - PID 3928: svchost.exe (First seen: 21:24:25) -> C:\windows\system32\svchost.exe -k LocalServiceNetworkRestricted
+   - PID 3934: winedevice.exe (First seen: 21:24:25) -> C:\windows\system32\winedevice.exe
+   - PID 3946: winedevice.exe (First seen: 21:24:25) -> C:\windows\system32\winedevice.exe
+   - PID 3960: plugplay.exe (First seen: 21:24:25) -> C:\windows\system32\plugplay.exe
+   - PID 3975: Launcher.exe (First seen: 21:24:25) -> S:\Games\Heroic\rocketleague\Binaries\Win64\Launcher.exe -AUTH_LOGIN=unused -AUTH_PASSWORD=757cad0e9
+   - PID 3980: RocketLeague_EA (First seen: 21:24:25) -> RocketLeague_EAC.exe -AUTH_LOGIN=unused -AUTH_PASSWORD=757cad0e92c04e3e9c690210f2c130af -AUTH_TYPE=e
+   - PID 3984: explorer.exe (First seen: 21:24:25) -> C:\windows\system32\explorer.exe /desktop
+   - PID 4000: rpcss.exe (First seen: 21:24:28) -> C:\windows\system32\rpcss.exe
+   - PID 4009: tabtip.exe (First seen: 21:24:28) -> C:\windows\system32\tabtip.exe
+   - PID 4025: RocketLeague.ex (First seen: 21:24:30) -> S:\Games\Heroic\rocketleague\Binaries\Win64\RocketLeague.exe -AUTH_LOGIN=unused -AUTH_PASSWORD=757ca
+   - PID 4068: explorer.exe (First seen: 21:24:36) -> C:\windows\system32\explorer.exe /desktop
+   - PID 4077: tabtip.exe (First seen: 21:24:36) -> C:\windows\system32\tabtip.exe
+
+4. PROCESSES UTILIZING NVIDIA GPU
+   - PID 1316: /usr/lib/xorg/Xorg (Type: G, Peak GPU Memory: 257MiB)
+   - PID 4186: ...cuments/Antigravity-x64/antigravity (Type: G, Peak GPU Memory: 156MiB)
+   - PID 3386: /app/bin/heroic/heroic (Type: G, Peak GPU Memory: 58MiB)
+   - PID 1774: xfwm4 (Type: G, Peak GPU Memory: 1MiB)
+
+
+
+========================================
+🎮 ROCKET LEAGUE SESSION TELEMETRY
+Start Time: 2026-05-27 21:33:54
+End Time:   2026-05-27 21:35:56
+Available RAM at Start: 6533.2 MB
+========================================
+
+1. KILLED PROCESSES DURING CLEANUP (0)
+   None
+
+2. PROCESSES THAT USED ZRAM (PEAK SWAP)
+   None
+
+3. PROCESSES LAUNCHED BY HEROIC / ROCKET LEAGUE (21)
+   - PID 4898: bwrap (First seen: 21:33:56) -> bwrap --args 47 -- heroic-run --no-gui --launch Sugar
+   - PID 4899: heroic-run (First seen: 21:33:56) -> /bin/sh /app/bin/heroic-run --no-gui --launch Sugar
+   - PID 4910: heroic (First seen: 21:33:56) -> /app/bin/heroic/heroic --no-gui --launch Sugar
+   - PID 4917: heroic (First seen: 21:33:56) -> /app/bin/heroic/heroic --type=zygote --no-zygote-sandbox
+   - PID 4919: zypak-sandbox (First seen: 21:33:56) -> zypak-sandbox
+   - PID 4921: cat (First seen: 21:33:56) -> cat
+   - PID 4922: cat (First seen: 21:33:56) -> cat
+   - PID 4933: bwrap (First seen: 21:33:56) -> bwrap --args 46 -- /app/bin/zypak-helper child - /app/bin/heroic/heroic --type=zygote
+   - PID 4934: heroic (First seen: 21:33:56) -> /app/bin/heroic/heroic --type=zygote
+   - PID 4965: heroic (First seen: 21:33:58) -> /app/bin/heroic/heroic --type=zygote --no-zygote-sandbox
+   - PID 4977: heroic (First seen: 21:33:58) -> /proc/self/exe --type=utility --utility-sub-type=network.mojom.NetworkService --lang=en-US --service
+   - PID 5000: heroic (First seen: 21:33:58) -> /app/bin/heroic/heroic --type=zygote --no-zygote-sandbox
+   - PID 5011: heroic (First seen: 21:33:58) -> /proc/self/exe --type=renderer --enable-crash-reporter=a73c5469-6ab9-469e-ab46-0b82b5e42347,no_chann
+   - PID 5042: python3 (First seen: 21:33:58) -> python3 ./legendary --version
+   - PID 5044: nile (First seen: 21:33:58) -> ./nile --version
+   - PID 5049: gogdl (First seen: 21:33:58) -> ./gogdl --auth-config-path /home/darian/.var/app/com.heroicgameslauncher.hgl/config/heroic/gog_store
+   - PID 5051: nile (First seen: 21:33:58) -> ./nile --version
+   - PID 5052: gogdl (First seen: 21:33:58) -> ./gogdl --auth-config-path /home/darian/.var/app/com.heroicgameslauncher.hgl/config/heroic/gog_store
+   - PID 5058: gogdl (First seen: 21:33:58) -> ./gogdl --auth-config-path /home/darian/.var/app/com.heroicgameslauncher.hgl/config/heroic/gog_store
+   - PID 5096: python3 (First seen: 21:34:00) -> python3 ./legendary list --third-party
+   - PID 5101: vulkan-helper (First seen: 21:34:00) -> /app/bin/heroic/resources/app.asar.unpacked/build/bin/x64/linux/vulkan-helper physical-versions
+
+4. PROCESSES UTILIZING NVIDIA GPU
+   - PID 1316: /usr/lib/xorg/Xorg (Type: G, Peak GPU Memory: 257MiB)
+   - PID 5329: ...cuments/Antigravity-x64/antigravity (Type: G, Peak GPU Memory: 153MiB)
+   - PID 4965: /app/bin/heroic/heroic (Type: G, Peak GPU Memory: 54MiB)
+   - PID 1774: xfwm4 (Type: G, Peak GPU Memory: 1MiB)
+
+
+
+========================================
+🎮 ROCKET LEAGUE SESSION TELEMETRY
+Start Time: 2026-05-27 21:40:26
+End Time:   2026-05-27 21:42:29
+Available RAM at Start: 6565.0 MB
+========================================
+
+1. KILLED PROCESSES DURING CLEANUP (10)
+   - PID 5293: antigravity (Reason: Not whitelisted) -> /home/darian/Documents/Antigravity-x64/antigravity --fullscreen
+   - PID 5297: antigravity (Reason: Not whitelisted) -> /home/darian/Documents/Antigravity-x64/antigravity --type=zygote --no-zygote-sandbox
+   - PID 5298: antigravity (Reason: Not whitelisted) -> /home/darian/Documents/Antigravity-x64/antigravity --type=zygote
+   - PID 5300: antigravity (Reason: Not whitelisted) -> /home/darian/Documents/Antigravity-x64/antigravity --type=zygote
+   - PID 5329: antigravity (Reason: Not whitelisted) -> /home/darian/Documents/Antigravity-x64/antigravity --type=zygote --no-zygote-sandbox
+   - PID 5334: antigravity (Reason: Not whitelisted) -> /proc/self/exe --type=utility --utility-sub-type=network.mojom.NetworkService --lang=en-US --service
+   - PID 5369: antigravity (Reason: Not whitelisted) -> /home/darian/Documents/Antigravity-x64/antigravity --type=zygote --no-zygote-sandbox
+   - PID 5383: language_server (Reason: Not whitelisted) -> /home/darian/Documents/Antigravity-x64/resources/bin/language_server --standalone --override_ide_nam
+   - PID 5398: antigravity (Reason: Not whitelisted) -> /home/darian/Documents/Antigravity-x64/antigravity --type=zygote
+   - PID 5481: antigravity (Reason: Not whitelisted) -> /proc/self/exe --type=utility --utility-sub-type=audio.mojom.AudioService --lang=en-US --service-san
+
+2. PROCESSES THAT USED ZRAM (PEAK SWAP)
+   None
+
+3. PROCESSES LAUNCHED BY HEROIC / ROCKET LEAGUE (15)
+   - PID 5906: bwrap (First seen: 21:40:28) -> bwrap --args 47 -- heroic-run --no-gui --launch Sugar
+   - PID 5907: heroic-run (First seen: 21:40:28) -> /bin/sh /app/bin/heroic-run --no-gui --launch Sugar
+   - PID 5918: heroic (First seen: 21:40:28) -> /app/bin/heroic/heroic --no-gui --launch Sugar
+   - PID 5925: heroic (First seen: 21:40:28) -> /app/bin/heroic/heroic --type=zygote --no-zygote-sandbox
+   - PID 5927: zypak-sandbox (First seen: 21:40:28) -> zypak-sandbox
+   - PID 5929: cat (First seen: 21:40:28) -> cat
+   - PID 5930: cat (First seen: 21:40:28) -> cat
+   - PID 5941: bwrap (First seen: 21:40:28) -> bwrap --args 46 -- /app/bin/zypak-helper child - /app/bin/heroic/heroic --type=zygote
+   - PID 5942: heroic (First seen: 21:40:28) -> /app/bin/heroic/heroic --type=zygote
+   - PID 5968: heroic (First seen: 21:40:28) -> /app/bin/heroic/heroic --type=zygote --no-zygote-sandbox
+   - PID 5980: heroic (First seen: 21:40:28) -> /proc/self/exe --type=utility --utility-sub-type=network.mojom.NetworkService --lang=en-US --service
+   - PID 5998: heroic (First seen: 21:40:28) -> /app/bin/heroic/heroic --type=zygote --no-zygote-sandbox
+   - PID 6010: heroic (First seen: 21:40:28) -> /proc/self/exe --type=renderer --enable-crash-reporter=a73c5469-6ab9-469e-ab46-0b82b5e42347,no_chann
+   - PID 6050: python3 (First seen: 21:40:28) -> python3 ./legendary --version
+   - PID 6094: python3 (First seen: 21:40:30) -> python3 ./legendary list --third-party
+
+4. PROCESSES UTILIZING NVIDIA GPU
+   - PID 1316: /usr/lib/xorg/Xorg (Type: G, Peak GPU Memory: 259MiB)
+   - PID 6280: ...cuments/Antigravity-x64/antigravity (Type: G, Peak GPU Memory: 74MiB)
+   - PID 5968: /app/bin/heroic/heroic (Type: G, Peak GPU Memory: 58MiB)
+   - PID 1774: xfwm4 (Type: G, Peak GPU Memory: 1MiB)
+
+
+
+========================================
+🎮 ROCKET LEAGUE SESSION TELEMETRY
+Start Time: 2026-05-27 21:47:20
+End Time:   2026-05-27 21:49:23
+Available RAM at Start: 6568.6 MB
+========================================
+
+1. KILLED PROCESSES DURING CLEANUP (0)
+   None
+
+2. PROCESSES THAT USED ZRAM (PEAK SWAP)
+   None
+
+3. PROCESSES LAUNCHED BY HEROIC / ROCKET LEAGUE (14)
+   - PID 6879: bwrap (First seen: 21:47:22) -> bwrap --args 48 -- heroic-run --no-gui --disable-gpu --disable-gpu-sandbox --launch Sugar
+   - PID 6880: heroic-run (First seen: 21:47:22) -> /bin/sh /app/bin/heroic-run --no-gui --disable-gpu --disable-gpu-sandbox --launch Sugar
+   - PID 6891: heroic (First seen: 21:47:22) -> /app/bin/heroic/heroic --no-gui --disable-gpu --disable-gpu-sandbox --launch Sugar
+   - PID 6898: heroic (First seen: 21:47:22) -> /app/bin/heroic/heroic --type=zygote --no-zygote-sandbox
+   - PID 6900: zypak-sandbox (First seen: 21:47:22) -> zypak-sandbox
+   - PID 6902: cat (First seen: 21:47:22) -> cat
+   - PID 6903: cat (First seen: 21:47:22) -> cat
+   - PID 6915: bwrap (First seen: 21:47:22) -> bwrap --args 46 -- /app/bin/zypak-helper child - /app/bin/heroic/heroic --type=zygote
+   - PID 6916: heroic (First seen: 21:47:22) -> /app/bin/heroic/heroic --type=zygote
+   - PID 6941: heroic (First seen: 21:47:22) -> /proc/self/exe --type=gpu-process --disable-gpu-sandbox --ozone-platform=x11 --enable-crash-reporter
+   - PID 6957: heroic (First seen: 21:47:22) -> /proc/self/exe --type=utility --utility-sub-type=network.mojom.NetworkService --lang=en-US --service
+   - PID 6976: heroic (First seen: 21:47:22) -> /proc/self/exe --type=renderer --enable-crash-reporter=a73c5469-6ab9-469e-ab46-0b82b5e42347,no_chann
+   - PID 7009: python3 (First seen: 21:47:22) -> python3 ./legendary list --third-party
+   - PID 7019: python3 (First seen: 21:47:24) -> python3 ./legendary list --third-party
+
+4. PROCESSES UTILIZING NVIDIA GPU
+   - PID 1316: /usr/lib/xorg/Xorg (Type: G, Peak GPU Memory: 227MiB)
+   - PID 7133: ...cuments/Antigravity-x64/antigravity (Type: G, Peak GPU Memory: 85MiB)
+   - PID 1774: xfwm4 (Type: G, Peak GPU Memory: 1MiB)
+
+
+
+========================================
+🎮 ROCKET LEAGUE SESSION TELEMETRY
+Start Time: 2026-05-27 22:06:25
+End Time:   2026-05-27 22:08:28
+Available RAM at Start: 6494.8 MB
+========================================
+
+1. KILLED PROCESSES DURING CLEANUP (0)
+   None
+
+2. PROCESSES THAT USED ZRAM (PEAK SWAP)
+   None
+
+3. PROCESSES LAUNCHED BY HEROIC / ROCKET LEAGUE (14)
+   - PID 7883: bwrap (First seen: 22:06:27) -> bwrap --args 48 -- heroic-run --no-gui --disable-gpu --disable-gpu-sandbox --launch Sugar
+   - PID 7884: heroic-run (First seen: 22:06:27) -> /bin/sh /app/bin/heroic-run --no-gui --disable-gpu --disable-gpu-sandbox --launch Sugar
+   - PID 7895: heroic (First seen: 22:06:27) -> /app/bin/heroic/heroic --no-gui --disable-gpu --disable-gpu-sandbox --launch Sugar
+   - PID 7907: heroic (First seen: 22:06:27) -> /app/bin/heroic/heroic --type=zygote --no-zygote-sandbox
+   - PID 7909: zypak-sandbox (First seen: 22:06:27) -> zypak-sandbox
+   - PID 7911: cat (First seen: 22:06:27) -> cat
+   - PID 7912: cat (First seen: 22:06:27) -> cat
+   - PID 7922: bwrap (First seen: 22:06:27) -> bwrap --args 46 -- /app/bin/zypak-helper child - /app/bin/heroic/heroic --type=zygote
+   - PID 7923: heroic (First seen: 22:06:27) -> /app/bin/heroic/heroic --type=zygote
+   - PID 7948: heroic (First seen: 22:06:27) -> /proc/self/exe --type=gpu-process --disable-gpu-sandbox --ozone-platform=x11 --enable-crash-reporter
+   - PID 7964: heroic (First seen: 22:06:27) -> /proc/self/exe --type=utility --utility-sub-type=network.mojom.NetworkService --lang=en-US --service
+   - PID 7984: heroic (First seen: 22:06:27) -> /proc/self/exe --type=renderer --enable-crash-reporter=a73c5469-6ab9-469e-ab46-0b82b5e42347,no_chann
+   - PID 8016: python3 (First seen: 22:06:27) -> python3 ./legendary list --third-party
+   - PID 8026: python3 (First seen: 22:06:29) -> python3 ./legendary list --third-party
+
+4. PROCESSES UTILIZING NVIDIA GPU
+   - PID 1316: /usr/lib/xorg/Xorg (Type: G, Peak GPU Memory: 225MiB)
+   - PID 8145: ...cuments/Antigravity-x64/antigravity (Type: G, Peak GPU Memory: 128MiB)
+   - PID 1774: xfwm4 (Type: G, Peak GPU Memory: 1MiB)
+
+

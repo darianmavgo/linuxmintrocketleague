@@ -73,3 +73,38 @@ The exported `report.html` features:
 - Real-time searching/filtering.
 - Sorting by column.
 - Translucent backdrop blur cards (Glassmorphism).
+
+## Repository Scripts Summary
+
+This folder contains various scripts designed to optimize, launch, and monitor a Linux gaming environment (specifically for Rocket League). 
+
+### Launch & Environment
+- **`launch_rocket_league.sh`**: Master launch script for Rocket League via Heroic Games Launcher. Coordinates environment cleanup, telemetry, and launch flags.
+- **`clean_gaming_env.py`**: Cleans up the environment before gaming by terminating non-essential processes based on a whitelist to free up memory.
+
+### Optimization & Boosting
+- **`game_booster.sh`**: Stops desktop components and non-essential system services for a gaming boost mode, with an option to restore them later.
+- **`rocket_booster_daemon.sh`**: Background daemon that automatically suspends resource-hogging apps (e.g., browsers, Discord) when Rocket League is running, and resumes them when it closes.
+- **`install_booster_daemon.sh`**: Registers the RocketMode Booster Daemon to start automatically on user login.
+- **`optimize_autostart.sh`**: Disables non-gaming background applications from launching at login.
+- **`optimize_services.sh`**: Disables background system services (CUPS, Avahi, etc.) that are unnecessary for gaming.
+
+### Memory & Swap Management
+- **`ram_inspector.py`**: Diagnostic utility to inspect system RAM, tmpfs, and process memory, with CLI, HTML, and Markdown export capabilities.
+- **`cap_zram.sh`**: Limits the ZRAM swap size to 1 GB.
+- **`disable_hdd_swap.sh`**: Disables and removes the HDD/SSD swap file, keeping only ZRAM for swap.
+- **`setup_swap.sh`**: Creates, configures, and enables an 8GB swap file.
+- **`tune_system_memory.sh`**: Optimizes system kernel parameters (e.g., `vm.swappiness`) for ZRAM and gaming workloads.
+- **`take_ram_snapshot.sh`**: Captures a GPU VRAM snapshot and a RAM core dump of the running Rocket League process.
+
+### Telemetry & Diagnostics
+- **`game_logger.py`**: Telemetry logger daemon that tracks memory, ZRAM usage, game processes, and GPU usage during a gaming session.
+- **`desktop_comparison.py`**: Compares Cinnamon's memory footprint against a simulated XFCE footprint to calculate memory savings.
+- **`test_controller.py`**: Reads and displays raw events from a controller device (e.g., `/dev/input/js0`) for testing inputs.
+
+### System Fixes
+- **`apply_grub_patch.sh`**: Applies a GRUB patch (`pci=noaer`) to disable PCIe AER log flooding.
+- **`fix_audio.sh`**: Applies temporary pin connectivity overrides to the Intel/Realtek Audio codec.
+- **`make_audio_permanent.sh`**: Creates a persistent kernel firmware patch to permanently apply Realtek ALC3861 audio jack overrides.
+- **`persist_audio.sh`**: Creates a systemd service to apply HDA jack overrides on boot.
+- **`generate_melody.py`**: Generates a C major chord arpeggio WAV audio file (useful for testing audio output).
