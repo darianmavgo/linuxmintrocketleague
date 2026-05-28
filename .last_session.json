@@ -1,16 +1,16 @@
 {
-  "start_time": "2026-05-28 11:24:08",
-  "end_time": "2026-05-28 12:18:29",
+  "start_time": "2026-05-28 12:25:39",
+  "end_time": "2026-05-28 12:28:17",
   "zram_start": {
     "1": {
       "name": "systemd",
       "cmdline": "/sbin/init splash",
-      "swap_kb": 1148
+      "swap_kb": 1084
     },
     "448": {
       "name": "systemd-journal",
       "cmdline": "/usr/lib/systemd/systemd-journald",
-      "swap_kb": 752
+      "swap_kb": 756
     },
     "505": {
       "name": "systemd-udevd",
@@ -20,284 +20,7 @@
     "1000": {
       "name": "systemd-resolve",
       "cmdline": "/usr/lib/systemd/systemd-resolved",
-      "swap_kb": 88
-    },
-    "1001": {
-      "name": "systemd-timesyn",
-      "cmdline": "/usr/lib/systemd/systemd-timesyncd",
-      "swap_kb": 856
-    },
-    "1028": {
-      "name": "dbus-daemon",
-      "cmdline": "@dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only",
-      "swap_kb": 8
-    },
-    "1033": {
-      "name": "irqbalance",
-      "cmdline": "/usr/sbin/irqbalance",
-      "swap_kb": 120
-    },
-    "1049": {
-      "name": "power-profiles-",
-      "cmdline": "/usr/libexec/power-profiles-daemon",
-      "swap_kb": 88
-    },
-    "1067": {
-      "name": "nvidia-persiste",
-      "cmdline": "/usr/bin/nvidia-persistenced --user nvidia-persistenced --no-persistence-mode --verbose",
-      "swap_kb": 68
-    },
-    "1069": {
-      "name": "switcheroo-cont",
-      "cmdline": "/usr/libexec/switcheroo-control",
-      "swap_kb": 64
-    },
-    "1072": {
-      "name": "thermald",
-      "cmdline": "/usr/sbin/thermald --systemd --dbus-enable --adaptive",
-      "swap_kb": 4
-    },
-    "1074": {
-      "name": "udisksd",
-      "cmdline": "/usr/libexec/udisks2/udisksd",
-      "swap_kb": 24
-    },
-    "1100": {
-      "name": "rsyslogd",
-      "cmdline": "/usr/sbin/rsyslogd -n -iNONE",
-      "swap_kb": 140
-    },
-    "1104": {
-      "name": "kerneloops",
-      "cmdline": "/usr/sbin/kerneloops --test",
-      "swap_kb": 72
-    },
-    "1107": {
-      "name": "kerneloops",
-      "cmdline": "/usr/sbin/kerneloops",
-      "swap_kb": 32
-    },
-    "1186": {
-      "name": "wpa_supplicant",
-      "cmdline": "/usr/sbin/wpa_supplicant -u -s -O DIR=/run/wpa_supplicant GROUP=netdev",
-      "swap_kb": 56
-    },
-    "1315": {
-      "name": "lightdm",
-      "cmdline": "/usr/sbin/lightdm",
-      "swap_kb": 428
-    },
-    "1327": {
-      "name": "Xorg",
-      "cmdline": "/usr/lib/xorg/Xorg -core :0 -seat seat0 -auth /var/run/lightdm/root/:0 -nolisten tcp vt7 -novtswitch",
-      "swap_kb": 44280
-    },
-    "1417": {
-      "name": "rtkit-daemon",
-      "cmdline": "/usr/libexec/rtkit-daemon",
-      "swap_kb": 60
-    },
-    "1484": {
-      "name": "upowerd",
-      "cmdline": "/usr/libexec/upowerd",
-      "swap_kb": 400
-    },
-    "1493": {
-      "name": "lightdm",
-      "cmdline": "lightdm --session-child 14 21",
-      "swap_kb": 1164
-    },
-    "1513": {
-      "name": "systemd",
-      "cmdline": "/usr/lib/systemd/systemd --user",
-      "swap_kb": 36
-    },
-    "1514": {
-      "name": "(sd-pam)",
-      "cmdline": "(sd-pam)",
-      "swap_kb": 544
-    },
-    "1523": {
-      "name": "pipewire",
-      "cmdline": "/usr/bin/pipewire",
-      "swap_kb": 2084
-    },
-    "1524": {
-      "name": "pipewire",
-      "cmdline": "/usr/bin/pipewire -c filter-chain.conf",
-      "swap_kb": 184
-    },
-    "1526": {
-      "name": "wireplumber",
-      "cmdline": "/usr/bin/wireplumber",
-      "swap_kb": 4020
-    },
-    "1527": {
-      "name": "pipewire-pulse",
-      "cmdline": "/usr/bin/pipewire-pulse",
-      "swap_kb": 176
-    },
-    "1531": {
-      "name": "dbus-daemon",
-      "cmdline": "/usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only",
-      "swap_kb": 76
-    },
-    "1559": {
-      "name": "xfce4-session",
-      "cmdline": "xfce4-session",
-      "swap_kb": 4844
-    },
-    "1727": {
-      "name": "xdg-desktop-por",
-      "cmdline": "/usr/libexec/xdg-desktop-portal",
-      "swap_kb": 176
-    },
-    "1738": {
-      "name": "xdg-permission-",
-      "cmdline": "/usr/libexec/xdg-permission-store",
-      "swap_kb": 4
-    },
-    "1745": {
-      "name": "xdg-document-po",
-      "cmdline": "/usr/libexec/xdg-document-portal",
-      "swap_kb": 12
-    },
-    "1754": {
-      "name": "fusermount3",
-      "cmdline": "fusermount3 -o rw,nosuid,nodev,fsname=portal,auto_unmount,subtype=portal -- /run/user/1000/doc",
-      "swap_kb": 80
-    },
-    "1760": {
-      "name": "xdg-desktop-por",
-      "cmdline": "/usr/libexec/xdg-desktop-portal-gtk",
-      "swap_kb": 1212
-    },
-    "1772": {
-      "name": "xfwm4",
-      "cmdline": "xfwm4",
-      "swap_kb": 42492
-    },
-    "1780": {
-      "name": "xdg-desktop-por",
-      "cmdline": "/usr/libexec/xdg-desktop-portal-xapp",
-      "swap_kb": 1188
-    },
-    "1790": {
-      "name": "xfsettingsd",
-      "cmdline": "xfsettingsd",
-      "swap_kb": 5272
-    },
-    "1802": {
-      "name": "xfce4-panel",
-      "cmdline": "xfce4-panel",
-      "swap_kb": 3940
-    },
-    "1813": {
-      "name": "xfdesktop",
-      "cmdline": "xfdesktop",
-      "swap_kb": 47908
-    },
-    "1818": {
-      "name": "panel-1-whisker",
-      "cmdline": "/usr/lib/x86_64-linux-gnu/xfce4/panel/wrapper-2.0 /usr/lib/x86_64-linux-gnu/xfce4/panel/plugins/libwhiskermenu.so 1 25165831 whiskermenu Whisker Menu Show a menu to easily access installed applications",
-      "swap_kb": 6868
-    },
-    "1822": {
-      "name": "panel-8-systray",
-      "cmdline": "/usr/lib/x86_64-linux-gnu/xfce4/panel/wrapper-2.0 /usr/lib/x86_64-linux-gnu/xfce4/panel/plugins/libsystray.so 8 25165832 systray Status Tray Plugin Provides status notifier items (application indicators) and legacy systray items",
-      "swap_kb": 4544
-    },
-    "1823": {
-      "name": "panel-9-notific",
-      "cmdline": "/usr/lib/x86_64-linux-gnu/xfce4/panel/wrapper-2.0 /usr/lib/x86_64-linux-gnu/xfce4/panel/plugins/libnotification-plugin.so 9 25165833 notification-plugin Notification Plugin Notification plugin for the Xfce panel",
-      "swap_kb": 6000
-    },
-    "1824": {
-      "name": "panel-11-power-",
-      "cmdline": "/usr/lib/x86_64-linux-gnu/xfce4/panel/wrapper-2.0 /usr/lib/x86_64-linux-gnu/xfce4/panel/plugins/libxfce4powermanager.so 11 25165834 power-manager-plugin Power Manager Plugin Display the battery levels of your devices and control the brightness of your display",
-      "swap_kb": 5992
-    },
-    "1825": {
-      "name": "panel-12-pulsea",
-      "cmdline": "/usr/lib/x86_64-linux-gnu/xfce4/panel/wrapper-2.0 /usr/lib/x86_64-linux-gnu/xfce4/panel/plugins/libpulseaudio-plugin.so 12 25165835 pulseaudio PulseAudio Plugin Adjust the audio volume of the PulseAudio sound system",
-      "swap_kb": 6044
-    },
-    "1845": {
-      "name": "nvidia-prime",
-      "cmdline": "/usr/bin/python3 /usr/lib/nvidia-prime-applet/nvidia-prime",
-      "swap_kb": 15232
-    },
-    "1893": {
-      "name": "dconf-service",
-      "cmdline": "/usr/libexec/dconf-service",
-      "swap_kb": 100
-    },
-    "1982": {
-      "name": "colord",
-      "cmdline": "/usr/libexec/colord",
-      "swap_kb": 4252
-    },
-    "3838": {
-      "name": "sshd",
-      "cmdline": "sshd: /usr/sbin/sshd -D [listener] 0 of 10-100 startups",
-      "swap_kb": 888
-    },
-    "7951": {
-      "name": "fwupd",
-      "cmdline": "/usr/libexec/fwupd/fwupd",
-      "swap_kb": 3636
-    },
-    "15795": {
-      "name": "flatpak-session",
-      "cmdline": "/usr/libexec/flatpak-session-helper",
-      "swap_kb": 300
-    },
-    "15800": {
-      "name": "p11-kit-server",
-      "cmdline": "server --sh -n /run/user/1000/.flatpak-helper/pkcs11-flatpak-15795 --provider p11-kit-trust.so pkcs11:model=p11-kit-trust?write-protected=yes",
-      "swap_kb": 212
-    },
-    "16315": {
-      "name": "xfce4-terminal",
-      "cmdline": "xfce4-terminal",
-      "swap_kb": 4276
-    },
-    "16366": {
-      "name": "bash",
-      "cmdline": "bash",
-      "swap_kb": 1372
-    },
-    "16948": {
-      "name": "gamemoded",
-      "cmdline": "/usr/bin/gamemoded",
-      "swap_kb": 584
-    },
-    "21616": {
-      "name": "(udev-worker)",
-      "cmdline": "(udev-worker)",
-      "swap_kb": 724
-    }
-  },
-  "zram_end": {
-    "1": {
-      "name": "systemd",
-      "cmdline": "/sbin/init splash",
-      "swap_kb": 1100
-    },
-    "448": {
-      "name": "systemd-journal",
-      "cmdline": "/usr/lib/systemd/systemd-journald",
-      "swap_kb": 884
-    },
-    "505": {
-      "name": "systemd-udevd",
-      "cmdline": "/usr/lib/systemd/systemd-udevd",
-      "swap_kb": 2844
-    },
-    "1000": {
-      "name": "systemd-resolve",
-      "cmdline": "/usr/lib/systemd/systemd-resolved",
-      "swap_kb": 1900
+      "swap_kb": 1840
     },
     "1001": {
       "name": "systemd-timesyn",
@@ -307,7 +30,7 @@
     "1022": {
       "name": "accounts-daemon",
       "cmdline": "/usr/libexec/accounts-daemon",
-      "swap_kb": 360
+      "swap_kb": 364
     },
     "1025": {
       "name": "cron",
@@ -317,7 +40,7 @@
     "1028": {
       "name": "dbus-daemon",
       "cmdline": "@dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only",
-      "swap_kb": 476
+      "swap_kb": 468
     },
     "1033": {
       "name": "irqbalance",
@@ -337,27 +60,27 @@
     "1069": {
       "name": "switcheroo-cont",
       "cmdline": "/usr/libexec/switcheroo-control",
-      "swap_kb": 532
+      "swap_kb": 536
     },
     "1071": {
       "name": "systemd-logind",
       "cmdline": "/usr/lib/systemd/systemd-logind",
-      "swap_kb": 804
+      "swap_kb": 812
     },
     "1072": {
       "name": "thermald",
       "cmdline": "/usr/sbin/thermald --systemd --dbus-enable --adaptive",
-      "swap_kb": 692
+      "swap_kb": 688
     },
     "1074": {
       "name": "udisksd",
       "cmdline": "/usr/libexec/udisks2/udisksd",
-      "swap_kb": 1484
+      "swap_kb": 1480
     },
     "1100": {
       "name": "rsyslogd",
       "cmdline": "/usr/sbin/rsyslogd -n -iNONE",
-      "swap_kb": 1652
+      "swap_kb": 1644
     },
     "1104": {
       "name": "kerneloops",
@@ -377,27 +100,27 @@
     "1186": {
       "name": "wpa_supplicant",
       "cmdline": "/usr/sbin/wpa_supplicant -u -s -O DIR=/run/wpa_supplicant GROUP=netdev",
-      "swap_kb": 704
+      "swap_kb": 336
     },
     "1188": {
       "name": "polkitd",
       "cmdline": "/usr/lib/polkit-1/polkitd --no-debug",
-      "swap_kb": 728
+      "swap_kb": 620
     },
     "1315": {
       "name": "lightdm",
       "cmdline": "/usr/sbin/lightdm",
-      "swap_kb": 492
+      "swap_kb": 508
     },
     "1327": {
       "name": "Xorg",
       "cmdline": "/usr/lib/xorg/Xorg -core :0 -seat seat0 -auth /var/run/lightdm/root/:0 -nolisten tcp vt7 -novtswitch",
-      "swap_kb": 61936
+      "swap_kb": 63380
     },
     "1417": {
       "name": "rtkit-daemon",
       "cmdline": "/usr/libexec/rtkit-daemon",
-      "swap_kb": 60
+      "swap_kb": 68
     },
     "1484": {
       "name": "upowerd",
@@ -412,7 +135,7 @@
     "1513": {
       "name": "systemd",
       "cmdline": "/usr/lib/systemd/systemd --user",
-      "swap_kb": 136
+      "swap_kb": 116
     },
     "1514": {
       "name": "(sd-pam)",
@@ -442,12 +165,12 @@
     "1531": {
       "name": "dbus-daemon",
       "cmdline": "/usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only",
-      "swap_kb": 280
+      "swap_kb": 276
     },
     "1559": {
       "name": "xfce4-session",
       "cmdline": "xfce4-session",
-      "swap_kb": 5220
+      "swap_kb": 5200
     },
     "1727": {
       "name": "xdg-desktop-por",
@@ -477,42 +200,42 @@
     "1772": {
       "name": "xfwm4",
       "cmdline": "xfwm4",
-      "swap_kb": 43860
+      "swap_kb": 44036
     },
     "1780": {
       "name": "xdg-desktop-por",
       "cmdline": "/usr/libexec/xdg-desktop-portal-xapp",
-      "swap_kb": 4416
+      "swap_kb": 4480
     },
     "1790": {
       "name": "xfsettingsd",
       "cmdline": "xfsettingsd",
-      "swap_kb": 5324
+      "swap_kb": 5296
     },
     "1802": {
       "name": "xfce4-panel",
       "cmdline": "xfce4-panel",
-      "swap_kb": 4192
+      "swap_kb": 3984
     },
     "1813": {
       "name": "xfdesktop",
       "cmdline": "xfdesktop",
-      "swap_kb": 48228
+      "swap_kb": 48196
     },
     "1818": {
       "name": "panel-1-whisker",
       "cmdline": "/usr/lib/x86_64-linux-gnu/xfce4/panel/wrapper-2.0 /usr/lib/x86_64-linux-gnu/xfce4/panel/plugins/libwhiskermenu.so 1 25165831 whiskermenu Whisker Menu Show a menu to easily access installed applications",
-      "swap_kb": 7744
+      "swap_kb": 7704
     },
     "1822": {
       "name": "panel-8-systray",
       "cmdline": "/usr/lib/x86_64-linux-gnu/xfce4/panel/wrapper-2.0 /usr/lib/x86_64-linux-gnu/xfce4/panel/plugins/libsystray.so 8 25165832 systray Status Tray Plugin Provides status notifier items (application indicators) and legacy systray items",
-      "swap_kb": 4556
+      "swap_kb": 4560
     },
     "1823": {
       "name": "panel-9-notific",
       "cmdline": "/usr/lib/x86_64-linux-gnu/xfce4/panel/wrapper-2.0 /usr/lib/x86_64-linux-gnu/xfce4/panel/plugins/libnotification-plugin.so 9 25165833 notification-plugin Notification Plugin Notification plugin for the Xfce panel",
-      "swap_kb": 6472
+      "swap_kb": 6448
     },
     "1824": {
       "name": "panel-11-power-",
@@ -522,7 +245,7 @@
     "1825": {
       "name": "panel-12-pulsea",
       "cmdline": "/usr/lib/x86_64-linux-gnu/xfce4/panel/wrapper-2.0 /usr/lib/x86_64-linux-gnu/xfce4/panel/plugins/libpulseaudio-plugin.so 12 25165835 pulseaudio PulseAudio Plugin Adjust the audio volume of the PulseAudio sound system",
-      "swap_kb": 6404
+      "swap_kb": 6388
     },
     "1845": {
       "name": "nvidia-prime",
@@ -532,7 +255,7 @@
     "1893": {
       "name": "dconf-service",
       "cmdline": "/usr/libexec/dconf-service",
-      "swap_kb": 336
+      "swap_kb": 344
     },
     "1982": {
       "name": "colord",
@@ -542,12 +265,319 @@
     "3838": {
       "name": "sshd",
       "cmdline": "sshd: /usr/sbin/sshd -D [listener] 0 of 10-100 startups",
-      "swap_kb": 1076
+      "swap_kb": 1088
     },
     "7951": {
       "name": "fwupd",
       "cmdline": "/usr/libexec/fwupd/fwupd",
-      "swap_kb": 3688
+      "swap_kb": 3800
+    },
+    "15795": {
+      "name": "flatpak-session",
+      "cmdline": "/usr/libexec/flatpak-session-helper",
+      "swap_kb": 316
+    },
+    "15800": {
+      "name": "p11-kit-server",
+      "cmdline": "server --sh -n /run/user/1000/.flatpak-helper/pkcs11-flatpak-15795 --provider p11-kit-trust.so pkcs11:model=p11-kit-trust?write-protected=yes",
+      "swap_kb": 212
+    },
+    "16315": {
+      "name": "xfce4-terminal",
+      "cmdline": "xfce4-terminal",
+      "swap_kb": 4924
+    },
+    "16366": {
+      "name": "bash",
+      "cmdline": "bash",
+      "swap_kb": 1252
+    },
+    "16948": {
+      "name": "gamemoded",
+      "cmdline": "/usr/bin/gamemoded",
+      "swap_kb": 188
+    },
+    "21696": {
+      "name": "flatpak-portal",
+      "cmdline": "/usr/libexec/flatpak-portal",
+      "swap_kb": 2004
+    },
+    "26258": {
+      "name": "(udev-worker)",
+      "cmdline": "(udev-worker)",
+      "swap_kb": 724
+    }
+  },
+  "zram_end": {
+    "1": {
+      "name": "systemd",
+      "cmdline": "/sbin/init splash",
+      "swap_kb": 1176
+    },
+    "448": {
+      "name": "systemd-journal",
+      "cmdline": "/usr/lib/systemd/systemd-journald",
+      "swap_kb": 768
+    },
+    "505": {
+      "name": "systemd-udevd",
+      "cmdline": "/usr/lib/systemd/systemd-udevd",
+      "swap_kb": 740
+    },
+    "1000": {
+      "name": "systemd-resolve",
+      "cmdline": "/usr/lib/systemd/systemd-resolved",
+      "swap_kb": 1812
+    },
+    "1001": {
+      "name": "systemd-timesyn",
+      "cmdline": "/usr/lib/systemd/systemd-timesyncd",
+      "swap_kb": 856
+    },
+    "1022": {
+      "name": "accounts-daemon",
+      "cmdline": "/usr/libexec/accounts-daemon",
+      "swap_kb": 356
+    },
+    "1025": {
+      "name": "cron",
+      "cmdline": "/usr/sbin/cron -f -P",
+      "swap_kb": 152
+    },
+    "1028": {
+      "name": "dbus-daemon",
+      "cmdline": "@dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only",
+      "swap_kb": 468
+    },
+    "1033": {
+      "name": "irqbalance",
+      "cmdline": "/usr/sbin/irqbalance",
+      "swap_kb": 200
+    },
+    "1049": {
+      "name": "power-profiles-",
+      "cmdline": "/usr/libexec/power-profiles-daemon",
+      "swap_kb": 508
+    },
+    "1067": {
+      "name": "nvidia-persiste",
+      "cmdline": "/usr/bin/nvidia-persistenced --user nvidia-persistenced --no-persistence-mode --verbose",
+      "swap_kb": 68
+    },
+    "1069": {
+      "name": "switcheroo-cont",
+      "cmdline": "/usr/libexec/switcheroo-control",
+      "swap_kb": 536
+    },
+    "1071": {
+      "name": "systemd-logind",
+      "cmdline": "/usr/lib/systemd/systemd-logind",
+      "swap_kb": 812
+    },
+    "1072": {
+      "name": "thermald",
+      "cmdline": "/usr/sbin/thermald --systemd --dbus-enable --adaptive",
+      "swap_kb": 688
+    },
+    "1074": {
+      "name": "udisksd",
+      "cmdline": "/usr/libexec/udisks2/udisksd",
+      "swap_kb": 1484
+    },
+    "1100": {
+      "name": "rsyslogd",
+      "cmdline": "/usr/sbin/rsyslogd -n -iNONE",
+      "swap_kb": 1652
+    },
+    "1104": {
+      "name": "kerneloops",
+      "cmdline": "/usr/sbin/kerneloops --test",
+      "swap_kb": 372
+    },
+    "1107": {
+      "name": "kerneloops",
+      "cmdline": "/usr/sbin/kerneloops",
+      "swap_kb": 376
+    },
+    "1185": {
+      "name": "NetworkManager",
+      "cmdline": "/usr/sbin/NetworkManager --no-daemon",
+      "swap_kb": 812
+    },
+    "1186": {
+      "name": "wpa_supplicant",
+      "cmdline": "/usr/sbin/wpa_supplicant -u -s -O DIR=/run/wpa_supplicant GROUP=netdev",
+      "swap_kb": 344
+    },
+    "1188": {
+      "name": "polkitd",
+      "cmdline": "/usr/lib/polkit-1/polkitd --no-debug",
+      "swap_kb": 620
+    },
+    "1315": {
+      "name": "lightdm",
+      "cmdline": "/usr/sbin/lightdm",
+      "swap_kb": 508
+    },
+    "1327": {
+      "name": "Xorg",
+      "cmdline": "/usr/lib/xorg/Xorg -core :0 -seat seat0 -auth /var/run/lightdm/root/:0 -nolisten tcp vt7 -novtswitch",
+      "swap_kb": 47872
+    },
+    "1417": {
+      "name": "rtkit-daemon",
+      "cmdline": "/usr/libexec/rtkit-daemon",
+      "swap_kb": 68
+    },
+    "1484": {
+      "name": "upowerd",
+      "cmdline": "/usr/libexec/upowerd",
+      "swap_kb": 1228
+    },
+    "1493": {
+      "name": "lightdm",
+      "cmdline": "lightdm --session-child 14 21",
+      "swap_kb": 1168
+    },
+    "1513": {
+      "name": "systemd",
+      "cmdline": "/usr/lib/systemd/systemd --user",
+      "swap_kb": 540
+    },
+    "1514": {
+      "name": "(sd-pam)",
+      "cmdline": "(sd-pam)",
+      "swap_kb": 1636
+    },
+    "1523": {
+      "name": "pipewire",
+      "cmdline": "/usr/bin/pipewire",
+      "swap_kb": 2232
+    },
+    "1524": {
+      "name": "pipewire",
+      "cmdline": "/usr/bin/pipewire -c filter-chain.conf",
+      "swap_kb": 632
+    },
+    "1526": {
+      "name": "wireplumber",
+      "cmdline": "/usr/bin/wireplumber",
+      "swap_kb": 5684
+    },
+    "1527": {
+      "name": "pipewire-pulse",
+      "cmdline": "/usr/bin/pipewire-pulse",
+      "swap_kb": 1024
+    },
+    "1531": {
+      "name": "dbus-daemon",
+      "cmdline": "/usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only",
+      "swap_kb": 292
+    },
+    "1559": {
+      "name": "xfce4-session",
+      "cmdline": "xfce4-session",
+      "swap_kb": 5236
+    },
+    "1727": {
+      "name": "xdg-desktop-por",
+      "cmdline": "/usr/libexec/xdg-desktop-portal",
+      "swap_kb": 1140
+    },
+    "1738": {
+      "name": "xdg-permission-",
+      "cmdline": "/usr/libexec/xdg-permission-store",
+      "swap_kb": 240
+    },
+    "1745": {
+      "name": "xdg-document-po",
+      "cmdline": "/usr/libexec/xdg-document-portal",
+      "swap_kb": 352
+    },
+    "1754": {
+      "name": "fusermount3",
+      "cmdline": "fusermount3 -o rw,nosuid,nodev,fsname=portal,auto_unmount,subtype=portal -- /run/user/1000/doc",
+      "swap_kb": 116
+    },
+    "1760": {
+      "name": "xdg-desktop-por",
+      "cmdline": "/usr/libexec/xdg-desktop-portal-gtk",
+      "swap_kb": 4636
+    },
+    "1772": {
+      "name": "xfwm4",
+      "cmdline": "xfwm4",
+      "swap_kb": 39612
+    },
+    "1780": {
+      "name": "xdg-desktop-por",
+      "cmdline": "/usr/libexec/xdg-desktop-portal-xapp",
+      "swap_kb": 4396
+    },
+    "1790": {
+      "name": "xfsettingsd",
+      "cmdline": "xfsettingsd",
+      "swap_kb": 5320
+    },
+    "1802": {
+      "name": "xfce4-panel",
+      "cmdline": "xfce4-panel",
+      "swap_kb": 4156
+    },
+    "1813": {
+      "name": "xfdesktop",
+      "cmdline": "xfdesktop",
+      "swap_kb": 38884
+    },
+    "1818": {
+      "name": "panel-1-whisker",
+      "cmdline": "/usr/lib/x86_64-linux-gnu/xfce4/panel/wrapper-2.0 /usr/lib/x86_64-linux-gnu/xfce4/panel/plugins/libwhiskermenu.so 1 25165831 whiskermenu Whisker Menu Show a menu to easily access installed applications",
+      "swap_kb": 7768
+    },
+    "1822": {
+      "name": "panel-8-systray",
+      "cmdline": "/usr/lib/x86_64-linux-gnu/xfce4/panel/wrapper-2.0 /usr/lib/x86_64-linux-gnu/xfce4/panel/plugins/libsystray.so 8 25165832 systray Status Tray Plugin Provides status notifier items (application indicators) and legacy systray items",
+      "swap_kb": 4356
+    },
+    "1823": {
+      "name": "panel-9-notific",
+      "cmdline": "/usr/lib/x86_64-linux-gnu/xfce4/panel/wrapper-2.0 /usr/lib/x86_64-linux-gnu/xfce4/panel/plugins/libnotification-plugin.so 9 25165833 notification-plugin Notification Plugin Notification plugin for the Xfce panel",
+      "swap_kb": 6472
+    },
+    "1824": {
+      "name": "panel-11-power-",
+      "cmdline": "/usr/lib/x86_64-linux-gnu/xfce4/panel/wrapper-2.0 /usr/lib/x86_64-linux-gnu/xfce4/panel/plugins/libxfce4powermanager.so 11 25165834 power-manager-plugin Power Manager Plugin Display the battery levels of your devices and control the brightness of your display",
+      "swap_kb": 6536
+    },
+    "1825": {
+      "name": "panel-12-pulsea",
+      "cmdline": "/usr/lib/x86_64-linux-gnu/xfce4/panel/wrapper-2.0 /usr/lib/x86_64-linux-gnu/xfce4/panel/plugins/libpulseaudio-plugin.so 12 25165835 pulseaudio PulseAudio Plugin Adjust the audio volume of the PulseAudio sound system",
+      "swap_kb": 6396
+    },
+    "1845": {
+      "name": "nvidia-prime",
+      "cmdline": "/usr/bin/python3 /usr/lib/nvidia-prime-applet/nvidia-prime",
+      "swap_kb": 15836
+    },
+    "1893": {
+      "name": "dconf-service",
+      "cmdline": "/usr/libexec/dconf-service",
+      "swap_kb": 344
+    },
+    "1982": {
+      "name": "colord",
+      "cmdline": "/usr/libexec/colord",
+      "swap_kb": 4404
+    },
+    "3838": {
+      "name": "sshd",
+      "cmdline": "sshd: /usr/sbin/sshd -D [listener] 0 of 10-100 startups",
+      "swap_kb": 952
+    },
+    "7951": {
+      "name": "fwupd",
+      "cmdline": "/usr/libexec/fwupd/fwupd",
+      "swap_kb": 4372
     },
     "15795": {
       "name": "flatpak-session",
@@ -562,224 +592,249 @@
     "16315": {
       "name": "xfce4-terminal",
       "cmdline": "xfce4-terminal",
-      "swap_kb": 5332
+      "swap_kb": 5380
     },
     "16366": {
       "name": "bash",
       "cmdline": "bash",
-      "swap_kb": 1744
+      "swap_kb": 1648
     },
     "16948": {
       "name": "gamemoded",
       "cmdline": "/usr/bin/gamemoded",
       "swap_kb": 176
     },
-    "21579": {
+    "21696": {
+      "name": "flatpak-portal",
+      "cmdline": "/usr/libexec/flatpak-portal",
+      "swap_kb": 1748
+    },
+    "26221": {
       "name": "bash",
       "cmdline": "bash ./launch_rocket_league.sh",
-      "swap_kb": 164
+      "swap_kb": 156
     },
-    "21640": {
+    "26286": {
       "name": "python3",
       "cmdline": "/usr/bin/python3 /home/darian/Documents/RocketMode/game_logger.py --daemon",
-      "swap_kb": 4376
+      "swap_kb": 4400
     },
-    "21649": {
+    "26295": {
       "name": "gvfsd",
       "cmdline": "/usr/libexec/gvfsd",
-      "swap_kb": 768
+      "swap_kb": 192
     },
-    "21657": {
-      "name": "gvfsd-fuse",
-      "cmdline": "/usr/libexec/gvfsd-fuse /run/user/1000/gvfs -f",
-      "swap_kb": 724
-    },
-    "21665": {
+    "26311": {
       "name": "at-spi-bus-laun",
       "cmdline": "/usr/libexec/at-spi-bus-launcher",
-      "swap_kb": 800
+      "swap_kb": 420
     },
-    "21672": {
-      "name": "dbus-daemon",
-      "cmdline": "/usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 11 --address=unix:path=/run/user/1000/at-spi/bus_0",
-      "swap_kb": 276
-    },
-    "21679": {
+    "26325": {
       "name": "bwrap",
-      "cmdline": "bwrap --args 47 -- heroic-run --launch Sugar",
-      "swap_kb": 264
+      "cmdline": "bwrap --args 48 -- heroic-run --launch Sugar",
+      "swap_kb": 188
     },
-    "21680": {
+    "26326": {
       "name": "heroic-run",
       "cmdline": "/bin/sh /app/bin/heroic-run --launch Sugar",
       "swap_kb": 316
     },
-    "21691": {
+    "26337": {
       "name": "heroic",
       "cmdline": "/app/bin/heroic/heroic --launch Sugar",
-      "swap_kb": 14472
+      "swap_kb": 20008
     },
-    "21696": {
-      "name": "flatpak-portal",
-      "cmdline": "/usr/libexec/flatpak-portal",
-      "swap_kb": 2044
-    },
-    "21709": {
+    "26356": {
       "name": "heroic",
       "cmdline": "/app/bin/heroic/heroic --type=zygote --no-zygote-sandbox",
-      "swap_kb": 9768
+      "swap_kb": 8560
     },
-    "21782": {
+    "26403": {
+      "name": "sshd",
+      "cmdline": "sshd: darian [priv]",
+      "swap_kb": 64
+    },
+    "26427": {
+      "name": "sshd",
+      "cmdline": "sshd: darian@pts/1",
+      "swap_kb": 764
+    },
+    "26431": {
+      "name": "bash",
+      "cmdline": "-bash",
+      "swap_kb": 1600
+    },
+    "26457": {
       "name": "bwrap",
       "cmdline": "bwrap --args 46 -- /app/bin/zypak-helper child - /app/bin/heroic/heroic --type=zygote",
-      "swap_kb": 192
+      "swap_kb": 144
     },
-    "21783": {
+    "26458": {
       "name": "heroic",
       "cmdline": "/app/bin/heroic/heroic --type=zygote",
-      "swap_kb": 9644
+      "swap_kb": 2344
     },
-    "21819": {
+    "26489": {
       "name": "heroic",
       "cmdline": "/app/bin/heroic/heroic --type=zygote --no-zygote-sandbox",
-      "swap_kb": 81176
+      "swap_kb": 66504
     },
-    "21838": {
+    "26510": {
       "name": "heroic",
-      "cmdline": "/proc/self/exe --type=utility --utility-sub-type=network.mojom.NetworkService --lang=en-US --service-sandbox-type=none --enable-crash-reporter=a73c5469-6ab9-469e-ab46-0b82b5e42347,no_channel --user-data-dir=/home/darian/.var/app/com.heroicgameslauncher.hgl/config/heroic --shared-files=v8_context_snapshot_data:100 --field-trial-handle=3,i,2706857557879764611,4584468675466105288,262144 --enable-features=PdfUseShowSaveFilePicker --disable-features=DropInputEventsWhilePaintHolding,LocalNetworkAccessChecks,ScreenAIOCREnabled,SpareRendererForSitePerProcess,TraceSiteInstanceGetProcessCreation --variations-seed-version --pseudonymization-salt-handle=7,i,8465189742790784877,317787737656706542,4 --trace-process-track-uuid=3190708989122997041",
-      "swap_kb": 10032
+      "cmdline": "/proc/self/exe --type=utility --utility-sub-type=network.mojom.NetworkService --lang=en-US --service-sandbox-type=none --enable-crash-reporter=a73c5469-6ab9-469e-ab46-0b82b5e42347,no_channel --user-data-dir=/home/darian/.var/app/com.heroicgameslauncher.hgl/config/heroic --shared-files=v8_context_snapshot_data:100 --field-trial-handle=3,i,12898258587564193612,15757691467831092033,262144 --enable-features=PdfUseShowSaveFilePicker --disable-features=DropInputEventsWhilePaintHolding,LocalNetworkAccessChecks,ScreenAIOCREnabled,SpareRendererForSitePerProcess,TraceSiteInstanceGetProcessCreation --variations-seed-version --pseudonymization-salt-handle=7,i,13276214767221502374,9491769604380076472,4 --trace-process-track-uuid=3190708989122997041",
+      "swap_kb": 9732
     },
-    "21862": {
+    "26537": {
       "name": "heroic",
-      "cmdline": "/proc/self/exe --type=renderer --enable-crash-reporter=a73c5469-6ab9-469e-ab46-0b82b5e42347,no_channel --user-data-dir=/home/darian/.var/app/com.heroicgameslauncher.hgl/config/heroic --app-path=/app/bin/heroic/resources/app.asar --no-sandbox --no-zygote --ozone-platform=x11 --lang=en-US --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=4 --time-ticks-at-unix-epoch=-1779936235034551 --launch-time-ticks=45643314841 --shared-files=v8_context_snapshot_data:100 --field-trial-handle=3,i,2706857557879764611,4584468675466105288,262144 --enable-features=PdfUseShowSaveFilePicker --disable-features=DropInputEventsWhilePaintHolding,LocalNetworkAccessChecks,ScreenAIOCREnabled,SpareRendererForSitePerProcess,TraceSiteInstanceGetProcessCreation --variations-seed-version --pseudonymization-salt-handle=7,i,8465189742790784877,317787737656706542,4 --trace-process-track-uuid=3190708990060038890",
-      "swap_kb": 73748
+      "cmdline": "/proc/self/exe --type=renderer --enable-crash-reporter=a73c5469-6ab9-469e-ab46-0b82b5e42347,no_channel --user-data-dir=/home/darian/.var/app/com.heroicgameslauncher.hgl/config/heroic --app-path=/app/bin/heroic/resources/app.asar --no-sandbox --no-zygote --ozone-platform=x11 --lang=en-US --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=4 --time-ticks-at-unix-epoch=-1779936235034551 --launch-time-ticks=49338070585 --shared-files=v8_context_snapshot_data:100 --field-trial-handle=3,i,12898258587564193612,15757691467831092033,262144 --enable-features=PdfUseShowSaveFilePicker --disable-features=DropInputEventsWhilePaintHolding,LocalNetworkAccessChecks,ScreenAIOCREnabled,SpareRendererForSitePerProcess,TraceSiteInstanceGetProcessCreation --variations-seed-version --pseudonymization-salt-handle=7,i,13276214767221502374,9491769604380076472,4 --trace-process-track-uuid=3190708990060038890",
+      "swap_kb": 62036
     },
-    "21878": {
-      "name": "at-spi2-registr",
-      "cmdline": "/usr/libexec/at-spi2-registryd --use-gnome-session",
-      "swap_kb": 648
+    "26556": {
+      "name": "git",
+      "cmdline": "git push",
+      "swap_kb": 268
     },
-    "21915": {
+    "26557": {
+      "name": "git",
+      "cmdline": "/usr/lib/git-core/git remote-https origin https://github.com/darianmavgo/linuxmintrocketleague.git",
+      "swap_kb": 224
+    },
+    "26558": {
+      "name": "git-remote-http",
+      "cmdline": "/usr/lib/git-core/git-remote-https origin https://github.com/darianmavgo/linuxmintrocketleague.git",
+      "swap_kb": 6092
+    },
+    "26589": {
+      "name": "git",
+      "cmdline": "/usr/lib/git-core/git send-pack --stateless-rpc --helper-status --thin --progress https://github.com/darianmavgo/linuxmintrocketleague.git/ --stdin",
+      "swap_kb": 292
+    },
+    "26591": {
+      "name": "git",
+      "cmdline": "/usr/lib/git-core/git pack-objects --all-progress-implied --revs --stdout --thin --delta-base-offset --progress",
+      "swap_kb": 1980
+    },
+    "26649": {
       "name": "heroic",
       "cmdline": "/app/bin/heroic/heroic --type=zygote --no-zygote-sandbox",
-      "swap_kb": 24508
+      "swap_kb": 23064
     },
-    "22406": {
+    "27011": {
       "name": "bwrap",
-      "cmdline": "bwrap --args 41 -- /usr/lib/pressure-vessel/from-host/libexec/steam-runtime-tools-0/pv-adverb --prefix=/usr/lib/pressure-vessel/from-host --generate-locales --fd 11 --regenerate-ld.so-cache /run/user/1000/pressure-vessel/ldso --add-ld.so-path /usr/lib/pressure-vessel/overrides/lib/x86_64-linux-gnu --add-ld.so-path /usr/lib/pressure-vessel/overrides/lib/i386-linux-gnu --set-ld-library-path /usr/lib/pressure-vessel/overrides/lib/x86_64-linux-gnu/aliases:/usr/lib/pressure-vessel/overrides/lib/i386-linux-gnu/aliases --overrides-path /usr/lib/pressure-vessel/overrides --assign-fd=1=3 --assign-fd=2=4 --ld-preload=/run/parent/app/lib/libgamemodeauto.so.0:abi=x86_64-linux-gnu --ld-preload=/run/parent/app/lib32/libgamemodeauto.so.0:abi=i386-linux-gnu -- /home/darian/.local/share/umu/umu-shim /home/darian/.var/app/com.heroicgameslauncher.hgl/config/heroic/tools/proton/GE-Proton9-20/proton waitforexitandrun /home/darian/Games/Heroic/rocketleague/Binaries/Win64/Launcher.exe -AUTH_LOGIN=unused -AUTH_PASSWORD=5f14b86b19e340c59dc4e91a3724be7f -AUTH_TYPE=exchangecode -epicapp=Sugar -epicenv=Prod -EpicPortal -epicusername=Darian311 -epicuserid=f4b4bf4a594249b5a94d32718d6e3e28 -epiclocale=en -epicsandboxid=9773aa1aa54f4f7b80e44bef04986cea",
-      "swap_kb": 264
+      "cmdline": "bwrap --args 41 -- /usr/lib/pressure-vessel/from-host/libexec/steam-runtime-tools-0/pv-adverb --prefix=/usr/lib/pressure-vessel/from-host --generate-locales --fd 12 --regenerate-ld.so-cache /run/user/1000/pressure-vessel/ldso --add-ld.so-path /usr/lib/pressure-vessel/overrides/lib/x86_64-linux-gnu --add-ld.so-path /usr/lib/pressure-vessel/overrides/lib/i386-linux-gnu --set-ld-library-path /usr/lib/pressure-vessel/overrides/lib/x86_64-linux-gnu/aliases:/usr/lib/pressure-vessel/overrides/lib/i386-linux-gnu/aliases --overrides-path /usr/lib/pressure-vessel/overrides --assign-fd=1=3 --assign-fd=2=4 --ld-preload=/run/parent/app/lib/libgamemodeauto.so.0:abi=x86_64-linux-gnu --ld-preload=/run/parent/app/lib32/libgamemodeauto.so.0:abi=i386-linux-gnu -- /home/darian/.local/share/umu/umu-shim /home/darian/.var/app/com.heroicgameslauncher.hgl/config/heroic/tools/proton/GE-Proton9-20/proton waitforexitandrun /home/darian/Games/Heroic/rocketleague/Binaries/Win64/Launcher.exe -AUTH_LOGIN=unused -AUTH_PASSWORD=e5605a4d0e4b46d8af188dfafd83f07b -AUTH_TYPE=exchangecode -epicapp=Sugar -epicenv=Prod -EpicPortal -epicusername=Darian311 -epicuserid=f4b4bf4a594249b5a94d32718d6e3e28 -epiclocale=en -epicsandboxid=9773aa1aa54f4f7b80e44bef04986cea",
+      "swap_kb": 268
     },
-    "22411": {
+    "27016": {
       "name": "bwrap",
-      "cmdline": "bwrap --args 37 -- xdg-dbus-proxy --args=41",
-      "swap_kb": 140
+      "cmdline": "bwrap --args 39 -- xdg-dbus-proxy --args=41",
+      "swap_kb": 136
     },
-    "22412": {
+    "27017": {
       "name": "xdg-dbus-proxy",
       "cmdline": "xdg-dbus-proxy --args=41",
-      "swap_kb": 252
+      "swap_kb": 248
     },
-    "22416": {
+    "27021": {
       "name": "bwrap",
-      "cmdline": "bwrap --args 41 -- /usr/lib/pressure-vessel/from-host/libexec/steam-runtime-tools-0/pv-adverb --prefix=/usr/lib/pressure-vessel/from-host --generate-locales --fd 11 --regenerate-ld.so-cache /run/user/1000/pressure-vessel/ldso --add-ld.so-path /usr/lib/pressure-vessel/overrides/lib/x86_64-linux-gnu --add-ld.so-path /usr/lib/pressure-vessel/overrides/lib/i386-linux-gnu --set-ld-library-path /usr/lib/pressure-vessel/overrides/lib/x86_64-linux-gnu/aliases:/usr/lib/pressure-vessel/overrides/lib/i386-linux-gnu/aliases --overrides-path /usr/lib/pressure-vessel/overrides --assign-fd=1=3 --assign-fd=2=4 --ld-preload=/run/parent/app/lib/libgamemodeauto.so.0:abi=x86_64-linux-gnu --ld-preload=/run/parent/app/lib32/libgamemodeauto.so.0:abi=i386-linux-gnu -- /home/darian/.local/share/umu/umu-shim /home/darian/.var/app/com.heroicgameslauncher.hgl/config/heroic/tools/proton/GE-Proton9-20/proton waitforexitandrun /home/darian/Games/Heroic/rocketleague/Binaries/Win64/Launcher.exe -AUTH_LOGIN=unused -AUTH_PASSWORD=5f14b86b19e340c59dc4e91a3724be7f -AUTH_TYPE=exchangecode -epicapp=Sugar -epicenv=Prod -EpicPortal -epicusername=Darian311 -epicuserid=f4b4bf4a594249b5a94d32718d6e3e28 -epiclocale=en -epicsandboxid=9773aa1aa54f4f7b80e44bef04986cea",
+      "cmdline": "bwrap --args 41 -- /usr/lib/pressure-vessel/from-host/libexec/steam-runtime-tools-0/pv-adverb --prefix=/usr/lib/pressure-vessel/from-host --generate-locales --fd 12 --regenerate-ld.so-cache /run/user/1000/pressure-vessel/ldso --add-ld.so-path /usr/lib/pressure-vessel/overrides/lib/x86_64-linux-gnu --add-ld.so-path /usr/lib/pressure-vessel/overrides/lib/i386-linux-gnu --set-ld-library-path /usr/lib/pressure-vessel/overrides/lib/x86_64-linux-gnu/aliases:/usr/lib/pressure-vessel/overrides/lib/i386-linux-gnu/aliases --overrides-path /usr/lib/pressure-vessel/overrides --assign-fd=1=3 --assign-fd=2=4 --ld-preload=/run/parent/app/lib/libgamemodeauto.so.0:abi=x86_64-linux-gnu --ld-preload=/run/parent/app/lib32/libgamemodeauto.so.0:abi=i386-linux-gnu -- /home/darian/.local/share/umu/umu-shim /home/darian/.var/app/com.heroicgameslauncher.hgl/config/heroic/tools/proton/GE-Proton9-20/proton waitforexitandrun /home/darian/Games/Heroic/rocketleague/Binaries/Win64/Launcher.exe -AUTH_LOGIN=unused -AUTH_PASSWORD=e5605a4d0e4b46d8af188dfafd83f07b -AUTH_TYPE=exchangecode -epicapp=Sugar -epicenv=Prod -EpicPortal -epicusername=Darian311 -epicuserid=f4b4bf4a594249b5a94d32718d6e3e28 -epiclocale=en -epicsandboxid=9773aa1aa54f4f7b80e44bef04986cea",
       "swap_kb": 316
     },
-    "22417": {
+    "27022": {
       "name": "pv-adverb",
-      "cmdline": "/usr/lib/pressure-vessel/from-host/libexec/steam-runtime-tools-0/pv-adverb --prefix=/usr/lib/pressure-vessel/from-host --generate-locales --fd 11 --regenerate-ld.so-cache /run/user/1000/pressure-vessel/ldso --add-ld.so-path /usr/lib/pressure-vessel/overrides/lib/x86_64-linux-gnu --add-ld.so-path /usr/lib/pressure-vessel/overrides/lib/i386-linux-gnu --set-ld-library-path /usr/lib/pressure-vessel/overrides/lib/x86_64-linux-gnu/aliases:/usr/lib/pressure-vessel/overrides/lib/i386-linux-gnu/aliases --overrides-path /usr/lib/pressure-vessel/overrides --assign-fd=1=3 --assign-fd=2=4 --ld-preload=/run/parent/app/lib/libgamemodeauto.so.0:abi=x86_64-linux-gnu --ld-preload=/run/parent/app/lib32/libgamemodeauto.so.0:abi=i386-linux-gnu -- /home/darian/.local/share/umu/umu-shim /home/darian/.var/app/com.heroicgameslauncher.hgl/config/heroic/tools/proton/GE-Proton9-20/proton waitforexitandrun /home/darian/Games/Heroic/rocketleague/Binaries/Win64/Launcher.exe -AUTH_LOGIN=unused -AUTH_PASSWORD=5f14b86b19e340c59dc4e91a3724be7f -AUTH_TYPE=exchangecode -epicapp=Sugar -epicenv=Prod -EpicPortal -epicusername=Darian311 -epicuserid=f4b4bf4a594249b5a94d32718d6e3e28 -epiclocale=en -epicsandboxid=9773aa1aa54f4f7b80e44bef04986cea",
+      "cmdline": "/usr/lib/pressure-vessel/from-host/libexec/steam-runtime-tools-0/pv-adverb --prefix=/usr/lib/pressure-vessel/from-host --generate-locales --fd 12 --regenerate-ld.so-cache /run/user/1000/pressure-vessel/ldso --add-ld.so-path /usr/lib/pressure-vessel/overrides/lib/x86_64-linux-gnu --add-ld.so-path /usr/lib/pressure-vessel/overrides/lib/i386-linux-gnu --set-ld-library-path /usr/lib/pressure-vessel/overrides/lib/x86_64-linux-gnu/aliases:/usr/lib/pressure-vessel/overrides/lib/i386-linux-gnu/aliases --overrides-path /usr/lib/pressure-vessel/overrides --assign-fd=1=3 --assign-fd=2=4 --ld-preload=/run/parent/app/lib/libgamemodeauto.so.0:abi=x86_64-linux-gnu --ld-preload=/run/parent/app/lib32/libgamemodeauto.so.0:abi=i386-linux-gnu -- /home/darian/.local/share/umu/umu-shim /home/darian/.var/app/com.heroicgameslauncher.hgl/config/heroic/tools/proton/GE-Proton9-20/proton waitforexitandrun /home/darian/Games/Heroic/rocketleague/Binaries/Win64/Launcher.exe -AUTH_LOGIN=unused -AUTH_PASSWORD=e5605a4d0e4b46d8af188dfafd83f07b -AUTH_TYPE=exchangecode -epicapp=Sugar -epicenv=Prod -EpicPortal -epicusername=Darian311 -epicuserid=f4b4bf4a594249b5a94d32718d6e3e28 -epiclocale=en -epicsandboxid=9773aa1aa54f4f7b80e44bef04986cea",
       "swap_kb": 448
     },
-    "22455": {
+    "27056": {
       "name": "wineserver",
       "cmdline": "/home/darian/.var/app/com.heroicgameslauncher.hgl/config/heroic/tools/proton/GE-Proton9-20/files/bin/wineserver",
-      "swap_kb": 12984
+      "swap_kb": 104
     },
-    "22459": {
+    "27060": {
       "name": "services.exe",
       "cmdline": "C:\\windows\\system32\\services.exe",
-      "swap_kb": 11148
+      "swap_kb": 11144
     },
-    "22462": {
+    "27063": {
       "name": "svchost.exe",
       "cmdline": "C:\\windows\\system32\\svchost.exe -k LocalServiceNetworkRestricted",
       "swap_kb": 3748
     },
-    "22468": {
+    "27069": {
       "name": "winedevice.exe",
       "cmdline": "C:\\windows\\system32\\winedevice.exe",
-      "swap_kb": 13096
+      "swap_kb": 9720
     },
-    "22476": {
+    "27081": {
       "name": "winedevice.exe",
       "cmdline": "C:\\windows\\system32\\winedevice.exe",
-      "swap_kb": 13932
+      "swap_kb": 13888
     },
-    "22488": {
+    "27094": {
       "name": "plugplay.exe",
       "cmdline": "C:\\windows\\system32\\plugplay.exe",
-      "swap_kb": 7500
+      "swap_kb": 5228
     },
-    "22528": {
+    "27134": {
       "name": "rpcss.exe",
       "cmdline": "C:\\windows\\system32\\rpcss.exe",
       "swap_kb": 7816
     },
-    "22553": {
+    "27159": {
       "name": "RocketLeague.ex",
-      "cmdline": "S:\\Games\\Heroic\\rocketleague\\Binaries\\Win64\\RocketLeague.exe -AUTH_LOGIN=unused -AUTH_PASSWORD=5f14b86b19e340c59dc4e91a3724be7f -AUTH_TYPE=exchangecode -epicapp=Sugar -epicenv=Prod -EpicPortal -epicusername=Darian311 -epicuserid=f4b4bf4a594249b5a94d32718d6e3e28 -epiclocale=en -epicsandboxid=9773aa1aa54f4f7b80e44bef04986cea",
-      "swap_kb": 3428720
+      "cmdline": "S:\\Games\\Heroic\\rocketleague\\Binaries\\Win64\\RocketLeague.exe -AUTH_LOGIN=unused -AUTH_PASSWORD=e5605a4d0e4b46d8af188dfafd83f07b -AUTH_TYPE=exchangecode -epicapp=Sugar -epicenv=Prod -EpicPortal -epicusername=Darian311 -epicuserid=f4b4bf4a594249b5a94d32718d6e3e28 -epiclocale=en -epicsandboxid=9773aa1aa54f4f7b80e44bef04986cea",
+      "swap_kb": 1300668
     },
-    "22587": {
+    "27193": {
       "name": "explorer.exe",
       "cmdline": "C:\\windows\\system32\\explorer.exe /desktop",
-      "swap_kb": 11196
+      "swap_kb": 25876
     },
-    "22596": {
+    "27203": {
       "name": "tabtip.exe",
       "cmdline": "C:\\windows\\system32\\tabtip.exe",
-      "swap_kb": 6192
-    },
-    "24012": {
-      "name": "sshd",
-      "cmdline": "sshd: darian [priv]",
-      "swap_kb": 1028
-    },
-    "24046": {
-      "name": "sshd",
-      "cmdline": "sshd: darian@pts/1",
-      "swap_kb": 784
+      "swap_kb": 4920
     }
   },
   "zram_peaks": {
     "1": {
       "name": "systemd",
       "cmdline": "/sbin/init splash",
-      "peak_kb": 1192
+      "peak_kb": 1176
     },
     "448": {
       "name": "systemd-journal",
       "cmdline": "/usr/lib/systemd/systemd-journald",
-      "peak_kb": 888
+      "peak_kb": 756
     },
     "505": {
       "name": "systemd-udevd",
       "cmdline": "/usr/lib/systemd/systemd-udevd",
-      "peak_kb": 2844
+      "peak_kb": 740
     },
     "1000": {
       "name": "systemd-resolve",
       "cmdline": "/usr/lib/systemd/systemd-resolved",
-      "peak_kb": 1852
+      "peak_kb": 1840
     },
     "1001": {
       "name": "systemd-timesyn",
       "cmdline": "/usr/lib/systemd/systemd-timesyncd",
       "peak_kb": 856
     },
+    "1022": {
+      "name": "accounts-daemon",
+      "cmdline": "/usr/libexec/accounts-daemon",
+      "peak_kb": 364
+    },
+    "1025": {
+      "name": "cron",
+      "cmdline": "/usr/sbin/cron -f -P",
+      "peak_kb": 152
+    },
     "1028": {
       "name": "dbus-daemon",
       "cmdline": "@dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only",
-      "peak_kb": 496
+      "peak_kb": 468
     },
     "1033": {
       "name": "irqbalance",
@@ -799,17 +854,22 @@
     "1069": {
       "name": "switcheroo-cont",
       "cmdline": "/usr/libexec/switcheroo-control",
-      "peak_kb": 508
+      "peak_kb": 536
+    },
+    "1071": {
+      "name": "systemd-logind",
+      "cmdline": "/usr/lib/systemd/systemd-logind",
+      "peak_kb": 812
     },
     "1072": {
       "name": "thermald",
       "cmdline": "/usr/sbin/thermald --systemd --dbus-enable --adaptive",
-      "peak_kb": 692
+      "peak_kb": 688
     },
     "1074": {
       "name": "udisksd",
       "cmdline": "/usr/libexec/udisks2/udisksd",
-      "peak_kb": 1544
+      "peak_kb": 1484
     },
     "1100": {
       "name": "rsyslogd",
@@ -826,80 +886,90 @@
       "cmdline": "/usr/sbin/kerneloops",
       "peak_kb": 376
     },
+    "1185": {
+      "name": "NetworkManager",
+      "cmdline": "/usr/sbin/NetworkManager --no-daemon",
+      "peak_kb": 812
+    },
     "1186": {
       "name": "wpa_supplicant",
       "cmdline": "/usr/sbin/wpa_supplicant -u -s -O DIR=/run/wpa_supplicant GROUP=netdev",
-      "peak_kb": 708
+      "peak_kb": 344
+    },
+    "1188": {
+      "name": "polkitd",
+      "cmdline": "/usr/lib/polkit-1/polkitd --no-debug",
+      "peak_kb": 620
     },
     "1315": {
       "name": "lightdm",
       "cmdline": "/usr/sbin/lightdm",
-      "peak_kb": 496
+      "peak_kb": 508
     },
     "1327": {
       "name": "Xorg",
       "cmdline": "/usr/lib/xorg/Xorg -core :0 -seat seat0 -auth /var/run/lightdm/root/:0 -nolisten tcp vt7 -novtswitch",
-      "peak_kb": 61996
+      "peak_kb": 63380
     },
     "1417": {
       "name": "rtkit-daemon",
       "cmdline": "/usr/libexec/rtkit-daemon",
-      "peak_kb": 60
+      "peak_kb": 68
     },
     "1484": {
       "name": "upowerd",
       "cmdline": "/usr/libexec/upowerd",
-      "peak_kb": 1212
+      "peak_kb": 1228
     },
     "1493": {
       "name": "lightdm",
       "cmdline": "lightdm --session-child 14 21",
-      "peak_kb": 1260
+      "peak_kb": 1172
     },
     "1513": {
       "name": "systemd",
       "cmdline": "/usr/lib/systemd/systemd --user",
-      "peak_kb": 116
+      "peak_kb": 556
     },
     "1514": {
       "name": "(sd-pam)",
       "cmdline": "(sd-pam)",
-      "peak_kb": 756
+      "peak_kb": 1636
     },
     "1523": {
       "name": "pipewire",
       "cmdline": "/usr/bin/pipewire",
-      "peak_kb": 2648
+      "peak_kb": 2464
     },
     "1524": {
       "name": "pipewire",
       "cmdline": "/usr/bin/pipewire -c filter-chain.conf",
-      "peak_kb": 580
+      "peak_kb": 632
     },
     "1526": {
       "name": "wireplumber",
       "cmdline": "/usr/bin/wireplumber",
-      "peak_kb": 5128
+      "peak_kb": 5692
     },
     "1527": {
       "name": "pipewire-pulse",
       "cmdline": "/usr/bin/pipewire-pulse",
-      "peak_kb": 1216
+      "peak_kb": 1208
     },
     "1531": {
       "name": "dbus-daemon",
       "cmdline": "/usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only",
-      "peak_kb": 312
+      "peak_kb": 292
     },
     "1559": {
       "name": "xfce4-session",
       "cmdline": "xfce4-session",
-      "peak_kb": 5660
+      "peak_kb": 5420
     },
     "1727": {
       "name": "xdg-desktop-por",
       "cmdline": "/usr/libexec/xdg-desktop-portal",
-      "peak_kb": 1180
+      "peak_kb": 1176
     },
     "1738": {
       "name": "xdg-permission-",
@@ -924,62 +994,62 @@
     "1772": {
       "name": "xfwm4",
       "cmdline": "xfwm4",
-      "peak_kb": 50224
+      "peak_kb": 44036
     },
     "1780": {
       "name": "xdg-desktop-por",
       "cmdline": "/usr/libexec/xdg-desktop-portal-xapp",
-      "peak_kb": 4416
+      "peak_kb": 4480
     },
     "1790": {
       "name": "xfsettingsd",
       "cmdline": "xfsettingsd",
-      "peak_kb": 5556
+      "peak_kb": 5332
     },
     "1802": {
       "name": "xfce4-panel",
       "cmdline": "xfce4-panel",
-      "peak_kb": 6016
+      "peak_kb": 4264
     },
     "1813": {
       "name": "xfdesktop",
       "cmdline": "xfdesktop",
-      "peak_kb": 49084
+      "peak_kb": 48196
     },
     "1818": {
       "name": "panel-1-whisker",
       "cmdline": "/usr/lib/x86_64-linux-gnu/xfce4/panel/wrapper-2.0 /usr/lib/x86_64-linux-gnu/xfce4/panel/plugins/libwhiskermenu.so 1 25165831 whiskermenu Whisker Menu Show a menu to easily access installed applications",
-      "peak_kb": 8052
+      "peak_kb": 7852
     },
     "1822": {
       "name": "panel-8-systray",
       "cmdline": "/usr/lib/x86_64-linux-gnu/xfce4/panel/wrapper-2.0 /usr/lib/x86_64-linux-gnu/xfce4/panel/plugins/libsystray.so 8 25165832 systray Status Tray Plugin Provides status notifier items (application indicators) and legacy systray items",
-      "peak_kb": 6072
+      "peak_kb": 4560
     },
     "1823": {
       "name": "panel-9-notific",
       "cmdline": "/usr/lib/x86_64-linux-gnu/xfce4/panel/wrapper-2.0 /usr/lib/x86_64-linux-gnu/xfce4/panel/plugins/libnotification-plugin.so 9 25165833 notification-plugin Notification Plugin Notification plugin for the Xfce panel",
-      "peak_kb": 6868
+      "peak_kb": 6516
     },
     "1824": {
       "name": "panel-11-power-",
       "cmdline": "/usr/lib/x86_64-linux-gnu/xfce4/panel/wrapper-2.0 /usr/lib/x86_64-linux-gnu/xfce4/panel/plugins/libxfce4powermanager.so 11 25165834 power-manager-plugin Power Manager Plugin Display the battery levels of your devices and control the brightness of your display",
-      "peak_kb": 6868
+      "peak_kb": 6600
     },
     "1825": {
       "name": "panel-12-pulsea",
       "cmdline": "/usr/lib/x86_64-linux-gnu/xfce4/panel/wrapper-2.0 /usr/lib/x86_64-linux-gnu/xfce4/panel/plugins/libpulseaudio-plugin.so 12 25165835 pulseaudio PulseAudio Plugin Adjust the audio volume of the PulseAudio sound system",
-      "peak_kb": 6904
+      "peak_kb": 6752
     },
     "1845": {
       "name": "nvidia-prime",
       "cmdline": "/usr/bin/python3 /usr/lib/nvidia-prime-applet/nvidia-prime",
-      "peak_kb": 16188
+      "peak_kb": 16152
     },
     "1893": {
       "name": "dconf-service",
       "cmdline": "/usr/libexec/dconf-service",
-      "peak_kb": 308
+      "peak_kb": 344
     },
     "1982": {
       "name": "colord",
@@ -989,17 +1059,17 @@
     "3838": {
       "name": "sshd",
       "cmdline": "sshd: /usr/sbin/sshd -D [listener] 0 of 10-100 startups",
-      "peak_kb": 952
+      "peak_kb": 1088
     },
     "7951": {
       "name": "fwupd",
       "cmdline": "/usr/libexec/fwupd/fwupd",
-      "peak_kb": 3776
+      "peak_kb": 4372
     },
     "15795": {
       "name": "flatpak-session",
       "cmdline": "/usr/libexec/flatpak-session-helper",
-      "peak_kb": 304
+      "peak_kb": 316
     },
     "15800": {
       "name": "p11-kit-server",
@@ -1009,272 +1079,247 @@
     "16315": {
       "name": "xfce4-terminal",
       "cmdline": "xfce4-terminal",
-      "peak_kb": 8160
+      "peak_kb": 6904
     },
     "16366": {
       "name": "bash",
       "cmdline": "bash",
-      "peak_kb": 1744
+      "peak_kb": 1648
     },
     "16948": {
       "name": "gamemoded",
       "cmdline": "/usr/bin/gamemoded",
-      "peak_kb": 584
-    },
-    "21616": {
-      "name": "(udev-worker)",
-      "cmdline": "(udev-worker)",
-      "peak_kb": 724
-    },
-    "1071": {
-      "name": "systemd-logind",
-      "cmdline": "/usr/lib/systemd/systemd-logind",
-      "peak_kb": 804
-    },
-    "1022": {
-      "name": "accounts-daemon",
-      "cmdline": "/usr/libexec/accounts-daemon",
-      "peak_kb": 360
-    },
-    "1025": {
-      "name": "cron",
-      "cmdline": "/usr/sbin/cron -f -P",
-      "peak_kb": 152
-    },
-    "1185": {
-      "name": "NetworkManager",
-      "cmdline": "/usr/sbin/NetworkManager --no-daemon",
-      "peak_kb": 204
-    },
-    "1188": {
-      "name": "polkitd",
-      "cmdline": "/usr/lib/polkit-1/polkitd --no-debug",
-      "peak_kb": 724
-    },
-    "21579": {
-      "name": "bash",
-      "cmdline": "bash ./launch_rocket_league.sh",
-      "peak_kb": 312
-    },
-    "21640": {
-      "name": "python3",
-      "cmdline": "/usr/bin/python3 /home/darian/Documents/RocketMode/game_logger.py --daemon",
-      "peak_kb": 4540
-    },
-    "21641": {
-      "name": "bash",
-      "cmdline": "bash ./launch_rocket_league.sh",
-      "peak_kb": 196
-    },
-    "21642": {
-      "name": "bwrap",
-      "cmdline": "bwrap --args 47 -- heroic-run --launch Sugar",
-      "peak_kb": 220
-    },
-    "21665": {
-      "name": "at-spi-bus-laun",
-      "cmdline": "/usr/libexec/at-spi-bus-launcher",
-      "peak_kb": 800
-    },
-    "21674": {
-      "name": "bwrap",
-      "cmdline": "bwrap --args 47 -- xdg-dbus-proxy --args=50",
-      "peak_kb": 144
-    },
-    "21675": {
-      "name": "xdg-dbus-proxy",
-      "cmdline": "xdg-dbus-proxy --args=50",
-      "peak_kb": 524
-    },
-    "21679": {
-      "name": "bwrap",
-      "cmdline": "bwrap --args 47 -- heroic-run --launch Sugar",
-      "peak_kb": 280
-    },
-    "21680": {
-      "name": "heroic-run",
-      "cmdline": "/bin/sh /app/bin/heroic-run --launch Sugar",
-      "peak_kb": 372
-    },
-    "21691": {
-      "name": "heroic",
-      "cmdline": "/app/bin/heroic/heroic --launch Sugar",
-      "peak_kb": 79900
-    },
-    "21709": {
-      "name": "heroic",
-      "cmdline": "/app/bin/heroic/heroic --type=zygote --no-zygote-sandbox",
-      "peak_kb": 9712
-    },
-    "21713": {
-      "name": "cat",
-      "cmdline": "cat",
-      "peak_kb": 112
-    },
-    "21714": {
-      "name": "cat",
-      "cmdline": "cat",
-      "peak_kb": 112
-    },
-    "21715": {
-      "name": "bwrap",
-      "cmdline": "bwrap --args 46 -- /app/bin/zypak-helper child - /app/bin/heroic/heroic --type=zygote",
-      "peak_kb": 144
-    },
-    "21782": {
-      "name": "bwrap",
-      "cmdline": "bwrap --args 46 -- /app/bin/zypak-helper child - /app/bin/heroic/heroic --type=zygote",
-      "peak_kb": 192
-    },
-    "21783": {
-      "name": "heroic",
-      "cmdline": "/app/bin/heroic/heroic --type=zygote",
-      "peak_kb": 9592
-    },
-    "21819": {
-      "name": "heroic",
-      "cmdline": "/app/bin/heroic/heroic --type=zygote --no-zygote-sandbox",
-      "peak_kb": 80964
-    },
-    "21838": {
-      "name": "heroic",
-      "cmdline": "/proc/self/exe --type=utility --utility-sub-type=network.mojom.NetworkService --lang=en-US --service-sandbox-type=none --enable-crash-reporter=a73c5469-6ab9-469e-ab46-0b82b5e42347,no_channel --user-data-dir=/home/darian/.var/app/com.heroicgameslauncher.hgl/config/heroic --shared-files=v8_context_snapshot_data:100 --field-trial-handle=3,i,2706857557879764611,4584468675466105288,262144 --enable-features=PdfUseShowSaveFilePicker --disable-features=DropInputEventsWhilePaintHolding,LocalNetworkAccessChecks,ScreenAIOCREnabled,SpareRendererForSitePerProcess,TraceSiteInstanceGetProcessCreation --variations-seed-version --pseudonymization-salt-handle=7,i,8465189742790784877,317787737656706542,4 --trace-process-track-uuid=3190708989122997041",
-      "peak_kb": 10648
-    },
-    "21862": {
-      "name": "heroic",
-      "cmdline": "/proc/self/exe --type=renderer --enable-crash-reporter=a73c5469-6ab9-469e-ab46-0b82b5e42347,no_channel --user-data-dir=/home/darian/.var/app/com.heroicgameslauncher.hgl/config/heroic --app-path=/app/bin/heroic/resources/app.asar --no-sandbox --no-zygote --ozone-platform=x11 --lang=en-US --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=4 --time-ticks-at-unix-epoch=-1779936235034551 --launch-time-ticks=45643314841 --shared-files=v8_context_snapshot_data:100 --field-trial-handle=3,i,2706857557879764611,4584468675466105288,262144 --enable-features=PdfUseShowSaveFilePicker --disable-features=DropInputEventsWhilePaintHolding,LocalNetworkAccessChecks,ScreenAIOCREnabled,SpareRendererForSitePerProcess,TraceSiteInstanceGetProcessCreation --variations-seed-version --pseudonymization-salt-handle=7,i,8465189742790784877,317787737656706542,4 --trace-process-track-uuid=3190708990060038890",
-      "peak_kb": 73196
-    },
-    "21915": {
-      "name": "heroic",
-      "cmdline": "/app/bin/heroic/heroic --type=zygote --no-zygote-sandbox",
-      "peak_kb": 24452
-    },
-    "22406": {
-      "name": "bwrap",
-      "cmdline": "bwrap --args 41 -- /usr/lib/pressure-vessel/from-host/libexec/steam-runtime-tools-0/pv-adverb --prefix=/usr/lib/pressure-vessel/from-host --generate-locales --fd 11 --regenerate-ld.so-cache /run/user/1000/pressure-vessel/ldso --add-ld.so-path /usr/lib/pressure-vessel/overrides/lib/x86_64-linux-gnu --add-ld.so-path /usr/lib/pressure-vessel/overrides/lib/i386-linux-gnu --set-ld-library-path /usr/lib/pressure-vessel/overrides/lib/x86_64-linux-gnu/aliases:/usr/lib/pressure-vessel/overrides/lib/i386-linux-gnu/aliases --overrides-path /usr/lib/pressure-vessel/overrides --assign-fd=1=3 --assign-fd=2=4 --ld-preload=/run/parent/app/lib/libgamemodeauto.so.0:abi=x86_64-linux-gnu --ld-preload=/run/parent/app/lib32/libgamemodeauto.so.0:abi=i386-linux-gnu -- /home/darian/.local/share/umu/umu-shim /home/darian/.var/app/com.heroicgameslauncher.hgl/config/heroic/tools/proton/GE-Proton9-20/proton waitforexitandrun /home/darian/Games/Heroic/rocketleague/Binaries/Win64/Launcher.exe -AUTH_LOGIN=unused -AUTH_PASSWORD=5f14b86b19e340c59dc4e91a3724be7f -AUTH_TYPE=exchangecode -epicapp=Sugar -epicenv=Prod -EpicPortal -epicusername=Darian311 -epicuserid=f4b4bf4a594249b5a94d32718d6e3e28 -epiclocale=en -epicsandboxid=9773aa1aa54f4f7b80e44bef04986cea",
-      "peak_kb": 264
-    },
-    "22411": {
-      "name": "bwrap",
-      "cmdline": "bwrap --args 37 -- xdg-dbus-proxy --args=41",
-      "peak_kb": 140
-    },
-    "22412": {
-      "name": "xdg-dbus-proxy",
-      "cmdline": "xdg-dbus-proxy --args=41",
-      "peak_kb": 492
-    },
-    "22416": {
-      "name": "bwrap",
-      "cmdline": "bwrap --args 41 -- /usr/lib/pressure-vessel/from-host/libexec/steam-runtime-tools-0/pv-adverb --prefix=/usr/lib/pressure-vessel/from-host --generate-locales --fd 11 --regenerate-ld.so-cache /run/user/1000/pressure-vessel/ldso --add-ld.so-path /usr/lib/pressure-vessel/overrides/lib/x86_64-linux-gnu --add-ld.so-path /usr/lib/pressure-vessel/overrides/lib/i386-linux-gnu --set-ld-library-path /usr/lib/pressure-vessel/overrides/lib/x86_64-linux-gnu/aliases:/usr/lib/pressure-vessel/overrides/lib/i386-linux-gnu/aliases --overrides-path /usr/lib/pressure-vessel/overrides --assign-fd=1=3 --assign-fd=2=4 --ld-preload=/run/parent/app/lib/libgamemodeauto.so.0:abi=x86_64-linux-gnu --ld-preload=/run/parent/app/lib32/libgamemodeauto.so.0:abi=i386-linux-gnu -- /home/darian/.local/share/umu/umu-shim /home/darian/.var/app/com.heroicgameslauncher.hgl/config/heroic/tools/proton/GE-Proton9-20/proton waitforexitandrun /home/darian/Games/Heroic/rocketleague/Binaries/Win64/Launcher.exe -AUTH_LOGIN=unused -AUTH_PASSWORD=5f14b86b19e340c59dc4e91a3724be7f -AUTH_TYPE=exchangecode -epicapp=Sugar -epicenv=Prod -EpicPortal -epicusername=Darian311 -epicuserid=f4b4bf4a594249b5a94d32718d6e3e28 -epiclocale=en -epicsandboxid=9773aa1aa54f4f7b80e44bef04986cea",
-      "peak_kb": 316
-    },
-    "22417": {
-      "name": "pv-adverb",
-      "cmdline": "/usr/lib/pressure-vessel/from-host/libexec/steam-runtime-tools-0/pv-adverb --prefix=/usr/lib/pressure-vessel/from-host --generate-locales --fd 11 --regenerate-ld.so-cache /run/user/1000/pressure-vessel/ldso --add-ld.so-path /usr/lib/pressure-vessel/overrides/lib/x86_64-linux-gnu --add-ld.so-path /usr/lib/pressure-vessel/overrides/lib/i386-linux-gnu --set-ld-library-path /usr/lib/pressure-vessel/overrides/lib/x86_64-linux-gnu/aliases:/usr/lib/pressure-vessel/overrides/lib/i386-linux-gnu/aliases --overrides-path /usr/lib/pressure-vessel/overrides --assign-fd=1=3 --assign-fd=2=4 --ld-preload=/run/parent/app/lib/libgamemodeauto.so.0:abi=x86_64-linux-gnu --ld-preload=/run/parent/app/lib32/libgamemodeauto.so.0:abi=i386-linux-gnu -- /home/darian/.local/share/umu/umu-shim /home/darian/.var/app/com.heroicgameslauncher.hgl/config/heroic/tools/proton/GE-Proton9-20/proton waitforexitandrun /home/darian/Games/Heroic/rocketleague/Binaries/Win64/Launcher.exe -AUTH_LOGIN=unused -AUTH_PASSWORD=5f14b86b19e340c59dc4e91a3724be7f -AUTH_TYPE=exchangecode -epicapp=Sugar -epicenv=Prod -EpicPortal -epicusername=Darian311 -epicuserid=f4b4bf4a594249b5a94d32718d6e3e28 -epiclocale=en -epicsandboxid=9773aa1aa54f4f7b80e44bef04986cea",
-      "peak_kb": 448
-    },
-    "22455": {
-      "name": "wineserver",
-      "cmdline": "/home/darian/.var/app/com.heroicgameslauncher.hgl/config/heroic/tools/proton/GE-Proton9-20/files/bin/wineserver",
-      "peak_kb": 13660
-    },
-    "22459": {
-      "name": "services.exe",
-      "cmdline": "C:\\windows\\system32\\services.exe",
-      "peak_kb": 11148
-    },
-    "22462": {
-      "name": "svchost.exe",
-      "cmdline": "C:\\windows\\system32\\svchost.exe -k LocalServiceNetworkRestricted",
-      "peak_kb": 3748
-    },
-    "22468": {
-      "name": "winedevice.exe",
-      "cmdline": "C:\\windows\\system32\\winedevice.exe",
-      "peak_kb": 13096
-    },
-    "22476": {
-      "name": "winedevice.exe",
-      "cmdline": "C:\\windows\\system32\\winedevice.exe",
-      "peak_kb": 14436
-    },
-    "22488": {
-      "name": "plugplay.exe",
-      "cmdline": "C:\\windows\\system32\\plugplay.exe",
-      "peak_kb": 7500
-    },
-    "22528": {
-      "name": "rpcss.exe",
-      "cmdline": "C:\\windows\\system32\\rpcss.exe",
-      "peak_kb": 7816
-    },
-    "22553": {
-      "name": "RocketLeague.ex",
-      "cmdline": "S:\\Games\\Heroic\\rocketleague\\Binaries\\Win64\\RocketLeague.exe -AUTH_LOGIN=unused -AUTH_PASSWORD=5f14b86b19e340c59dc4e91a3724be7f -AUTH_TYPE=exchangecode -epicapp=Sugar -epicenv=Prod -EpicPortal -epicusername=Darian311 -epicuserid=f4b4bf4a594249b5a94d32718d6e3e28 -epiclocale=en -epicsandboxid=9773aa1aa54f4f7b80e44bef04986cea",
-      "peak_kb": 3432196
-    },
-    "22587": {
-      "name": "explorer.exe",
-      "cmdline": "C:\\windows\\system32\\explorer.exe /desktop",
-      "peak_kb": 11896
-    },
-    "22596": {
-      "name": "tabtip.exe",
-      "cmdline": "C:\\windows\\system32\\tabtip.exe",
-      "peak_kb": 7244
-    },
-    "22332": {
-      "name": "gamemoderun",
-      "cmdline": "/bin/bash /app/bin/gamemoderun /home/darian/.var/app/com.heroicgameslauncher.hgl/config/heroic/tools/runtimes/umu/umu_run.py /home/darian/Games/Heroic/rocketleague/Binaries/Win64/Launcher.exe -AUTH_LOGIN=unused -AUTH_PASSWORD=5f14b86b19e340c59dc4e91a3724be7f -AUTH_TYPE=exchangecode -epicapp=Sugar -epicenv=Prod -EpicPortal -epicusername=Darian311 -epicuserid=f4b4bf4a594249b5a94d32718d6e3e28 -epiclocale=en -epicsandboxid=9773aa1aa54f4f7b80e44bef04986cea",
-      "peak_kb": 400
-    },
-    "22340": {
-      "name": "python3",
-      "cmdline": "python3 /home/darian/.var/app/com.heroicgameslauncher.hgl/config/heroic/tools/runtimes/umu/umu_run.py /home/darian/Games/Heroic/rocketleague/Binaries/Win64/Launcher.exe -AUTH_LOGIN=unused -AUTH_PASSWORD=5f14b86b19e340c59dc4e91a3724be7f -AUTH_TYPE=exchangecode -epicapp=Sugar -epicenv=Prod -EpicPortal -epicusername=Darian311 -epicuserid=f4b4bf4a594249b5a94d32718d6e3e28 -epiclocale=en -epicsandboxid=9773aa1aa54f4f7b80e44bef04986cea",
-      "peak_kb": 20968
-    },
-    "22372": {
-      "name": "steam-runtime-l",
-      "cmdline": "/home/darian/.local/share/umu/steamrt3/pressure-vessel/bin/steam-runtime-launch-client --pass-env-matching=* --bus-name=org.freedesktop.portal.Flatpak --app-path /home/darian/.local/share/umu/steamrt3/var/tmp-NPPYP3/app --share-pids --usr-path /home/darian/.local/share/umu/steamrt3/var/tmp-NPPYP3/usr --directory /home/darian/Games/Heroic/rocketleague/Binaries/Win64 --env-fd 17 --unset-env PRESSURE_VESSEL_FILESYSTEMS_RO --unset-env PRESSURE_VESSEL_FILESYSTEMS_RW --unset-env PWD --unset-env STEAM_COMPAT_APP_LIBRARY_PATH --unset-env STEAM_COMPAT_APP_LIBRARY_PATHS --unset-env STEAM_COMPAT_MOUNT_PATHS --unset-env STEAM_COMPAT_TOOL_PATH --unset-env STEAM_EXTRA_COMPAT_TOOLS_PATHS --unset-env STEAM_RUNTIME_SCOUT --unset-env VDPAU_DRIVER_PATH --unset-env VK_ADD_DRIVER_FILES --unset-env VK_ADD_IMPLICIT_LAYER_PATH --unset-env VK_ADD_LAYER_PATH --unset-env XR_API_LAYER_PATH --unset-env __EGL_EXTERNAL_PLATFORM_CONFIG_DIRS --unset-env __EGL_VENDOR_LIBRARY_DIRS --forward-fd=11 --forward-fd=3 --forward-fd=4 -- /usr/lib/pressure-vessel/from-host/libexec/steam-runtime-tools-0/pv-adverb --prefix=/usr/lib/pressure-vessel/from-host --generate-locales --fd 11 --regenerate-ld.so-cache /run/user/1000/pressure-vessel/ldso --add-ld.so-path /usr/lib/pressure-vessel/overrides/lib/x86_64-linux-gnu --add-ld.so-path /usr/lib/pressure-vessel/overrides/lib/i386-linux-gnu --set-ld-library-path /usr/lib/pressure-vessel/overrides/lib/x86_64-linux-gnu/aliases:/usr/lib/pressure-vessel/overrides/lib/i386-linux-gnu/aliases --overrides-path /usr/lib/pressure-vessel/overrides --assign-fd=1=3 --assign-fd=2=4 --ld-preload=/run/parent/app/lib/libgamemodeauto.so.0:abi=x86_64-linux-gnu --ld-preload=/run/parent/app/lib32/libgamemodeauto.so.0:abi=i386-linux-gnu -- /home/darian/.local/share/umu/umu-shim /home/darian/.var/app/com.heroicgameslauncher.hgl/config/heroic/tools/proton/GE-Proton9-20/proton waitforexitandrun /home/darian/Games/Heroic/rocketleague/Binaries/Win64/Launcher.exe -AUTH_LOGIN=unused -AUTH_PASSWORD=5f14b86b19e340c59dc4e91a3724be7f -AUTH_TYPE=exchangecode -epicapp=Sugar -epicenv=Prod -EpicPortal -epicusername=Darian311 -epicuserid=f4b4bf4a594249b5a94d32718d6e3e28 -epiclocale=en -epicsandboxid=9773aa1aa54f4f7b80e44bef04986cea",
-      "peak_kb": 588
-    },
-    "21649": {
-      "name": "gvfsd",
-      "cmdline": "/usr/libexec/gvfsd",
-      "peak_kb": 768
-    },
-    "21657": {
-      "name": "gvfsd-fuse",
-      "cmdline": "/usr/libexec/gvfsd-fuse /run/user/1000/gvfs -f",
-      "peak_kb": 724
+      "peak_kb": 188
     },
     "21696": {
       "name": "flatpak-portal",
       "cmdline": "/usr/libexec/flatpak-portal",
-      "peak_kb": 2352
+      "peak_kb": 2004
     },
-    "21672": {
-      "name": "dbus-daemon",
-      "cmdline": "/usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 11 --address=unix:path=/run/user/1000/at-spi/bus_0",
-      "peak_kb": 292
+    "26258": {
+      "name": "(udev-worker)",
+      "cmdline": "(udev-worker)",
+      "peak_kb": 724
     },
-    "21878": {
-      "name": "at-spi2-registr",
-      "cmdline": "/usr/libexec/at-spi2-registryd --use-gnome-session",
-      "peak_kb": 648
+    "27011": {
+      "name": "bwrap",
+      "cmdline": "bwrap --args 41 -- /usr/lib/pressure-vessel/from-host/libexec/steam-runtime-tools-0/pv-adverb --prefix=/usr/lib/pressure-vessel/from-host --generate-locales --fd 12 --regenerate-ld.so-cache /run/user/1000/pressure-vessel/ldso --add-ld.so-path /usr/lib/pressure-vessel/overrides/lib/x86_64-linux-gnu --add-ld.so-path /usr/lib/pressure-vessel/overrides/lib/i386-linux-gnu --set-ld-library-path /usr/lib/pressure-vessel/overrides/lib/x86_64-linux-gnu/aliases:/usr/lib/pressure-vessel/overrides/lib/i386-linux-gnu/aliases --overrides-path /usr/lib/pressure-vessel/overrides --assign-fd=1=3 --assign-fd=2=4 --ld-preload=/run/parent/app/lib/libgamemodeauto.so.0:abi=x86_64-linux-gnu --ld-preload=/run/parent/app/lib32/libgamemodeauto.so.0:abi=i386-linux-gnu -- /home/darian/.local/share/umu/umu-shim /home/darian/.var/app/com.heroicgameslauncher.hgl/config/heroic/tools/proton/GE-Proton9-20/proton waitforexitandrun /home/darian/Games/Heroic/rocketleague/Binaries/Win64/Launcher.exe -AUTH_LOGIN=unused -AUTH_PASSWORD=e5605a4d0e4b46d8af188dfafd83f07b -AUTH_TYPE=exchangecode -epicapp=Sugar -epicenv=Prod -EpicPortal -epicusername=Darian311 -epicuserid=f4b4bf4a594249b5a94d32718d6e3e28 -epiclocale=en -epicsandboxid=9773aa1aa54f4f7b80e44bef04986cea",
+      "peak_kb": 268
     },
-    "24012": {
+    "27016": {
+      "name": "bwrap",
+      "cmdline": "bwrap --args 39 -- xdg-dbus-proxy --args=41",
+      "peak_kb": 136
+    },
+    "27017": {
+      "name": "xdg-dbus-proxy",
+      "cmdline": "xdg-dbus-proxy --args=41",
+      "peak_kb": 492
+    },
+    "27021": {
+      "name": "bwrap",
+      "cmdline": "bwrap --args 41 -- /usr/lib/pressure-vessel/from-host/libexec/steam-runtime-tools-0/pv-adverb --prefix=/usr/lib/pressure-vessel/from-host --generate-locales --fd 12 --regenerate-ld.so-cache /run/user/1000/pressure-vessel/ldso --add-ld.so-path /usr/lib/pressure-vessel/overrides/lib/x86_64-linux-gnu --add-ld.so-path /usr/lib/pressure-vessel/overrides/lib/i386-linux-gnu --set-ld-library-path /usr/lib/pressure-vessel/overrides/lib/x86_64-linux-gnu/aliases:/usr/lib/pressure-vessel/overrides/lib/i386-linux-gnu/aliases --overrides-path /usr/lib/pressure-vessel/overrides --assign-fd=1=3 --assign-fd=2=4 --ld-preload=/run/parent/app/lib/libgamemodeauto.so.0:abi=x86_64-linux-gnu --ld-preload=/run/parent/app/lib32/libgamemodeauto.so.0:abi=i386-linux-gnu -- /home/darian/.local/share/umu/umu-shim /home/darian/.var/app/com.heroicgameslauncher.hgl/config/heroic/tools/proton/GE-Proton9-20/proton waitforexitandrun /home/darian/Games/Heroic/rocketleague/Binaries/Win64/Launcher.exe -AUTH_LOGIN=unused -AUTH_PASSWORD=e5605a4d0e4b46d8af188dfafd83f07b -AUTH_TYPE=exchangecode -epicapp=Sugar -epicenv=Prod -EpicPortal -epicusername=Darian311 -epicuserid=f4b4bf4a594249b5a94d32718d6e3e28 -epiclocale=en -epicsandboxid=9773aa1aa54f4f7b80e44bef04986cea",
+      "peak_kb": 316
+    },
+    "27022": {
+      "name": "pv-adverb",
+      "cmdline": "/usr/lib/pressure-vessel/from-host/libexec/steam-runtime-tools-0/pv-adverb --prefix=/usr/lib/pressure-vessel/from-host --generate-locales --fd 12 --regenerate-ld.so-cache /run/user/1000/pressure-vessel/ldso --add-ld.so-path /usr/lib/pressure-vessel/overrides/lib/x86_64-linux-gnu --add-ld.so-path /usr/lib/pressure-vessel/overrides/lib/i386-linux-gnu --set-ld-library-path /usr/lib/pressure-vessel/overrides/lib/x86_64-linux-gnu/aliases:/usr/lib/pressure-vessel/overrides/lib/i386-linux-gnu/aliases --overrides-path /usr/lib/pressure-vessel/overrides --assign-fd=1=3 --assign-fd=2=4 --ld-preload=/run/parent/app/lib/libgamemodeauto.so.0:abi=x86_64-linux-gnu --ld-preload=/run/parent/app/lib32/libgamemodeauto.so.0:abi=i386-linux-gnu -- /home/darian/.local/share/umu/umu-shim /home/darian/.var/app/com.heroicgameslauncher.hgl/config/heroic/tools/proton/GE-Proton9-20/proton waitforexitandrun /home/darian/Games/Heroic/rocketleague/Binaries/Win64/Launcher.exe -AUTH_LOGIN=unused -AUTH_PASSWORD=e5605a4d0e4b46d8af188dfafd83f07b -AUTH_TYPE=exchangecode -epicapp=Sugar -epicenv=Prod -EpicPortal -epicusername=Darian311 -epicuserid=f4b4bf4a594249b5a94d32718d6e3e28 -epiclocale=en -epicsandboxid=9773aa1aa54f4f7b80e44bef04986cea",
+      "peak_kb": 448
+    },
+    "27056": {
+      "name": "wineserver",
+      "cmdline": "/home/darian/.var/app/com.heroicgameslauncher.hgl/config/heroic/tools/proton/GE-Proton9-20/files/bin/wineserver",
+      "peak_kb": 13684
+    },
+    "27060": {
+      "name": "services.exe",
+      "cmdline": "C:\\windows\\system32\\services.exe",
+      "peak_kb": 11144
+    },
+    "27063": {
+      "name": "svchost.exe",
+      "cmdline": "C:\\windows\\system32\\svchost.exe -k LocalServiceNetworkRestricted",
+      "peak_kb": 3748
+    },
+    "27069": {
+      "name": "winedevice.exe",
+      "cmdline": "C:\\windows\\system32\\winedevice.exe",
+      "peak_kb": 10216
+    },
+    "27081": {
+      "name": "winedevice.exe",
+      "cmdline": "C:\\windows\\system32\\winedevice.exe",
+      "peak_kb": 14492
+    },
+    "27094": {
+      "name": "plugplay.exe",
+      "cmdline": "C:\\windows\\system32\\plugplay.exe",
+      "peak_kb": 5552
+    },
+    "27134": {
+      "name": "rpcss.exe",
+      "cmdline": "C:\\windows\\system32\\rpcss.exe",
+      "peak_kb": 7816
+    },
+    "27159": {
+      "name": "RocketLeague.ex",
+      "cmdline": "S:\\Games\\Heroic\\rocketleague\\Binaries\\Win64\\RocketLeague.exe -AUTH_LOGIN=unused -AUTH_PASSWORD=e5605a4d0e4b46d8af188dfafd83f07b -AUTH_TYPE=exchangecode -epicapp=Sugar -epicenv=Prod -EpicPortal -epicusername=Darian311 -epicuserid=f4b4bf4a594249b5a94d32718d6e3e28 -epiclocale=en -epicsandboxid=9773aa1aa54f4f7b80e44bef04986cea",
+      "peak_kb": 2116056
+    },
+    "27193": {
+      "name": "explorer.exe",
+      "cmdline": "C:\\windows\\system32\\explorer.exe /desktop",
+      "peak_kb": 26520
+    },
+    "27203": {
+      "name": "tabtip.exe",
+      "cmdline": "C:\\windows\\system32\\tabtip.exe",
+      "peak_kb": 7248
+    },
+    "26221": {
+      "name": "bash",
+      "cmdline": "bash ./launch_rocket_league.sh",
+      "peak_kb": 308
+    },
+    "26287": {
+      "name": "bash",
+      "cmdline": "bash ./launch_rocket_league.sh",
+      "peak_kb": 184
+    },
+    "26288": {
+      "name": "bwrap",
+      "cmdline": "bwrap --args 48 -- heroic-run --launch Sugar",
+      "peak_kb": 140
+    },
+    "26311": {
+      "name": "at-spi-bus-laun",
+      "cmdline": "/usr/libexec/at-spi-bus-launcher",
+      "peak_kb": 396
+    },
+    "26320": {
+      "name": "bwrap",
+      "cmdline": "bwrap --args 48 -- xdg-dbus-proxy --args=50",
+      "peak_kb": 144
+    },
+    "26321": {
+      "name": "xdg-dbus-proxy",
+      "cmdline": "xdg-dbus-proxy --args=50",
+      "peak_kb": 484
+    },
+    "26325": {
+      "name": "bwrap",
+      "cmdline": "bwrap --args 48 -- heroic-run --launch Sugar",
+      "peak_kb": 196
+    },
+    "26326": {
+      "name": "heroic-run",
+      "cmdline": "/bin/sh /app/bin/heroic-run --launch Sugar",
+      "peak_kb": 368
+    },
+    "26337": {
+      "name": "heroic",
+      "cmdline": "/app/bin/heroic/heroic --launch Sugar",
+      "peak_kb": 72992
+    },
+    "26356": {
+      "name": "heroic",
+      "cmdline": "/app/bin/heroic/heroic --type=zygote --no-zygote-sandbox",
+      "peak_kb": 8560
+    },
+    "26360": {
+      "name": "cat",
+      "cmdline": "cat",
+      "peak_kb": 108
+    },
+    "26361": {
+      "name": "cat",
+      "cmdline": "cat",
+      "peak_kb": 108
+    },
+    "26363": {
+      "name": "bwrap",
+      "cmdline": "bwrap --args 46 -- /app/bin/zypak-helper child - /app/bin/heroic/heroic --type=zygote",
+      "peak_kb": 96
+    },
+    "26457": {
+      "name": "bwrap",
+      "cmdline": "bwrap --args 46 -- /app/bin/zypak-helper child - /app/bin/heroic/heroic --type=zygote",
+      "peak_kb": 144
+    },
+    "26458": {
+      "name": "heroic",
+      "cmdline": "/app/bin/heroic/heroic --type=zygote",
+      "peak_kb": 2344
+    },
+    "26489": {
+      "name": "heroic",
+      "cmdline": "/app/bin/heroic/heroic --type=zygote --no-zygote-sandbox",
+      "peak_kb": 19960
+    },
+    "26649": {
+      "name": "heroic",
+      "cmdline": "/app/bin/heroic/heroic --type=zygote --no-zygote-sandbox",
+      "peak_kb": 22052
+    },
+    "26286": {
+      "name": "python3",
+      "cmdline": "/usr/bin/python3 /home/darian/Documents/RocketMode/game_logger.py --daemon",
+      "peak_kb": 4420
+    },
+    "26295": {
+      "name": "gvfsd",
+      "cmdline": "/usr/libexec/gvfsd",
+      "peak_kb": 192
+    },
+    "26403": {
       "name": "sshd",
       "cmdline": "sshd: darian [priv]",
-      "peak_kb": 116
+      "peak_kb": 64
     },
-    "24046": {
+    "26427": {
       "name": "sshd",
       "cmdline": "sshd: darian@pts/1",
-      "peak_kb": 116
+      "peak_kb": 764
+    },
+    "26431": {
+      "name": "bash",
+      "cmdline": "-bash",
+      "peak_kb": 1600
+    },
+    "26510": {
+      "name": "heroic",
+      "cmdline": "/proc/self/exe --type=utility --utility-sub-type=network.mojom.NetworkService --lang=en-US --service-sandbox-type=none --enable-crash-reporter=a73c5469-6ab9-469e-ab46-0b82b5e42347,no_channel --user-data-dir=/home/darian/.var/app/com.heroicgameslauncher.hgl/config/heroic --shared-files=v8_context_snapshot_data:100 --field-trial-handle=3,i,12898258587564193612,15757691467831092033,262144 --enable-features=PdfUseShowSaveFilePicker --disable-features=DropInputEventsWhilePaintHolding,LocalNetworkAccessChecks,ScreenAIOCREnabled,SpareRendererForSitePerProcess,TraceSiteInstanceGetProcessCreation --variations-seed-version --pseudonymization-salt-handle=7,i,13276214767221502374,9491769604380076472,4 --trace-process-track-uuid=3190708989122997041",
+      "peak_kb": 9732
+    },
+    "26537": {
+      "name": "heroic",
+      "cmdline": "/proc/self/exe --type=renderer --enable-crash-reporter=a73c5469-6ab9-469e-ab46-0b82b5e42347,no_channel --user-data-dir=/home/darian/.var/app/com.heroicgameslauncher.hgl/config/heroic --app-path=/app/bin/heroic/resources/app.asar --no-sandbox --no-zygote --ozone-platform=x11 --lang=en-US --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=4 --time-ticks-at-unix-epoch=-1779936235034551 --launch-time-ticks=49338070585 --shared-files=v8_context_snapshot_data:100 --field-trial-handle=3,i,12898258587564193612,15757691467831092033,262144 --enable-features=PdfUseShowSaveFilePicker --disable-features=DropInputEventsWhilePaintHolding,LocalNetworkAccessChecks,ScreenAIOCREnabled,SpareRendererForSitePerProcess,TraceSiteInstanceGetProcessCreation --variations-seed-version --pseudonymization-salt-handle=7,i,13276214767221502374,9491769604380076472,4 --trace-process-track-uuid=3190708990060038890",
+      "peak_kb": 52464
+    },
+    "26556": {
+      "name": "git",
+      "cmdline": "git push",
+      "peak_kb": 268
+    },
+    "26557": {
+      "name": "git",
+      "cmdline": "/usr/lib/git-core/git remote-https origin https://github.com/darianmavgo/linuxmintrocketleague.git",
+      "peak_kb": 224
+    },
+    "26558": {
+      "name": "git-remote-http",
+      "cmdline": "/usr/lib/git-core/git-remote-https origin https://github.com/darianmavgo/linuxmintrocketleague.git",
+      "peak_kb": 6092
+    },
+    "26589": {
+      "name": "git",
+      "cmdline": "/usr/lib/git-core/git send-pack --stateless-rpc --helper-status --thin --progress https://github.com/darianmavgo/linuxmintrocketleague.git/ --stdin",
+      "peak_kb": 292
+    },
+    "26591": {
+      "name": "git",
+      "cmdline": "/usr/lib/git-core/git pack-objects --all-progress-implied --revs --stdout --thin --delta-base-offset --progress",
+      "peak_kb": 1980
     }
   },
   "gpu_processes": {
@@ -1283,354 +1328,377 @@
       "type": "G",
       "peak_memory_str": "341MiB",
       "peak_memory_mib": 341,
-      "first_seen": "11:24:08"
+      "first_seen": "12:25:39"
     },
     "1772": {
       "name": "xfwm4",
       "type": "G",
       "peak_memory_str": "1MiB",
       "peak_memory_mib": 1,
-      "first_seen": "11:24:08"
+      "first_seen": "12:25:39"
     },
-    "21819": {
+    "26489": {
       "name": "/app/bin/heroic/heroic",
       "type": "G",
-      "peak_memory_str": "65MiB",
-      "peak_memory_mib": 65,
-      "first_seen": "11:24:39"
+      "peak_memory_str": "60MiB",
+      "peak_memory_mib": 60,
+      "first_seen": "12:26:16"
     },
-    "22553": {
+    "27159": {
       "name": "...gue\\Binaries\\Win64\\RocketLeague.exe",
       "type": "C+G",
-      "peak_memory_str": "1631MiB",
-      "peak_memory_mib": 1631,
-      "first_seen": "11:26:32"
+      "peak_memory_str": "1235MiB",
+      "peak_memory_mib": 1235,
+      "first_seen": "12:27:23"
     }
   },
   "game_processes": {
-    "21679": {
+    "26325": {
       "name": "bwrap",
-      "cmdline": "bwrap --args 47 -- heroic-run --launch Sugar",
-      "first_seen": "11:24:10"
+      "cmdline": "bwrap --args 48 -- heroic-run --launch Sugar",
+      "first_seen": "12:25:41"
     },
-    "21680": {
+    "26326": {
       "name": "heroic-run",
       "cmdline": "/bin/sh /app/bin/heroic-run --launch Sugar",
-      "first_seen": "11:24:10"
+      "first_seen": "12:25:41"
     },
-    "21691": {
+    "26337": {
       "name": "heroic",
       "cmdline": "/app/bin/heroic/heroic --launch Sugar",
-      "first_seen": "11:24:10"
+      "first_seen": "12:25:41"
     },
-    "21709": {
+    "26356": {
       "name": "heroic",
       "cmdline": "/app/bin/heroic/heroic --type=zygote --no-zygote-sandbox",
-      "first_seen": "11:24:12"
+      "first_seen": "12:25:45"
     },
-    "21711": {
+    "26358": {
       "name": "zypak-sandbox",
       "cmdline": "zypak-sandbox",
-      "first_seen": "11:24:12"
+      "first_seen": "12:25:45"
     },
-    "21713": {
+    "26360": {
       "name": "cat",
       "cmdline": "cat",
-      "first_seen": "11:24:12"
+      "first_seen": "12:25:45"
     },
-    "21714": {
+    "26361": {
       "name": "cat",
       "cmdline": "cat",
-      "first_seen": "11:24:12"
+      "first_seen": "12:25:45"
     },
-    "21719": {
+    "26367": {
       "name": "bwrap",
-      "cmdline": "bwrap --args 32 ldconfig -X -C /run/ld-so-cache-dir/e8aea12804ee0eb231915154e1e9ed670b17220be56616d67f1c806ef2d9323d.jEZVz4",
-      "first_seen": "11:24:12"
+      "cmdline": "bwrap --args 32 ldconfig -X -C /run/ld-so-cache-dir/e8aea12804ee0eb231915154e1e9ed670b17220be56616d67f1c806ef2d9323d.HUMN2K",
+      "first_seen": "12:25:45"
     },
-    "21720": {
+    "26368": {
       "name": "bwrap",
-      "cmdline": "bwrap --args 32 ldconfig -X -C /run/ld-so-cache-dir/e8aea12804ee0eb231915154e1e9ed670b17220be56616d67f1c806ef2d9323d.jEZVz4",
-      "first_seen": "11:24:12"
+      "cmdline": "bwrap --args 32 ldconfig -X -C /run/ld-so-cache-dir/e8aea12804ee0eb231915154e1e9ed670b17220be56616d67f1c806ef2d9323d.HUMN2K",
+      "first_seen": "12:25:45"
     },
-    "21721": {
+    "26369": {
       "name": "ldconfig",
-      "cmdline": "ldconfig -X -C /run/ld-so-cache-dir/e8aea12804ee0eb231915154e1e9ed670b17220be56616d67f1c806ef2d9323d.jEZVz4",
-      "first_seen": "11:24:12"
+      "cmdline": "ldconfig -X -C /run/ld-so-cache-dir/e8aea12804ee0eb231915154e1e9ed670b17220be56616d67f1c806ef2d9323d.HUMN2K",
+      "first_seen": "12:25:45"
     },
-    "21782": {
+    "26457": {
       "name": "bwrap",
       "cmdline": "bwrap --args 46 -- /app/bin/zypak-helper child - /app/bin/heroic/heroic --type=zygote",
-      "first_seen": "11:24:33"
+      "first_seen": "12:26:08"
     },
-    "21783": {
+    "26458": {
       "name": "heroic",
       "cmdline": "/app/bin/heroic/heroic --type=zygote",
-      "first_seen": "11:24:33"
+      "first_seen": "12:26:08"
     },
-    "21819": {
+    "26489": {
       "name": "heroic",
       "cmdline": "/app/bin/heroic/heroic --type=zygote --no-zygote-sandbox",
-      "first_seen": "11:24:37"
+      "first_seen": "12:26:12"
     },
-    "21838": {
+    "26510": {
       "name": "heroic",
-      "cmdline": "/proc/self/exe --type=utility --utility-sub-type=network.mojom.NetworkService --lang=en-US --service-sandbox-type=none --enable-crash-reporter=a73c5469-6ab9-469e-ab46-0b82b5e42347,no_channel --user-data-dir=/home/darian/.var/app/com.heroicgameslauncher.hgl/config/heroic --shared-files=v8_context_snapshot_data:100 --field-trial-handle=3,i,2706857557879764611,4584468675466105288,262144 --enable-features=PdfUseShowSaveFilePicker --disable-features=DropInputEventsWhilePaintHolding,LocalNetworkAccessChecks,ScreenAIOCREnabled,SpareRendererForSitePerProcess,TraceSiteInstanceGetProcessCreation --variations-seed-version --pseudonymization-salt-handle=7,i,8465189742790784877,317787737656706542,4 --trace-process-track-uuid=3190708989122997041",
-      "first_seen": "11:24:37"
+      "cmdline": "/proc/self/exe --type=utility --utility-sub-type=network.mojom.NetworkService --lang=en-US --service-sandbox-type=none --enable-crash-reporter=a73c5469-6ab9-469e-ab46-0b82b5e42347,no_channel --user-data-dir=/home/darian/.var/app/com.heroicgameslauncher.hgl/config/heroic --shared-files=v8_context_snapshot_data:100 --field-trial-handle=3,i,12898258587564193612,15757691467831092033,262144 --enable-features=PdfUseShowSaveFilePicker --disable-features=DropInputEventsWhilePaintHolding,LocalNetworkAccessChecks,ScreenAIOCREnabled,SpareRendererForSitePerProcess,TraceSiteInstanceGetProcessCreation --variations-seed-version --pseudonymization-salt-handle=7,i,13276214767221502374,9491769604380076472,4 --trace-process-track-uuid=3190708989122997041",
+      "first_seen": "12:26:12"
     },
-    "21862": {
+    "26527": {
+      "name": "which",
+      "cmdline": "which",
+      "first_seen": "12:26:12"
+    },
+    "26537": {
       "name": "heroic",
-      "cmdline": "/proc/self/exe --type=renderer --enable-crash-reporter=a73c5469-6ab9-469e-ab46-0b82b5e42347,no_channel --user-data-dir=/home/darian/.var/app/com.heroicgameslauncher.hgl/config/heroic --app-path=/app/bin/heroic/resources/app.asar --no-sandbox --no-zygote --ozone-platform=x11 --lang=en-US --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=4 --time-ticks-at-unix-epoch=-1779936235034551 --launch-time-ticks=45643314841 --shared-files=v8_context_snapshot_data:100 --field-trial-handle=3,i,2706857557879764611,4584468675466105288,262144 --enable-features=PdfUseShowSaveFilePicker --disable-features=DropInputEventsWhilePaintHolding,LocalNetworkAccessChecks,ScreenAIOCREnabled,SpareRendererForSitePerProcess,TraceSiteInstanceGetProcessCreation --variations-seed-version --pseudonymization-salt-handle=7,i,8465189742790784877,317787737656706542,4 --trace-process-track-uuid=3190708990060038890",
-      "first_seen": "11:24:39"
+      "cmdline": "/proc/self/exe --type=renderer --enable-crash-reporter=a73c5469-6ab9-469e-ab46-0b82b5e42347,no_channel --user-data-dir=/home/darian/.var/app/com.heroicgameslauncher.hgl/config/heroic --app-path=/app/bin/heroic/resources/app.asar --no-sandbox --no-zygote --ozone-platform=x11 --lang=en-US --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=4 --time-ticks-at-unix-epoch=-1779936235034551 --launch-time-ticks=49338070585 --shared-files=v8_context_snapshot_data:100 --field-trial-handle=3,i,12898258587564193612,15757691467831092033,262144 --enable-features=PdfUseShowSaveFilePicker --disable-features=DropInputEventsWhilePaintHolding,LocalNetworkAccessChecks,ScreenAIOCREnabled,SpareRendererForSitePerProcess,TraceSiteInstanceGetProcessCreation --variations-seed-version --pseudonymization-salt-handle=7,i,13276214767221502374,9491769604380076472,4 --trace-process-track-uuid=3190708990060038890",
+      "first_seen": "12:26:14"
     },
-    "21891": {
+    "26558": {
+      "name": "git-remote-http",
+      "cmdline": "/usr/lib/git-core/git-remote-https origin https://github.com/darianmavgo/linuxmintrocketleague.git",
+      "first_seen": "12:26:14"
+    },
+    "26589": {
+      "name": "git",
+      "cmdline": "/usr/lib/git-core/git send-pack --stateless-rpc --helper-status --thin --progress https://github.com/darianmavgo/linuxmintrocketleague.git/ --stdin",
+      "first_seen": "12:26:14"
+    },
+    "26591": {
+      "name": "git",
+      "cmdline": "/usr/lib/git-core/git pack-objects --all-progress-implied --revs --stdout --thin --delta-base-offset --progress",
+      "first_seen": "12:26:14"
+    },
+    "26595": {
       "name": "gogdl",
       "cmdline": "./gogdl --auth-config-path /home/darian/.var/app/com.heroicgameslauncher.hgl/config/heroic/gog_store/auth.json auth",
-      "first_seen": "11:24:39"
+      "first_seen": "12:26:14"
     },
-    "21897": {
-      "name": "gogdl",
-      "cmdline": "./gogdl --auth-config-path /home/darian/.var/app/com.heroicgameslauncher.hgl/config/heroic/gog_store/auth.json auth",
-      "first_seen": "11:24:39"
+    "26601": {
+      "name": "comet",
+      "cmdline": "comet",
+      "first_seen": "12:26:14"
     },
-    "21906": {
-      "name": "gogdl",
-      "cmdline": "./gogdl --auth-config-path /home/darian/.var/app/com.heroicgameslauncher.hgl/config/heroic/gog_store/auth.json --version",
-      "first_seen": "11:24:39"
+    "26619": {
+      "name": "python3",
+      "cmdline": "python3 ./legendary --version",
+      "first_seen": "12:26:16"
     },
-    "21908": {
-      "name": "legendary",
-      "cmdline": "/usr/bin/env python3 ./legendary --version",
-      "first_seen": "11:24:39"
-    },
-    "21910": {
-      "name": "gogdl",
-      "cmdline": "./gogdl --auth-config-path /home/darian/.var/app/com.heroicgameslauncher.hgl/config/heroic/gog_store/auth.json --version",
-      "first_seen": "11:24:39"
-    },
-    "21913": {
-      "name": "heroic",
-      "cmdline": "/app/bin/heroic/heroic --launch Sugar",
-      "first_seen": "11:24:39"
-    },
-    "21915": {
+    "26649": {
       "name": "heroic",
       "cmdline": "/app/bin/heroic/heroic --type=zygote --no-zygote-sandbox",
-      "first_seen": "11:24:39"
+      "first_seen": "12:26:16"
     },
-    "21948": {
+    "26660": {
       "name": "python3",
       "cmdline": "python3 ./legendary list --third-party",
-      "first_seen": "11:24:41"
+      "first_seen": "12:26:18"
     },
-    "22117": {
-      "name": "python3",
-      "cmdline": "python3 ./legendary info Sugar --json --platform Windows",
-      "first_seen": "11:25:33"
-    },
-    "22137": {
+    "26736": {
       "name": "python3",
       "cmdline": "python3 ./legendary eos-overlay info --prefix /home/darian/Games/Heroic/Prefixes/Rocket League/pfx",
-      "first_seen": "11:25:35"
+      "first_seen": "12:26:22"
     },
-    "22139": {
+    "26742": {
       "name": "python3",
       "cmdline": "python3 /home/darian/.var/app/com.heroicgameslauncher.hgl/config/heroic/tools/runtimes/umu/umu_run.py createprefix",
-      "first_seen": "11:25:35"
+      "first_seen": "12:26:22"
     },
-    "22152": {
+    "26758": {
       "name": "pressure-vessel",
-      "cmdline": "/home/darian/.local/share/umu/steamrt3/pressure-vessel/bin/pressure-vessel-wrap --env-if-host=PRESSURE_VESSEL_APP_LD_LIBRARY_PATH=/usr/lib/extensions/vulkan/gamescope/lib --env-if-host=STEAM_RUNTIME_LIBRARY_PATH=/app/lib/i386-linux-gnu:/usr/lib/extensions/vulkan/gamescope/lib:/app/lib:/usr/lib/x86_64-linux-gnu/GL/default/lib:/app/lib32:/usr/lib/x86_64-linux-gnu/codecs-extra/lib:/usr/lib/x86_64-linux-gnu/dri/intel-vaapi-driver/lib:/app/lib/i386-linux-gnu/GL/default/lib:/usr/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu/GL/nvidia-535-309-01/lib:/app/lib/i386-linux-gnu/GL/nvidia-535-309-01/lib:/app/lib/i386-linux-gnu/dri/intel-vaapi-driver/lib --env-if-host=PATH=/app/bin:/app/bin:/app/utils/bin:/usr/bin:/usr/lib/extensions/vulkan/MangoHud/bin:/usr/lib/extensions/vulkan/gamescope/bin:/usr/lib/extensions/vulkan/OBSVkCapture/bin:/app/bin/heroic/resources/app.asar.unpacked/build/bin/linux --variable-dir=/home/darian/.local/share/umu/steamrt3/var -- /home/darian/.local/share/umu/umu-shim /home/darian/.var/app/com.heroicgameslauncher.hgl/config/heroic/tools/proton/GE-Proton9-20/proton run",
-      "first_seen": "11:25:37"
+      "cmdline": "/home/darian/.local/share/umu/steamrt3/pressure-vessel/bin/pressure-vessel-wrap --env-if-host=PRESSURE_VESSEL_APP_LD_LIBRARY_PATH=/usr/lib/extensions/vulkan/gamescope/lib --env-if-host=STEAM_RUNTIME_LIBRARY_PATH=/usr/lib/x86_64-linux-gnu:/app/lib32:/app/lib/i386-linux-gnu:/usr/lib/x86_64-linux-gnu/codecs-extra/lib:/usr/lib/extensions/vulkan/gamescope/lib:/usr/lib/x86_64-linux-gnu/GL/default/lib:/app/lib/i386-linux-gnu/GL/default/lib:/app/lib/i386-linux-gnu/dri/intel-vaapi-driver/lib:/app/lib:/usr/lib/x86_64-linux-gnu/GL/nvidia-535-309-01/lib:/usr/lib/x86_64-linux-gnu/dri/intel-vaapi-driver/lib:/app/lib/i386-linux-gnu/GL/nvidia-535-309-01/lib --env-if-host=PATH=/app/bin:/app/bin:/app/utils/bin:/usr/bin:/usr/lib/extensions/vulkan/MangoHud/bin:/usr/lib/extensions/vulkan/gamescope/bin:/usr/lib/extensions/vulkan/OBSVkCapture/bin:/app/bin/heroic/resources/app.asar.unpacked/build/bin/linux --variable-dir=/home/darian/.local/share/umu/steamrt3/var -- /home/darian/.local/share/umu/umu-shim /home/darian/.var/app/com.heroicgameslauncher.hgl/config/heroic/tools/proton/GE-Proton9-20/proton run",
+      "first_seen": "12:26:25"
     },
-    "22198": {
+    "26807": {
       "name": "bwrap",
-      "cmdline": "bwrap --args 41 -- /usr/lib/pressure-vessel/from-host/libexec/steam-runtime-tools-0/pv-adverb --prefix=/usr/lib/pressure-vessel/from-host --generate-locales --fd 10 --regenerate-ld.so-cache /run/user/1000/pressure-vessel/ldso --add-ld.so-path /usr/lib/pressure-vessel/overrides/lib/x86_64-linux-gnu --add-ld.so-path /usr/lib/pressure-vessel/overrides/lib/i386-linux-gnu --set-ld-library-path /usr/lib/pressure-vessel/overrides/lib/x86_64-linux-gnu/aliases:/usr/lib/pressure-vessel/overrides/lib/i386-linux-gnu/aliases --overrides-path /usr/lib/pressure-vessel/overrides --assign-fd=1=3 --assign-fd=2=4 -- /home/darian/.local/share/umu/umu-shim /home/darian/.var/app/com.heroicgameslauncher.hgl/config/heroic/tools/proton/GE-Proton9-20/proton run",
-      "first_seen": "11:25:39"
+      "cmdline": "bwrap --args 41 -- /usr/lib/pressure-vessel/from-host/libexec/steam-runtime-tools-0/pv-adverb --prefix=/usr/lib/pressure-vessel/from-host --generate-locales --fd 11 --regenerate-ld.so-cache /run/user/1000/pressure-vessel/ldso --add-ld.so-path /usr/lib/pressure-vessel/overrides/lib/x86_64-linux-gnu --add-ld.so-path /usr/lib/pressure-vessel/overrides/lib/i386-linux-gnu --set-ld-library-path /usr/lib/pressure-vessel/overrides/lib/x86_64-linux-gnu/aliases:/usr/lib/pressure-vessel/overrides/lib/i386-linux-gnu/aliases --overrides-path /usr/lib/pressure-vessel/overrides --assign-fd=1=3 --assign-fd=2=4 -- /home/darian/.local/share/umu/umu-shim /home/darian/.var/app/com.heroicgameslauncher.hgl/config/heroic/tools/proton/GE-Proton9-20/proton run",
+      "first_seen": "12:26:27"
     },
-    "22199": {
+    "26808": {
       "name": "pv-adverb",
-      "cmdline": "/usr/lib/pressure-vessel/from-host/libexec/steam-runtime-tools-0/pv-adverb --prefix=/usr/lib/pressure-vessel/from-host --generate-locales --fd 10 --regenerate-ld.so-cache /run/user/1000/pressure-vessel/ldso --add-ld.so-path /usr/lib/pressure-vessel/overrides/lib/x86_64-linux-gnu --add-ld.so-path /usr/lib/pressure-vessel/overrides/lib/i386-linux-gnu --set-ld-library-path /usr/lib/pressure-vessel/overrides/lib/x86_64-linux-gnu/aliases:/usr/lib/pressure-vessel/overrides/lib/i386-linux-gnu/aliases --overrides-path /usr/lib/pressure-vessel/overrides --assign-fd=1=3 --assign-fd=2=4 -- /home/darian/.local/share/umu/umu-shim /home/darian/.var/app/com.heroicgameslauncher.hgl/config/heroic/tools/proton/GE-Proton9-20/proton run",
-      "first_seen": "11:25:39"
+      "cmdline": "/usr/lib/pressure-vessel/from-host/libexec/steam-runtime-tools-0/pv-adverb --prefix=/usr/lib/pressure-vessel/from-host --generate-locales --fd 11 --regenerate-ld.so-cache /run/user/1000/pressure-vessel/ldso --add-ld.so-path /usr/lib/pressure-vessel/overrides/lib/x86_64-linux-gnu --add-ld.so-path /usr/lib/pressure-vessel/overrides/lib/i386-linux-gnu --set-ld-library-path /usr/lib/pressure-vessel/overrides/lib/x86_64-linux-gnu/aliases:/usr/lib/pressure-vessel/overrides/lib/i386-linux-gnu/aliases --overrides-path /usr/lib/pressure-vessel/overrides --assign-fd=1=3 --assign-fd=2=4 -- /home/darian/.local/share/umu/umu-shim /home/darian/.var/app/com.heroicgameslauncher.hgl/config/heroic/tools/proton/GE-Proton9-20/proton run",
+      "first_seen": "12:26:27"
     },
-    "22200": {
+    "26809": {
       "name": "ldconfig",
       "cmdline": "/sbin/ldconfig -f /run/user/1000/pressure-vessel/ldso/ld.so.conf -C /run/user/1000/pressure-vessel/ldso/new-ld.so.cache -X",
-      "first_seen": "11:25:39"
+      "first_seen": "12:26:27"
     },
-    "22243": {
+    "26853": {
       "name": "python3",
       "cmdline": "python3 /home/darian/.var/app/com.heroicgameslauncher.hgl/config/heroic/tools/proton/GE-Proton9-20/proton run",
-      "first_seen": "11:25:48"
+      "first_seen": "12:26:35"
     },
-    "22249": {
+    "26859": {
       "name": "x86_64-linux-gn",
       "cmdline": "/usr/lib/pressure-vessel/from-host/libexec/steam-runtime-tools-0/x86_64-linux-gnu-srt-launcher-service --exec-fallback --hint --inside-app --no-stop-on-name-loss --replace --session -- /home/darian/.var/app/com.heroicgameslauncher.hgl/config/heroic/tools/proton/GE-Proton9-20/files/bin/wine64",
-      "first_seen": "11:25:50"
+      "first_seen": "12:26:37"
     },
-    "22255": {
+    "26865": {
       "name": "wine64",
       "cmdline": "/home/darian/.var/app/com.heroicgameslauncher.hgl/config/heroic/tools/proton/GE-Proton9-20/files/bin/wine64",
-      "first_seen": "11:25:50"
+      "first_seen": "12:26:37"
     },
-    "22257": {
+    "26867": {
       "name": "wineserver",
       "cmdline": "/home/darian/.var/app/com.heroicgameslauncher.hgl/config/heroic/tools/proton/GE-Proton9-20/files/bin/wineserver",
-      "first_seen": "11:25:50"
+      "first_seen": "12:26:37"
     },
-    "22259": {
+    "26869": {
       "name": "wineboot.exe",
       "cmdline": "C:\\windows\\system32\\wineboot.exe --init",
-      "first_seen": "11:25:50"
+      "first_seen": "12:26:37"
     },
-    "22261": {
+    "26876": {
       "name": "services.exe",
       "cmdline": "C:\\windows\\system32\\services.exe",
-      "first_seen": "11:25:50"
+      "first_seen": "12:26:39"
     },
-    "22264": {
+    "26879": {
       "name": "svchost.exe",
       "cmdline": "C:\\windows\\system32\\svchost.exe -k LocalServiceNetworkRestricted",
-      "first_seen": "11:25:50"
+      "first_seen": "12:26:39"
     },
-    "22270": {
+    "26885": {
       "name": "winedevice.exe",
       "cmdline": "C:\\windows\\system32\\winedevice.exe",
-      "first_seen": "11:25:50"
+      "first_seen": "12:26:39"
     },
-    "22279": {
+    "26894": {
       "name": "winedevice.exe",
       "cmdline": "C:\\windows\\system32\\winedevice.exe",
-      "first_seen": "11:25:50"
+      "first_seen": "12:26:39"
     },
-    "22327": {
-      "name": "python3",
-      "cmdline": "python3 ./legendary launch Sugar --no-wine --wrapper /app/bin/gamemoderun \"/home/darian/.var/app/com.heroicgameslauncher.hgl/config/heroic/tools/runtimes/umu/umu_run.py\" --language en",
-      "first_seen": "11:25:54"
-    },
-    "22332": {
-      "name": "gamemoderun",
-      "cmdline": "/bin/bash /app/bin/gamemoderun /home/darian/.var/app/com.heroicgameslauncher.hgl/config/heroic/tools/runtimes/umu/umu_run.py /home/darian/Games/Heroic/rocketleague/Binaries/Win64/Launcher.exe -AUTH_LOGIN=unused -AUTH_PASSWORD=5f14b86b19e340c59dc4e91a3724be7f -AUTH_TYPE=exchangecode -epicapp=Sugar -epicenv=Prod -EpicPortal -epicusername=Darian311 -epicuserid=f4b4bf4a594249b5a94d32718d6e3e28 -epiclocale=en -epicsandboxid=9773aa1aa54f4f7b80e44bef04986cea",
-      "first_seen": "11:25:56"
-    },
-    "22340": {
-      "name": "python3",
-      "cmdline": "python3 /home/darian/.var/app/com.heroicgameslauncher.hgl/config/heroic/tools/runtimes/umu/umu_run.py /home/darian/Games/Heroic/rocketleague/Binaries/Win64/Launcher.exe -AUTH_LOGIN=unused -AUTH_PASSWORD=5f14b86b19e340c59dc4e91a3724be7f -AUTH_TYPE=exchangecode -epicapp=Sugar -epicenv=Prod -EpicPortal -epicusername=Darian311 -epicuserid=f4b4bf4a594249b5a94d32718d6e3e28 -epiclocale=en -epicsandboxid=9773aa1aa54f4f7b80e44bef04986cea",
-      "first_seen": "11:25:56"
-    },
-    "22372": {
-      "name": "steam-runtime-l",
-      "cmdline": "/home/darian/.local/share/umu/steamrt3/pressure-vessel/bin/steam-runtime-launch-client --pass-env-matching=* --bus-name=org.freedesktop.portal.Flatpak --app-path /home/darian/.local/share/umu/steamrt3/var/tmp-NPPYP3/app --share-pids --usr-path /home/darian/.local/share/umu/steamrt3/var/tmp-NPPYP3/usr --directory /home/darian/Games/Heroic/rocketleague/Binaries/Win64 --env-fd 17 --unset-env PRESSURE_VESSEL_FILESYSTEMS_RO --unset-env PRESSURE_VESSEL_FILESYSTEMS_RW --unset-env PWD --unset-env STEAM_COMPAT_APP_LIBRARY_PATH --unset-env STEAM_COMPAT_APP_LIBRARY_PATHS --unset-env STEAM_COMPAT_MOUNT_PATHS --unset-env STEAM_COMPAT_TOOL_PATH --unset-env STEAM_EXTRA_COMPAT_TOOLS_PATHS --unset-env STEAM_RUNTIME_SCOUT --unset-env VDPAU_DRIVER_PATH --unset-env VK_ADD_DRIVER_FILES --unset-env VK_ADD_IMPLICIT_LAYER_PATH --unset-env VK_ADD_LAYER_PATH --unset-env XR_API_LAYER_PATH --unset-env __EGL_EXTERNAL_PLATFORM_CONFIG_DIRS --unset-env __EGL_VENDOR_LIBRARY_DIRS --forward-fd=11 --forward-fd=3 --forward-fd=4 -- /usr/lib/pressure-vessel/from-host/libexec/steam-runtime-tools-0/pv-adverb --prefix=/usr/lib/pressure-vessel/from-host --generate-locales --fd 11 --regenerate-ld.so-cache /run/user/1000/pressure-vessel/ldso --add-ld.so-path /usr/lib/pressure-vessel/overrides/lib/x86_64-linux-gnu --add-ld.so-path /usr/lib/pressure-vessel/overrides/lib/i386-linux-gnu --set-ld-library-path /usr/lib/pressure-vessel/overrides/lib/x86_64-linux-gnu/aliases:/usr/lib/pressure-vessel/overrides/lib/i386-linux-gnu/aliases --overrides-path /usr/lib/pressure-vessel/overrides --assign-fd=1=3 --assign-fd=2=4 --ld-preload=/run/parent/app/lib/libgamemodeauto.so.0:abi=x86_64-linux-gnu --ld-preload=/run/parent/app/lib32/libgamemodeauto.so.0:abi=i386-linux-gnu -- /home/darian/.local/share/umu/umu-shim /home/darian/.var/app/com.heroicgameslauncher.hgl/config/heroic/tools/proton/GE-Proton9-20/proton waitforexitandrun /home/darian/Games/Heroic/rocketleague/Binaries/Win64/Launcher.exe -AUTH_LOGIN=unused -AUTH_PASSWORD=5f14b86b19e340c59dc4e91a3724be7f -AUTH_TYPE=exchangecode -epicapp=Sugar -epicenv=Prod -EpicPortal -epicusername=Darian311 -epicuserid=f4b4bf4a594249b5a94d32718d6e3e28 -epiclocale=en -epicsandboxid=9773aa1aa54f4f7b80e44bef04986cea",
-      "first_seen": "11:26:02"
-    },
-    "22416": {
-      "name": "bwrap",
-      "cmdline": "bwrap --args 41 -- /usr/lib/pressure-vessel/from-host/libexec/steam-runtime-tools-0/pv-adverb --prefix=/usr/lib/pressure-vessel/from-host --generate-locales --fd 11 --regenerate-ld.so-cache /run/user/1000/pressure-vessel/ldso --add-ld.so-path /usr/lib/pressure-vessel/overrides/lib/x86_64-linux-gnu --add-ld.so-path /usr/lib/pressure-vessel/overrides/lib/i386-linux-gnu --set-ld-library-path /usr/lib/pressure-vessel/overrides/lib/x86_64-linux-gnu/aliases:/usr/lib/pressure-vessel/overrides/lib/i386-linux-gnu/aliases --overrides-path /usr/lib/pressure-vessel/overrides --assign-fd=1=3 --assign-fd=2=4 --ld-preload=/run/parent/app/lib/libgamemodeauto.so.0:abi=x86_64-linux-gnu --ld-preload=/run/parent/app/lib32/libgamemodeauto.so.0:abi=i386-linux-gnu -- /home/darian/.local/share/umu/umu-shim /home/darian/.var/app/com.heroicgameslauncher.hgl/config/heroic/tools/proton/GE-Proton9-20/proton waitforexitandrun /home/darian/Games/Heroic/rocketleague/Binaries/Win64/Launcher.exe -AUTH_LOGIN=unused -AUTH_PASSWORD=5f14b86b19e340c59dc4e91a3724be7f -AUTH_TYPE=exchangecode -epicapp=Sugar -epicenv=Prod -EpicPortal -epicusername=Darian311 -epicuserid=f4b4bf4a594249b5a94d32718d6e3e28 -epiclocale=en -epicsandboxid=9773aa1aa54f4f7b80e44bef04986cea",
-      "first_seen": "11:26:02"
-    },
-    "22417": {
-      "name": "pv-adverb",
-      "cmdline": "/usr/lib/pressure-vessel/from-host/libexec/steam-runtime-tools-0/pv-adverb --prefix=/usr/lib/pressure-vessel/from-host --generate-locales --fd 11 --regenerate-ld.so-cache /run/user/1000/pressure-vessel/ldso --add-ld.so-path /usr/lib/pressure-vessel/overrides/lib/x86_64-linux-gnu --add-ld.so-path /usr/lib/pressure-vessel/overrides/lib/i386-linux-gnu --set-ld-library-path /usr/lib/pressure-vessel/overrides/lib/x86_64-linux-gnu/aliases:/usr/lib/pressure-vessel/overrides/lib/i386-linux-gnu/aliases --overrides-path /usr/lib/pressure-vessel/overrides --assign-fd=1=3 --assign-fd=2=4 --ld-preload=/run/parent/app/lib/libgamemodeauto.so.0:abi=x86_64-linux-gnu --ld-preload=/run/parent/app/lib32/libgamemodeauto.so.0:abi=i386-linux-gnu -- /home/darian/.local/share/umu/umu-shim /home/darian/.var/app/com.heroicgameslauncher.hgl/config/heroic/tools/proton/GE-Proton9-20/proton waitforexitandrun /home/darian/Games/Heroic/rocketleague/Binaries/Win64/Launcher.exe -AUTH_LOGIN=unused -AUTH_PASSWORD=5f14b86b19e340c59dc4e91a3724be7f -AUTH_TYPE=exchangecode -epicapp=Sugar -epicenv=Prod -EpicPortal -epicusername=Darian311 -epicuserid=f4b4bf4a594249b5a94d32718d6e3e28 -epiclocale=en -epicsandboxid=9773aa1aa54f4f7b80e44bef04986cea",
-      "first_seen": "11:26:02"
-    },
-    "22441": {
-      "name": "python3",
-      "cmdline": "python3 /home/darian/.var/app/com.heroicgameslauncher.hgl/config/heroic/tools/proton/GE-Proton9-20/proton waitforexitandrun /home/darian/Games/Heroic/rocketleague/Binaries/Win64/Launcher.exe -AUTH_LOGIN=unused -AUTH_PASSWORD=5f14b86b19e340c59dc4e91a3724be7f -AUTH_TYPE=exchangecode -epicapp=Sugar -epicenv=Prod -EpicPortal -epicusername=Darian311 -epicuserid=f4b4bf4a594249b5a94d32718d6e3e28 -epiclocale=en -epicsandboxid=9773aa1aa54f4f7b80e44bef04986cea",
-      "first_seen": "11:26:02"
-    },
-    "22447": {
-      "name": "x86_64-linux-gn",
-      "cmdline": "/usr/lib/pressure-vessel/from-host/libexec/steam-runtime-tools-0/x86_64-linux-gnu-srt-launcher-service --exec-fallback --hint --inside-app --no-stop-on-name-loss --replace --session -- /home/darian/.var/app/com.heroicgameslauncher.hgl/config/heroic/tools/proton/GE-Proton9-20/files/bin/wine64 start /unix /home/darian/Games/Heroic/rocketleague/Binaries/Win64/Launcher.exe -AUTH_LOGIN=unused -AUTH_PASSWORD=5f14b86b19e340c59dc4e91a3724be7f -AUTH_TYPE=exchangecode -epicapp=Sugar -epicenv=Prod -EpicPortal -epicusername=Darian311 -epicuserid=f4b4bf4a594249b5a94d32718d6e3e28 -epiclocale=en -epicsandboxid=9773aa1aa54f4f7b80e44bef04986cea",
-      "first_seen": "11:26:02"
-    },
-    "22453": {
-      "name": "wine64",
-      "cmdline": "/home/darian/.var/app/com.heroicgameslauncher.hgl/config/heroic/tools/proton/GE-Proton9-20/files/bin/wine64 start /unix /home/darian/Games/Heroic/rocketleague/Binaries/Win64/Launcher.exe -AUTH_LOGIN=unused -AUTH_PASSWORD=5f14b86b19e340c59dc4e91a3724be7f -AUTH_TYPE=exchangecode -epicapp=Sugar -epicenv=Prod -EpicPortal -epicusername=Darian311 -epicuserid=f4b4bf4a594249b5a94d32718d6e3e28 -epiclocale=en -epicsandboxid=9773aa1aa54f4f7b80e44bef04986cea",
-      "first_seen": "11:26:02"
-    },
-    "22455": {
-      "name": "wineserver",
-      "cmdline": "/home/darian/.var/app/com.heroicgameslauncher.hgl/config/heroic/tools/proton/GE-Proton9-20/files/bin/wineserver",
-      "first_seen": "11:26:02"
-    },
-    "22457": {
-      "name": "wineboot.exe",
-      "cmdline": "C:\\windows\\system32\\wineboot.exe --init",
-      "first_seen": "11:26:02"
-    },
-    "22459": {
-      "name": "services.exe",
-      "cmdline": "C:\\windows\\system32\\services.exe",
-      "first_seen": "11:26:02"
-    },
-    "22462": {
-      "name": "svchost.exe",
-      "cmdline": "C:\\windows\\system32\\svchost.exe -k LocalServiceNetworkRestricted",
-      "first_seen": "11:26:02"
-    },
-    "22468": {
-      "name": "winedevice.exe",
-      "cmdline": "C:\\windows\\system32\\winedevice.exe",
-      "first_seen": "11:26:02"
-    },
-    "22476": {
-      "name": "winedevice.exe",
-      "cmdline": "C:\\windows\\system32\\winedevice.exe",
-      "first_seen": "11:26:02"
-    },
-    "22488": {
+    "26910": {
       "name": "plugplay.exe",
       "cmdline": "C:\\windows\\system32\\plugplay.exe",
-      "first_seen": "11:26:04"
+      "first_seen": "12:26:41"
     },
-    "22503": {
+    "26938": {
+      "name": "python3",
+      "cmdline": "python3 ./legendary launch Sugar --no-wine --wrapper /app/bin/gamemoderun \"/home/darian/.var/app/com.heroicgameslauncher.hgl/config/heroic/tools/runtimes/umu/umu_run.py\" --language en",
+      "first_seen": "12:26:43"
+    },
+    "26947": {
+      "name": "gamemoderun",
+      "cmdline": "/bin/bash /app/bin/gamemoderun /home/darian/.var/app/com.heroicgameslauncher.hgl/config/heroic/tools/runtimes/umu/umu_run.py /home/darian/Games/Heroic/rocketleague/Binaries/Win64/Launcher.exe -AUTH_LOGIN=unused -AUTH_PASSWORD=e5605a4d0e4b46d8af188dfafd83f07b -AUTH_TYPE=exchangecode -epicapp=Sugar -epicenv=Prod -EpicPortal -epicusername=Darian311 -epicuserid=f4b4bf4a594249b5a94d32718d6e3e28 -epiclocale=en -epicsandboxid=9773aa1aa54f4f7b80e44bef04986cea",
+      "first_seen": "12:26:45"
+    },
+    "26955": {
+      "name": "python3",
+      "cmdline": "python3 /home/darian/.var/app/com.heroicgameslauncher.hgl/config/heroic/tools/runtimes/umu/umu_run.py /home/darian/Games/Heroic/rocketleague/Binaries/Win64/Launcher.exe -AUTH_LOGIN=unused -AUTH_PASSWORD=e5605a4d0e4b46d8af188dfafd83f07b -AUTH_TYPE=exchangecode -epicapp=Sugar -epicenv=Prod -EpicPortal -epicusername=Darian311 -epicuserid=f4b4bf4a594249b5a94d32718d6e3e28 -epiclocale=en -epicsandboxid=9773aa1aa54f4f7b80e44bef04986cea",
+      "first_seen": "12:26:45"
+    },
+    "26977": {
+      "name": "steam-runtime-l",
+      "cmdline": "/home/darian/.local/share/umu/steamrt3/pressure-vessel/bin/steam-runtime-launch-client --pass-env-matching=* --bus-name=org.freedesktop.portal.Flatpak --app-path /home/darian/.local/share/umu/steamrt3/var/tmp-7CA5P3/app --share-pids --usr-path /home/darian/.local/share/umu/steamrt3/var/tmp-7CA5P3/usr --directory /home/darian/Games/Heroic/rocketleague/Binaries/Win64 --env-fd 17 --unset-env PRESSURE_VESSEL_FILESYSTEMS_RO --unset-env PRESSURE_VESSEL_FILESYSTEMS_RW --unset-env PWD --unset-env STEAM_COMPAT_APP_LIBRARY_PATH --unset-env STEAM_COMPAT_APP_LIBRARY_PATHS --unset-env STEAM_COMPAT_MOUNT_PATHS --unset-env STEAM_COMPAT_TOOL_PATH --unset-env STEAM_EXTRA_COMPAT_TOOLS_PATHS --unset-env STEAM_RUNTIME_SCOUT --unset-env VDPAU_DRIVER_PATH --unset-env VK_ADD_DRIVER_FILES --unset-env VK_ADD_IMPLICIT_LAYER_PATH --unset-env VK_ADD_LAYER_PATH --unset-env XR_API_LAYER_PATH --unset-env __EGL_EXTERNAL_PLATFORM_CONFIG_DIRS --unset-env __EGL_VENDOR_LIBRARY_DIRS --forward-fd=12 --forward-fd=3 --forward-fd=4 -- /usr/lib/pressure-vessel/from-host/libexec/steam-runtime-tools-0/pv-adverb --prefix=/usr/lib/pressure-vessel/from-host --generate-locales --fd 12 --regenerate-ld.so-cache /run/user/1000/pressure-vessel/ldso --add-ld.so-path /usr/lib/pressure-vessel/overrides/lib/x86_64-linux-gnu --add-ld.so-path /usr/lib/pressure-vessel/overrides/lib/i386-linux-gnu --set-ld-library-path /usr/lib/pressure-vessel/overrides/lib/x86_64-linux-gnu/aliases:/usr/lib/pressure-vessel/overrides/lib/i386-linux-gnu/aliases --overrides-path /usr/lib/pressure-vessel/overrides --assign-fd=1=3 --assign-fd=2=4 --ld-preload=/run/parent/app/lib/libgamemodeauto.so.0:abi=x86_64-linux-gnu --ld-preload=/run/parent/app/lib32/libgamemodeauto.so.0:abi=i386-linux-gnu -- /home/darian/.local/share/umu/umu-shim /home/darian/.var/app/com.heroicgameslauncher.hgl/config/heroic/tools/proton/GE-Proton9-20/proton waitforexitandrun /home/darian/Games/Heroic/rocketleague/Binaries/Win64/Launcher.exe -AUTH_LOGIN=unused -AUTH_PASSWORD=e5605a4d0e4b46d8af188dfafd83f07b -AUTH_TYPE=exchangecode -epicapp=Sugar -epicenv=Prod -EpicPortal -epicusername=Darian311 -epicuserid=f4b4bf4a594249b5a94d32718d6e3e28 -epiclocale=en -epicsandboxid=9773aa1aa54f4f7b80e44bef04986cea",
+      "first_seen": "12:26:47"
+    },
+    "27021": {
+      "name": "bwrap",
+      "cmdline": "bwrap --args 41 -- /usr/lib/pressure-vessel/from-host/libexec/steam-runtime-tools-0/pv-adverb --prefix=/usr/lib/pressure-vessel/from-host --generate-locales --fd 12 --regenerate-ld.so-cache /run/user/1000/pressure-vessel/ldso --add-ld.so-path /usr/lib/pressure-vessel/overrides/lib/x86_64-linux-gnu --add-ld.so-path /usr/lib/pressure-vessel/overrides/lib/i386-linux-gnu --set-ld-library-path /usr/lib/pressure-vessel/overrides/lib/x86_64-linux-gnu/aliases:/usr/lib/pressure-vessel/overrides/lib/i386-linux-gnu/aliases --overrides-path /usr/lib/pressure-vessel/overrides --assign-fd=1=3 --assign-fd=2=4 --ld-preload=/run/parent/app/lib/libgamemodeauto.so.0:abi=x86_64-linux-gnu --ld-preload=/run/parent/app/lib32/libgamemodeauto.so.0:abi=i386-linux-gnu -- /home/darian/.local/share/umu/umu-shim /home/darian/.var/app/com.heroicgameslauncher.hgl/config/heroic/tools/proton/GE-Proton9-20/proton waitforexitandrun /home/darian/Games/Heroic/rocketleague/Binaries/Win64/Launcher.exe -AUTH_LOGIN=unused -AUTH_PASSWORD=e5605a4d0e4b46d8af188dfafd83f07b -AUTH_TYPE=exchangecode -epicapp=Sugar -epicenv=Prod -EpicPortal -epicusername=Darian311 -epicuserid=f4b4bf4a594249b5a94d32718d6e3e28 -epiclocale=en -epicsandboxid=9773aa1aa54f4f7b80e44bef04986cea",
+      "first_seen": "12:26:47"
+    },
+    "27022": {
+      "name": "pv-adverb",
+      "cmdline": "/usr/lib/pressure-vessel/from-host/libexec/steam-runtime-tools-0/pv-adverb --prefix=/usr/lib/pressure-vessel/from-host --generate-locales --fd 12 --regenerate-ld.so-cache /run/user/1000/pressure-vessel/ldso --add-ld.so-path /usr/lib/pressure-vessel/overrides/lib/x86_64-linux-gnu --add-ld.so-path /usr/lib/pressure-vessel/overrides/lib/i386-linux-gnu --set-ld-library-path /usr/lib/pressure-vessel/overrides/lib/x86_64-linux-gnu/aliases:/usr/lib/pressure-vessel/overrides/lib/i386-linux-gnu/aliases --overrides-path /usr/lib/pressure-vessel/overrides --assign-fd=1=3 --assign-fd=2=4 --ld-preload=/run/parent/app/lib/libgamemodeauto.so.0:abi=x86_64-linux-gnu --ld-preload=/run/parent/app/lib32/libgamemodeauto.so.0:abi=i386-linux-gnu -- /home/darian/.local/share/umu/umu-shim /home/darian/.var/app/com.heroicgameslauncher.hgl/config/heroic/tools/proton/GE-Proton9-20/proton waitforexitandrun /home/darian/Games/Heroic/rocketleague/Binaries/Win64/Launcher.exe -AUTH_LOGIN=unused -AUTH_PASSWORD=e5605a4d0e4b46d8af188dfafd83f07b -AUTH_TYPE=exchangecode -epicapp=Sugar -epicenv=Prod -EpicPortal -epicusername=Darian311 -epicuserid=f4b4bf4a594249b5a94d32718d6e3e28 -epiclocale=en -epicsandboxid=9773aa1aa54f4f7b80e44bef04986cea",
+      "first_seen": "12:26:47"
+    },
+    "27046": {
+      "name": "python3",
+      "cmdline": "python3 /home/darian/.var/app/com.heroicgameslauncher.hgl/config/heroic/tools/proton/GE-Proton9-20/proton waitforexitandrun /home/darian/Games/Heroic/rocketleague/Binaries/Win64/Launcher.exe -AUTH_LOGIN=unused -AUTH_PASSWORD=e5605a4d0e4b46d8af188dfafd83f07b -AUTH_TYPE=exchangecode -epicapp=Sugar -epicenv=Prod -EpicPortal -epicusername=Darian311 -epicuserid=f4b4bf4a594249b5a94d32718d6e3e28 -epiclocale=en -epicsandboxid=9773aa1aa54f4f7b80e44bef04986cea",
+      "first_seen": "12:26:47"
+    },
+    "27048": {
+      "name": "x86_64-linux-gn",
+      "cmdline": "/usr/lib/pressure-vessel/from-host/libexec/steam-runtime-tools-0/x86_64-linux-gnu-srt-launcher-service --exec-fallback --hint --inside-app --no-stop-on-name-loss --replace --session -- /home/darian/.var/app/com.heroicgameslauncher.hgl/config/heroic/tools/proton/GE-Proton9-20/files/bin/wine64 start /unix /home/darian/Games/Heroic/rocketleague/Binaries/Win64/Launcher.exe -AUTH_LOGIN=unused -AUTH_PASSWORD=e5605a4d0e4b46d8af188dfafd83f07b -AUTH_TYPE=exchangecode -epicapp=Sugar -epicenv=Prod -EpicPortal -epicusername=Darian311 -epicuserid=f4b4bf4a594249b5a94d32718d6e3e28 -epiclocale=en -epicsandboxid=9773aa1aa54f4f7b80e44bef04986cea",
+      "first_seen": "12:26:47"
+    },
+    "27054": {
+      "name": "wine64",
+      "cmdline": "/home/darian/.var/app/com.heroicgameslauncher.hgl/config/heroic/tools/proton/GE-Proton9-20/files/bin/wine64 start /unix /home/darian/Games/Heroic/rocketleague/Binaries/Win64/Launcher.exe -AUTH_LOGIN=unused -AUTH_PASSWORD=e5605a4d0e4b46d8af188dfafd83f07b -AUTH_TYPE=exchangecode -epicapp=Sugar -epicenv=Prod -EpicPortal -epicusername=Darian311 -epicuserid=f4b4bf4a594249b5a94d32718d6e3e28 -epiclocale=en -epicsandboxid=9773aa1aa54f4f7b80e44bef04986cea",
+      "first_seen": "12:26:47"
+    },
+    "27056": {
+      "name": "wineserver",
+      "cmdline": "/home/darian/.var/app/com.heroicgameslauncher.hgl/config/heroic/tools/proton/GE-Proton9-20/files/bin/wineserver",
+      "first_seen": "12:26:47"
+    },
+    "27058": {
+      "name": "wineboot.exe",
+      "cmdline": "C:\\windows\\system32\\wineboot.exe --init",
+      "first_seen": "12:26:47"
+    },
+    "27060": {
+      "name": "services.exe",
+      "cmdline": "C:\\windows\\system32\\services.exe",
+      "first_seen": "12:26:47"
+    },
+    "27063": {
+      "name": "svchost.exe",
+      "cmdline": "C:\\windows\\system32\\svchost.exe -k LocalServiceNetworkRestricted",
+      "first_seen": "12:26:47"
+    },
+    "27069": {
+      "name": "winedevice.exe",
+      "cmdline": "C:\\windows\\system32\\winedevice.exe",
+      "first_seen": "12:26:47"
+    },
+    "27081": {
+      "name": "winedevice.exe",
+      "cmdline": "C:\\windows\\system32\\winedevice.exe",
+      "first_seen": "12:26:47"
+    },
+    "27094": {
+      "name": "plugplay.exe",
+      "cmdline": "C:\\windows\\system32\\plugplay.exe",
+      "first_seen": "12:26:49"
+    },
+    "27109": {
       "name": "Launcher.exe",
-      "cmdline": "S:\\Games\\Heroic\\rocketleague\\Binaries\\Win64\\Launcher.exe -AUTH_LOGIN=unused -AUTH_PASSWORD=5f14b86b19e340c59dc4e91a3724be7f -AUTH_TYPE=exchangecode -epicapp=Sugar -epicenv=Prod -EpicPortal -epicusername=Darian311 -epicuserid=f4b4bf4a594249b5a94d32718d6e3e28 -epiclocale=en -epicsandboxid=9773aa1aa54f4f7b80e44bef04986cea",
-      "first_seen": "11:26:04"
+      "cmdline": "S:\\Games\\Heroic\\rocketleague\\Binaries\\Win64\\Launcher.exe -AUTH_LOGIN=unused -AUTH_PASSWORD=e5605a4d0e4b46d8af188dfafd83f07b -AUTH_TYPE=exchangecode -epicapp=Sugar -epicenv=Prod -EpicPortal -epicusername=Darian311 -epicuserid=f4b4bf4a594249b5a94d32718d6e3e28 -epiclocale=en -epicsandboxid=9773aa1aa54f4f7b80e44bef04986cea",
+      "first_seen": "12:26:49"
     },
-    "22508": {
+    "27114": {
       "name": "RocketLeague_EA",
-      "cmdline": "RocketLeague_EAC.exe -AUTH_LOGIN=unused -AUTH_PASSWORD=5f14b86b19e340c59dc4e91a3724be7f -AUTH_TYPE=exchangecode -epicapp=Sugar -epicenv=Prod -EpicPortal -epicusername=Darian311 -epicuserid=f4b4bf4a594249b5a94d32718d6e3e28 -epiclocale=en -epicsandboxid=9773aa1aa54f4f7b80e44bef04986cea",
-      "first_seen": "11:26:04"
+      "cmdline": "RocketLeague_EAC.exe -AUTH_LOGIN=unused -AUTH_PASSWORD=e5605a4d0e4b46d8af188dfafd83f07b -AUTH_TYPE=exchangecode -epicapp=Sugar -epicenv=Prod -EpicPortal -epicusername=Darian311 -epicuserid=f4b4bf4a594249b5a94d32718d6e3e28 -epiclocale=en -epicsandboxid=9773aa1aa54f4f7b80e44bef04986cea",
+      "first_seen": "12:26:49"
     },
-    "22516": {
+    "27118": {
       "name": "explorer.exe",
       "cmdline": "C:\\windows\\system32\\explorer.exe /desktop",
-      "first_seen": "11:26:04"
+      "first_seen": "12:26:49"
     },
-    "22528": {
+    "27134": {
       "name": "rpcss.exe",
       "cmdline": "C:\\windows\\system32\\rpcss.exe",
-      "first_seen": "11:26:06"
+      "first_seen": "12:26:52"
     },
-    "22538": {
+    "27143": {
       "name": "tabtip.exe",
       "cmdline": "C:\\windows\\system32\\tabtip.exe",
-      "first_seen": "11:26:06"
+      "first_seen": "12:26:52"
     },
-    "22553": {
+    "27159": {
       "name": "RocketLeague.ex",
-      "cmdline": "S:\\Games\\Heroic\\rocketleague\\Binaries\\Win64\\RocketLeague.exe -AUTH_LOGIN=unused -AUTH_PASSWORD=5f14b86b19e340c59dc4e91a3724be7f -AUTH_TYPE=exchangecode -epicapp=Sugar -epicenv=Prod -EpicPortal -epicusername=Darian311 -epicuserid=f4b4bf4a594249b5a94d32718d6e3e28 -epiclocale=en -epicsandboxid=9773aa1aa54f4f7b80e44bef04986cea",
-      "first_seen": "11:26:08"
+      "cmdline": "S:\\Games\\Heroic\\rocketleague\\Binaries\\Win64\\RocketLeague.exe -AUTH_LOGIN=unused -AUTH_PASSWORD=e5605a4d0e4b46d8af188dfafd83f07b -AUTH_TYPE=exchangecode -epicapp=Sugar -epicenv=Prod -EpicPortal -epicusername=Darian311 -epicuserid=f4b4bf4a594249b5a94d32718d6e3e28 -epiclocale=en -epicsandboxid=9773aa1aa54f4f7b80e44bef04986cea",
+      "first_seen": "12:26:54"
     },
-    "22587": {
+    "27193": {
       "name": "explorer.exe",
       "cmdline": "C:\\windows\\system32\\explorer.exe /desktop",
-      "first_seen": "11:26:10"
+      "first_seen": "12:26:56"
     },
-    "22596": {
+    "27203": {
       "name": "tabtip.exe",
       "cmdline": "C:\\windows\\system32\\tabtip.exe",
-      "first_seen": "11:26:10"
+      "first_seen": "12:26:58"
     }
   },
   "killed_processes": [
     {
-      "pid": 19520,
+      "pid": 24047,
       "name": "bash",
       "reason": "Not whitelisted",
       "cmdline": "-bash"
+    },
+    {
+      "pid": 26118,
+      "name": "gcr-prompter",
+      "reason": "Not whitelisted",
+      "cmdline": "/usr/libexec/gcr-prompter"
+    },
+    {
+      "pid": 26187,
+      "name": "git",
+      "reason": "Not whitelisted",
+      "cmdline": "git push"
+    },
+    {
+      "pid": 26216,
+      "name": "git",
+      "reason": "Not whitelisted",
+      "cmdline": "/usr/lib/git-core/git pack-objects --all-progress-implied --revs --stdout --thin --delta-base-offset --progress"
     }
   ],
-  "available_ram_kb": 6727516
+  "available_ram_kb": 6738152
 }
