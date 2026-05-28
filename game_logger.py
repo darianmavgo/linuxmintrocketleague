@@ -32,6 +32,16 @@ def sigterm_handler(signum, frame):
     global running
     running = False
 
+def get_available_ram_kb():
+    try:
+        with open("/proc/meminfo", "r") as f:
+            for line in f:
+                if line.startswith("MemAvailable:"):
+                    return int(line.split()[1])
+    except:
+        pass
+    return 0
+
 def get_zram_usage():
     zram_usage = {}
     for pid_name in os.listdir('/proc'):
@@ -231,6 +241,9 @@ def write_to_history_log():
             f.write(f"🎮 ROCKET LEAGUE SESSION TELEMETRY\n")
             f.write(f"Start Time: {session_data['start_time']}\n")
             f.write(f"End Time:   {session_data['end_time']}\n")
+            if "available_ram_kb" in session_data:
+                avail_mb = session_data["available_ram_kb"] / 1024.0
+                f.write(f"Available RAM at Start: {avail_mb:.1f} MB\n")
             f.write(f"========================================\n\n")
             
             f.write(f"1. KILLED PROCESSES DURING CLEANUP ({len(session_data['killed_processes'])})\n")
@@ -271,7 +284,8 @@ def run_daemon():
     start_dt = datetime.now()
     session_data["start_time"] = start_dt.strftime("%Y-%m-%d %H:%M:%S")
     
-    # Capture initial ZRAM state
+    # Capture initial available RAM and ZRAM state
+    session_data["available_ram_kb"] = get_available_ram_kb()
     session_data["zram_start"] = {str(k): v for k, v in get_zram_usage().items()}
     
     game_roots = set()
@@ -379,6 +393,9 @@ def print_session_summary():
     print(f"{BOLD}{CYAN}   🎮  ROCKET LEAGUE SESSION PERFORMANCE SUMMARY{RESET}")
     print(f"{BOLD}{CYAN}========================================================================{RESET}")
     print(f" {BOLD}Session Duration:{RESET} {data['start_time']} to {data['end_time']} ({duration})")
+    if "available_ram_kb" in data:
+        avail_mb = data["available_ram_kb"] / 1024.0
+        print(f" {BOLD}Available RAM at Start:{RESET} {avail_mb:.1f} MB")
     print(f"{BOLD}{CYAN}========================================================================{RESET}\n")
     
     # 1. Killed Processes

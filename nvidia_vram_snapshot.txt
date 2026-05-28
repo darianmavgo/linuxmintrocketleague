@@ -1,7 +1,7 @@
 
 ==============NVSMI LOG==============
 
-Timestamp                                 : Wed May 27 10:00:02 2026
+Timestamp                                 : Wed May 27 20:42:09 2026
 Driver Version                            : 535.309.01
 CUDA Version                              : 12.2
 
@@ -10,12 +10,12 @@ GPU 00000000:01:00.0
     FB Memory Usage
         Total                             : 2048 MiB
         Reserved                          : 51 MiB
-        Used                              : 248 MiB
-        Free                              : 1748 MiB
+        Used                              : 1189 MiB
+        Free                              : 807 MiB
     BAR1 Memory Usage
         Total                             : 256 MiB
-        Used                              : 4 MiB
-        Free                              : 252 MiB
+        Used                              : 25 MiB
+        Free                              : 231 MiB
     Conf Compute Protected Memory Usage
         Total                             : 0 MiB
         Used                              : 0 MiB
@@ -26,7 +26,7 @@ GPU 00000000:01:00.0
         Process ID                        : 1329
             Type                          : G
             Name                          : /usr/lib/xorg/Xorg
-            Used GPU Memory               : 214 MiB
+            Used GPU Memory               : 255 MiB
         GPU instance ID                   : N/A
         Compute instance ID               : N/A
         Process ID                        : 1904
@@ -35,8 +35,14 @@ GPU 00000000:01:00.0
             Used GPU Memory               : 1 MiB
         GPU instance ID                   : N/A
         Compute instance ID               : N/A
-        Process ID                        : 6833
+        Process ID                        : 18528
             Type                          : G
             Name                          : /app/bin/heroic/heroic
             Used GPU Memory               : 29 MiB
+        GPU instance ID                   : N/A
+        Compute instance ID               : N/A
+        Process ID                        : 19173
+            Type                          : C+G
+            Name                          : S:\Games\Heroic\rocketleague\Binaries\Win64\RocketLeague.exe
+            Used GPU Memory               : 899 MiB
 

@@ -9,13 +9,13 @@ from datetime import datetime
 WHITELIST_NAMES = {
     "systemd", "sd-pam", "dbus-daemon", "dconf-service",
     "xfce4-session", "xfwm4", "xfsettingsd", "xfce4-panel", "xfdesktop", "xfconfd",
-    "pipewire", "pipewire-pulse", "wireplumber", "sndiod",
+    "pipewire", "pipewire-pulse", "wireplumber",
     "flatpak-session-helper", "pkcs11-flatpak", "xdg-dbus-proxy", "flatpak-portal", "bwrap", "zypak-helper",
     "xdg-desktop-portal", "xdg-permission-store", "xdg-document-portal", "xdg-desktop-portal-gtk", "xdg-desktop-portal-xapp", "fusermount3",
-    "nvidia-settings", "nvidia-persistenced", "nvidia-prime", "nvidia-smi",
+    "nvidia-persistenced", "nvidia-prime", "nvidia-smi",
     "gamemoded", "gamemoderun",
     "heroic", "heroic-run", "legendary",
-    "wineserver", "services.exe", "winedevice.exe", "plugplay.exe", "rpcss.exe", "explorer.exe", "svchost.exe", "tabtip.exe",
+    "wineserver", "services.exe", "winedevice.exe", "plugplay.exe", "rpcss.exe", "explorer.exe", "svchost.exe",
     "rocketleague.exe", "launcher.exe"
 }
 

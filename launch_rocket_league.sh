@@ -40,6 +40,17 @@ for arg in "$@"; do
     fi
 done
 
+# Check if wired ethernet has link/carrier
+ETHERNET_STATUS=$(cat /sys/class/net/enp4s0/carrier 2>/dev/null || echo "0")
+if [ "$ETHERNET_STATUS" = "1" ]; then
+    echo "🔌 Wired connection detected on enp4s0! Temporarily disabling WiFi to force wired-only connection..."
+    nmcli radio wifi off || true
+    WIFI_DISABLED_BY_US=true
+else
+    echo "⚠️ WARNING: Wired connection (enp4s0) is not active. Keeping WiFi enabled to prevent going offline."
+    WIFI_DISABLED_BY_US=false
+fi
+
 # Start the telemetry logger
 python3 "$SCRIPT_DIR/game_logger.py" --start
 
@@ -49,6 +60,11 @@ cleanup() {
     python3 "$SCRIPT_DIR/game_logger.py" --stop
     
     terminate_game_and_compatibility_layers
+    
+    if [ "$WIFI_DISABLED_BY_US" = true ]; then
+        echo "📡 Re-enabling WiFi..."
+        nmcli radio wifi on || true
+    fi
     
     echo "♻️ Restoring background systemd user services..."
     systemctl --user start gvfs-daemon.service gvfs-mtp-volume-monitor.service gvfs-udisks2-volume-monitor.service gnome-keyring-daemon.service xfce4-notifyd.service at-spi-dbus-bus.service gpg-agent.service || true
@@ -91,11 +107,9 @@ echo "🎮 Launching Rocket League via Heroic Games Launcher (with FSR, DXVK, an
         tail -f -n +1 "$LOG_FILE" | grep -m 1 -E "m_uiState:MainMenu|LoadMap: MENU_Main_p" > /dev/null || true
         echo "🎮 Main Menu loaded and authenticated!"
         
-        # Snapshot RAM and GPU VRAM State
-        echo "📸 Capturing RAM core dump and GPU allocation snapshot..."
-        nvidia-smi -q -d MEMORY,PIDS > "/home/darian/Documents/RocketMode/nvidia_vram_snapshot.txt" 2>&1 || true
-        gcore -o "/home/darian/Documents/RocketMode/rocketleague_ram.dump" "$GAME_PID" || true
-        echo "📸 Snapshot complete (saved in /home/darian/Documents/RocketMode/)."
+        # RAM/VRAM snapshots have been moved to the standalone take_ram_snapshot.sh script
+        # nvidia-smi -q -d MEMORY,PIDS > "/home/darian/Documents/RocketMode/nvidia_vram_snapshot.txt" 2>&1 || true
+        # gcore -o "/home/darian/Documents/RocketMode/rocketleague_ram.dump" "$GAME_PID" || true
     fi
     
     # Terminate Heroic UI to reclaim ~400MB RAM since game is now running
