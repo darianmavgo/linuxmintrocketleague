@@ -60,7 +60,7 @@ fi
 
 if [ "$WIRED_INTERNET" = true ]; then
     echo "🔌 Active wired internet connection detected on enp4s0! Temporarily disabling WiFi to force wired-only connection..."
-    nmcli radio wifi off || true
+    nmcli radio wifi off >/dev/null 2>&1 || true
     WIFI_DISABLED_BY_US=true
 else
     echo "⚠️ WARNING: Wired connection (enp4s0) is not active or has no internet access. Keeping WiFi enabled to prevent going offline."
@@ -68,7 +68,7 @@ else
     # Auto-restore WiFi if it was left disabled by a crashed run
     if [ "$(nmcli radio wifi)" = "disabled" ]; then
         echo "📡 WiFi was disabled. Re-enabling WiFi to ensure internet access..."
-        nmcli radio wifi on || true
+        nmcli radio wifi on >/dev/null 2>&1 || true
     fi
 fi
 
@@ -84,7 +84,7 @@ cleanup() {
     
     if [ "$WIFI_DISABLED_BY_US" = true ]; then
         echo "📡 Re-enabling WiFi..."
-        nmcli radio wifi on || true
+        nmcli radio wifi on >/dev/null 2>&1 || true
     fi
     
     echo "♻️ Restoring background systemd user services..."
@@ -97,7 +97,7 @@ echo "🎮 Launching Rocket League via Heroic Games Launcher (with FSR, DXVK, an
 (
     # Monitor for the game starting (timeout: 120 seconds)
     GAME_PID=""
-    for i in {1..60}; do
+    for i in {1..150}; do
         GAME_PID=$(pgrep -u "$USER" -f -i "RocketLeague.exe" | head -n 1 || true)
         if [ -n "$GAME_PID" ]; then
             break
@@ -106,7 +106,7 @@ echo "🎮 Launching Rocket League via Heroic Games Launcher (with FSR, DXVK, an
     done
 
     if [ -z "$GAME_PID" ]; then
-        echo "⚠️ Rocket League failed to start within 120 seconds."
+        echo "⚠️ Rocket League failed to start within 300 seconds."
         flatpak kill com.heroicgameslauncher.hgl || true
         exit 1
     fi
@@ -159,7 +159,7 @@ FLATPAK_ARGS=()
 flatpak run \
     --env=WINE_FULLSCREEN_FSR=1 \
     --env=WINE_FULLSCREEN_FSR_STRENGTH=2 \
-    --env=DXVK_CONFIG="dxvk.maxChunkSize=32 dxvk.numCompilerThreads=4" \
+    --env=DXVK_CONFIG="dxvk.numCompilerThreads = 4; dxgi.maxDeviceMemory = 2048; dxgi.maxSharedMemory = 4096" \
     --env=PIPEWIRE_LATENCY="128/48000" \
     com.heroicgameslauncher.hgl "${FLATPAK_ARGS[@]}" --launch Sugar
 

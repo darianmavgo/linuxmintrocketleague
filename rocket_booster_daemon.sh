@@ -6,7 +6,7 @@
 set -e
 
 # Target applications to suspend (matching process names exactly)
-TARGETS=("chrome" "firefox" "discord" "spotify" "slack" "steamwebhelper")
+TARGETS=("chrome" "firefox" "discord" "spotify" "slack" "steamwebhelper" "heroic")
 
 echo "🚀 RocketMode Game Booster Daemon active. Listening for Rocket League..."
 

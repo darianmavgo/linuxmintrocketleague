@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Helper script to cap ZRAM swap size to 1 GB.
+# Helper script to cap ZRAM swap size to 4 GB.
 set -e
 
 if [ "$EUID" -ne 0 ]; then
@@ -21,9 +21,9 @@ modprobe zram
 totalmem=`LC_ALL=C free | grep -e "^Mem:" | sed -e 's/^Mem: *//' -e 's/  *.*//'`
 mem=$((totalmem / 2 * 1024))
 
-# Cap ZRAM size at 1 GB (1,073,741,824 bytes)
-if [ $mem -gt 1073741824 ]; then
-    mem=1073741824
+# Cap ZRAM size at 4 GB (1,073,741,824 bytes)
+if [ $mem -gt 4294967296 ]; then
+    mem=4294967296
 fi
 
 # initialize the devices
@@ -42,4 +42,4 @@ echo "📊 Verifying new swap allocations..."
 swapon --show
 free -h
 
-echo "🎉 ZRAM successfully capped at 1 GB!"
+echo "🎉 ZRAM successfully capped at 4 GB!"
