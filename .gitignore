@@ -1,0 +1,8 @@
+# RAM snapshots / dumps
+*.dump
+*ram.dump.*
+rocketleague_ram.dump.*
+
+# Files over 40 MB
+rocketleague_ram.dump.3555
+rocketleague_ram.dump.7431
