@@ -1,4 +1,7 @@
 #!/usr/bin/env bash
+# Enable launching graphical apps from SSH
+if [ -z "$DISPLAY" ]; then export DISPLAY=:0; fi
+if [ -z "$XAUTHORITY" ]; then export XAUTHORITY=/home/darian/.Xauthority; fi
 # Master launcher for Rocket League with performance optimization.
 set -e
 
@@ -161,6 +164,8 @@ flatpak run \
     --env=WINE_FULLSCREEN_FSR_STRENGTH=2 \
     --env=DXVK_CONFIG="dxvk.numCompilerThreads = 4; dxgi.maxDeviceMemory = 2048; dxgi.maxSharedMemory = 4096" \
     --env=PIPEWIRE_LATENCY="128/48000" \
+    --env=MANGOHUD=0 \
+    --env=DXVK_HUD=0 \
     com.heroicgameslauncher.hgl "${FLATPAK_ARGS[@]}" --launch Sugar
 
 echo "🚀 Workstation session remains active."
