@@ -857,3 +857,38 @@
 2026-05-28 12:25:38 - PID 26187 (git) - Not whitelisted - Command: git push
 2026-05-28 12:25:38 - PID 26216 (git) - Not whitelisted - Command: /usr/lib/git-core/git pack-objects --all-progress-implied --revs --stdout --thin --delta-base-offset --progress
 2026-05-28 12:25:38 - Cleanup finished. Successfully killed 4 processes.
+
+--- Gaming Environment Cleanup: 2026-05-28 12:35:36 (Mode: ACTIVE) ---
+2026-05-28 12:35:36 - PID 26431 (bash) - Not whitelisted - Command: -bash
+2026-05-28 12:35:36 - PID 27472 (sshd) - Duplicate SSH Session - Command: sshd: darian@pts/2
+2026-05-28 12:35:36 - PID 27473 (bash) - Not whitelisted - Command: -bash
+2026-05-28 12:35:36 - Cleanup finished. Successfully killed 3 processes.
+
+--- Gaming Environment Cleanup: 2026-05-28 21:13:09 (Mode: ACTIVE) ---
+2026-05-28 21:13:09 - Cleanup finished. Successfully killed 0 processes.
+
+--- Gaming Environment Cleanup: 2026-05-29 07:22:37 (Mode: ACTIVE) ---
+2026-05-29 07:22:37 - PID 1673 (ibus-daemon) - Not whitelisted - Command: /usr/bin/ibus-daemon --daemonize --xim
+2026-05-29 07:22:37 - PID 1694 (ibus-memconf) - Not whitelisted - Command: /usr/libexec/ibus-memconf
+2026-05-29 07:22:37 - PID 1703 (ibus-ui-gtk3) - Not whitelisted - Command: /usr/libexec/ibus-ui-gtk3
+2026-05-29 07:22:37 - PID 1707 (ibus-extension-) - Not whitelisted - Command: /usr/libexec/ibus-extension-gtk3
+2026-05-29 07:22:37 - PID 1709 (ibus-x11) - Not whitelisted - Command: /usr/libexec/ibus-x11 --kill-daemon
+2026-05-29 07:22:37 - PID 1712 (ibus-portal) - Not whitelisted - Command: /usr/libexec/ibus-portal
+2026-05-29 07:22:37 - PID 1766 (ssh-agent) - Not whitelisted - Command: /usr/bin/ssh-agent -s
+2026-05-29 07:22:37 - PID 1809 (ibus-engine-sim) - Not whitelisted - Command: /usr/libexec/ibus-engine-simple
+2026-05-29 07:22:37 - PID 1826 (Thunar) - Not whitelisted - Command: Thunar --daemon
+2026-05-29 07:22:37 - PID 1861 (tumblerd) - Not whitelisted - Command: /usr/lib/x86_64-linux-gnu/tumbler-1/tumblerd
+2026-05-29 07:22:37 - PID 1867 (touchegg) - Not whitelisted - Command: touchegg
+2026-05-29 07:22:37 - PID 1871 (agent) - Not whitelisted - Command: /usr/libexec/geoclue-2.0/demos/agent
+2026-05-29 07:22:37 - PID 1889 (light-locker) - Not whitelisted - Command: light-locker
+2026-05-29 07:22:37 - PID 1904 (polkit-gnome-au) - Not whitelisted - Command: /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1
+2026-05-29 07:22:37 - PID 1918 (nm-applet) - Not whitelisted - Command: nm-applet
+2026-05-29 07:22:37 - PID 1931 (xiccd) - Not whitelisted - Command: xiccd
+2026-05-29 07:22:37 - PID 1968 (xfce4-power-man) - Not whitelisted - Command: xfce4-power-manager
+2026-05-29 07:22:37 - PID 2541 (bash) - Not whitelisted - Command: bash
+2026-05-29 07:22:37 - PID 3321 (sleep) - Not whitelisted - Command: sleep 2
+2026-05-29 07:22:37 - PID 3325 (sleep) - Not whitelisted - Command: sleep 2
+2026-05-29 07:22:37 - Cleanup finished. Successfully killed 20 processes.
+
+--- Gaming Environment Cleanup: 2026-05-29 07:32:36 (Mode: ACTIVE) ---
+2026-05-29 07:32:36 - Cleanup finished. Successfully killed 0 processes.
