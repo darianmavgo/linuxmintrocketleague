@@ -892,3 +892,91 @@
 
 --- Gaming Environment Cleanup: 2026-05-29 07:32:36 (Mode: ACTIVE) ---
 2026-05-29 07:32:36 - Cleanup finished. Successfully killed 0 processes.
+
+--- Gaming Environment Cleanup: 2026-05-29 18:30:04 (Mode: ACTIVE) ---
+2026-05-29 18:30:04 - PID 1663 (ibus-daemon) - Not whitelisted - Command: /usr/bin/ibus-daemon --daemonize --xim
+2026-05-29 18:30:04 - PID 1684 (ibus-memconf) - Not whitelisted - Command: /usr/libexec/ibus-memconf
+2026-05-29 18:30:04 - PID 1693 (ibus-ui-gtk3) - Not whitelisted - Command: /usr/libexec/ibus-ui-gtk3
+2026-05-29 18:30:04 - PID 1697 (ibus-extension-) - Not whitelisted - Command: /usr/libexec/ibus-extension-gtk3
+2026-05-29 18:30:04 - PID 1699 (ibus-x11) - Not whitelisted - Command: /usr/libexec/ibus-x11 --kill-daemon
+2026-05-29 18:30:04 - PID 1702 (ibus-portal) - Not whitelisted - Command: /usr/libexec/ibus-portal
+2026-05-29 18:30:04 - PID 1756 (ssh-agent) - Not whitelisted - Command: /usr/bin/ssh-agent -s
+2026-05-29 18:30:04 - PID 1798 (ibus-engine-sim) - Not whitelisted - Command: /usr/libexec/ibus-engine-simple
+2026-05-29 18:30:04 - PID 1815 (Thunar) - Not whitelisted - Command: Thunar --daemon
+2026-05-29 18:30:04 - PID 1858 (touchegg) - Not whitelisted - Command: touchegg
+2026-05-29 18:30:04 - PID 1860 (agent) - Not whitelisted - Command: /usr/libexec/geoclue-2.0/demos/agent
+2026-05-29 18:30:04 - PID 1879 (light-locker) - Not whitelisted - Command: light-locker
+2026-05-29 18:30:04 - PID 1892 (polkit-gnome-au) - Not whitelisted - Command: /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1
+2026-05-29 18:30:04 - PID 1901 (nm-applet) - Not whitelisted - Command: nm-applet
+2026-05-29 18:30:04 - PID 1913 (xiccd) - Not whitelisted - Command: xiccd
+2026-05-29 18:30:04 - PID 1950 (xfce4-power-man) - Not whitelisted - Command: xfce4-power-manager
+2026-05-29 18:30:04 - PID 7905 (cat) - Not whitelisted - Command: cat
+2026-05-29 18:30:04 - PID 7906 (cat) - Not whitelisted - Command: cat
+2026-05-29 18:30:04 - PID 9964 (file-roller) - Not whitelisted - Command: /usr/bin/file-roller /home/darian/Downloads/Antigravity IDE.tar.gz
+2026-05-29 18:30:04 - PID 10058 (gvfsd-metadata) - Not whitelisted - Command: /usr/libexec/gvfsd-metadata
+2026-05-29 18:30:04 - PID 10114 (antigravity-ide) - Not whitelisted - Command: /home/darian/Documents/Antigravity IDE/antigravity-ide
+2026-05-29 18:30:04 - PID 10117 (antigravity-ide) - Not whitelisted - Command: /home/darian/Documents/Antigravity IDE/antigravity-ide --type=zygote --no-zygote-sandbox
+2026-05-29 18:30:04 - PID 10118 (antigravity-ide) - Not whitelisted - Command: /home/darian/Documents/Antigravity IDE/antigravity-ide --type=zygote
+2026-05-29 18:30:04 - PID 10120 (antigravity-ide) - Not whitelisted - Command: /home/darian/Documents/Antigravity IDE/antigravity-ide --type=zygote
+2026-05-29 18:30:04 - PID 10155 (antigravity-ide) - Not whitelisted - Command: /proc/self/exe --type=utility --utility-sub-type=network.mojom.NetworkService --lang=en-US --service-sandbox-type=none --enable-crash-reporter=d6f5d1ae-b18c-4aec-a0bd-28ea13879b82,no_channel --user-data-dir=/home/darian/.config/Antigravity IDE --standard-schemes=vscode-webview,vscode-file --enable-sandbox --secure-schemes=vscode-webview,vscode-file --cors-schemes=vscode-webview,vscode-file --fetch-schemes=vscode-webview,vscode-file --service-worker-schemes=vscode-webview --code-cache-schemes=vscode-webview,vscode-file --shared-files=v8_context_snapshot_data:100 --field-trial-handle=3,i,3247301717562956181,4682797393806929694,262144 --enable-features=DocumentPolicyIncludeJSCallStacksInCrashReports,EarlyEstablishGpuChannel,EstablishGpuChannelAsync,PdfUseShowSaveFilePicker --disable-features=CalculateNativeWinOcclusion,LocalNetworkAccessChecks,ScreenAIOCREnabled,SpareRendererForSitePerProcess,TraceSiteInstanceGetProcessCreation --variations-seed-version --trace-process-track-uuid=3190708989122997041
+2026-05-29 18:30:04 - PID 10185 (antigravity-ide) - Not whitelisted - Command: /home/darian/Documents/Antigravity IDE/antigravity-ide --type=zygote
+2026-05-29 18:30:04 - PID 10224 (language_server) - Not whitelisted - Command: /home/darian/Documents/Antigravity IDE/resources/app/extensions/antigravity/bin/language_server_linux_x64 --csrf_token 2036a23c-0ed0-4a13-974a-df012c50caef --extension_server_port 36089 --extension_server_csrf_token 12f7ed32-9cc6-42bc-ad50-34e8ec124fcd --app_data_dir antigravity-ide --subclient_type ide --cloud_code_endpoint https://cloudcode-pa.googleapis.com
+2026-05-29 18:30:04 - PID 10234 (antigravity-ide) - Not whitelisted - Command: /home/darian/Documents/Antigravity IDE/antigravity-ide --type=zygote
+2026-05-29 18:30:04 - PID 10273 (antigravity-ide) - Not whitelisted - Command: /proc/self/exe --type=utility --utility-sub-type=node.mojom.NodeService --lang=en-US --service-sandbox-type=none --enable-crash-reporter=d6f5d1ae-b18c-4aec-a0bd-28ea13879b82,no_channel --user-data-dir=/home/darian/.config/Antigravity IDE --standard-schemes=vscode-webview,vscode-file --enable-sandbox --secure-schemes=vscode-webview,vscode-file --cors-schemes=vscode-webview,vscode-file --fetch-schemes=vscode-webview,vscode-file --service-worker-schemes=vscode-webview --code-cache-schemes=vscode-webview,vscode-file --shared-files=v8_context_snapshot_data:100 --field-trial-handle=3,i,3247301717562956181,4682797393806929694,262144 --enable-features=DocumentPolicyIncludeJSCallStacksInCrashReports,EarlyEstablishGpuChannel,EstablishGpuChannelAsync,PdfUseShowSaveFilePicker --disable-features=CalculateNativeWinOcclusion,LocalNetworkAccessChecks,ScreenAIOCREnabled,SpareRendererForSitePerProcess,TraceSiteInstanceGetProcessCreation --variations-seed-version --trace-process-track-uuid=3190708991934122588
+2026-05-29 18:30:04 - PID 10274 (antigravity-ide) - Not whitelisted - Command: /proc/self/exe --type=utility --utility-sub-type=node.mojom.NodeService --lang=en-US --service-sandbox-type=none --enable-crash-reporter=d6f5d1ae-b18c-4aec-a0bd-28ea13879b82,no_channel --user-data-dir=/home/darian/.config/Antigravity IDE --standard-schemes=vscode-webview,vscode-file --enable-sandbox --secure-schemes=vscode-webview,vscode-file --cors-schemes=vscode-webview,vscode-file --fetch-schemes=vscode-webview,vscode-file --service-worker-schemes=vscode-webview --code-cache-schemes=vscode-webview,vscode-file --shared-files=v8_context_snapshot_data:100 --field-trial-handle=3,i,3247301717562956181,4682797393806929694,262144 --enable-features=DocumentPolicyIncludeJSCallStacksInCrashReports,EarlyEstablishGpuChannel,EstablishGpuChannelAsync,PdfUseShowSaveFilePicker --disable-features=CalculateNativeWinOcclusion,LocalNetworkAccessChecks,ScreenAIOCREnabled,SpareRendererForSitePerProcess,TraceSiteInstanceGetProcessCreation --variations-seed-version --trace-process-track-uuid=3190708992871164437
+2026-05-29 18:30:04 - PID 10303 (antigravity-ide) - Not whitelisted - Command: /proc/self/exe --type=utility --utility-sub-type=node.mojom.NodeService --lang=en-US --service-sandbox-type=none --dns-result-order=ipv4first --experimental-network-inspection --inspect-port=0 --enable-crash-reporter=d6f5d1ae-b18c-4aec-a0bd-28ea13879b82,no_channel --user-data-dir=/home/darian/.config/Antigravity IDE --standard-schemes=vscode-webview,vscode-file --enable-sandbox --secure-schemes=vscode-webview,vscode-file --cors-schemes=vscode-webview,vscode-file --fetch-schemes=vscode-webview,vscode-file --service-worker-schemes=vscode-webview --code-cache-schemes=vscode-webview,vscode-file --shared-files=v8_context_snapshot_data:100 --field-trial-handle=3,i,3247301717562956181,4682797393806929694,262144 --enable-features=DocumentPolicyIncludeJSCallStacksInCrashReports,EarlyEstablishGpuChannel,EstablishGpuChannelAsync,PdfUseShowSaveFilePicker --disable-features=CalculateNativeWinOcclusion,LocalNetworkAccessChecks,ScreenAIOCREnabled,SpareRendererForSitePerProcess,TraceSiteInstanceGetProcessCreation --variations-seed-version --trace-process-track-uuid=3190708993808206286
+2026-05-29 18:30:04 - PID 10347 (antigravity-ide) - Not whitelisted - Command: /proc/self/exe --type=utility --utility-sub-type=node.mojom.NodeService --lang=en-US --service-sandbox-type=none --enable-crash-reporter=d6f5d1ae-b18c-4aec-a0bd-28ea13879b82,no_channel --user-data-dir=/home/darian/.config/Antigravity IDE --standard-schemes=vscode-webview,vscode-file --enable-sandbox --secure-schemes=vscode-webview,vscode-file --cors-schemes=vscode-webview,vscode-file --fetch-schemes=vscode-webview,vscode-file --service-worker-schemes=vscode-webview --code-cache-schemes=vscode-webview,vscode-file --shared-files=v8_context_snapshot_data:100 --field-trial-handle=3,i,3247301717562956181,4682797393806929694,262144 --enable-features=DocumentPolicyIncludeJSCallStacksInCrashReports,EarlyEstablishGpuChannel,EstablishGpuChannelAsync,PdfUseShowSaveFilePicker --disable-features=CalculateNativeWinOcclusion,LocalNetworkAccessChecks,ScreenAIOCREnabled,SpareRendererForSitePerProcess,TraceSiteInstanceGetProcessCreation --variations-seed-version --trace-process-track-uuid=3190708994745248135
+2026-05-29 18:30:04 - PID 10368 (bash) - Not whitelisted - Command: /usr/bin/bash --init-file /home/darian/Documents/Antigravity IDE/resources/app/out/vs/workbench/contrib/terminal/common/scripts/shellIntegration-bash.sh
+2026-05-29 18:30:04 - PID 10461 (antigravity-ide) - Not whitelisted - Command: /proc/self/exe --type=utility --utility-sub-type=audio.mojom.AudioService --lang=en-US --service-sandbox-type=none --enable-crash-reporter=d6f5d1ae-b18c-4aec-a0bd-28ea13879b82,no_channel --user-data-dir=/home/darian/.config/Antigravity IDE --standard-schemes=vscode-webview,vscode-file --enable-sandbox --secure-schemes=vscode-webview,vscode-file --cors-schemes=vscode-webview,vscode-file --fetch-schemes=vscode-webview,vscode-file --service-worker-schemes=vscode-webview --code-cache-schemes=vscode-webview,vscode-file --shared-files=v8_context_snapshot_data:100 --field-trial-handle=3,i,3247301717562956181,4682797393806929694,262144 --enable-features=DocumentPolicyIncludeJSCallStacksInCrashReports,EarlyEstablishGpuChannel,EstablishGpuChannelAsync,PdfUseShowSaveFilePicker --disable-features=CalculateNativeWinOcclusion,LocalNetworkAccessChecks,ScreenAIOCREnabled,SpareRendererForSitePerProcess,TraceSiteInstanceGetProcessCreation --variations-seed-version --trace-process-track-uuid=3190708995682289984
+2026-05-29 18:30:04 - PID 10632 (language_server) - Not whitelisted - Command: /home/darian/Documents/Antigravity IDE/resources/app/extensions/antigravity/bin/language_server_linux_x64 --enable_lsp --csrf_token d8947cd4-346c-47de-98e7-1689828322ba --extension_server_port 42571 --extension_server_csrf_token 2c0abf79-49e4-4f06-bf8b-853f3ede879e --https_server_port 40267 --lsp_port 39681 --cloud_code_endpoint https://daily-cloudcode-pa.googleapis.com --subclient_type ide --app_data_dir antigravity-ide --parent_pipe_path /tmp/server_9b90cc0d1b7a522a
+2026-05-29 18:30:04 - PID 11018 (antigravity-ide) - Not whitelisted - Command: /home/darian/Documents/Antigravity IDE/antigravity-ide --type=zygote
+2026-05-29 18:30:04 - PID 11358 (antigravity-ide) - Not whitelisted - Command: /proc/self/exe --type=utility --utility-sub-type=node.mojom.NodeService --lang=en-US --service-sandbox-type=none --enable-crash-reporter=d6f5d1ae-b18c-4aec-a0bd-28ea13879b82,no_channel --user-data-dir=/home/darian/.config/Antigravity IDE --standard-schemes=vscode-webview,vscode-file --enable-sandbox --secure-schemes=vscode-webview,vscode-file --cors-schemes=vscode-webview,vscode-file --fetch-schemes=vscode-webview,vscode-file --service-worker-schemes=vscode-webview --code-cache-schemes=vscode-webview,vscode-file --shared-files=v8_context_snapshot_data:100 --field-trial-handle=3,i,3247301717562956181,4682797393806929694,262144 --enable-features=DocumentPolicyIncludeJSCallStacksInCrashReports,EarlyEstablishGpuChannel,EstablishGpuChannelAsync,PdfUseShowSaveFilePicker --disable-features=CalculateNativeWinOcclusion,LocalNetworkAccessChecks,ScreenAIOCREnabled,SpareRendererForSitePerProcess,TraceSiteInstanceGetProcessCreation --variations-seed-version --trace-process-track-uuid=3190709005052708474
+2026-05-29 18:30:04 - PID 11373 (antigravity-ide) - Not whitelisted - Command: /proc/self/exe --type=utility --utility-sub-type=node.mojom.NodeService --lang=en-US --service-sandbox-type=none --dns-result-order=ipv4first --experimental-network-inspection --inspect-port=0 --enable-crash-reporter=d6f5d1ae-b18c-4aec-a0bd-28ea13879b82,no_channel --user-data-dir=/home/darian/.config/Antigravity IDE --standard-schemes=vscode-webview,vscode-file --enable-sandbox --secure-schemes=vscode-webview,vscode-file --cors-schemes=vscode-webview,vscode-file --fetch-schemes=vscode-webview,vscode-file --service-worker-schemes=vscode-webview --code-cache-schemes=vscode-webview,vscode-file --shared-files=v8_context_snapshot_data:100 --field-trial-handle=3,i,3247301717562956181,4682797393806929694,262144 --enable-features=DocumentPolicyIncludeJSCallStacksInCrashReports,EarlyEstablishGpuChannel,EstablishGpuChannelAsync,PdfUseShowSaveFilePicker --disable-features=CalculateNativeWinOcclusion,LocalNetworkAccessChecks,ScreenAIOCREnabled,SpareRendererForSitePerProcess,TraceSiteInstanceGetProcessCreation --variations-seed-version --trace-process-track-uuid=3190709005989750323
+2026-05-29 18:30:04 - PID 11426 (bash) - Not whitelisted - Command: /usr/bin/bash --init-file /home/darian/Documents/Antigravity IDE/resources/app/out/vs/workbench/contrib/terminal/common/scripts/shellIntegration-bash.sh
+2026-05-29 18:30:04 - PID 11461 (language_server) - Not whitelisted - Command: /home/darian/Documents/Antigravity IDE/resources/app/extensions/antigravity/bin/language_server_linux_x64 --enable_lsp --csrf_token 1b189148-c6ca-4190-b5dd-e24002c91dd0 --extension_server_port 46757 --extension_server_csrf_token 53dbe558-ad2b-4681-aeeb-128092120666 --workspace_id file_home_darian_Documents_RocketMode --cloud_code_endpoint https://daily-cloudcode-pa.googleapis.com --subclient_type ide --app_data_dir antigravity-ide --parent_pipe_path /tmp/server_dacc2de7f325bb4b
+2026-05-29 18:30:04 - PID 53615 (antigravity-ide) - Not whitelisted - Command: /home/darian/Documents/Antigravity IDE/antigravity-ide --type=zygote --no-zygote-sandbox
+2026-05-29 18:30:04 - PID 53636 (antigravity-ide) - Not whitelisted - Command: /home/darian/Documents/Antigravity IDE/antigravity-ide --type=zygote --no-zygote-sandbox
+2026-05-29 18:30:04 - PID 53726 (bash) - Not whitelisted - Command: /usr/bin/bash --init-file /home/darian/Documents/Antigravity IDE/resources/app/out/vs/workbench/contrib/terminal/common/scripts/shellIntegration-bash.sh
+2026-05-29 18:30:04 - PID 54055 (tumblerd) - Not whitelisted - Command: /usr/lib/x86_64-linux-gnu/tumbler-1/tumblerd
+2026-05-29 18:30:04 - PID 54411 (sleep) - Not whitelisted - Command: sleep 2
+2026-05-29 18:30:04 - Cleanup finished. Successfully killed 45 processes.
+
+--- Gaming Environment Cleanup: 2026-05-29 21:07:25 (Mode: ACTIVE) ---
+2026-05-29 21:07:25 - PID 56605 (bash) - Not whitelisted - Command: -bash
+2026-05-29 21:07:25 - Cleanup finished. Successfully killed 1 processes.
+
+--- Gaming Environment Cleanup: 2026-05-30 07:37:43 (Mode: ACTIVE) ---
+2026-05-30 07:37:43 - Cleanup finished. Successfully killed 0 processes.
+
+--- Gaming Environment Cleanup: 2026-05-30 14:58:57 (Mode: ACTIVE) ---
+2026-05-30 14:58:57 - PID 1680 (ibus-daemon) - Not whitelisted - Command: /usr/bin/ibus-daemon --daemonize --xim
+2026-05-30 14:58:57 - PID 1697 (ibus-memconf) - Not whitelisted - Command: /usr/libexec/ibus-memconf
+2026-05-30 14:58:57 - PID 1710 (ibus-ui-gtk3) - Not whitelisted - Command: /usr/libexec/ibus-ui-gtk3
+2026-05-30 14:58:57 - PID 1714 (ibus-extension-) - Not whitelisted - Command: /usr/libexec/ibus-extension-gtk3
+2026-05-30 14:58:57 - PID 1716 (ibus-x11) - Not whitelisted - Command: /usr/libexec/ibus-x11 --kill-daemon
+2026-05-30 14:58:57 - PID 1719 (ibus-portal) - Not whitelisted - Command: /usr/libexec/ibus-portal
+2026-05-30 14:58:57 - PID 1773 (ssh-agent) - Not whitelisted - Command: /usr/bin/ssh-agent -s
+2026-05-30 14:58:57 - PID 1815 (ibus-engine-sim) - Not whitelisted - Command: /usr/libexec/ibus-engine-simple
+2026-05-30 14:58:57 - PID 1832 (Thunar) - Not whitelisted - Command: Thunar --daemon
+2026-05-30 14:58:57 - PID 1871 (tumblerd) - Not whitelisted - Command: /usr/lib/x86_64-linux-gnu/tumbler-1/tumblerd
+2026-05-30 14:58:57 - PID 1872 (touchegg) - Not whitelisted - Command: touchegg
+2026-05-30 14:58:57 - PID 1874 (agent) - Not whitelisted - Command: /usr/libexec/geoclue-2.0/demos/agent
+2026-05-30 14:58:57 - PID 1889 (light-locker) - Not whitelisted - Command: light-locker
+2026-05-30 14:58:57 - PID 1895 (polkit-gnome-au) - Not whitelisted - Command: /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1
+2026-05-30 14:58:57 - PID 1896 (nm-applet) - Not whitelisted - Command: nm-applet
+2026-05-30 14:58:57 - PID 1913 (xiccd) - Not whitelisted - Command: xiccd
+2026-05-30 14:58:57 - PID 1952 (xfce4-power-man) - Not whitelisted - Command: xfce4-power-manager
+2026-05-30 14:58:57 - PID 2959 (sleep) - Not whitelisted - Command: sleep 2
+2026-05-30 14:58:57 - Cleanup finished. Successfully killed 18 processes.
+
+--- Gaming Environment Cleanup: 2026-05-31 09:05:46 (Mode: ACTIVE) ---
+2026-05-31 09:05:46 - Cleanup finished. Successfully killed 0 processes.
+
+--- Gaming Environment Cleanup: 2026-05-31 10:01:46 (Mode: ACTIVE) ---
+2026-05-31 10:01:46 - Cleanup finished. Successfully killed 0 processes.
+
+--- Gaming Environment Cleanup: 2026-05-31 14:10:01 (Mode: ACTIVE) ---
+2026-05-31 14:10:01 - Cleanup finished. Successfully killed 0 processes.
+
+--- Gaming Environment Cleanup: 2026-05-31 22:51:53 (Mode: ACTIVE) ---
+2026-05-31 22:51:53 - Cleanup finished. Successfully killed 0 processes.
