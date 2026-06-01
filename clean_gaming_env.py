@@ -16,20 +16,20 @@ WHITELIST_NAMES = {
     "gamemoded", "gamemoderun",
     "heroic", "heroic-run", "legendary",
     "wineserver", "services.exe", "winedevice.exe", "plugplay.exe", "rpcss.exe", "explorer.exe", "svchost.exe",
-    "rocketleague.exe", "launcher.exe"
+    "rocketleague.exe", "launcher.exe", "gamescope"
 }
 
 # Whitelist patterns for process command lines to keep alive
 WHITELIST_PATTERNS = [
     "wine", "proton", "umu", "pressure-vessel", "pv-adverb",
     "rocketleague", "legendary", "heroic", "gamemode", ".exe",
-    "rocket_booster", "game_logger"
+    "rocket_booster", "game_logger", "gamescope"
 ]
 
 # Only these processes are allowed to pass their whitelisted status down to descendants
 PROPAGATING_KEYWORDS = [
     "heroic", "flatpak", "wineserver", "gamemoded", 
-    "pressure-vessel", "umu-shim", "bwrap"
+    "pressure-vessel", "umu-shim", "bwrap", "gamescope"
 ]
 
 def get_ancestor_pids():
