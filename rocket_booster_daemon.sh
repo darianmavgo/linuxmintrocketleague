@@ -19,7 +19,7 @@ while true; do
         
         SUSPENDED_PIDS=()
         
-        # Suspend target apps
+        # Suspend target apps and reclaim their memory
         for app in "${TARGETS[@]}"; do
             # Get PIDs for this app belonging to current user
             PIDS=$(pgrep -u "$USER" -x "$app" || true)
@@ -28,6 +28,15 @@ while true; do
                     # Send SIGSTOP to freeze the process
                     if kill -STOP "$pid" 2>/dev/null; then
                         SUSPENDED_PIDS+=("$pid")
+                        
+                        # Reclaim memory from the cgroup of the suspended process (cgroup v2)
+                        if [ -f "/proc/$pid/cgroup" ]; then
+                            CGROUP_PATH=$(grep -E '^0::' "/proc/$pid/cgroup" | cut -d: -f3 || true)
+                            if [ -n "$CGROUP_PATH" ] && [ -f "/sys/fs/cgroup$CGROUP_PATH/memory.reclaim" ]; then
+                                echo "❄️ Reclaiming memory from $app (PID: $pid, Cgroup: $CGROUP_PATH)..."
+                                echo "999G" > "/sys/fs/cgroup$CGROUP_PATH/memory.reclaim" 2>/dev/null || true
+                            fi
+                        fi
                     fi
                 fi
             done

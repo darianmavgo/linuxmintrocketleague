@@ -23,7 +23,7 @@ WHITELIST_NAMES = {
 WHITELIST_PATTERNS = [
     "wine", "proton", "umu", "pressure-vessel", "pv-adverb",
     "rocketleague", "legendary", "heroic", "gamemode", ".exe",
-    "rocket_booster", "game_logger"
+    "rocket_booster", "game_logger", "antigravity", "language_server"
 ]
 
 # Only these processes are allowed to pass their whitelisted status down to descendants
